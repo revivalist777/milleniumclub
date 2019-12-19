@@ -96,7 +96,7 @@ public:
 };
 
 /**
- * Delion RPC command dispatcher.
+ * Millenniumclubcoin RPC command dispatcher.
  */
 class CRPCTable
 {

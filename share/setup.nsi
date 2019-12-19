@@ -1,4 +1,4 @@
-Name "Delion Core (-bit)"
+Name "Millenniumclubcoin Core (-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -6,23 +6,23 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 1.0.0
-!define COMPANY "Delion Core project"
-!define URL https://www.delion.online
+!define COMPANY "Millenniumclubcoin Core project"
+!define URL https://https://millenniumclub.ca/
 
 # MUI Symbol Definitions
-!define MUI_ICON "/root/delion/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/root/delion/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/root/millenniumclubcoin/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/root/millenniumclubcoin/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/root/delion/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/root/millenniumclubcoin/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Delion Core"
-!define MUI_FINISHPAGE_RUN $INSTDIR\delion-qt
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Millenniumclubcoin Core"
+!define MUI_FINISHPAGE_RUN $INSTDIR\millenniumclubcoin-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/root/delion/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/root/millenniumclubcoin/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,18 +48,18 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /root/delion/delion-${VERSION}-win-setup.exe
+OutFile /root/millenniumclubcoin/millenniumclubcoin-${VERSION}-win-setup.exe
 !if "" == "64"
-InstallDir $PROGRAMFILES64\Delion
+InstallDir $PROGRAMFILES64\Millenniumclubcoin
 !else
-InstallDir $PROGRAMFILES\Delion
+InstallDir $PROGRAMFILES\Millenniumclubcoin
 !endif
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
 VIProductVersion ${VERSION}.0
-VIAddVersionKey ProductName "Delion Core"
+VIAddVersionKey ProductName "Millenniumclubcoin Core"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /root/delion/release/delion-qt
-    File /oname=COPYING.txt /root/delion/COPYING
-    File /oname=readme.txt /root/delion/doc/README_windows.txt
+    File /root/millenniumclubcoin/release/millenniumclubcoin-qt
+    File /oname=COPYING.txt /root/millenniumclubcoin/COPYING
+    File /oname=readme.txt /root/millenniumclubcoin/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /root/delion/release/deliond
-    File /root/delion/release/delion-cli
+    File /root/millenniumclubcoin/release/millenniumclubcoind
+    File /root/millenniumclubcoin/release/millenniumclubcoin-cli
     SetOutPath $INSTDIR\doc
-    File /r /root/delion/doc\*.*
+    File /r /root/millenniumclubcoin/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd
@@ -91,8 +91,8 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\delion-qt
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Delion Core (testnet, -bit).lnk" "$INSTDIR\delion-qt" "-testnet" "$INSTDIR\delion-qt" 1
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\millenniumclubcoin-qt
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Millenniumclubcoin Core (testnet, -bit).lnk" "$INSTDIR\millenniumclubcoin-qt" "-testnet" "$INSTDIR\millenniumclubcoin-qt" 1
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
@@ -103,10 +103,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "delion" "URL Protocol" ""
-    WriteRegStr HKCR "delion" "" "URL:Delion"
-    WriteRegStr HKCR "delion\DefaultIcon" "" $INSTDIR\delion-qt
-    WriteRegStr HKCR "delion\shell\open\command" "" '"$INSTDIR\delion-qt" "%1"'
+    WriteRegStr HKCR "millenniumclubcoin" "URL Protocol" ""
+    WriteRegStr HKCR "millenniumclubcoin" "" "URL:Millenniumclubcoin"
+    WriteRegStr HKCR "millenniumclubcoin\DefaultIcon" "" $INSTDIR\millenniumclubcoin-qt
+    WriteRegStr HKCR "millenniumclubcoin\shell\open\command" "" '"$INSTDIR\millenniumclubcoin-qt" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -124,7 +124,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\delion-qt
+    Delete /REBOOTOK $INSTDIR\millenniumclubcoin-qt
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
     RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -136,8 +136,8 @@ Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Delion Core (testnet, -bit).lnk"
-    Delete /REBOOTOK "$SMSTARTUP\Delion.lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Millenniumclubcoin Core (testnet, -bit).lnk"
+    Delete /REBOOTOK "$SMSTARTUP\Millenniumclubcoin.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log
@@ -145,7 +145,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "delion"
+    DeleteRegKey HKCR "millenniumclubcoin"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0

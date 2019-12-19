@@ -1,12 +1,12 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Delion
-Comment=Delion P2P Cryptocurrency
-Comment[fr]=Delion, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Delion, eşten eşe kriptografik sanal para birimi
-Exec=delion-qt %u
+Name=Millenniumclubcoin
+Comment=Millenniumclubcoin P2P Cryptocurrency
+Comment[fr]=Millenniumclubcoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Millenniumclubcoin, eşten eşe kriptografik sanal para birimi
+Exec=millenniumclubcoin-qt %u
 Terminal=false
 Type=Application
-Icon=delion128
-MimeType=x-scheme-handler/delion;
+Icon=millenniumclubcoin128
+MimeType=x-scheme-handler/millenniumclubcoin;
 Categories=Office;Finance;

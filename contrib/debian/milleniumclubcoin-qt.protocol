@@ -1,6 +1,6 @@
 [Protocol]
-exec=delion-qt '%u'
-protocol=delion
+exec=millenniumclubcoin-qt '%u'
+protocol=millenniumclubcoin
 input=none
 output=none
 helper=true

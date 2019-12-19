@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017 The Delion developers
+// Copyright (c) 2017 The Millenniumclubcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -238,10 +238,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Delion server.");
+            "\nStop Millenniumclubcoin server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "Delion server stopping";
+    return "Millenniumclubcoin server stopping";
 }
 
 
@@ -318,36 +318,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* Delion features */
-        {"delion", "masternode", &masternode, true, true, false},
-        {"delion", "listmasternodes", &listmasternodes, true, true, false},
-        {"delion", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"delion", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"delion", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"delion", "masternodedebug", &masternodedebug, true, true, false},
-        {"delion", "startmasternode", &startmasternode, true, true, false},
-        {"delion", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"delion", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"delion", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"delion", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"delion", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"delion", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"delion", "mnbudget", &mnbudget, true, true, false},
-        {"delion", "preparebudget", &preparebudget, true, true, false},
-        {"delion", "submitbudget", &submitbudget, true, true, false},
-        {"delion", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"delion", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"delion", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"delion", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"delion", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"delion", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"delion", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"delion", "checkbudgets", &checkbudgets, true, true, false},
-        {"delion", "mnsync", &mnsync, true, true, false},
-        {"delion", "spork", &spork, true, true, false},
-        {"delion", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* Millenniumclubcoin features */
+        {"millenniumclubcoin", "masternode", &masternode, true, true, false},
+        {"millenniumclubcoin", "listmasternodes", &listmasternodes, true, true, false},
+        {"millenniumclubcoin", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"millenniumclubcoin", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"millenniumclubcoin", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"millenniumclubcoin", "masternodedebug", &masternodedebug, true, true, false},
+        {"millenniumclubcoin", "startmasternode", &startmasternode, true, true, false},
+        {"millenniumclubcoin", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"millenniumclubcoin", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"millenniumclubcoin", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"millenniumclubcoin", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"millenniumclubcoin", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"millenniumclubcoin", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"millenniumclubcoin", "mnbudget", &mnbudget, true, true, false},
+        {"millenniumclubcoin", "preparebudget", &preparebudget, true, true, false},
+        {"millenniumclubcoin", "submitbudget", &submitbudget, true, true, false},
+        {"millenniumclubcoin", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"millenniumclubcoin", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"millenniumclubcoin", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"millenniumclubcoin", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"millenniumclubcoin", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"millenniumclubcoin", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"millenniumclubcoin", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"millenniumclubcoin", "checkbudgets", &checkbudgets, true, true, false},
+        {"millenniumclubcoin", "mnsync", &mnsync, true, true, false},
+        {"millenniumclubcoin", "spork", &spork, true, true, false},
+        {"millenniumclubcoin", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"delion", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"millenniumclubcoin", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -626,16 +626,16 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use deliond, or the -server option to delion-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use millenniumclubcoind, or the -server option to millenniumclubcoin-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=delionrpc\n"
+                                               "rpcuser=millenniumclubcoinrpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"Delion Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"Millenniumclubcoin Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1086,7 +1086,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> delion-cli " + methodname + " " + args + "\n";
+    return "> millenniumclubcoin-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

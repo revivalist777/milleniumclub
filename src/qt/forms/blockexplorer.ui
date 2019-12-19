@@ -168,7 +168,7 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../delion.qrc"/>
+  <include location="../millenniumclubcoin.qrc"/>
  </resources>
  <connections/>
 </ui>

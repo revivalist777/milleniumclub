@@ -115,8 +115,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>The Delion address the message was signed with</source>
-        <translation>Delion adresa s kojom je potpisana poruka</translation>
+        <source>The Millenniumclubcoin address the message was signed with</source>
+        <translation>Millenniumclubcoin adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Allowed: 0-9,a-z,A-Z,</source>
@@ -150,8 +150,8 @@
         <translation>Otvori konfiguracijsku datoteku</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>Millenniumclubcoin Core</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -162,8 +162,8 @@
         <translation>&amp;BIP38 alat</translation>
     </message>
     <message>
-        <source>Delion Core client</source>
-        <translation>Delion Core klijent</translation>
+        <source>Millenniumclubcoin Core client</source>
+        <translation>Millenniumclubcoin Core klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -256,15 +256,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>Millenniumclubcoin Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>Millenniumclubcoin Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -597,8 +597,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Delion Core is shutting down...</source>
-        <translation>Delion Core se gasi...</translation>
+        <source>Millenniumclubcoin Core is shutting down...</source>
+        <translation>Millenniumclubcoin Core se gasi...</translation>
     </message>
     </context>
 <context>
@@ -620,8 +620,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>The Delion address the message was signed with</source>
-        <translation>Delion adresa s kojom je potpisana poruka</translation>
+        <source>The Millenniumclubcoin address the message was signed with</source>
+        <translation>Millenniumclubcoin adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Message signed.</source>
@@ -635,8 +635,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>Millenniumclubcoin Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -783,14 +783,14 @@
     </message>
     </context>
 <context>
-    <name>ZDelionControlDialog</name>
+    <name>ZMillenniumclubcoinControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>delion-core</name>
+    <name>millenniumclubcoin-core</name>
     <message>
         <source>Error</source>
         <translation>Greška</translation>

@@ -1,19 +1,19 @@
 [Unit]
-Description=Delion's distributed currency daemon
+Description=Millenniumclubcoin's distributed currency daemon
 After=network.target
 
 [Service]
-User=delion
-Group=delion
+User=millenniumclubcoin
+Group=millenniumclubcoin
 
 Type=forking
-PIDFile=/var/lib/deliond/deliond.pid
+PIDFile=/var/lib/millenniumclubcoind/millenniumclubcoind.pid
 
-ExecStart=/usr/bin/deliond -daemon -pid=/var/lib/deliond/deliond.pid \
-          -conf=/etc/delion/delion.conf -datadir=/var/lib/deliond
+ExecStart=/usr/bin/millenniumclubcoind -daemon -pid=/var/lib/millenniumclubcoind/millenniumclubcoind.pid \
+          -conf=/etc/millenniumclubcoin/millenniumclubcoin.conf -datadir=/var/lib/millenniumclubcoind
 
-ExecStop=-/usr/bin/delion-cli -conf=/etc/delion/delion.conf \
-         -datadir=/var/lib/deliond stop
+ExecStop=-/usr/bin/millenniumclubcoin-cli -conf=/etc/millenniumclubcoin/millenniumclubcoin.conf \
+         -datadir=/var/lib/millenniumclubcoind stop
 
 Restart=always
 PrivateTmp=true

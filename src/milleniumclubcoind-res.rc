@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Delion"
-            VALUE "FileDescription",    "deliond (OSS daemon/client for Delion)"
+            VALUE "CompanyName",        "Millenniumclubcoin"
+            VALUE "FileDescription",    "millenniumclubcoind (OSS daemon/client for Millenniumclubcoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "deliond"
+            VALUE "InternalName",       "millenniumclubcoind"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "deliond.exe"
-            VALUE "ProductName",        "deliond"
+            VALUE "OriginalFilename",   "millenniumclubcoind.exe"
+            VALUE "ProductName",        "millenniumclubcoind"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

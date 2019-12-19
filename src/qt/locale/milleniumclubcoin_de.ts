@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Wählen Sie die Adresse aus, an die Sie Delion überweisen möchten</translation>
+        <translation>Wählen Sie die Adresse aus, an die Sie Millenniumclubcoin überweisen möchten</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Wählen Sie die Adresse aus, über die Sie Delion empfangen wollen</translation>
+        <translation>Wählen Sie die Adresse aus, über die Sie Millenniumclubcoin empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>Empfangsadressen</translation>
     </message>
     <message>
-        <source>These are your Delion addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre Delion-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie Delion überweisen.</translation>
+        <source>These are your Millenniumclubcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dies sind ihre Millenniumclubcoin-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie Millenniumclubcoin überweisen.</translation>
     </message>
     <message>
-        <source>These are your Delion addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dies sind ihre Delion-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
+        <source>These are your Millenniumclubcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dies sind ihre Millenniumclubcoin-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,7 +176,7 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>Delion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DLNs from being stolen by malware infecting your computer.</source>
+        <source>Millenniumclubcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DLNs from being stolen by malware infecting your computer.</source>
         <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer DLNs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Verschlüsselung</translation>
     </message>
     <message>
-        <source>Enter a Delion Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Gib eine Delion Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
+        <source>Enter a Millenniumclubcoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Gib eine Millenniumclubcoin Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse:</translation>
     </message>
     <message>
-        <source>The Delion address to sign the message with</source>
-        <translation>Delion Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The Millenniumclubcoin address to sign the message with</source>
+        <translation>Millenniumclubcoin Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopiert die aktuelle Signatur in den Zwischenspeicher</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Delion address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese Delion Adresse besitzt</translation>
+        <source>Sign the message to prove you own this Millenniumclubcoin address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese Millenniumclubcoin Adresse besitzt</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Geben Sie den BIP 38 verschlüsselten privaten Schlüssel ein. Geben Sie die Passphrase im mittleren Feld ein. Klicken Sie auf Entschlüsselung, um den privaten Schlüssel zu berechnen. Nachdem der Schlüssel entschlüsselt wurde, klicken Sie auf 'Adresse importieren', fügen Sie diesen privaten Schlüssel der Wallet hinzu.</translation>
     </message>
     <message>
-        <source>The Delion address the message was signed with</source>
-        <translation>Die Delion Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The Millenniumclubcoin address the message was signed with</source>
+        <translation>Die Millenniumclubcoin Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Delion address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen Delion-Adresse signiert wurde.</translation>
+        <source>Verify the message to ensure it was signed with the specified Millenniumclubcoin address</source>
+        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen Millenniumclubcoin-Adresse signiert wurde.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,16 +602,16 @@
         <translation>Registerkartenleiste</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>Millenniumclubcoin Core</translation>
     </message>
     <message>
-        <source>Send coins to a Delion address</source>
-        <translation>An eine Delion-Adresse überweisen</translation>
+        <source>Send coins to a Millenniumclubcoin address</source>
+        <translation>An eine Millenniumclubcoin-Adresse überweisen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and delion: URIs)</source>
-        <translation>Zahlung anfordern (QR-Code Generierung und delion: URIs)</translation>
+        <source>Request payments (generates QR codes and millenniumclubcoin: URIs)</source>
+        <translation>Zahlung anfordern (QR-Code Generierung und millenniumclubcoin: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -630,24 +630,24 @@
         <translation>Masternodes durchsuchen</translation>
     </message>
     <message>
-        <source>&amp;About Delion Core</source>
-        <translation>Über.Delion Core</translation>
+        <source>&amp;About Millenniumclubcoin Core</source>
+        <translation>Über.Millenniumclubcoin Core</translation>
     </message>
     <message>
-        <source>Show information about Delion Core</source>
-        <translation>Zeigt Informationen über Delion Core</translation>
+        <source>Show information about Millenniumclubcoin Core</source>
+        <translation>Zeigt Informationen über Millenniumclubcoin Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Delion</source>
-        <translation>Konfiguration von Delion verändern</translation>
+        <source>Modify configuration options for Millenniumclubcoin</source>
+        <translation>Konfiguration von Millenniumclubcoin verändern</translation>
     </message>
     <message>
-        <source>Sign messages with your Delion addresses to prove you own them</source>
-        <translation>Unterschreibt eine Nachricht mit Ihrer Delion-Adresse und beweist, dass sie Ihnen gehört</translation>
+        <source>Sign messages with your Millenniumclubcoin addresses to prove you own them</source>
+        <translation>Unterschreibt eine Nachricht mit Ihrer Millenniumclubcoin-Adresse und beweist, dass sie Ihnen gehört</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Delion addresses</source>
-        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten Delion-Adresse signiert wurde</translation>
+        <source>Verify messages to ensure they were signed with specified Millenniumclubcoin addresses</source>
+        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten Millenniumclubcoin-Adresse signiert wurde</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -674,8 +674,8 @@
         <translation>Öffne Masternode Einstellungsdatei</translation>
     </message>
     <message>
-        <source>Open a Delion: URI or payment request</source>
-        <translation>Öffne eine Delion: URI or Zahlungsanfrage</translation>
+        <source>Open a Millenniumclubcoin: URI or payment request</source>
+        <translation>Öffne eine Millenniumclubcoin: URI or Zahlungsanfrage</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -686,16 +686,16 @@
         <translation>Blockchain Betrachter Fenster</translation>
     </message>
     <message>
-        <source>Show the Delion Core help message to get a list with possible Delion command-line options</source>
-        <translation>Zeige die Delion-Core Hilfe, um mögliche Delion Kommando-Zeilen-Optionen anzuzeigen</translation>
+        <source>Show the Millenniumclubcoin Core help message to get a list with possible Millenniumclubcoin command-line options</source>
+        <translation>Zeige die Millenniumclubcoin-Core Hilfe, um mögliche Millenniumclubcoin Kommando-Zeilen-Optionen anzuzeigen</translation>
     </message>
     <message>
-        <source>Delion Core client</source>
-        <translation>Delion Core Client</translation>
+        <source>Millenniumclubcoin Core client</source>
+        <translation>Millenniumclubcoin Core Client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Delion network</source>
-        <translation><numerusform>%n aktive Verbindung zum Delion Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum Delion Netzwerk</numerusform></translation>
+        <source>%n active connection(s) to Millenniumclubcoin network</source>
+        <translation><numerusform>%n aktive Verbindung zum Millenniumclubcoin Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum Millenniumclubcoin Netzwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -848,8 +848,8 @@ Adresse: %4</translation>
         <translation>TextEtikett</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (delion.conf).</source>
-        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "delion.conf" Konfigurationsdatei hinzufügen.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (millenniumclubcoin.conf).</source>
+        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "millenniumclubcoin.conf" Konfigurationsdatei hinzufügen.</translation>
     </message>
 </context>
 <context>
@@ -1137,8 +1137,8 @@ Adresse: %4</translation>
         <translation>Zahlungsadresse bearbeiten</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Delion address.</source>
-        <translation>Die eingegebene Adresse "%1" ist keine gültige Delion-Adresse.</translation>
+        <source>The entered address "%1" is not a valid Millenniumclubcoin address.</source>
+        <translation>Die eingegebene Adresse "%1" ist keine gültige Millenniumclubcoin-Adresse.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1183,16 +1183,16 @@ Adresse: %4</translation>
         <translation>Version</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>Millenniumclubcoin Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-Bit)</translation>
     </message>
     <message>
-        <source>About Delion Core</source>
-        <translation>Über Delion Core</translation>
+        <source>About Millenniumclubcoin Core</source>
+        <translation>Über Millenniumclubcoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1238,16 +1238,16 @@ Adresse: %4</translation>
         <translation>Willkommen</translation>
     </message>
     <message>
-        <source>Welcome to Delion Core.</source>
-        <translation>Willkommen zu Delion Core.</translation>
+        <source>Welcome to Millenniumclubcoin Core.</source>
+        <translation>Willkommen zu Millenniumclubcoin Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Delion Core will store its data.</source>
-        <translation>Da dies das erste Mal ist, dass Sie Delion Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
+        <source>As this is the first time the program is launched, you can choose where Millenniumclubcoin Core will store its data.</source>
+        <translation>Da dies das erste Mal ist, dass Sie Millenniumclubcoin Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
     </message>
     <message>
-        <source>Delion Core will download and store a copy of the Delion block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Delion Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
+        <source>Millenniumclubcoin Core will download and store a copy of the Millenniumclubcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Millenniumclubcoin Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1258,8 +1258,8 @@ Adresse: %4</translation>
         <translation>Ein benutzerdefiniertes Datenverzeichnis verwenden:</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>Millenniumclubcoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1396,12 +1396,12 @@ Adresse: %4</translation>
         <translation>Zieladresse eingeben</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Delion addresses after it matures.
-To Add: enter percentage to give and Delion address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Millenniumclubcoin addresses after it matures.
+To Add: enter percentage to give and Millenniumclubcoin address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen Delion-Adressen zu senden.
-Zum hinzufügen: Gebe den Prozentsätze ein, um die Delion-Adressen des MultiSend-Vektor hinzuzufügen.
+        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen Millenniumclubcoin-Adressen zu senden.
+Zum hinzufügen: Gebe den Prozentsätze ein, um die Millenniumclubcoin-Adressen des MultiSend-Vektor hinzuzufügen.
 Zum entfernen: Gebe die zu löschende Adresse ein und drücke löschen.
 MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translation>
     </message>
@@ -1571,16 +1571,16 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Verschleierungskonfiguration</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Delion's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf normal gesetzt (%1 und 2 Runden). Sie können dies jederzeit in den Delions Konfigurationen ändern.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Millenniumclubcoin's configuration screen.</source>
+        <translation>Verschleierung erfolgreich auf normal gesetzt (%1 und 2 Runden). Sie können dies jederzeit in den Millenniumclubcoins Konfigurationen ändern.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Delion's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf hohen gesetzt (%1 und 8 Runden). Sie können dies jederzeit in den Delions Konfigurationen ändern.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Millenniumclubcoin's configuration screen.</source>
+        <translation>Verschleierung erfolgreich auf hohen gesetzt (%1 und 8 Runden). Sie können dies jederzeit in den Millenniumclubcoins Konfigurationen ändern.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Delion's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf maximal gesetzt (%1 und 16 Runden). Sie können dies jederzeit in den Delions Konfigurationen ändern.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Millenniumclubcoin's configuration screen.</source>
+        <translation>Verschleierung erfolgreich auf maximal gesetzt (%1 und 16 Runden). Sie können dies jederzeit in den Millenniumclubcoins Konfigurationen ändern.</translation>
     </message>
 </context>
 <context>
@@ -1641,8 +1641,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Wenn Sie das Ausgeben von unbestätigten Wechselgeld deaktivieren, so kann das Wechselgeld von einer Transaktion &lt;br/&gt;nicht verwendet werden, bis mindestens eine Bestätigung vorliegt.&lt;br/&gt;Dies hat auch Auswirkungen auf ihre Bilanzberechnung.</translation>
     </message>
     <message>
-        <source>Automatically open the Delion client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatisches öffnen des Delion-Client-Port im Router. Dies funktioniert nur, wenn ihr Router UPnP unterstützt und es eingeschaltet ist.</translation>
+        <source>Automatically open the Millenniumclubcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatisches öffnen des Millenniumclubcoin-Client-Port im Router. Dies funktioniert nur, wenn ihr Router UPnP unterstützt und es eingeschaltet ist.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1661,12 +1661,12 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Experte</translation>
     </message>
     <message>
-        <source>Automatically start Delion after logging in to the system.</source>
-        <translation>Delion automatisch nach dem Login starten.</translation>
+        <source>Automatically start Millenniumclubcoin after logging in to the system.</source>
+        <translation>Millenniumclubcoin automatisch nach dem Login starten.</translation>
     </message>
     <message>
-        <source>&amp;Start Delion on system login</source>
-        <translation>Delion automatisch beim System Login &amp;starten.</translation>
+        <source>&amp;Start Millenniumclubcoin on system login</source>
+        <translation>Millenniumclubcoin automatisch beim System Login &amp;starten.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1693,14 +1693,14 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>&amp;Netzwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Delion.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Millenniumclubcoin.</source>
         <translation>Die Sprache der Benutzeroberfläche kann hier festgelegt werden. Diese Einstellung wird nach einem Neustart realisiert.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/delion-project/delion-project-translations</source>
+https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-translations</source>
         <translation>Sprache fehlt oder ist unvollständig? Helfe mit und trage zur Übersetzung bei unter:
-https://www.transifex.com/delion-project/delion-project-translations</translation>
+https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1723,8 +1723,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Bevorzugte automatisierte zDLN Stückelung </translation>
     </message>
     <message>
-        <source>Connect to the Delion network through a SOCKS5 proxy.</source>
-        <translation>Durch einen SOCKS5 Proxy mit dem Delion Netzwerk verbinden.</translation>
+        <source>Connect to the Millenniumclubcoin network through a SOCKS5 proxy.</source>
+        <translation>Durch einen SOCKS5 Proxy mit dem Millenniumclubcoin Netzwerk verbinden.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1854,8 +1854,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Formular</translation>
     </message>
     <message>
-        <source>DELION Balances</source>
-        <translation>DELION Bilanzen</translation>
+        <source>MILLENIUMCLUBCOIN Balances</source>
+        <translation>MILLENIUMCLUBCOIN Bilanzen</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1882,8 +1882,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Erarbeiteter Betrag der noch nicht gereift ist</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Delion network after a connection is established, but this process has not completed yet.</source>
-        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem Delion-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Millenniumclubcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem Millenniumclubcoin-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1922,12 +1922,12 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Kombinierte Bilanz (einschließlich unreifer Coins)</translation>
     </message>
     <message>
-        <source>DELION:</source>
-        <translation>DELION:</translation>
+        <source>MILLENIUMCLUBCOIN:</source>
+        <translation>MILLENIUMCLUBCOIN:</translation>
     </message>
     <message>
-        <source>zDELION:</source>
-        <translation>zDELION:</translation>
+        <source>zMILLENIUMCLUBCOIN:</source>
+        <translation>zMILLENIUMCLUBCOIN:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1969,12 +1969,12 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Zahlungsaufforderungadresse %1</translation>
     </message>
     <message>
-        <source>Cannot start delion: click-to-pay handler</source>
-        <translation>Kann Delion nicht starten: click-to-pay Handler</translation>
+        <source>Cannot start millenniumclubcoin: click-to-pay handler</source>
+        <translation>Kann Millenniumclubcoin nicht starten: click-to-pay Handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Delion address or malformed URI parameters.</source>
-        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige Delion-Adresse oder fehlerhafte URI-Parameter verursacht worden sein.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Millenniumclubcoin address or malformed URI parameters.</source>
+        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige Millenniumclubcoin-Adresse oder fehlerhafte URI-Parameter verursacht worden sein.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2067,8 +2067,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Zerocoin Aktionen:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Delion network after a connection is established, but this process has not completed yet.</source>
-        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem Delion-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Millenniumclubcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem Millenniumclubcoin-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
     </message>
     <message>
         <source>Enter an amount of DLN to convert to zDLN</source>
@@ -2171,8 +2171,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>E&amp;mpfänger:</translation>
     </message>
     <message>
-        <source>The Delion address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>Die Delion-Adresse, an die die Zahlung gesendet wird. Erstellt eine lokale Zahlung an Sie selbst, wenn die Zeile leer ist.</translation>
+        <source>The Millenniumclubcoin address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>Die Millenniumclubcoin-Adresse, an die die Zahlung gesendet wird. Erstellt eine lokale Zahlung an Sie selbst, wenn die Zeile leer ist.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2371,8 +2371,8 @@ https://www.transifex.com/delion-project/delion-project-translations</translatio
         <translation>Betrag kopieren</translation>
     </message>
     <message>
-        <source>Zerocoin functionality is not enabled on the Delion network yet.</source>
-        <translation>Die Zerocoin Funktionalität ist im Delion Netzwerk im Moment nicht freigeschaltet.</translation>
+        <source>Zerocoin functionality is not enabled on the Millenniumclubcoin network yet.</source>
+        <translation>Die Zerocoin Funktionalität ist im Millenniumclubcoin Netzwerk im Moment nicht freigeschaltet.</translation>
     </message>
     <message>
         <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
@@ -2425,8 +2425,8 @@ Bitte haben Sie etwas Geduld...</translation>
         <translation>Keine "Pay To"-Adresse zur Verfügung. Erstelle lokale Zahlung</translation>
     </message>
     <message>
-        <source>Invalid Delion Address</source>
-        <translation>Ungültige Delion-Adresse </translation>
+        <source>Invalid Millenniumclubcoin Address</source>
+        <translation>Ungültige Millenniumclubcoin-Adresse </translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2516,8 +2516,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>Enter a Delion address (e.g. %1)</source>
-        <translation>Delion-Adresse eingeben (z.B. %1)</translation>
+        <source>Enter a Millenniumclubcoin address (e.g. %1)</source>
+        <translation>Millenniumclubcoin-Adresse eingeben (z.B. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2654,8 +2654,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the Delion debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öffne Delion-Debug-Protokolldatei aus dem aktuellen Datenverzeichnis. Dies kann bei großen Protokolldateien einige Sekunden dauern.</translation>
+        <source>Open the Millenniumclubcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öffne Millenniumclubcoin-Debug-Protokolldatei aus dem aktuellen Datenverzeichnis. Dies kann bei großen Protokolldateien einige Sekunden dauern.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2822,8 +2822,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Out:</translation>
     </message>
     <message>
-        <source>Welcome to the Delion RPC console.</source>
-        <translation>Willkommen in der Delion RPC-Konsole.</translation>
+        <source>Welcome to the Millenniumclubcoin RPC console.</source>
+        <translation>Willkommen in der Millenniumclubcoin RPC-Konsole.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2893,12 +2893,12 @@ Bitte haben Sie Geduld...</translation>
         <translation>Ein optionales Etikett, das mit der neuen Empfangsadresse verknüpft werden soll.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Delion network.</source>
-        <translation>Eine optionale Nachricht an die Zahlungsaufforderung anhängen, die bei der Eröffnung der Anforderung angezeigt wird. Hinweis: Die Nachricht wird nicht mit der Zahlung über das Delion-Netzwerk gesendet.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Millenniumclubcoin network.</source>
+        <translation>Eine optionale Nachricht an die Zahlungsaufforderung anhängen, die bei der Eröffnung der Anforderung angezeigt wird. Hinweis: Die Nachricht wird nicht mit der Zahlung über das Millenniumclubcoin-Netzwerk gesendet.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Delion network.</source>
-        <translation>Eine optionale Nachricht an die Zahlungsaufforderung anhängen, die bei der Eröffnung der Anforderung angezeigt wird.&lt;br&gt;Hinweis: Die Nachricht wird nicht mit der Zahlung über das Delion-Netzwerk gesendet.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Millenniumclubcoin network.</source>
+        <translation>Eine optionale Nachricht an die Zahlungsaufforderung anhängen, die bei der Eröffnung der Anforderung angezeigt wird.&lt;br&gt;Hinweis: Die Nachricht wird nicht mit der Zahlung über das Millenniumclubcoin-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3182,8 +3182,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Wenn die kundenspezifische Gebühr auf 1000 uDLNs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uDLNs an Gebühren,&lt;br /&gt;während man "insgesamt mindestens" 1000 uDLNs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Delion transactions than the network can process.</source>
-        <translation>Nur die minimale Gebühr zu zahlen ist nur gut, solange es weniger Transaktionsvolumen als Platz in den Blocken gibt.&lt;br /&gt;Aber seien Sie sich bewusst, dass dies in einer niemals bestätigende Transaktion enden kann, sobald die Nachfrage nach Delion-Transaktionen höher ist, als was das Netzwerk verarbeiten kann.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Millenniumclubcoin transactions than the network can process.</source>
+        <translation>Nur die minimale Gebühr zu zahlen ist nur gut, solange es weniger Transaktionsvolumen als Platz in den Blocken gibt.&lt;br /&gt;Aber seien Sie sich bewusst, dass dies in einer niemals bestätigende Transaktion enden kann, sobald die Nachfrage nach Millenniumclubcoin-Transaktionen höher ist, als was das Netzwerk verarbeiten kann.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3290,8 +3290,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>anonyme Mittel</translation>
     </message>
     <message>
-        <source>Warning: Invalid Delion address</source>
-        <translation>Warnung: Ungültige Delion-Adresse</translation>
+        <source>Warning: Invalid Millenniumclubcoin address</source>
+        <translation>Warnung: Ungültige Millenniumclubcoin-Adresse</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3397,8 +3397,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>E&amp;mpfänger:</translation>
     </message>
     <message>
-        <source>The Delion address to send the payment to</source>
-        <translation>Delion-Adresse, an die überwiesen werden soll</translation>
+        <source>The Millenniumclubcoin address to send the payment to</source>
+        <translation>Millenniumclubcoin-Adresse, an die überwiesen werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3437,8 +3437,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Nachricht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the Delion: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Delion network.</source>
-        <translation>Eine an die Delion-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Delion-Netzwerk gesendet.</translation>
+        <source>A message that was attached to the Millenniumclubcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Millenniumclubcoin network.</source>
+        <translation>Eine an die Millenniumclubcoin-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Millenniumclubcoin-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3464,8 +3464,8 @@ Bitte haben Sie Geduld...</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Delion Core is shutting down...</source>
-        <translation>Delion Core wird beendet...</translation>
+        <source>Millenniumclubcoin Core is shutting down...</source>
+        <translation>Millenniumclubcoin Core wird beendet...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3487,8 +3487,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Sie können Nachrichten mit Ihren Adressen signieren, um zu beweisen, dass Sie diese besitzen. Seien Sie vorsichtig nichts fragwürdiges zu unterschreiben, da Phishing-Angriffe versuchen können, Sie dazu zu bringen, Ihre Identität zu überschreiben. Unterschreiben Sie nur ganz detaillierte Aussagen, denen Sie zustimmen.</translation>
     </message>
     <message>
-        <source>The Delion address to sign the message with</source>
-        <translation>Delion Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The Millenniumclubcoin address to sign the message with</source>
+        <translation>Millenniumclubcoin Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3519,16 +3519,16 @@ Bitte haben Sie Geduld...</translation>
         <translation>Kopiert die aktuelle Signatur in die Zwischenablage</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Delion address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese Delion Adresse besitzt</translation>
+        <source>Sign the message to prove you own this Millenniumclubcoin address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese Millenniumclubcoin Adresse besitzt</translation>
     </message>
     <message>
-        <source>The Delion address the message was signed with</source>
-        <translation>Die Delion Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The Millenniumclubcoin address the message was signed with</source>
+        <translation>Die Millenniumclubcoin Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Delion address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen Delion-Adresse signiert wurde.</translation>
+        <source>Verify the message to ensure it was signed with the specified Millenniumclubcoin address</source>
+        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen Millenniumclubcoin-Adresse signiert wurde.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3614,8 +3614,8 @@ Bitte haben Sie Geduld...</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>Millenniumclubcoin Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3630,8 +3630,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Die Dash Core Entwickler</translation>
     </message>
     <message>
-        <source>The Delion Core developers</source>
-        <translation>Die Delion Core Entwickler</translation>
+        <source>The Millenniumclubcoin Core developers</source>
+        <translation>Die Millenniumclubcoin Core Entwickler</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4266,7 +4266,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
 </context>
 <context>
-    <name>ZDelionControlDialog</name>
+    <name>ZMillenniumclubcoinControlDialog</name>
     <message>
         <source>Select zDLN to Spend</source>
         <translation>Auswahl zDLN als Ausgabe</translation>
@@ -4293,7 +4293,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
 </context>
 <context>
-    <name>delion-core</name>
+    <name>millenniumclubcoin-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = behalte Tx-Meta-Daten z.B. Betrag, Besitzer und Zahlungsanforderungsinformationen, 2 = verwerfe Tx-Meta-Daten)</translation>
@@ -4311,8 +4311,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Der berechnete Akkumulator-Checkpoint stimmt nicht mit dem vom Blockindex aufgezeichneten überein</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Delion Core is probably already running.</source>
-        <translation>Kann keine Sperre für das Datenverzeichnis %s erhalten. Delion Core läuft wahrscheinlich bereits.</translation>
+        <source>Cannot obtain a lock on data directory %s. Millenniumclubcoin Core is probably already running.</source>
+        <translation>Kann keine Sperre für das Datenverzeichnis %s erhalten. Millenniumclubcoin Core läuft wahrscheinlich bereits.</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
@@ -4323,8 +4323,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Lösche alle Wallet-Transaktionen und stelle nur diese Teile der Blockchain  beim Start durch -neuscan wieder her</translation>
     </message>
     <message>
-        <source>Disable all Delion specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Deaktiviere alle Delion-spezifischen Funktionen (Masternodes, Verschleierung, SwiftTX, Budgetplanung) (0-1, default: %u)</translation>
+        <source>Disable all Millenniumclubcoin specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Deaktiviere alle Millenniumclubcoin-spezifischen Funktionen (Masternodes, Verschleierung, SwiftTX, Budgetplanung) (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -4463,27 +4463,27 @@ Bitte haben Sie Geduld...</translation>
         <translation>Dieses Produkt beinhaltet Software, die vom OpenSSL Projekt für die Nutzung im OpenSSL Toolkit &lt;https://www.openssl.org/&gt; entwickelt wurde. Desweiteren kryptografische Software , die von Eric Young, und UPnP Software, die von Thomas Bernard, geschrieben wurde.</translation>
     </message>
     <message>
-        <source>To use deliond, or the -server option to delion-qt, you must set an rpcpassword in the configuration file:
+        <source>To use millenniumclubcoind, or the -server option to millenniumclubcoin-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=delionrpc
+rpcuser=millenniumclubcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Delion Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Millenniumclubcoin Alert" admin@foo.com
 </source>
-        <translation>Um deliond oder die -server option in delion-qt zu nutzen, muss ein RPC-Passwort mittels rpcpassword in der Konfigurationsdatei gestzt werden:
+        <translation>Um millenniumclubcoind oder die -server option in millenniumclubcoin-qt zu nutzen, muss ein RPC-Passwort mittels rpcpassword in der Konfigurationsdatei gestzt werden:
 %s
 Es wird empfohlen das folgende zufällige Passwort zu nutzen:
-rpcuser=delionrpc
+rpcuser=millenniumclubcoinrpc
 rpcpassword=%s
 (Sie müssen sich das Passwort nicht merken)
 User-Name und Passwort MÜSSEN NICHT die oben genannten sein.
 Falls die Datei bisher nicht existiert, erstellen Sie diese mit der eingeschränkten Berechtigung das nur der Besitzer diese lesen darf.
 Des weiteren wird empfohlen das Argument alertnotify zu setzen, damit Sie bei ggf. auftretenden Problemen benachrichtigt werden.
-Beispiel: alertnotify=echo %%s | mail -s "Delion Alert" admin@foo.com
+Beispiel: alertnotify=echo %%s | mail -s "Millenniumclubcoin Alert" admin@foo.com
 </translation>
     </message>
     <message>
@@ -4503,8 +4503,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Delion Alert" admin@foo.com
         <translation>Warnung: -paytxfee ist sehr hoch eingestellt! Diese Transaktionsgebühr werden Ihnen abgebucht, falls Sie die Transaktion überweisen.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Delion Core will not work properly.</source>
-        <translation>Warnung: Bitte stellen Sie sicher, das vom Computer verwendete Zeit und Datumangaben korrekt sind! Wenn ihr System falsche Zeitangaben nutzt, wird Delion Core nicht korrekt funktionieren.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Millenniumclubcoin Core will not work properly.</source>
+        <translation>Warnung: Bitte stellen Sie sicher, das vom Computer verwendete Zeit und Datumangaben korrekt sind! Wenn ihr System falsche Zeitangaben nutzt, wird Millenniumclubcoin Core nicht korrekt funktionieren.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4639,8 +4639,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Delion Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Delion Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Delion Core Developers</translation>
+        <source>Copyright (C) 2015-%i The Millenniumclubcoin Core Developers</source>
+        <translation>Copyright (C) 2015-%i The Millenniumclubcoin Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4707,8 +4707,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Delion Alert" admin@foo.com
         <translation>Fehler beim Laden von wallet.dat : Wallet beschädigt</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Delion Core</source>
-        <translation>Fehler beim Laden der wallet.dat: Neuere Delion Core Version benötigt</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Millenniumclubcoin Core</source>
+        <translation>Fehler beim Laden der wallet.dat: Neuere Millenniumclubcoin Core Version benötigt</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4811,8 +4811,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Delion Alert" admin@foo.com
         <translation>Hinweis</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Delion Core is shutting down.</source>
-        <translation>Initialisierung Sanity-Check fehlgeschlagen. Delion Core schaltet ab.</translation>
+        <source>Initialization sanity check failed. Millenniumclubcoin Core is shutting down.</source>
+        <translation>Initialisierung Sanity-Check fehlgeschlagen. Millenniumclubcoin Core schaltet ab.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -5407,8 +5407,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Delion Alert" admin@foo.com
         <translation>Wallet gesperrt.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Delion Core to complete</source>
-        <translation>Wallet musste neu geschrieben werden: Bitte Delion Core neu starten</translation>
+        <source>Wallet needed to be rewritten: restart Millenniumclubcoin Core to complete</source>
+        <translation>Wallet musste neu geschrieben werden: Bitte Millenniumclubcoin Core neu starten</translation>
     </message>
     <message>
         <source>Wallet options:</source>

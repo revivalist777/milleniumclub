@@ -1,22 +1,22 @@
 // Copyright (c) 2017 The PIVX developers
-// Copyright (c) 2017-2018 The Delion developers
+// Copyright (c) 2017-2018 The Millenniumclubcoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zdelioncontroldialog.h"
-#include "ui_zdelioncontroldialog.h"
+#include "zmillenniumclubcoincontroldialog.h"
+#include "ui_zmillenniumclubcoincontroldialog.h"
 
 #include "main.h"
 #include "walletmodel.h"
 
 using namespace std;
 
-std::list<std::string> ZDelionControlDialog::listSelectedMints;
-std::list<CZerocoinMint> ZDelionControlDialog::listMints;
+std::list<std::string> ZMillenniumclubcoinControlDialog::listSelectedMints;
+std::list<CZerocoinMint> ZMillenniumclubcoinControlDialog::listMints;
 
-ZDelionControlDialog::ZDelionControlDialog(QWidget *parent) :
+ZMillenniumclubcoinControlDialog::ZMillenniumclubcoinControlDialog(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::ZDelionControlDialog),
+    ui(new Ui::ZMillenniumclubcoinControlDialog),
     model(0)
 {
     ui->setupUi(this);
@@ -30,19 +30,19 @@ ZDelionControlDialog::ZDelionControlDialog(QWidget *parent) :
     connect(ui->pushButtonAll, SIGNAL(clicked()), this, SLOT(ButtonAllClicked()));
 }
 
-ZDelionControlDialog::~ZDelionControlDialog()
+ZMillenniumclubcoinControlDialog::~ZMillenniumclubcoinControlDialog()
 {
     delete ui;
 }
 
-void ZDelionControlDialog::setModel(WalletModel *model)
+void ZMillenniumclubcoinControlDialog::setModel(WalletModel *model)
 {
     this->model = model;
     updateList();
 }
 
 //Update the tree widget
-void ZDelionControlDialog::updateList()
+void ZMillenniumclubcoinControlDialog::updateList()
 {
     // need to prevent the slot from being called each time something is changed
     ui->treeWidget->blockSignals(true);
@@ -134,7 +134,7 @@ void ZDelionControlDialog::updateList()
 }
 
 // Update the list when a checkbox is clicked
-void ZDelionControlDialog::updateSelection(QTreeWidgetItem* item, int column)
+void ZMillenniumclubcoinControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 {
     // only want updates from non top level items that are available to spend
     if (item->parent() && column == COLUMN_CHECKBOX && !item->isDisabled()){
@@ -157,7 +157,7 @@ void ZDelionControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 }
 
 // Update the Quantity and Amount display
-void ZDelionControlDialog::updateLabels()
+void ZMillenniumclubcoinControlDialog::updateLabels()
 {
     int64_t nAmount = 0;
     for (const CZerocoinMint mint : listMints) {
@@ -167,14 +167,14 @@ void ZDelionControlDialog::updateLabels()
     }
 
     //update this dialog's labels
-    ui->labelZDelion_int->setText(QString::number(nAmount));
+    ui->labelZMillenniumclubcoin_int->setText(QString::number(nAmount));
     ui->labelQuantity_int->setText(QString::number(listSelectedMints.size()));
 
     //update PrivacyDialog labels
-    privacyDialog->setZDelionControlLabels(nAmount, listSelectedMints.size());
+    privacyDialog->setZMillenniumclubcoinControlLabels(nAmount, listSelectedMints.size());
 }
 
-std::vector<CZerocoinMint> ZDelionControlDialog::GetSelectedMints()
+std::vector<CZerocoinMint> ZMillenniumclubcoinControlDialog::GetSelectedMints()
 {
     std::vector<CZerocoinMint> listReturn;
     for (const CZerocoinMint mint : listMints) {
@@ -187,7 +187,7 @@ std::vector<CZerocoinMint> ZDelionControlDialog::GetSelectedMints()
 }
 
 // select or deselect all of the mints
-void ZDelionControlDialog::ButtonAllClicked()
+void ZMillenniumclubcoinControlDialog::ButtonAllClicked()
 {
     ui->treeWidget->blockSignals(true);
     Qt::CheckState state = Qt::Checked;

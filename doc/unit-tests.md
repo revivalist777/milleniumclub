@@ -6,13 +6,13 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with 'make check'.
 
-To run the deliond tests manually, launch src/test/test_delion .
+To run the millenniumclubcoind tests manually, launch src/test/test_millenniumclubcoin .
 
-To add more deliond tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more millenniumclubcoind tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
-To run the delion-qt tests manually, launch src/qt/test/delion-qt_test
+To run the millenniumclubcoin-qt tests manually, launch src/qt/test/millenniumclubcoin-qt_test
 
-To add more delion-qt tests, add them to the `src/qt/test/` directory and
+To add more millenniumclubcoin-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.

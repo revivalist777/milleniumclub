@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Delion address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Delion jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this Millenniumclubcoin address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Millenniumclubcoin jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,16 +518,16 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>&amp;Rdzeń Delion</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>&amp;Rdzeń Millenniumclubcoin</translation>
     </message>
     <message>
-        <source>Send coins to a Delion address</source>
-        <translation>Wyślij monety do adresu Delion</translation>
+        <source>Send coins to a Millenniumclubcoin address</source>
+        <translation>Wyślij monety do adresu Millenniumclubcoin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and delion: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i delion:URI)</translation>
+        <source>Request payments (generates QR codes and millenniumclubcoin: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i millenniumclubcoin:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Delion Core</source>
+        <source>&amp;About Millenniumclubcoin Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about Delion Core</source>
+        <source>Show information about Millenniumclubcoin Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for Delion</source>
-        <translation>Modyfikuj opcje konfiguracji Delion</translation>
+        <source>Modify configuration options for Millenniumclubcoin</source>
+        <translation>Modyfikuj opcje konfiguracji Millenniumclubcoin</translation>
     </message>
     <message>
-        <source>Sign messages with your Delion addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami Delion, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your Millenniumclubcoin addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami Millenniumclubcoin, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Delion addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu Delion</translation>
+        <source>Verify messages to ensure they were signed with specified Millenniumclubcoin addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu Millenniumclubcoin</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,7 +582,7 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a Delion: URI or payment request</source>
+        <source>Open a Millenniumclubcoin: URI or payment request</source>
         <translation>OtwórzDLNX: URI i żądanie zapłaty</translation>
     </message>
     <message>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the Delion Core help message to get a list with possible Delion command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia Delion, aby dostać listę możliwych opcji Delion command-line</translation>
+        <source>Show the Millenniumclubcoin Core help message to get a list with possible Millenniumclubcoin command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia Millenniumclubcoin, aby dostać listę możliwych opcji Millenniumclubcoin command-line</translation>
     </message>
     <message>
-        <source>Delion Core client</source>
-        <translation>Rdzeń Delion klient</translation>
+        <source>Millenniumclubcoin Core client</source>
+        <translation>Rdzeń Millenniumclubcoin klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -912,8 +912,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Delion Core</source>
-        <translation>&amp;Rdzeń Delion</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>&amp;Rdzeń Millenniumclubcoin</translation>
     </message>
     </context>
 <context>
@@ -927,8 +927,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>&amp;Rdzeń Delion</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>&amp;Rdzeń Millenniumclubcoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1188,12 +1188,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start Delion after logging in to the system.</source>
-        <translation>Automatycznie uruchom Delion po zalogowaniu do systemu</translation>
+        <source>Automatically start Millenniumclubcoin after logging in to the system.</source>
+        <translation>Automatycznie uruchom Millenniumclubcoin po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start Delion on system login</source>
-        <translation>&amp;Uruchom Delion podczas logowania do systemu</translation>
+        <source>&amp;Start Millenniumclubcoin on system login</source>
+        <translation>&amp;Uruchom Millenniumclubcoin podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1212,18 +1212,18 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Delion.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie Delion</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Millenniumclubcoin.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie Millenniumclubcoin</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/delion-project/delion-project-translations</source>
+https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/delion-project/delion-project-translations </translation>
+https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the Delion network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią Delion poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the Millenniumclubcoin network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią Millenniumclubcoin poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1461,8 +1461,8 @@ https://www.transifex.com/delion-project/delion-project-translations </translati
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a Delion address (e.g. %1)</source>
-        <translation>Wprowadź adres Delion (np. %1)</translation>
+        <source>Enter a Millenniumclubcoin address (e.g. %1)</source>
+        <translation>Wprowadź adres Millenniumclubcoin (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1900,8 +1900,8 @@ https://www.transifex.com/delion-project/delion-project-translations </translati
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Delion address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Delion jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this Millenniumclubcoin address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Millenniumclubcoin jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1935,8 +1935,8 @@ https://www.transifex.com/delion-project/delion-project-translations </translati
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Delion Core</source>
-        <translation>&amp;Rdzeń Delion</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>&amp;Rdzeń Millenniumclubcoin</translation>
     </message>
     </context>
 <context>
@@ -2027,14 +2027,14 @@ https://www.transifex.com/delion-project/delion-project-translations </translati
     </message>
     </context>
 <context>
-    <name>ZDelionControlDialog</name>
+    <name>ZMillenniumclubcoinControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>delion-core</name>
+    <name>millenniumclubcoin-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

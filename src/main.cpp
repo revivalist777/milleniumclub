@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018-2019 The Delion developers
+// Copyright (c) 2018-2019 The Millenniumclubcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -48,7 +48,7 @@ using namespace std;
 using namespace libzerocoin;
 
 #if defined(NDEBUG)
-#error "Delion cannot be compiled without assertions."
+#error "Millenniumclubcoin cannot be compiled without assertions."
 #endif
 
 // 6 comes from OPCODE (1) + vch.size() (1) + BIGNUM size (4)
@@ -2493,7 +2493,7 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
         const CTransaction& tx = block.vtx[i];
 
         /** UNDO ZEROCOIN DATABASING
-         * note we only undo zerocoin databasing in the following statement, value to and from Delion
+         * note we only undo zerocoin databasing in the following statement, value to and from Millenniumclubcoin
          * addresses should still be handled by the typical bitcoin based undo code
          * */
         if (tx.ContainsZerocoins()) {
@@ -2631,11 +2631,11 @@ static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck()
 {
-    RenameThread("delion-scriptch");
+    RenameThread("millenniumclubcoin-scriptch");
     scriptcheckqueue.Thread();
 }
 
-void RecalculateZDELIONMinted()
+void RecalculateZMILLENIUMCLUBCOINMinted()
 {
     CBlockIndex *pindex = chainActive[Params().Zerocoin_AccumulatorStartHeight()];
     int nHeightEnd = chainActive.Height();
@@ -2667,14 +2667,14 @@ void RecalculateZDELIONMinted()
     pblocktree->Flush();
 }
 
-void RecalculateZDELIONSpent()
+void RecalculateZMILLENIUMCLUBCOINSpent()
 {
     CBlockIndex* pindex = chainActive[Params().Zerocoin_AccumulatorStartHeight()];
     while (true) {
         if (pindex->nHeight % 1000 == 0)
             LogPrintf("%s : block %d...\n", __func__, pindex->nHeight);
 
-        //Rewrite zDELION supply
+        //Rewrite zMILLENIUMCLUBCOIN supply
         CBlock block;
         assert(ReadBlockFromDisk(block, pindex));
 
@@ -2683,13 +2683,13 @@ void RecalculateZDELIONSpent()
         //Reset the supply to previous block
         pindex->mapZerocoinSupply = pindex->pprev->mapZerocoinSupply;
 
-        //Add mints to zDELION supply
+        //Add mints to zMILLENIUMCLUBCOIN supply
         for (auto denom : libzerocoin::zerocoinDenomList) {
             long nDenomAdded = count(pindex->vMintDenominationsInBlock.begin(), pindex->vMintDenominationsInBlock.end(), denom);
             pindex->mapZerocoinSupply.at(denom) += nDenomAdded;
         }
 
-        //Remove spends from zDELION supply
+        //Remove spends from zMILLENIUMCLUBCOIN supply
         for (auto denom : listDenomsSpent)
             pindex->mapZerocoinSupply.at(denom)--;
 
@@ -2704,7 +2704,7 @@ void RecalculateZDELIONSpent()
     pblocktree->Flush();
 }
 
-bool RecalculateDELIONSupply(int nHeightStart)
+bool RecalculateMILLENIUMCLUBCOINSupply(int nHeightStart)
 {
     if (nHeightStart > chainActive.Height())
         return false;
@@ -2941,9 +2941,9 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     std::list<libzerocoin::CoinDenomination> listSpends = ZerocoinSpendListFromBlock(block);
 
     if (!fVerifyingBlocks && pindex->nHeight == Params().Zerocoin_StartHeight() + 1) {
-        RecalculateZDELIONMinted();
-        RecalculateZDELIONSpent();
-        RecalculateDELIONSupply(1);
+        RecalculateZMILLENIUMCLUBCOINMinted();
+        RecalculateZMILLENIUMCLUBCOINSpent();
+        RecalculateMILLENIUMCLUBCOINSupply(1);
     }
 
     // Initialize zerocoin supply to the supply from previous block
@@ -2982,7 +2982,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
     pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev + nFees;
 
-//    LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s zDELIONSpent: %s\n",
+//    LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s zMILLENIUMCLUBCOINSpent: %s\n",
 //              FormatMoney(nValueOut), FormatMoney(nValueIn),
 //              FormatMoney(nFees), FormatMoney(pindex->nMint), FormatMoney(nAmountZerocoinSpent));
 
@@ -3164,7 +3164,7 @@ void static UpdateTip(CBlockIndex* pindexNew)
 {
     chainActive.SetTip(pindexNew);
 
-    // If turned on AutoZeromint will automatically convert DELION to zDLN
+    // If turned on AutoZeromint will automatically convert MILLENIUMCLUBCOIN to zDLN
     if (pwalletMain->isZeromintEnabled ())
         pwalletMain->AutoZeromint ();
 
@@ -3991,7 +3991,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                 REJECT_INVALID, "block-version");
         }
 
-        // Delion
+        // Millenniumclubcoin
         // It is entierly possible that we don't have enough data and this could fail
         // (i.e. the block could indeed be valid). Store the block for later consideration
         // but issue an initial reject message.
@@ -4016,7 +4016,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
         if (!CheckTransaction(tx, fZerocoinActive, chainActive.Height() + 1 >= Params().Zerocoin_StartHeight(), state))
             return error("CheckBlock() : CheckTransaction failed");
 
-        // double check that there are no double spent zDELION spends in this block
+        // double check that there are no double spent zMILLENIUMCLUBCOIN spends in this block
         if (tx.IsZerocoinSpend()) {
             for (const CTxIn txIn : tx.vin) {
                 if (txIn.scriptSig.IsZerocoinSpend()) {
@@ -5509,7 +5509,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             return false;
         }
 
-        // Delion: We use certain sporks during IBD, so check to see if they are
+        // Millenniumclubcoin: We use certain sporks during IBD, so check to see if they are
         // available. If not, ask the first peer connected for them.
         if (!pSporkDB->SporkExists(SPORK_14_NEW_PROTOCOL_ENFORCEMENT) &&
             !pSporkDB->SporkExists(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2) &&

@@ -5,7 +5,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/delion-config.h"
+#include "config/millenniumclubcoin-config.h"
 #endif
 
 #include "optionsmodel.h"
@@ -79,10 +79,10 @@ void OptionsModel::Init()
         settings.setValue("nZeromintPercentage", 10);
     nZeromintPercentage = settings.value("nZeromintPercentage").toLongLong();
 
-    if (!settings.contains("nAnonymizeDelionAmount"))
-        settings.setValue("nAnonymizeDelionAmount", 1000);
+    if (!settings.contains("nAnonymizeMillenniumclubcoinAmount"))
+        settings.setValue("nAnonymizeMillenniumclubcoinAmount", 1000);
 
-    nAnonymizeDelionAmount = settings.value("nAnonymizeDelionAmount").toLongLong();
+    nAnonymizeMillenniumclubcoinAmount = settings.value("nAnonymizeMillenniumclubcoinAmount").toLongLong();
 
     if (!settings.contains("fShowMasternodesTab"))
         settings.setValue("fShowMasternodesTab", masternodeConfig.getCount());
@@ -151,8 +151,8 @@ void OptionsModel::Init()
         SoftSetArg("-zeromintpercentage", settings.value("nZeromintPercentage").toString().toStdString());
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
-    if (settings.contains("nAnonymizeDelionAmount"))
-        SoftSetArg("-anonymizedelionamount", settings.value("nAnonymizeDelionAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeMillenniumclubcoinAmount"))
+        SoftSetArg("-anonymizemillenniumclubcoinamount", settings.value("nAnonymizeMillenniumclubcoinAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }
@@ -163,7 +163,7 @@ void OptionsModel::Reset()
 
     // Remove all entries from our QSettings object
     settings.clear();
-    resetSettings = true; // Needed in delion.cpp during shotdown to also remove the window positions
+    resetSettings = true; // Needed in millenniumclubcoin.cpp during shotdown to also remove the window positions
 
     // default setting for OptionsModel::StartAtStartup - disabled
     if (GUIUtil::GetStartOnSystemStartup())
@@ -234,8 +234,8 @@ QVariant OptionsModel::data(const QModelIndex& index, int role) const
             return QVariant(nZeromintPercentage);
         case ZeromintPrefDenom:
             return QVariant(nPreferredDenom);
-        case AnonymizeDelionAmount:
-            return QVariant(nAnonymizeDelionAmount);
+        case AnonymizeMillenniumclubcoinAmount:
+            return QVariant(nAnonymizeMillenniumclubcoinAmount);
         case Listen:
             return settings.value("fListen");
         default:
@@ -350,10 +350,10 @@ bool OptionsModel::setData(const QModelIndex& index, const QVariant& value, int 
             emit preferredDenomChanged(nPreferredDenom);
             break;
 
-        case AnonymizeDelionAmount:
-            nAnonymizeDelionAmount = value.toInt();
-            settings.setValue("nAnonymizeDelionAmount", nAnonymizeDelionAmount);
-            emit anonymizeDelionAmountChanged(nAnonymizeDelionAmount);
+        case AnonymizeMillenniumclubcoinAmount:
+            nAnonymizeMillenniumclubcoinAmount = value.toInt();
+            settings.setValue("nAnonymizeMillenniumclubcoinAmount", nAnonymizeMillenniumclubcoinAmount);
+            emit anonymizeMillenniumclubcoinAmountChanged(nAnonymizeMillenniumclubcoinAmount);
             break;
         case CoinControlFeatures:
             fCoinControlFeatures = value.toBool();

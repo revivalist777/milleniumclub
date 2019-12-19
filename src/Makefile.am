@@ -66,15 +66,15 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += deliond
+  bin_PROGRAMS += millenniumclubcoind
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += delion-cli delion-tx
+  bin_PROGRAMS += millenniumclubcoin-cli millenniumclubcoin-tx
 endif
 
 .PHONY: FORCE
-# delion core #
+# millenniumclubcoin core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -190,7 +190,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between deliond and delion-qt
+# server: shared between millenniumclubcoind and millenniumclubcoin-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -236,7 +236,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between deliond and delion-qt, but only linked
+# wallet: shared between millenniumclubcoind and millenniumclubcoin-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -356,7 +356,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between deliond, and delion-qt and non-server tools
+# common: shared between millenniumclubcoind, and millenniumclubcoin-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   accumulators.cpp \
@@ -416,7 +416,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between delion-cli and delion-qt
+# cli: shared between millenniumclubcoin-cli and millenniumclubcoin-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -426,7 +426,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-deliond_LDADD = \
+millenniumclubcoind_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UNIVALUE) \
@@ -438,26 +438,26 @@ deliond_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-deliond_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+millenniumclubcoind_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-deliond_LDADD += libbitcoin_wallet.a
+millenniumclubcoind_LDADD += libbitcoin_wallet.a
 endif
-deliond_SOURCES = deliond.cpp
+millenniumclubcoind_SOURCES = millenniumclubcoind.cpp
 #
 
 if TARGET_WINDOWS
-deliond_SOURCES += deliond-res.rc
+millenniumclubcoind_SOURCES += millenniumclubcoind-res.rc
 endif
 
-deliond_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-deliond_CPPFLAGS = $(BITCOIN_INCLUDES)
-deliond_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+millenniumclubcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+millenniumclubcoind_CPPFLAGS = $(BITCOIN_INCLUDES)
+millenniumclubcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# delion-cli binary #
-delion_cli_LDADD = \
+# millenniumclubcoin-cli binary #
+millenniumclubcoin_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
@@ -465,14 +465,14 @@ delion_cli_LDADD = \
   $(CRYPTO_LIBS) \
   $(EVENT_LIBS)
 
-delion_cli_SOURCES = \
-  delion-cli.cpp
+millenniumclubcoin_cli_SOURCES = \
+  millenniumclubcoin-cli.cpp
 
-delion_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+millenniumclubcoin_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
 
-# delion-tx binary #
-delion_tx_LDADD = \
+# millenniumclubcoin-tx binary #
+millenniumclubcoin_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -482,15 +482,15 @@ delion_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-delion_tx_SOURCES = delion-tx.cpp
-delion_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+millenniumclubcoin_tx_SOURCES = millenniumclubcoin-tx.cpp
+millenniumclubcoin_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-delion_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+millenniumclubcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-delion_cli_SOURCES += delion-cli-res.rc
+millenniumclubcoin_cli_SOURCES += millenniumclubcoin-cli-res.rc
 endif
-delion_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+millenniumclubcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

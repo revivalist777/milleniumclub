@@ -62,12 +62,12 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>These are your Delion addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són les teves adreces Delion per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
+        <source>These are your Millenniumclubcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són les teves adreces Millenniumclubcoin per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
     </message>
     <message>
-        <source>These are your Delion addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Aquestes són les teves adreces Delion per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
+        <source>These are your Millenniumclubcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Aquestes són les teves adreces Millenniumclubcoin per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,8 +168,8 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-        <source>Delion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DLNs from being stolen by malware infecting your computer.</source>
-        <translation>Delion es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus DLN de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <source>Millenniumclubcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DLNs from being stolen by malware infecting your computer.</source>
+        <translation>Millenniumclubcoin es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus DLN de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -418,12 +418,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>Millenniumclubcoin Core</translation>
     </message>
     <message>
-        <source>Send coins to a Delion address</source>
-        <translation>Envia monedes a una adreça Delion</translation>
+        <source>Send coins to a Millenniumclubcoin address</source>
+        <translation>Envia monedes a una adreça Millenniumclubcoin</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -434,8 +434,8 @@
         <translation>&amp;Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Delion Core</source>
-        <translation>&amp;Sobre Delion Core</translation>
+        <source>&amp;About Millenniumclubcoin Core</source>
+        <translation>&amp;Sobre Millenniumclubcoin Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -458,12 +458,12 @@
         <translation>Obre el fitxer de configuració del Masternode</translation>
     </message>
     <message>
-        <source>Delion Core client</source>
-        <translation>Client Delion core</translation>
+        <source>Millenniumclubcoin Core client</source>
+        <translation>Client Millenniumclubcoin core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Delion network</source>
-        <translation><numerusform>%n connexió activa a la xarxa Delion</numerusform><numerusform>%n connexions actives a la xarxa Delion</numerusform></translation>
+        <source>%n active connection(s) to Millenniumclubcoin network</source>
+        <translation><numerusform>%n connexió activa a la xarxa Millenniumclubcoin</numerusform><numerusform>%n connexions actives a la xarxa Millenniumclubcoin</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -814,8 +814,8 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Delion address.</source>
-        <translation>L'adreça introduïda "%1" no és una adreça Delion vàlida.</translation>
+        <source>The entered address "%1" is not a valid Millenniumclubcoin address.</source>
+        <translation>L'adreça introduïda "%1" no és una adreça Millenniumclubcoin vàlida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -860,16 +860,16 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>Millenniumclubcoin Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Delion Core</source>
-        <translation>Sobre Delion Core</translation>
+        <source>About Millenniumclubcoin Core</source>
+        <translation>Sobre Millenniumclubcoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -915,12 +915,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to Delion Core.</source>
-        <translation>Benvingut a Delion Core.</translation>
+        <source>Welcome to Millenniumclubcoin Core.</source>
+        <translation>Benvingut a Millenniumclubcoin Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Delion Core will store its data.</source>
-        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del Delion Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where Millenniumclubcoin Core will store its data.</source>
+        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del Millenniumclubcoin Core.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -931,8 +931,8 @@
         <translation>Usar una carpeta de dades personalitzada:</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>Millenniumclubcoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1208,8 +1208,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Delion after logging in to the system.</source>
-        <translation>Inicia Delion automàticament després d'identificar-te en el sistema.</translation>
+        <source>Automatically start Millenniumclubcoin after logging in to the system.</source>
+        <translation>Inicia Millenniumclubcoin automàticament després d'identificar-te en el sistema.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1271,12 +1271,12 @@
         <translation>Total:</translation>
     </message>
     <message>
-        <source>DELION:</source>
-        <translation>DELION:</translation>
+        <source>MILLENIUMCLUBCOIN:</source>
+        <translation>MILLENIUMCLUBCOIN:</translation>
     </message>
     <message>
-        <source>zDELION:</source>
-        <translation>zDELION:</translation>
+        <source>zMILLENIUMCLUBCOIN:</source>
+        <translation>zMILLENIUMCLUBCOIN:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1719,8 +1719,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Delion Core is shutting down...</source>
-        <translation>Delion Core s'està tancant...</translation>
+        <source>Millenniumclubcoin Core is shutting down...</source>
+        <translation>Millenniumclubcoin Core s'està tancant...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1785,8 +1785,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>Millenniumclubcoin Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1969,7 +1969,7 @@
     </message>
     </context>
 <context>
-    <name>ZDelionControlDialog</name>
+    <name>ZMillenniumclubcoinControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantitat</translation>
@@ -1984,7 +1984,7 @@
     </message>
     </context>
 <context>
-    <name>delion-core</name>
+    <name>millenniumclubcoin-core</name>
     <message>
         <source>Can't mix while sync in progress.</source>
         <translation>No es pot mesclar mentre s'està sincronitzant.</translation>

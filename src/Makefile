@@ -72,10 +72,10 @@ am__make_running_with_option = \
   test $$has_opt = yes
 am__make_dryrun = (target_option=n; $(am__make_running_with_option))
 am__make_keepgoing = (target_option=k; $(am__make_running_with_option))
-pkgdatadir = $(datadir)/delion
-pkgincludedir = $(includedir)/delion
-pkglibdir = $(libdir)/delion
-pkglibexecdir = $(libexecdir)/delion
+pkgdatadir = $(datadir)/millenniumclubcoin
+pkgincludedir = $(includedir)/millenniumclubcoin
+pkglibdir = $(libdir)/millenniumclubcoin
+pkglibexecdir = $(libexecdir)/millenniumclubcoin
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -100,20 +100,20 @@ am__append_6 = libbitcoin_zmq.a
 bin_PROGRAMS = $(am__EXEEXT_1) $(am__EXEEXT_2) $(am__EXEEXT_3) \
 	$(am__EXEEXT_4) $(am__EXEEXT_5)
 TESTS = $(am__EXEEXT_6) $(am__EXEEXT_5)
-am__append_7 = deliond
-am__append_8 = delion-cli delion-tx
+am__append_7 = millenniumclubcoind
+am__append_8 = millenniumclubcoin-cli millenniumclubcoin-tx
 #am__append_9 = compat/glibc_compat.cpp \
 #	compat/glibcxx_compat.cpp
 am__append_10 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 am__append_11 = libbitcoin_wallet.a
 #
-#am__append_12 = deliond-res.rc
-#am__append_13 = delion-cli-res.rc
+#am__append_12 = millenniumclubcoind-res.rc
+#am__append_13 = millenniumclubcoin-cli-res.rc
 ##am__append_14 = compat/glibc_compat.cpp \
 ##	compat/glibcxx_compat.cpp
 ##am__append_15 = secp256k1/libsecp256k1.la
-#am__append_16 = test/test_delion test/bitcoin-util-test.py
-#am__append_17 = test/test_delion
+#am__append_16 = test/test_millenniumclubcoin test/bitcoin-util-test.py
+#am__append_17 = test/test_millenniumclubcoin
 #am__append_18 = \
 #	test/bctest.py \
 #	test/bitcoin-util-test.py \
@@ -135,7 +135,7 @@ am__append_11 = libbitcoin_wallet.a
 #am__append_20 = $(LIBBITCOIN_WALLET)
 #am__append_21 = $(ZMQ_LIBS)
 #am__append_22 = $(CLEAN_BITCOIN_TEST)
-am__append_23 = qt/delion-qt
+am__append_23 = qt/millenniumclubcoin-qt
 am__append_24 = qt/libbitcoinqt.a
 am__append_25 = \
   qt/addressbookpage.cpp \
@@ -171,15 +171,15 @@ am__append_25 = \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
   qt/walletview.cpp \
-  qt/zdelioncontroldialog.cpp
+  qt/zmillenniumclubcoincontroldialog.cpp
 
 am__append_26 = $(BITCOIN_MM)
 #am__append_27 = $(BITCOIN_RC)
 am__append_28 = $(LIBBITCOIN_WALLET)
 am__append_29 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 am__append_30 = $(CLEAN_QT)
-#am__append_31 = qt/test/test_delion-qt
-#am__append_32 = qt/test/test_delion-qt
+#am__append_31 = qt/test/test_millenniumclubcoin-qt
+#am__append_32 = qt/test/test_millenniumclubcoin-qt
 #am__append_33 = qt/test/moc_paymentservertests.cpp
 #am__append_34 = \
 #  qt/test/paymentservertests.cpp
@@ -217,7 +217,7 @@ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 DIST_COMMON = $(srcdir)/Makefile.am $(am__include_HEADERS_DIST) \
 	$(am__DIST_COMMON)
 mkinstalldirs = $(install_sh) -d
-CONFIG_HEADER = $(top_builddir)/src/config/delion-config.h
+CONFIG_HEADER = $(top_builddir)/src/config/millenniumclubcoin-config.h
 CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 ARFLAGS = cru
@@ -455,7 +455,7 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 	qt/transactionrecord.cpp qt/transactiontablemodel.cpp \
 	qt/transactionview.cpp qt/walletframe.cpp qt/walletmodel.cpp \
 	qt/walletmodeltransaction.cpp qt/walletview.cpp \
-	qt/zdelioncontroldialog.cpp qt/addressbookpage.h \
+	qt/zmillenniumclubcoincontroldialog.cpp qt/addressbookpage.h \
 	qt/addresstablemodel.h qt/askpassphrasedialog.h \
 	qt/bip38tooldialog.h qt/bitcoinaddressvalidator.h \
 	qt/bitcoinamountfield.h qt/bitcoingui.h qt/bitcoinunits.h \
@@ -478,7 +478,7 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 	qt/transactionrecord.h qt/transactiontablemodel.h \
 	qt/transactionview.h qt/utilitydialog.h qt/walletframe.h \
 	qt/walletmodel.h qt/walletmodeltransaction.h qt/walletview.h \
-	qt/winshutdownmonitor.h qt/zdelioncontroldialog.h \
+	qt/winshutdownmonitor.h qt/zmillenniumclubcoincontroldialog.h \
 	qt/forms/addressbookpage.ui qt/forms/askpassphrasedialog.ui \
 	qt/forms/bip38tooldialog.ui qt/forms/coincontroldialog.ui \
 	qt/forms/blockexplorer.ui qt/forms/obfuscationconfig.ui \
@@ -491,22 +491,22 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 	qt/forms/rpcconsole.ui qt/forms/sendcoinsdialog.ui \
 	qt/forms/sendcoinsentry.ui qt/forms/signverifymessagedialog.ui \
 	qt/forms/transactiondescdialog.ui \
-	qt/forms/zdelioncontroldialog.ui qt/delion.qrc \
-	qt/delion_locale.qrc qt/locale/delion_bg.ts \
-	qt/locale/delion_ca.ts qt/locale/delion_cs.ts \
-	qt/locale/delion_da.ts qt/locale/delion_de.ts \
-	qt/locale/delion_en.ts qt/locale/delion_en_US.ts \
-	qt/locale/delion_es.ts qt/locale/delion_fi.ts \
-	qt/locale/delion_fr_FR.ts qt/locale/delion_hr.ts \
-	qt/locale/delion_it.ts qt/locale/delion_ja.ts \
-	qt/locale/delion_ko_KR.ts qt/locale/delion_nl.ts \
-	qt/locale/delion_pl.ts qt/locale/delion_pt.ts \
-	qt/locale/delion_pt_BR.ts \
-	qt/locale/delion_ro_RO.ts qt/locale/delion_ru.ts \
-	qt/locale/delion_sk.ts qt/locale/delion_sv.ts \
-	qt/locale/delion_tr.ts qt/locale/delion_uk.ts \
-	qt/locale/delion_zh_CN.ts \
-	qt/locale/delion_zh_TW.ts qt/paymentrequest.proto \
+	qt/forms/zmillenniumclubcoincontroldialog.ui qt/millenniumclubcoin.qrc \
+	qt/millenniumclubcoin_locale.qrc qt/locale/millenniumclubcoin_bg.ts \
+	qt/locale/millenniumclubcoin_ca.ts qt/locale/millenniumclubcoin_cs.ts \
+	qt/locale/millenniumclubcoin_da.ts qt/locale/millenniumclubcoin_de.ts \
+	qt/locale/millenniumclubcoin_en.ts qt/locale/millenniumclubcoin_en_US.ts \
+	qt/locale/millenniumclubcoin_es.ts qt/locale/millenniumclubcoin_fi.ts \
+	qt/locale/millenniumclubcoin_fr_FR.ts qt/locale/millenniumclubcoin_hr.ts \
+	qt/locale/millenniumclubcoin_it.ts qt/locale/millenniumclubcoin_ja.ts \
+	qt/locale/millenniumclubcoin_ko_KR.ts qt/locale/millenniumclubcoin_nl.ts \
+	qt/locale/millenniumclubcoin_pl.ts qt/locale/millenniumclubcoin_pt.ts \
+	qt/locale/millenniumclubcoin_pt_BR.ts \
+	qt/locale/millenniumclubcoin_ro_RO.ts qt/locale/millenniumclubcoin_ru.ts \
+	qt/locale/millenniumclubcoin_sk.ts qt/locale/millenniumclubcoin_sv.ts \
+	qt/locale/millenniumclubcoin_tr.ts qt/locale/millenniumclubcoin_uk.ts \
+	qt/locale/millenniumclubcoin_zh_CN.ts \
+	qt/locale/millenniumclubcoin_zh_TW.ts qt/paymentrequest.proto \
 	qt/res/icons/add.png qt/res/icons/address-book.png \
 	qt/res/icons/bitcoin.ico qt/res/icons/bitcoin.png \
 	qt/res/icons/bitcoin_testnet.ico \
@@ -535,14 +535,14 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 	qt/res/icons/tx_inout.png qt/res/icons/tx_input.png \
 	qt/res/icons/tx_output.png qt/res/icons/tx_mined.png \
 	qt/res/icons/tx_mn.png \
-	qt/res/icons/unit_delion.png \
-	qt/res/icons/unit_mdelion.png \
-	qt/res/icons/unit_udelion.png \
-	qt/res/icons/unit_tdelion.png \
-	qt/res/icons/unit_tmdelion.png \
-	qt/res/icons/unit_tudelion.png qt/res/images/about.png \
+	qt/res/icons/unit_millenniumclubcoin.png \
+	qt/res/icons/unit_mmillenniumclubcoin.png \
+	qt/res/icons/unit_umillenniumclubcoin.png \
+	qt/res/icons/unit_tmillenniumclubcoin.png \
+	qt/res/icons/unit_tmmillenniumclubcoin.png \
+	qt/res/icons/unit_tumillenniumclubcoin.png qt/res/images/about.png \
 	qt/res/images/splash.png qt/res/images/splash_testnet.png \
-	qt/res/images/delion_logo_horizontal.png \
+	qt/res/images/millenniumclubcoin_logo_horizontal.png \
 	qt/res/images/downArrow.png qt/res/images/downArrow_small.png \
 	qt/res/images/upArrow_small.png \
 	qt/res/images/leftArrow_small.png \
@@ -584,7 +584,7 @@ am__objects_3 = qt/qt_libbitcoinqt_a-addressbookpage.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-walletmodel.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-walletmodeltransaction.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-walletview.$(OBJEXT) \
-	qt/qt_libbitcoinqt_a-zdelioncontroldialog.$(OBJEXT)
+	qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.$(OBJEXT)
 am__objects_4 = qt/qt_libbitcoinqt_a-bitcoinaddressvalidator.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-bitcoinamountfield.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-bitcoingui.$(OBJEXT) \
@@ -665,10 +665,10 @@ am__objects_5 = qt/qt_libbitcoinqt_a-moc_addressbookpage.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-moc_walletframe.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-moc_walletmodel.$(OBJEXT) \
 	qt/qt_libbitcoinqt_a-moc_walletview.$(OBJEXT) \
-	qt/qt_libbitcoinqt_a-moc_zdelioncontroldialog.$(OBJEXT)
+	qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.$(OBJEXT)
 am__objects_6 = qt/qt_libbitcoinqt_a-paymentrequest.pb.$(OBJEXT)
-am__objects_7 = qt/qt_libbitcoinqt_a-qrc_delion.$(OBJEXT)
-am__objects_8 = qt/qt_libbitcoinqt_a-qrc_delion_locale.$(OBJEXT)
+am__objects_7 = qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin.$(OBJEXT)
+am__objects_8 = qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.$(OBJEXT)
 nodist_qt_libbitcoinqt_a_OBJECTS = $(am__objects_5) \
 	$(am__objects_1) $(am__objects_6) \
 	$(am__objects_1) $(am__objects_7) \
@@ -757,36 +757,36 @@ libbitcoinconsensus_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(LDFLAGS) -o $@
 #am_libbitcoinconsensus_la_rpath = -rpath \
 #	$(libdir)
-am__EXEEXT_1 = deliond$(EXEEXT)
-am__EXEEXT_2 = delion-cli$(EXEEXT) \
-	delion-tx$(EXEEXT)
-#am__EXEEXT_3 = test/test_delion$(EXEEXT)
-am__EXEEXT_4 = qt/delion-qt$(EXEEXT)
+am__EXEEXT_1 = millenniumclubcoind$(EXEEXT)
+am__EXEEXT_2 = millenniumclubcoin-cli$(EXEEXT) \
+	millenniumclubcoin-tx$(EXEEXT)
+#am__EXEEXT_3 = test/test_millenniumclubcoin$(EXEEXT)
+am__EXEEXT_4 = qt/millenniumclubcoin-qt$(EXEEXT)
 #am__EXEEXT_5 =  \
-#	qt/test/test_delion-qt$(EXEEXT)
+#	qt/test/test_millenniumclubcoin-qt$(EXEEXT)
 PROGRAMS = $(bin_PROGRAMS)
-am__qt_test_test_delion_qt_SOURCES_DIST =  \
+am__qt_test_test_millenniumclubcoin_qt_SOURCES_DIST =  \
 	qt/test/test_main.cpp qt/test/uritests.cpp qt/test/uritests.h \
 	qt/test/paymentrequestdata.h qt/test/paymentservertests.h \
 	qt/test/paymentservertests.cpp
-#am__objects_10 = qt/test/qt_test_test_delion_qt-paymentservertests.$(OBJEXT)
-#am_qt_test_test_delion_qt_OBJECTS = qt/test/qt_test_test_delion_qt-test_main.$(OBJEXT) \
-#	qt/test/qt_test_test_delion_qt-uritests.$(OBJEXT) \
+#am__objects_10 = qt/test/qt_test_test_millenniumclubcoin_qt-paymentservertests.$(OBJEXT)
+#am_qt_test_test_millenniumclubcoin_qt_OBJECTS = qt/test/qt_test_test_millenniumclubcoin_qt-test_main.$(OBJEXT) \
+#	qt/test/qt_test_test_millenniumclubcoin_qt-uritests.$(OBJEXT) \
 #	$(am__objects_1) $(am__objects_10)
-#am__objects_11 = qt/test/qt_test_test_delion_qt-moc_paymentservertests.$(OBJEXT)
-#am__objects_12 = qt/test/qt_test_test_delion_qt-moc_uritests.$(OBJEXT) \
+#am__objects_11 = qt/test/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.$(OBJEXT)
+#am__objects_12 = qt/test/qt_test_test_millenniumclubcoin_qt-moc_uritests.$(OBJEXT) \
 #	$(am__objects_11)
-#nodist_qt_test_test_delion_qt_OBJECTS =  \
+#nodist_qt_test_test_millenniumclubcoin_qt_OBJECTS =  \
 #	$(am__objects_12)
-qt_test_test_delion_qt_OBJECTS =  \
-	$(am_qt_test_test_delion_qt_OBJECTS) \
-	$(nodist_qt_test_test_delion_qt_OBJECTS)
+qt_test_test_millenniumclubcoin_qt_OBJECTS =  \
+	$(am_qt_test_test_millenniumclubcoin_qt_OBJECTS) \
+	$(nodist_qt_test_test_millenniumclubcoin_qt_OBJECTS)
 #am__DEPENDENCIES_2 =  \
 #	$(LIBBITCOIN_ZMQ) \
 #	$(am__DEPENDENCIES_1)
 am__DEPENDENCIES_3 = $(am__append_2)
 am__DEPENDENCIES_4 = $(am__append_3)
-#qt_test_test_delion_qt_DEPENDENCIES =  \
+#qt_test_test_millenniumclubcoin_qt_DEPENDENCIES =  \
 #	$(LIBBITCOINQT) $(LIBBITCOIN_SERVER) \
 #	$(am__append_35) $(am__DEPENDENCIES_2) \
 #	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
@@ -807,28 +807,28 @@ am__DEPENDENCIES_4 = $(am__append_3)
 #	$(am__DEPENDENCIES_1) $(LIBSECP256K1) \
 #	$(am__DEPENDENCIES_1) \
 #	$(am__DEPENDENCIES_1)
-qt_test_test_delion_qt_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
+qt_test_test_millenniumclubcoin_qt_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
 	$(AM_CXXFLAGS) $(CXXFLAGS) \
-	$(qt_test_test_delion_qt_LDFLAGS) $(LDFLAGS) -o $@
-am__qt_delion_qt_SOURCES_DIST = qt/delion.cpp \
+	$(qt_test_test_millenniumclubcoin_qt_LDFLAGS) $(LDFLAGS) -o $@
+am__qt_millenniumclubcoin_qt_SOURCES_DIST = qt/millenniumclubcoin.cpp \
 	qt/macdockiconhandler.mm qt/macnotificationhandler.mm \
-	qt/res/delion-qt-res.rc
-am__objects_13 = qt/qt_delion_qt-macdockiconhandler.$(OBJEXT) \
-	qt/qt_delion_qt-macnotificationhandler.$(OBJEXT)
+	qt/res/millenniumclubcoin-qt-res.rc
+am__objects_13 = qt/qt_millenniumclubcoin_qt-macdockiconhandler.$(OBJEXT) \
+	qt/qt_millenniumclubcoin_qt-macnotificationhandler.$(OBJEXT)
 am__objects_14 =  \
 	$(am__objects_13)
 am__objects_15 =  \
-	qt/res/delion-qt-res.$(OBJEXT)
+	qt/res/millenniumclubcoin-qt-res.$(OBJEXT)
 #am__objects_16 =  \
 #	$(am__objects_15)
-am_qt_delion_qt_OBJECTS = qt/qt_delion_qt-delion.$(OBJEXT) \
+am_qt_millenniumclubcoin_qt_OBJECTS = qt/qt_millenniumclubcoin_qt-millenniumclubcoin.$(OBJEXT) \
 	$(am__objects_14) $(am__objects_16)
-qt_delion_qt_OBJECTS = $(am_qt_delion_qt_OBJECTS)
+qt_millenniumclubcoin_qt_OBJECTS = $(am_qt_millenniumclubcoin_qt_OBJECTS)
 am__DEPENDENCIES_5 =  \
 	$(LIBBITCOIN_ZMQ) \
 	$(am__DEPENDENCIES_1)
-qt_delion_qt_DEPENDENCIES = qt/libbitcoinqt.a \
+qt_millenniumclubcoin_qt_DEPENDENCIES = qt/libbitcoinqt.a \
 	$(LIBBITCOIN_SERVER) $(am__append_28) \
 	$(am__DEPENDENCIES_5) $(LIBBITCOIN_CLI) \
 	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
@@ -841,11 +841,11 @@ qt_delion_qt_DEPENDENCIES = qt/libbitcoinqt.a \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	$(LIBSECP256K1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1)
-qt_delion_qt_LINK = $(LIBTOOL) $(AM_V_lt) \
-	$(qt_delion_qt_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
+qt_millenniumclubcoin_qt_LINK = $(LIBTOOL) $(AM_V_lt) \
+	$(qt_millenniumclubcoin_qt_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
 	--mode=link $(OBJCXXLD) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) \
-	$(qt_delion_qt_LDFLAGS) $(LDFLAGS) -o $@
-am__test_test_delion_SOURCES_DIST =  \
+	$(qt_millenniumclubcoin_qt_LDFLAGS) $(LDFLAGS) -o $@
+am__test_test_millenniumclubcoin_SOURCES_DIST =  \
 	test/zerocoin_implementation_tests.cpp \
 	test/zerocoin_denomination_tests.cpp \
 	test/zerocoin_transactions_tests.cpp \
@@ -863,7 +863,7 @@ am__test_test_delion_SOURCES_DIST =  \
 	test/script_tests.cpp test/scriptnum_tests.cpp \
 	test/serialize_tests.cpp test/sighash_tests.cpp \
 	test/sigopcount_tests.cpp test/skiplist_tests.cpp \
-	test/test_delion.cpp test/timedata_tests.cpp \
+	test/test_millenniumclubcoin.cpp test/timedata_tests.cpp \
 	test/torcontrol_tests.cpp test/transaction_tests.cpp \
 	test/uint256_tests.cpp test/univalue_tests.cpp \
 	test/util_tests.cpp test/accounting_tests.cpp \
@@ -875,64 +875,64 @@ am__test_test_delion_SOURCES_DIST =  \
 	test/data/script_invalid.json test/data/tx_invalid.json \
 	test/data/tx_valid.json test/data/sighash.json \
 	test/data/alertTests.raw
-#am__objects_17 = test/test_test_delion-accounting_tests.$(OBJEXT) \
-#	test/test_test_delion-wallet_tests.$(OBJEXT) \
-#	test/test_test_delion-rpc_wallet_tests.$(OBJEXT)
-#am__objects_18 = test/test_test_delion-zerocoin_implementation_tests.$(OBJEXT) \
-#	test/test_test_delion-zerocoin_denomination_tests.$(OBJEXT) \
-#	test/test_test_delion-zerocoin_transactions_tests.$(OBJEXT) \
-#	test/test_test_delion-benchmark_zerocoin.$(OBJEXT) \
-#	test/test_test_delion-tutorial_zerocoin.$(OBJEXT) \
-#	test/test_test_delion-libzerocoin_tests.$(OBJEXT) \
-#	test/test_test_delion-allocator_tests.$(OBJEXT) \
-#	test/test_test_delion-base32_tests.$(OBJEXT) \
-#	test/test_test_delion-base58_tests.$(OBJEXT) \
-#	test/test_test_delion-base64_tests.$(OBJEXT) \
-#	test/test_test_delion-checkblock_tests.$(OBJEXT) \
-#	test/test_test_delion-Checkpoints_tests.$(OBJEXT) \
-#	test/test_test_delion-coins_tests.$(OBJEXT) \
-#	test/test_test_delion-compress_tests.$(OBJEXT) \
-#	test/test_test_delion-crypto_tests.$(OBJEXT) \
-#	test/test_test_delion-DoS_tests.$(OBJEXT) \
-#	test/test_test_delion-getarg_tests.$(OBJEXT) \
-#	test/test_test_delion-hash_tests.$(OBJEXT) \
-#	test/test_test_delion-key_tests.$(OBJEXT) \
-#	test/test_test_delion-main_tests.$(OBJEXT) \
-#	test/test_test_delion-mempool_tests.$(OBJEXT) \
-#	test/test_test_delion-mruset_tests.$(OBJEXT) \
-#	test/test_test_delion-multisig_tests.$(OBJEXT) \
-#	test/test_test_delion-netbase_tests.$(OBJEXT) \
-#	test/test_test_delion-pmt_tests.$(OBJEXT) \
-#	test/test_test_delion-rpc_tests.$(OBJEXT) \
-#	test/test_test_delion-sanity_tests.$(OBJEXT) \
-#	test/test_test_delion-script_P2SH_tests.$(OBJEXT) \
-#	test/test_test_delion-script_tests.$(OBJEXT) \
-#	test/test_test_delion-scriptnum_tests.$(OBJEXT) \
-#	test/test_test_delion-serialize_tests.$(OBJEXT) \
-#	test/test_test_delion-sighash_tests.$(OBJEXT) \
-#	test/test_test_delion-sigopcount_tests.$(OBJEXT) \
-#	test/test_test_delion-skiplist_tests.$(OBJEXT) \
-#	test/test_test_delion-test_delion.$(OBJEXT) \
-#	test/test_test_delion-timedata_tests.$(OBJEXT) \
-#	test/test_test_delion-torcontrol_tests.$(OBJEXT) \
-#	test/test_test_delion-transaction_tests.$(OBJEXT) \
-#	test/test_test_delion-uint256_tests.$(OBJEXT) \
-#	test/test_test_delion-univalue_tests.$(OBJEXT) \
-#	test/test_test_delion-util_tests.$(OBJEXT) \
+#am__objects_17 = test/test_test_millenniumclubcoin-accounting_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-wallet_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-rpc_wallet_tests.$(OBJEXT)
+#am__objects_18 = test/test_test_millenniumclubcoin-zerocoin_implementation_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-zerocoin_denomination_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-zerocoin_transactions_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-benchmark_zerocoin.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-tutorial_zerocoin.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-libzerocoin_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-allocator_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-base32_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-base58_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-base64_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-checkblock_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-Checkpoints_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-coins_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-compress_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-crypto_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-DoS_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-getarg_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-hash_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-key_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-main_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-mempool_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-mruset_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-multisig_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-netbase_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-pmt_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-rpc_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-sanity_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-script_P2SH_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-script_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-scriptnum_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-serialize_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-sighash_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-sigopcount_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-skiplist_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-test_millenniumclubcoin.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-timedata_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-torcontrol_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-transaction_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-uint256_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-univalue_tests.$(OBJEXT) \
+#	test/test_test_millenniumclubcoin-util_tests.$(OBJEXT) \
 #	$(am__objects_17)
-#am_test_test_delion_OBJECTS =  \
+#am_test_test_millenniumclubcoin_OBJECTS =  \
 #	$(am__objects_18) $(am__objects_1) \
 #	$(am__objects_1)
 #am__objects_19 = $(am__objects_1) $(am__objects_1)
-#nodist_test_test_delion_OBJECTS =  \
+#nodist_test_test_millenniumclubcoin_OBJECTS =  \
 #	$(am__objects_19)
-test_test_delion_OBJECTS =  \
-	$(am_test_test_delion_OBJECTS) \
-	$(nodist_test_test_delion_OBJECTS)
+test_test_millenniumclubcoin_OBJECTS =  \
+	$(am_test_test_millenniumclubcoin_OBJECTS) \
+	$(nodist_test_test_millenniumclubcoin_OBJECTS)
 #am__DEPENDENCIES_6 = libbitcoinconsensus.la
 #am__DEPENDENCIES_7 =  \
 #	$(am__DEPENDENCIES_1)
-#test_test_delion_DEPENDENCIES =  \
+#test_test_millenniumclubcoin_DEPENDENCIES =  \
 #	$(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) \
 #	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
 #	$(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) \
@@ -944,44 +944,44 @@ test_test_delion_OBJECTS =  \
 #	$(am__DEPENDENCIES_6) $(am__DEPENDENCIES_1) \
 #	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 #	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_7)
-test_test_delion_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
+test_test_millenniumclubcoin_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
-	$(AM_CXXFLAGS) $(CXXFLAGS) $(test_test_delion_LDFLAGS) \
+	$(AM_CXXFLAGS) $(CXXFLAGS) $(test_test_millenniumclubcoin_LDFLAGS) \
 	$(LDFLAGS) -o $@
-am__delion_cli_SOURCES_DIST = delion-cli.cpp \
-	delion-cli-res.rc
-#am__objects_20 = delion-cli-res.$(OBJEXT)
-am_delion_cli_OBJECTS =  \
-	delion_cli-delion-cli.$(OBJEXT) \
+am__millenniumclubcoin_cli_SOURCES_DIST = millenniumclubcoin-cli.cpp \
+	millenniumclubcoin-cli-res.rc
+#am__objects_20 = millenniumclubcoin-cli-res.$(OBJEXT)
+am_millenniumclubcoin_cli_OBJECTS =  \
+	millenniumclubcoin_cli-millenniumclubcoin-cli.$(OBJEXT) \
 	$(am__objects_20)
-delion_cli_OBJECTS = $(am_delion_cli_OBJECTS)
-delion_cli_DEPENDENCIES = $(LIBBITCOIN_CLI) $(LIBBITCOIN_UTIL) \
+millenniumclubcoin_cli_OBJECTS = $(am_millenniumclubcoin_cli_OBJECTS)
+millenniumclubcoin_cli_DEPENDENCIES = $(LIBBITCOIN_CLI) $(LIBBITCOIN_UTIL) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
-delion_cli_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
+millenniumclubcoin_cli_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
-	$(AM_CXXFLAGS) $(CXXFLAGS) $(delion_cli_LDFLAGS) \
+	$(AM_CXXFLAGS) $(CXXFLAGS) $(millenniumclubcoin_cli_LDFLAGS) \
 	$(LDFLAGS) -o $@
-am_delion_tx_OBJECTS =  \
-	delion_tx-delion-tx.$(OBJEXT)
-delion_tx_OBJECTS = $(am_delion_tx_OBJECTS)
-delion_tx_DEPENDENCIES = $(LIBBITCOIN_UNIVALUE) \
+am_millenniumclubcoin_tx_OBJECTS =  \
+	millenniumclubcoin_tx-millenniumclubcoin-tx.$(OBJEXT)
+millenniumclubcoin_tx_OBJECTS = $(am_millenniumclubcoin_tx_OBJECTS)
+millenniumclubcoin_tx_DEPENDENCIES = $(LIBBITCOIN_UNIVALUE) \
 	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_ZEROCOIN) $(LIBBITCOIN_UTIL) \
 	$(LIBBITCOIN_CRYPTO) $(LIBSECP256K1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1)
-delion_tx_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
+millenniumclubcoin_tx_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
-	$(AM_CXXFLAGS) $(CXXFLAGS) $(delion_tx_LDFLAGS) \
+	$(AM_CXXFLAGS) $(CXXFLAGS) $(millenniumclubcoin_tx_LDFLAGS) \
 	$(LDFLAGS) -o $@
-am__deliond_SOURCES_DIST = deliond.cpp \
-	deliond-res.rc
-#am__objects_21 = deliond-res.$(OBJEXT)
-am_deliond_OBJECTS = deliond-deliond.$(OBJEXT) \
+am__millenniumclubcoind_SOURCES_DIST = millenniumclubcoind.cpp \
+	millenniumclubcoind-res.rc
+#am__objects_21 = millenniumclubcoind-res.$(OBJEXT)
+am_millenniumclubcoind_OBJECTS = millenniumclubcoind-millenniumclubcoind.$(OBJEXT) \
 	$(am__objects_21)
-deliond_OBJECTS = $(am_deliond_OBJECTS)
+millenniumclubcoind_OBJECTS = $(am_millenniumclubcoind_OBJECTS)
 am__DEPENDENCIES_8 = $(LIBBITCOIN_ZMQ) \
 	$(am__DEPENDENCIES_1)
-deliond_DEPENDENCIES = $(LIBBITCOIN_SERVER) \
+millenniumclubcoind_DEPENDENCIES = $(LIBBITCOIN_SERVER) \
 	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UNIVALUE) \
 	$(LIBBITCOIN_ZEROCOIN) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) \
 	$(am__DEPENDENCIES_3) $(am__DEPENDENCIES_4) $(LIBSECP256K1) \
@@ -989,9 +989,9 @@ deliond_DEPENDENCIES = $(LIBBITCOIN_SERVER) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
-deliond_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
+millenniumclubcoind_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CXX \
 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CXXLD) \
-	$(AM_CXXFLAGS) $(CXXFLAGS) $(deliond_LDFLAGS) \
+	$(AM_CXXFLAGS) $(CXXFLAGS) $(millenniumclubcoind_LDFLAGS) \
 	$(LDFLAGS) -o $@
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
@@ -1073,13 +1073,13 @@ SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) \
 	$(nodist_qt_libbitcoinqt_a_SOURCES) \
 	$(univalue_libbitcoin_univalue_a_SOURCES) \
 	$(libbitcoinconsensus_la_SOURCES) \
-	$(qt_test_test_delion_qt_SOURCES) \
-	$(nodist_qt_test_test_delion_qt_SOURCES) \
-	$(qt_delion_qt_SOURCES) \
-	$(test_test_delion_SOURCES) \
-	$(nodist_test_test_delion_SOURCES) \
-	$(delion_cli_SOURCES) $(delion_tx_SOURCES) \
-	$(deliond_SOURCES)
+	$(qt_test_test_millenniumclubcoin_qt_SOURCES) \
+	$(nodist_qt_test_test_millenniumclubcoin_qt_SOURCES) \
+	$(qt_millenniumclubcoin_qt_SOURCES) \
+	$(test_test_millenniumclubcoin_SOURCES) \
+	$(nodist_test_test_millenniumclubcoin_SOURCES) \
+	$(millenniumclubcoin_cli_SOURCES) $(millenniumclubcoin_tx_SOURCES) \
+	$(millenniumclubcoind_SOURCES)
 DIST_SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) \
 	$(libbitcoin_cli_a_SOURCES) $(libbitcoin_common_a_SOURCES) \
 	$(libbitcoin_server_a_SOURCES) \
@@ -1090,11 +1090,11 @@ DIST_SOURCES = $(crypto_libbitcoin_crypto_a_SOURCES) \
 	$(am__qt_libbitcoinqt_a_SOURCES_DIST) \
 	$(univalue_libbitcoin_univalue_a_SOURCES) \
 	$(am__libbitcoinconsensus_la_SOURCES_DIST) \
-	$(am__qt_test_test_delion_qt_SOURCES_DIST) \
-	$(am__qt_delion_qt_SOURCES_DIST) \
-	$(am__test_test_delion_SOURCES_DIST) \
-	$(am__delion_cli_SOURCES_DIST) \
-	$(delion_tx_SOURCES) $(am__deliond_SOURCES_DIST)
+	$(am__qt_test_test_millenniumclubcoin_qt_SOURCES_DIST) \
+	$(am__qt_millenniumclubcoin_qt_SOURCES_DIST) \
+	$(am__test_test_millenniumclubcoin_SOURCES_DIST) \
+	$(am__millenniumclubcoin_cli_SOURCES_DIST) \
+	$(millenniumclubcoin_tx_SOURCES) $(am__millenniumclubcoind_SOURCES_DIST)
 RECURSIVE_TARGETS = all-recursive check-recursive cscopelist-recursive \
 	ctags-recursive dvi-recursive html-recursive info-recursive \
 	install-data-recursive install-dvi-recursive \
@@ -1293,7 +1293,7 @@ am__set_TESTS_bases = \
   bases=`for i in $$bases; do echo $$i; done | sed 's/\.log$$//'`; \
   bases=`echo $$bases`
 RECHECK_LOGS = $(TEST_LOGS)
-#am__EXEEXT_6 = test/test_delion$(EXEEXT) \
+#am__EXEEXT_6 = test/test_millenniumclubcoin$(EXEEXT) \
 #	test/bitcoin-util-test.py
 TEST_SUITE_LOG = test-suite.log
 TEST_EXTENSIONS =  .test
@@ -1346,25 +1346,25 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /root/delion/build-aux/missing aclocal-1.15
+ACLOCAL = ${SHELL} /root/millenniumclubcoin/build-aux/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
-AR = /root/delion/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ar
-AUTOCONF = ${SHELL} /root/delion/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /root/delion/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /root/delion/build-aux/missing automake-1.15
+AR = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ar
+AUTOCONF = ${SHELL} /root/millenniumclubcoin/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /root/millenniumclubcoin/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /root/millenniumclubcoin/build-aux/missing automake-1.15
 AWK = gawk
 BDB_CPPFLAGS = 
 BDB_LIBS = -ldb_cxx-4.8
-BITCOIN_CLI_NAME = delion-cli
-BITCOIN_DAEMON_NAME = deliond
-BITCOIN_GUI_NAME = delion-qt
-BITCOIN_TX_NAME = delion-tx
+BITCOIN_CLI_NAME = millenniumclubcoin-cli
+BITCOIN_DAEMON_NAME = millenniumclubcoind
+BITCOIN_GUI_NAME = millenniumclubcoin-qt
+BITCOIN_TX_NAME = millenniumclubcoin-tx
 BOOST_CHRONO_LIB = -lboost_chrono-mt
-BOOST_CPPFLAGS = -pthread -I/root/delion/depends/x86_64-apple-darwin11/share/../include
+BOOST_CPPFLAGS = -pthread -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../include
 BOOST_FILESYSTEM_LIB = -lboost_filesystem-mt
-BOOST_LDFLAGS = -L/root/delion/depends/x86_64-apple-darwin11/share/../lib
-BOOST_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/share/../lib -lboost_system-mt -lboost_filesystem-mt -lboost_program_options-mt -lboost_thread-mt -lboost_chrono-mt
+BOOST_LDFLAGS = -L/root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../lib
+BOOST_LIBS = -L/root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../lib -lboost_system-mt -lboost_filesystem-mt -lboost_program_options-mt -lboost_thread-mt -lboost_chrono-mt
 BOOST_PROGRAM_OPTIONS_LIB = -lboost_program_options-mt
 BOOST_SYSTEM_LIB = -lboost_system-mt
 BOOST_THREAD_LIB = -lboost_thread-mt
@@ -1373,8 +1373,8 @@ BREW = no
 BUILD_QT = qt
 BUILD_TEST = 
 BUILD_TEST_QT = 
-CC = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/ccache /root/delion/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/delion/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9
-CCACHE = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/ccache
+CC = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../native/bin/ccache /root/millenniumclubcoin/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/millenniumclubcoin/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9
+CCACHE = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../native/bin/ccache
 CCDEPMODE = depmode=gcc3
 CFLAGS = -pipe -O2 
 CLIENT_VERSION_BUILD = 0
@@ -1384,13 +1384,13 @@ CLIENT_VERSION_MINOR = 0
 CLIENT_VERSION_REVISION = 0
 COMPARISON_TOOL_REORG_TESTS = 0
 COPYRIGHT_YEAR = 2017
-CPP = /root/delion/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/delion/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -E
+CPP = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/millenniumclubcoin/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -E
 CPPFILT = /usr/bin/c++filt
-CPPFLAGS = -Qunused-arguments -I/root/delion/depends/x86_64-apple-darwin11/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -DMAC_OSX  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -DHAVE_QT5
-CRYPTO_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include
-CRYPTO_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -lcrypto
-CXX = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/ccache /root/delion/depends/x86_64-apple-darwin11/native/bin/clang++ -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/delion/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11
-CXXCPP = /root/delion/depends/x86_64-apple-darwin11/native/bin/clang++ -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/delion/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11 -E
+CPPFLAGS = -Qunused-arguments -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../include/  -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS -DMAC_OSX  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2 -DHAVE_QT5
+CRYPTO_CFLAGS = -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include
+CRYPTO_LIBS = -L/root/millenniumclubcoin/depends/x86_64-apple-darwin11/lib -lcrypto
+CXX = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../native/bin/ccache /root/millenniumclubcoin/depends/x86_64-apple-darwin11/native/bin/clang++ -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/millenniumclubcoin/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11
+CXXCPP = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/native/bin/clang++ -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/millenniumclubcoin/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11 -E
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -pipe -O2   -Wstack-protector -fstack-protector-all -fPIC -fvisibility=hidden
 CYGPATH_W = echo
@@ -1403,22 +1403,22 @@ ECHO_C =
 ECHO_N = -n
 ECHO_T = 
 EGREP = /bin/grep -E
-EVENT_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include
-EVENT_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -levent
-EVENT_PTHREADS_CFLAGS = -D_THREAD_SAFE -I/root/delion/depends/x86_64-apple-darwin11/include
-EVENT_PTHREADS_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -levent_pthreads -levent
+EVENT_CFLAGS = -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include
+EVENT_LIBS = -L/root/millenniumclubcoin/depends/x86_64-apple-darwin11/lib -levent
+EVENT_PTHREADS_CFLAGS = -D_THREAD_SAFE -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include
+EVENT_PTHREADS_LIBS = -L/root/millenniumclubcoin/depends/x86_64-apple-darwin11/lib -levent_pthreads -levent
 EXEEXT = 
 FGREP = /bin/grep -F
 GCOV = /usr/bin/gcov
 GENHTML = 
-GENISOIMAGE = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/genisoimage
+GENISOIMAGE = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../native/bin/genisoimage
 GIT = /usr/bin/git
 GREP = /bin/grep
 HAVE_CXX11 = 1
 HEXDUMP = /usr/bin/hexdump
 IMAGEMAGICK_CONVERT = /usr/bin/convert
 INSTALL = /usr/bin/install -c
-INSTALLNAMETOOL = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/x86_64-apple-darwin11-install_name_tool
+INSTALLNAMETOOL = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../native/bin/x86_64-apple-darwin11-install_name_tool
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
@@ -1426,8 +1426,8 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 JAVA = 
 JAVA_COMPARISON_TOOL = 
 LCOV = 
-LD = /root/delion/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ld
-LDFLAGS = -L/root/delion/depends/x86_64-apple-darwin11/share/../lib  -Wl,-headerpad_max_install_names  -Wl,-dead_strip
+LD = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ld
+LDFLAGS = -L/root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../lib  -Wl,-headerpad_max_install_names  -Wl,-dead_strip
 LEVELDB_CPPFLAGS =  $(am__append_1)
 LEVELDB_TARGET_FLAGS = TARGET_OS=Darwin
 LIBLEVELDB =  $(am__append_2)
@@ -1438,84 +1438,84 @@ LIBTOOL = $(SHELL) $(top_builddir)/libtool
 LIBTOOL_APP_LDFLAGS = 
 LIPO = x86_64-apple-darwin11-lipo
 LN_S = ln -s
-LRELEASE = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/lrelease
+LRELEASE = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../native/bin/lrelease
 LTLIBOBJS = 
 LT_SYS_LIBRARY_PATH = 
 LUPDATE = 
 MAINT = 
-MAKEINFO = ${SHELL} /root/delion/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /root/millenniumclubcoin/build-aux/missing makeinfo
 MAKENSIS = 
 MANIFEST_TOOL = :
 MINIUPNPC_CPPFLAGS = 
 MINIUPNPC_LIBS = -lminiupnpc
 MKDIR_P = /bin/mkdir -p
-MOC = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/moc
+MOC = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../native/bin/moc
 MOC_DEFS = -DHAVE_CONFIG_H -I$(srcdir) -DQ_OS_MAC
-NM = /root/delion/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-nm
+NM = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-nm
 NMEDIT = x86_64-apple-darwin11-nmedit
 OBJCOPY = /usr/bin/objcopy
-OBJCXX = /root/delion/depends/x86_64-apple-darwin11/native/bin/clang++ -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/delion/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11
+OBJCXX = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/native/bin/clang++ -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/millenniumclubcoin/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9 -stdlib=libc++ -std=c++11
 OBJCXXDEPMODE = depmode=gcc3
 OBJCXXFLAGS = -pipe -O2   -Wstack-protector -fstack-protector-all -fPIC
 OBJDUMP = objdump
 OBJEXT = o
-OTOOL = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/x86_64-apple-darwin11-otool
+OTOOL = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../native/bin/x86_64-apple-darwin11-otool
 OTOOL64 = :
-PACKAGE = delion
-PACKAGE_BUGREPORT = www.delion.online
-PACKAGE_NAME = Delion Core
-PACKAGE_STRING = Delion Core 1.0.0
-PACKAGE_TARNAME = delion
+PACKAGE = millenniumclubcoin
+PACKAGE_BUGREPORT = https://millenniumclub.ca/
+PACKAGE_NAME = Millenniumclubcoin Core
+PACKAGE_STRING = Millenniumclubcoin Core 1.0.0
+PACKAGE_TARNAME = millenniumclubcoin
 PACKAGE_URL = 
 PACKAGE_VERSION = 1.0.0
 PATH_SEPARATOR = :
 PKG_CONFIG = /usr/bin/pkg-config --static
-PKG_CONFIG_LIBDIR = /root/delion/depends/x86_64-apple-darwin11/share/../lib/pkgconfig
-PKG_CONFIG_PATH = /root/delion/depends/x86_64-apple-darwin11/share/../share/pkgconfig
+PKG_CONFIG_LIBDIR = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../lib/pkgconfig
+PKG_CONFIG_PATH = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../share/pkgconfig
 PORT = no
-PROTOBUF_CFLAGS = -D_THREAD_SAFE -I/root/delion/depends/x86_64-apple-darwin11/include
-PROTOBUF_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -lprotobuf -D_THREAD_SAFE -lz
-PROTOC = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/protoc
-PTHREAD_CC = /root/delion/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/delion/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9
+PROTOBUF_CFLAGS = -D_THREAD_SAFE -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include
+PROTOBUF_LIBS = -L/root/millenniumclubcoin/depends/x86_64-apple-darwin11/lib -lprotobuf -D_THREAD_SAFE -lz
+PROTOC = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../native/bin/protoc
+PTHREAD_CC = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/native/bin/clang -target x86_64-apple-darwin11 -mmacosx-version-min=10.8 --sysroot /root/millenniumclubcoin/depends/SDKs/MacOSX10.11.sdk -mlinker-version=253.9
 PTHREAD_CFLAGS = -D_THREAD_SAFE -pthread
 PTHREAD_LIBS = 
 PYTHON = /usr/bin/python3
-PYTHONPATH = /root/delion/depends/x86_64-apple-darwin11/share/../native/lib/python/dist-packages:
-QR_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include
-QR_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -lqrencode -lpthread
-QTPLATFORM_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include/QtPlatformSupport -I/root/delion/depends/x86_64-apple-darwin11/include/QtGui -I/root/delion/depends/x86_64-apple-darwin11/include/QtCore
-QTPLATFORM_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -lQt5PlatformSupport -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -lz -framework AppKit -framework OpenGL -framework ApplicationServices -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation
-QTPRINT_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include/QtPrintSupport -I/root/delion/depends/x86_64-apple-darwin11/include/QtWidgets -I/root/delion/depends/x86_64-apple-darwin11/include/QtGui -I/root/delion/depends/x86_64-apple-darwin11/include/QtCore
-QTPRINT_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -lQt5PrintSupport -lQt5Widgets -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework OpenGL -framework AGL -framework Carbon -lQt5Gui -lqtpng -lqtharfbuzzng -lQt5Core -lz -lqtpcre -lm -framework AppKit -framework OpenGL -framework AGL -lQt5Widgets -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -framework AppKit -lz -framework Carbon -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation
+PYTHONPATH = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../native/lib/python/dist-packages:
+QR_CFLAGS = -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include
+QR_LIBS = -L/root/millenniumclubcoin/depends/x86_64-apple-darwin11/lib -lqrencode -lpthread
+QTPLATFORM_CFLAGS = -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtPlatformSupport -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtGui -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtCore
+QTPLATFORM_LIBS = -L/root/millenniumclubcoin/depends/x86_64-apple-darwin11/lib -lQt5PlatformSupport -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -lz -framework AppKit -framework OpenGL -framework ApplicationServices -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation
+QTPRINT_CFLAGS = -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtPrintSupport -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtWidgets -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtGui -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtCore
+QTPRINT_LIBS = -L/root/millenniumclubcoin/depends/x86_64-apple-darwin11/lib -lQt5PrintSupport -lQt5Widgets -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework OpenGL -framework AGL -framework Carbon -lQt5Gui -lqtpng -lqtharfbuzzng -lQt5Core -lz -lqtpcre -lm -framework AppKit -framework OpenGL -framework AGL -lQt5Widgets -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -framework AppKit -lz -framework Carbon -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation
 QTXCBQPA_CFLAGS = 
 QTXCBQPA_LIBS = 
-QT_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include/QtNetwork -I/root/delion/depends/x86_64-apple-darwin11/include/QtWidgets -I/root/delion/depends/x86_64-apple-darwin11/include/QtGui -I/root/delion/depends/x86_64-apple-darwin11/include/QtCore
-QT_DBUS_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include/QtDBus -I/root/delion/depends/x86_64-apple-darwin11/include/QtCore
-QT_DBUS_INCLUDES = -I/root/delion/depends/x86_64-apple-darwin11/include/QtDBus -I/root/delion/depends/x86_64-apple-darwin11/include/QtCore
-QT_DBUS_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -lQt5DBus -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation
-QT_INCLUDES = -I/root/delion/depends/x86_64-apple-darwin11/include/QtNetwork -I/root/delion/depends/x86_64-apple-darwin11/include/QtWidgets -I/root/delion/depends/x86_64-apple-darwin11/include/QtGui -I/root/delion/depends/x86_64-apple-darwin11/include/QtCore
+QT_CFLAGS = -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtNetwork -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtWidgets -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtGui -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtCore
+QT_DBUS_CFLAGS = -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtDBus -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtCore
+QT_DBUS_INCLUDES = -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtDBus -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtCore
+QT_DBUS_LIBS = -L/root/millenniumclubcoin/depends/x86_64-apple-darwin11/lib -lQt5DBus -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation
+QT_INCLUDES = -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtNetwork -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtWidgets -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtGui -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtCore
 QT_LDFLAGS = 
-QT_LIBS = -lqcocoa -L/root/delion/depends/x86_64-apple-darwin11/lib -lQt5PrintSupport -lQt5Widgets -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework OpenGL -framework AGL -framework Carbon -lQt5Gui -lqtpng -lqtharfbuzzng -lQt5Core -lz -lqtpcre -lm -framework AppKit -framework OpenGL -framework AGL -lQt5Widgets -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -framework AppKit -lz -framework Carbon -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -L/root/delion/depends/x86_64-apple-darwin11/lib -lQt5PlatformSupport -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -lz -framework AppKit -framework OpenGL -framework ApplicationServices -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -L/root/delion/depends/x86_64-apple-darwin11/lib -lQt5Network -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework Security -lz -framework SystemConfiguration -framework CoreFoundation -framework CoreServices -lssl -lcrypto -lQt5Widgets -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -framework AppKit -lz -framework Carbon -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -L/root/delion/depends/x86_64-apple-darwin11/share/../plugins/platforms -framework IOKit -framework Foundation -framework ApplicationServices -framework AppKit
+QT_LIBS = -lqcocoa -L/root/millenniumclubcoin/depends/x86_64-apple-darwin11/lib -lQt5PrintSupport -lQt5Widgets -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework OpenGL -framework AGL -framework Carbon -lQt5Gui -lqtpng -lqtharfbuzzng -lQt5Core -lz -lqtpcre -lm -framework AppKit -framework OpenGL -framework AGL -lQt5Widgets -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -framework AppKit -lz -framework Carbon -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -L/root/millenniumclubcoin/depends/x86_64-apple-darwin11/lib -lQt5PlatformSupport -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -lz -framework AppKit -framework OpenGL -framework ApplicationServices -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -L/root/millenniumclubcoin/depends/x86_64-apple-darwin11/lib -lQt5Network -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework Security -lz -framework SystemConfiguration -framework CoreFoundation -framework CoreServices -lssl -lcrypto -lQt5Widgets -lQt5Gui -framework DiskArbitration -framework IOKit -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -lqtpng -lqtharfbuzzng -framework OpenGL -framework AGL -lQt5Core -lz -lqtpcre -lm -framework AppKit -lz -framework Carbon -framework OpenGL -framework AGL -lQt5Gui -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -framework AppKit -framework Foundation -lqtpng -lqtharfbuzzng -framework ApplicationServices -lz -framework OpenGL -framework AGL -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation -L/root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../plugins/platforms -framework IOKit -framework Foundation -framework ApplicationServices -framework AppKit
 QT_PIE_FLAGS = 
 QT_SELECT = qt5
-QT_TEST_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include/QtTest -I/root/delion/depends/x86_64-apple-darwin11/include/QtCore
-QT_TEST_INCLUDES = -I/root/delion/depends/x86_64-apple-darwin11/include/QtTest -I/root/delion/depends/x86_64-apple-darwin11/include/QtCore
-QT_TEST_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -lQt5Test -framework Security -framework Foundation -framework ApplicationServices -framework IOKit -lQt5Core -framework DiskArbitration -lz -lqtpcre -lm -framework CoreServices -framework AppKit -framework CoreFoundation -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation
-QT_TRANSLATION_DIR = /root/delion/depends/x86_64-apple-darwin11/share/../translations
-RANLIB = /root/delion/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ranlib
-RCC = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/rcc
+QT_TEST_CFLAGS = -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtTest -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtCore
+QT_TEST_INCLUDES = -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtTest -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include/QtCore
+QT_TEST_LIBS = -L/root/millenniumclubcoin/depends/x86_64-apple-darwin11/lib -lQt5Test -framework Security -framework Foundation -framework ApplicationServices -framework IOKit -lQt5Core -framework DiskArbitration -lz -lqtpcre -lm -framework CoreServices -framework AppKit -framework CoreFoundation -lQt5Core -framework DiskArbitration -framework IOKit -lz -lqtpcre -lm -framework Foundation -framework CoreServices -framework AppKit -framework ApplicationServices -framework CoreFoundation
+QT_TRANSLATION_DIR = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../translations
+RANLIB = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/native/bin/x86_64-apple-darwin11-ranlib
+RCC = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../native/bin/rcc
 READELF = /usr/bin/readelf
 RELDFLAGS = 
 RSVG_CONVERT = /usr/bin/rsvg-convert
 SED = /bin/sed
 SET_MAKE = 
 SHELL = /bin/bash
-SSL_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include
-SSL_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -lssl -lcrypto
-STRIP = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/x86_64-apple-darwin11-strip
+SSL_CFLAGS = -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include
+SSL_LIBS = -L/root/millenniumclubcoin/depends/x86_64-apple-darwin11/lib -lssl -lcrypto
+STRIP = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../native/bin/x86_64-apple-darwin11-strip
 TESTDEFS = 
 TIFFCP = /usr/bin/tiffcp
-UIC = /root/delion/depends/x86_64-apple-darwin11/share/../native/bin/uic
+UIC = /root/millenniumclubcoin/depends/x86_64-apple-darwin11/share/../native/bin/uic
 USE_QRCODE = 
 USE_UPNP = 
 VERSION = 1.0.0
@@ -1524,12 +1524,12 @@ WINDRES =
 X11XCB_CFLAGS = 
 X11XCB_LIBS = 
 XGETTEXT = 
-ZMQ_CFLAGS = -I/root/delion/depends/x86_64-apple-darwin11/include
-ZMQ_LIBS = -L/root/delion/depends/x86_64-apple-darwin11/lib -lzmq
-abs_builddir = /root/delion/src
-abs_srcdir = /root/delion/src
-abs_top_builddir = /root/delion
-abs_top_srcdir = /root/delion
+ZMQ_CFLAGS = -I/root/millenniumclubcoin/depends/x86_64-apple-darwin11/include
+ZMQ_LIBS = -L/root/millenniumclubcoin/depends/x86_64-apple-darwin11/lib -lzmq
+abs_builddir = /root/millenniumclubcoin/src
+abs_srcdir = /root/millenniumclubcoin/src
+abs_top_builddir = /root/millenniumclubcoin
+abs_top_srcdir = /root/millenniumclubcoin
 ac_ct_AR = 
 ac_ct_CC = 
 ac_ct_CXX = 
@@ -1561,7 +1561,7 @@ host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /root/delion/build-aux/install-sh
+install_sh = ${SHELL} /root/millenniumclubcoin/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -1610,7 +1610,7 @@ EXTRA_LIBRARIES = crypto/libbitcoin_crypto.a libbitcoin_util.a \
 #lib_LTLIBRARIES = libbitcoinconsensus.la
 LIBBITCOIN_CONSENSUS = 
 #LIBBITCOIN_CONSENSUS = libbitcoinconsensus.la
-# delion core #
+# millenniumclubcoin core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -1721,7 +1721,7 @@ JSON_H = \
   json/json_spirit_writer_template.h
 
 
-# server: shared between deliond and delion-qt
+# server: shared between millenniumclubcoind and millenniumclubcoin-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -1765,7 +1765,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 
 
-# wallet: shared between deliond and delion-qt, but only linked
+# wallet: shared between millenniumclubcoind and millenniumclubcoin-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CFLAGS = -fPIC
 libbitcoin_wallet_a_CPPFLAGS = $(BITCOIN_INCLUDES)
@@ -1888,7 +1888,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
 
-# common: shared between deliond, and delion-qt and non-server tools
+# common: shared between millenniumclubcoind, and millenniumclubcoin-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   accumulators.cpp \
@@ -1934,7 +1934,7 @@ libbitcoin_util_a_SOURCES = allocators.cpp compat/strnlen.cpp \
 	utilstrencodings.cpp utilmoneystr.cpp utiltime.cpp \
 	$(BITCOIN_CORE_H) $(am__append_9)
 
-# cli: shared between delion-cli and delion-qt
+# cli: shared between millenniumclubcoin-cli and millenniumclubcoin-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -1944,18 +1944,18 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-deliond_LDADD = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
+millenniumclubcoind_LDADD = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_COMMON) \
 	$(LIBBITCOIN_UNIVALUE) $(LIBBITCOIN_ZEROCOIN) \
 	$(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBLEVELDB) \
 	$(LIBMEMENV) $(LIBSECP256K1) $(am__append_10) $(am__append_11) \
 	$(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) \
 	$(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-deliond_SOURCES = deliond.cpp $(am__append_12)
-deliond_CPPFLAGS = $(BITCOIN_INCLUDES)
-deliond_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+millenniumclubcoind_SOURCES = millenniumclubcoind.cpp $(am__append_12)
+millenniumclubcoind_CPPFLAGS = $(BITCOIN_INCLUDES)
+millenniumclubcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
-# delion-cli binary #
-delion_cli_LDADD = \
+# millenniumclubcoin-cli binary #
+millenniumclubcoin_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
   $(BOOST_LIBS) \
@@ -1963,12 +1963,12 @@ delion_cli_LDADD = \
   $(CRYPTO_LIBS) \
   $(EVENT_LIBS)
 
-delion_cli_SOURCES = delion-cli.cpp $(am__append_13)
-delion_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+millenniumclubcoin_cli_SOURCES = millenniumclubcoin-cli.cpp $(am__append_13)
+millenniumclubcoin_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
 
-# delion-tx binary #
-delion_tx_LDADD = \
+# millenniumclubcoin-tx binary #
+millenniumclubcoin_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -1978,11 +1978,11 @@ delion_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-delion_tx_SOURCES = delion-tx.cpp
-delion_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+millenniumclubcoin_tx_SOURCES = millenniumclubcoin-tx.cpp
+millenniumclubcoin_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-delion_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-delion_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+millenniumclubcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+millenniumclubcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 #include_HEADERS = script/bitcoinconsensus.h
 #libbitcoinconsensus_la_SOURCES =  \
 #	allocators.cpp \
@@ -2010,7 +2010,7 @@ CLEANFILES = leveldb/libleveldb.a leveldb/libmemenv.a *.gcda *.gcno \
 DISTCLEANFILES = obj/build.h
 EXTRA_DIST = leveldb $(am__append_18)
 #TEST_SRCDIR = test
-#TEST_BINARY = test/test_delion$(EXEEXT)
+#TEST_BINARY = test/test_millenniumclubcoin$(EXEEXT)
 #JSON_TEST_FILES = \
 #  test/data/script_valid.json \
 #  test/data/base58_keys_valid.json \
@@ -2054,16 +2054,16 @@ EXTRA_DIST = leveldb $(am__append_18)
 #	test/sighash_tests.cpp \
 #	test/sigopcount_tests.cpp \
 #	test/skiplist_tests.cpp \
-#	test/test_delion.cpp \
+#	test/test_millenniumclubcoin.cpp \
 #	test/timedata_tests.cpp \
 #	test/torcontrol_tests.cpp \
 #	test/transaction_tests.cpp \
 #	test/uint256_tests.cpp \
 #	test/univalue_tests.cpp test/util_tests.cpp \
 #	$(am__append_19)
-#test_test_delion_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
-#test_test_delion_CPPFLAGS = $(BITCOIN_INCLUDES) -I$(builddir)/test/ $(TESTDEFS)
-#test_test_delion_LDADD =  \
+#test_test_millenniumclubcoin_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
+#test_test_millenniumclubcoin_CPPFLAGS = $(BITCOIN_INCLUDES) -I$(builddir)/test/ $(TESTDEFS)
+#test_test_millenniumclubcoin_LDADD =  \
 #	$(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) \
 #	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
 #	$(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) \
@@ -2075,38 +2075,38 @@ EXTRA_DIST = leveldb $(am__append_18)
 #	$(LIBBITCOIN_CONSENSUS) $(BDB_LIBS) \
 #	$(SSL_LIBS) $(CRYPTO_LIBS) \
 #	$(MINIUPNPC_LIBS) $(am__append_21)
-#test_test_delion_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
-#nodist_test_test_delion_SOURCES = $(GENERATED_TEST_FILES)
+#test_test_millenniumclubcoin_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
+#nodist_test_test_millenniumclubcoin_SOURCES = $(GENERATED_TEST_FILES)
 #CLEAN_BITCOIN_TEST = test/*.gcda test/*.gcno $(GENERATED_TEST_FILES)
 
-# delion qt core #
+# millenniumclubcoin qt core #
 QT_TS = \
-  qt/locale/delion_bg.ts \
-  qt/locale/delion_ca.ts \
-  qt/locale/delion_cs.ts \
-  qt/locale/delion_da.ts \
-  qt/locale/delion_de.ts \
-  qt/locale/delion_en.ts \
-  qt/locale/delion_en_US.ts \
-  qt/locale/delion_es.ts \
-  qt/locale/delion_fi.ts \
-  qt/locale/delion_fr_FR.ts \
-  qt/locale/delion_hr.ts \
-  qt/locale/delion_it.ts \
-  qt/locale/delion_ja.ts \
-  qt/locale/delion_ko_KR.ts \
-  qt/locale/delion_nl.ts \
-  qt/locale/delion_pl.ts \
-  qt/locale/delion_pt.ts \
-  qt/locale/delion_pt_BR.ts \
-  qt/locale/delion_ro_RO.ts \
-  qt/locale/delion_ru.ts \
-  qt/locale/delion_sk.ts \
-  qt/locale/delion_sv.ts \
-  qt/locale/delion_tr.ts \
-  qt/locale/delion_uk.ts \
-  qt/locale/delion_zh_CN.ts \
-  qt/locale/delion_zh_TW.ts
+  qt/locale/millenniumclubcoin_bg.ts \
+  qt/locale/millenniumclubcoin_ca.ts \
+  qt/locale/millenniumclubcoin_cs.ts \
+  qt/locale/millenniumclubcoin_da.ts \
+  qt/locale/millenniumclubcoin_de.ts \
+  qt/locale/millenniumclubcoin_en.ts \
+  qt/locale/millenniumclubcoin_en_US.ts \
+  qt/locale/millenniumclubcoin_es.ts \
+  qt/locale/millenniumclubcoin_fi.ts \
+  qt/locale/millenniumclubcoin_fr_FR.ts \
+  qt/locale/millenniumclubcoin_hr.ts \
+  qt/locale/millenniumclubcoin_it.ts \
+  qt/locale/millenniumclubcoin_ja.ts \
+  qt/locale/millenniumclubcoin_ko_KR.ts \
+  qt/locale/millenniumclubcoin_nl.ts \
+  qt/locale/millenniumclubcoin_pl.ts \
+  qt/locale/millenniumclubcoin_pt.ts \
+  qt/locale/millenniumclubcoin_pt_BR.ts \
+  qt/locale/millenniumclubcoin_ro_RO.ts \
+  qt/locale/millenniumclubcoin_ru.ts \
+  qt/locale/millenniumclubcoin_sk.ts \
+  qt/locale/millenniumclubcoin_sv.ts \
+  qt/locale/millenniumclubcoin_tr.ts \
+  qt/locale/millenniumclubcoin_uk.ts \
+  qt/locale/millenniumclubcoin_zh_CN.ts \
+  qt/locale/millenniumclubcoin_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -2132,7 +2132,7 @@ QT_FORMS_UI = \
   qt/forms/sendcoinsentry.ui \
   qt/forms/signverifymessagedialog.ui \
   qt/forms/transactiondescdialog.ui \
-  qt/forms/zdelioncontroldialog.ui
+  qt/forms/zmillenniumclubcoincontroldialog.ui
 
 QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
@@ -2185,23 +2185,23 @@ QT_MOC_CPP = \
   qt/moc_walletframe.cpp \
   qt/moc_walletmodel.cpp \
   qt/moc_walletview.cpp \
-  qt/moc_zdelioncontroldialog.cpp
+  qt/moc_zmillenniumclubcoincontroldialog.cpp
 
 BITCOIN_MM = \
   qt/macdockiconhandler.mm \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/delion.moc \
+  qt/millenniumclubcoin.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_delion.cpp
-QT_QRC = qt/delion.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_delion_locale.cpp
-QT_QRC_LOCALE = qt/delion_locale.qrc
+QT_QRC_CPP = qt/qrc_millenniumclubcoin.cpp
+QT_QRC = qt/millenniumclubcoin.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_millenniumclubcoin_locale.cpp
+QT_QRC_LOCALE = qt/millenniumclubcoin_locale.qrc
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
 PROTOBUF_PROTO = qt/paymentrequest.proto
@@ -2263,7 +2263,7 @@ BITCOIN_QT_H = \
   qt/walletmodeltransaction.h \
   qt/walletview.h \
   qt/winshutdownmonitor.h \
-  qt/zdelioncontroldialog.h
+  qt/zmillenniumclubcoincontroldialog.h
 
 RES_ICONS = \
   qt/res/icons/add.png \
@@ -2318,12 +2318,12 @@ RES_ICONS = \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
   qt/res/icons/tx_mn.png \
-  qt/res/icons/unit_delion.png \
-  qt/res/icons/unit_mdelion.png \
-  qt/res/icons/unit_udelion.png \
-  qt/res/icons/unit_tdelion.png \
-  qt/res/icons/unit_tmdelion.png \
-  qt/res/icons/unit_tudelion.png
+  qt/res/icons/unit_millenniumclubcoin.png \
+  qt/res/icons/unit_mmillenniumclubcoin.png \
+  qt/res/icons/unit_umillenniumclubcoin.png \
+  qt/res/icons/unit_tmillenniumclubcoin.png \
+  qt/res/icons/unit_tmmillenniumclubcoin.png \
+  qt/res/icons/unit_tumillenniumclubcoin.png
 
 BITCOIN_QT_CPP = qt/bitcoinaddressvalidator.cpp \
 	qt/bitcoinamountfield.cpp qt/bitcoingui.cpp \
@@ -2342,7 +2342,7 @@ RES_IMAGES = \
   qt/res/images/about.png \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
-  qt/res/images/delion_logo_horizontal.png \
+  qt/res/images/millenniumclubcoin_logo_horizontal.png \
   qt/res/images/downArrow.png \
   qt/res/images/downArrow_small.png \
   qt/res/images/upArrow_small.png \
@@ -2357,7 +2357,7 @@ RES_CSS = \
   qt/res/css/default.css
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
-BITCOIN_RC = qt/res/delion-qt-res.rc
+BITCOIN_RC = qt/res/millenniumclubcoin-qt-res.rc
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
 
@@ -2374,13 +2374,13 @@ nodist_qt_libbitcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
 # forms/foo.h -> forms/ui_foo.h
 QT_FORMS_H = $(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:.ui=.h))))
 
-# delion-qt binary #
-qt_delion_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# millenniumclubcoin-qt binary #
+qt_millenniumclubcoin_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_delion_qt_SOURCES = qt/delion.cpp \
+qt_millenniumclubcoin_qt_SOURCES = qt/millenniumclubcoin.cpp \
 	$(am__append_26) $(am__append_27)
-qt_delion_qt_LDADD = qt/libbitcoinqt.a \
+qt_millenniumclubcoin_qt_LDADD = qt/libbitcoinqt.a \
 	$(LIBBITCOIN_SERVER) $(am__append_28) \
 	$(am__append_29) $(LIBBITCOIN_CLI) \
 	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
@@ -2391,8 +2391,8 @@ qt_delion_qt_LDADD = qt/libbitcoinqt.a \
 	$(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) \
 	$(MINIUPNPC_LIBS) $(LIBSECP256K1) \
 	$(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-qt_delion_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_delion_qt_LIBTOOLFLAGS = --tag CXX
+qt_millenniumclubcoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_millenniumclubcoin_qt_LIBTOOLFLAGS = --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM = $(QT_TS:.ts=.qm)
@@ -2404,15 +2404,15 @@ CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda 
 #  qt/test/paymentrequestdata.h \
 #  qt/test/paymentservertests.h
 
-#qt_test_test_delion_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+#qt_test_test_millenniumclubcoin_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
 #  $(QT_INCLUDES) $(QT_TEST_INCLUDES) $(PROTOBUF_CFLAGS)
 
-#qt_test_test_delion_qt_SOURCES =  \
+#qt_test_test_millenniumclubcoin_qt_SOURCES =  \
 #	qt/test/test_main.cpp \
 #	qt/test/uritests.cpp $(TEST_QT_H) \
 #	$(am__append_34)
-#nodist_qt_test_test_delion_qt_SOURCES = $(TEST_QT_MOC_CPP)
-#qt_test_test_delion_qt_LDADD =  \
+#nodist_qt_test_test_millenniumclubcoin_qt_SOURCES = $(TEST_QT_MOC_CPP)
+#qt_test_test_millenniumclubcoin_qt_LDADD =  \
 #	$(LIBBITCOINQT) $(LIBBITCOIN_SERVER) \
 #	$(am__append_35) $(am__append_36) \
 #	$(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) \
@@ -2425,7 +2425,7 @@ CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda 
 #	$(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) \
 #	$(MINIUPNPC_LIBS) $(LIBSECP256K1) \
 #	$(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-#qt_test_test_delion_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+#qt_test_test_millenniumclubcoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 #CLEAN_BITCOIN_QT_TEST = $(TEST_QT_MOC_CPP) qt/test/*.gcda qt/test/*.gcno
 all: all-recursive
 
@@ -2767,7 +2767,7 @@ qt/qt_libbitcoinqt_a-walletmodeltransaction.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-walletview.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_libbitcoinqt_a-zdelioncontroldialog.$(OBJEXT):  \
+qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-moc_addressbookpage.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
@@ -2869,13 +2869,13 @@ qt/qt_libbitcoinqt_a-moc_walletmodel.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-moc_walletview.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_libbitcoinqt_a-moc_zdelioncontroldialog.$(OBJEXT):  \
+qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-paymentrequest.pb.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_libbitcoinqt_a-qrc_delion.$(OBJEXT): qt/$(am__dirstamp) \
+qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_libbitcoinqt_a-qrc_delion_locale.$(OBJEXT):  \
+qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
 
 qt/libbitcoinqt.a: $(qt_libbitcoinqt_a_OBJECTS) $(qt_libbitcoinqt_a_DEPENDENCIES) $(EXTRA_qt_libbitcoinqt_a_DEPENDENCIES) qt/$(am__dirstamp)
@@ -3017,25 +3017,25 @@ qt/test/$(am__dirstamp):
 qt/test/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) qt/test/$(DEPDIR)
 	@: > qt/test/$(DEPDIR)/$(am__dirstamp)
-qt/test/qt_test_test_delion_qt-test_main.$(OBJEXT):  \
+qt/test/qt_test_test_millenniumclubcoin_qt-test_main.$(OBJEXT):  \
 	qt/test/$(am__dirstamp) qt/test/$(DEPDIR)/$(am__dirstamp)
-qt/test/qt_test_test_delion_qt-uritests.$(OBJEXT):  \
+qt/test/qt_test_test_millenniumclubcoin_qt-uritests.$(OBJEXT):  \
 	qt/test/$(am__dirstamp) qt/test/$(DEPDIR)/$(am__dirstamp)
-qt/test/qt_test_test_delion_qt-paymentservertests.$(OBJEXT):  \
+qt/test/qt_test_test_millenniumclubcoin_qt-paymentservertests.$(OBJEXT):  \
 	qt/test/$(am__dirstamp) qt/test/$(DEPDIR)/$(am__dirstamp)
-qt/test/qt_test_test_delion_qt-moc_uritests.$(OBJEXT):  \
+qt/test/qt_test_test_millenniumclubcoin_qt-moc_uritests.$(OBJEXT):  \
 	qt/test/$(am__dirstamp) qt/test/$(DEPDIR)/$(am__dirstamp)
-qt/test/qt_test_test_delion_qt-moc_paymentservertests.$(OBJEXT):  \
+qt/test/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.$(OBJEXT):  \
 	qt/test/$(am__dirstamp) qt/test/$(DEPDIR)/$(am__dirstamp)
 
-qt/test/test_delion-qt$(EXEEXT): $(qt_test_test_delion_qt_OBJECTS) $(qt_test_test_delion_qt_DEPENDENCIES) $(EXTRA_qt_test_test_delion_qt_DEPENDENCIES) qt/test/$(am__dirstamp)
-	@rm -f qt/test/test_delion-qt$(EXEEXT)
-	$(AM_V_CXXLD)$(qt_test_test_delion_qt_LINK) $(qt_test_test_delion_qt_OBJECTS) $(qt_test_test_delion_qt_LDADD) $(LIBS)
-qt/qt_delion_qt-delion.$(OBJEXT): qt/$(am__dirstamp) \
+qt/test/test_millenniumclubcoin-qt$(EXEEXT): $(qt_test_test_millenniumclubcoin_qt_OBJECTS) $(qt_test_test_millenniumclubcoin_qt_DEPENDENCIES) $(EXTRA_qt_test_test_millenniumclubcoin_qt_DEPENDENCIES) qt/test/$(am__dirstamp)
+	@rm -f qt/test/test_millenniumclubcoin-qt$(EXEEXT)
+	$(AM_V_CXXLD)$(qt_test_test_millenniumclubcoin_qt_LINK) $(qt_test_test_millenniumclubcoin_qt_OBJECTS) $(qt_test_test_millenniumclubcoin_qt_LDADD) $(LIBS)
+qt/qt_millenniumclubcoin_qt-millenniumclubcoin.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_delion_qt-macdockiconhandler.$(OBJEXT):  \
+qt/qt_millenniumclubcoin_qt-macdockiconhandler.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_delion_qt-macnotificationhandler.$(OBJEXT):  \
+qt/qt_millenniumclubcoin_qt-macnotificationhandler.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
 qt/res/$(am__dirstamp):
 	@$(MKDIR_P) qt/res
@@ -3043,122 +3043,122 @@ qt/res/$(am__dirstamp):
 qt/res/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) qt/res/$(DEPDIR)
 	@: > qt/res/$(DEPDIR)/$(am__dirstamp)
-qt/res/delion-qt-res.$(OBJEXT): qt/res/$(am__dirstamp) \
+qt/res/millenniumclubcoin-qt-res.$(OBJEXT): qt/res/$(am__dirstamp) \
 	qt/res/$(DEPDIR)/$(am__dirstamp)
 
-qt/delion-qt$(EXEEXT): $(qt_delion_qt_OBJECTS) $(qt_delion_qt_DEPENDENCIES) $(EXTRA_qt_delion_qt_DEPENDENCIES) qt/$(am__dirstamp)
-	@rm -f qt/delion-qt$(EXEEXT)
-	$(AM_V_OBJCXXLD)$(qt_delion_qt_LINK) $(qt_delion_qt_OBJECTS) $(qt_delion_qt_LDADD) $(LIBS)
+qt/millenniumclubcoin-qt$(EXEEXT): $(qt_millenniumclubcoin_qt_OBJECTS) $(qt_millenniumclubcoin_qt_DEPENDENCIES) $(EXTRA_qt_millenniumclubcoin_qt_DEPENDENCIES) qt/$(am__dirstamp)
+	@rm -f qt/millenniumclubcoin-qt$(EXEEXT)
+	$(AM_V_OBJCXXLD)$(qt_millenniumclubcoin_qt_LINK) $(qt_millenniumclubcoin_qt_OBJECTS) $(qt_millenniumclubcoin_qt_LDADD) $(LIBS)
 test/$(am__dirstamp):
 	@$(MKDIR_P) test
 	@: > test/$(am__dirstamp)
 test/$(DEPDIR)/$(am__dirstamp):
 	@$(MKDIR_P) test/$(DEPDIR)
 	@: > test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-zerocoin_implementation_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-zerocoin_implementation_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-zerocoin_denomination_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-zerocoin_denomination_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-zerocoin_transactions_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-zerocoin_transactions_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-benchmark_zerocoin.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-benchmark_zerocoin.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-tutorial_zerocoin.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-tutorial_zerocoin.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-libzerocoin_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-libzerocoin_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-allocator_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-allocator_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-base32_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-base32_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-base58_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-base58_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-base64_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-base64_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-checkblock_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-checkblock_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-Checkpoints_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-Checkpoints_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-coins_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-coins_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-compress_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-compress_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-crypto_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-crypto_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-DoS_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-DoS_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-getarg_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-getarg_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-hash_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-hash_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-key_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-key_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-main_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-main_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-mempool_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-mempool_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-mruset_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-mruset_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-multisig_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-multisig_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-netbase_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-netbase_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-pmt_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-pmt_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-rpc_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-rpc_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-sanity_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-sanity_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-script_P2SH_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-script_P2SH_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-script_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-script_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-scriptnum_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-scriptnum_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-serialize_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-serialize_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-sighash_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-sighash_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-sigopcount_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-sigopcount_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-skiplist_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-skiplist_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-test_delion.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-test_millenniumclubcoin.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-timedata_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-timedata_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-torcontrol_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-torcontrol_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-transaction_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-transaction_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-uint256_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-uint256_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-univalue_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-univalue_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-util_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-util_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-accounting_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-accounting_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-wallet_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-wallet_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
-test/test_test_delion-rpc_wallet_tests.$(OBJEXT):  \
+test/test_test_millenniumclubcoin-rpc_wallet_tests.$(OBJEXT):  \
 	test/$(am__dirstamp) test/$(DEPDIR)/$(am__dirstamp)
 
-test/test_delion$(EXEEXT): $(test_test_delion_OBJECTS) $(test_test_delion_DEPENDENCIES) $(EXTRA_test_test_delion_DEPENDENCIES) test/$(am__dirstamp)
-	@rm -f test/test_delion$(EXEEXT)
-	$(AM_V_CXXLD)$(test_test_delion_LINK) $(test_test_delion_OBJECTS) $(test_test_delion_LDADD) $(LIBS)
+test/test_millenniumclubcoin$(EXEEXT): $(test_test_millenniumclubcoin_OBJECTS) $(test_test_millenniumclubcoin_DEPENDENCIES) $(EXTRA_test_test_millenniumclubcoin_DEPENDENCIES) test/$(am__dirstamp)
+	@rm -f test/test_millenniumclubcoin$(EXEEXT)
+	$(AM_V_CXXLD)$(test_test_millenniumclubcoin_LINK) $(test_test_millenniumclubcoin_OBJECTS) $(test_test_millenniumclubcoin_LDADD) $(LIBS)
 
-delion-cli$(EXEEXT): $(delion_cli_OBJECTS) $(delion_cli_DEPENDENCIES) $(EXTRA_delion_cli_DEPENDENCIES) 
-	@rm -f delion-cli$(EXEEXT)
-	$(AM_V_CXXLD)$(delion_cli_LINK) $(delion_cli_OBJECTS) $(delion_cli_LDADD) $(LIBS)
+millenniumclubcoin-cli$(EXEEXT): $(millenniumclubcoin_cli_OBJECTS) $(millenniumclubcoin_cli_DEPENDENCIES) $(EXTRA_millenniumclubcoin_cli_DEPENDENCIES) 
+	@rm -f millenniumclubcoin-cli$(EXEEXT)
+	$(AM_V_CXXLD)$(millenniumclubcoin_cli_LINK) $(millenniumclubcoin_cli_OBJECTS) $(millenniumclubcoin_cli_LDADD) $(LIBS)
 
-delion-tx$(EXEEXT): $(delion_tx_OBJECTS) $(delion_tx_DEPENDENCIES) $(EXTRA_delion_tx_DEPENDENCIES) 
-	@rm -f delion-tx$(EXEEXT)
-	$(AM_V_CXXLD)$(delion_tx_LINK) $(delion_tx_OBJECTS) $(delion_tx_LDADD) $(LIBS)
+millenniumclubcoin-tx$(EXEEXT): $(millenniumclubcoin_tx_OBJECTS) $(millenniumclubcoin_tx_DEPENDENCIES) $(EXTRA_millenniumclubcoin_tx_DEPENDENCIES) 
+	@rm -f millenniumclubcoin-tx$(EXEEXT)
+	$(AM_V_CXXLD)$(millenniumclubcoin_tx_LINK) $(millenniumclubcoin_tx_OBJECTS) $(millenniumclubcoin_tx_LDADD) $(LIBS)
 
-deliond$(EXEEXT): $(deliond_OBJECTS) $(deliond_DEPENDENCIES) $(EXTRA_deliond_DEPENDENCIES) 
-	@rm -f deliond$(EXEEXT)
-	$(AM_V_CXXLD)$(deliond_LINK) $(deliond_OBJECTS) $(deliond_LDADD) $(LIBS)
+millenniumclubcoind$(EXEEXT): $(millenniumclubcoind_OBJECTS) $(millenniumclubcoind_DEPENDENCIES) $(EXTRA_millenniumclubcoind_DEPENDENCIES) 
+	@rm -f millenniumclubcoind$(EXEEXT)
+	$(AM_V_CXXLD)$(millenniumclubcoind_LINK) $(millenniumclubcoind_OBJECTS) $(millenniumclubcoind_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -3269,9 +3269,9 @@ include ./$(DEPDIR)/libbitcoinconsensus_la-hash.Plo
 include ./$(DEPDIR)/libbitcoinconsensus_la-pubkey.Plo
 include ./$(DEPDIR)/libbitcoinconsensus_la-uint256.Plo
 include ./$(DEPDIR)/libbitcoinconsensus_la-utilstrencodings.Plo
-include ./$(DEPDIR)/delion_cli-delion-cli.Po
-include ./$(DEPDIR)/delion_tx-delion-tx.Po
-include ./$(DEPDIR)/deliond-deliond.Po
+include ./$(DEPDIR)/millenniumclubcoin_cli-millenniumclubcoin-cli.Po
+include ./$(DEPDIR)/millenniumclubcoin_tx-millenniumclubcoin-tx.Po
+include ./$(DEPDIR)/millenniumclubcoind-millenniumclubcoind.Po
 include compat/$(DEPDIR)/libbitcoin_util_a-glibc_compat.Po
 include compat/$(DEPDIR)/libbitcoin_util_a-glibc_sanity.Po
 include compat/$(DEPDIR)/libbitcoin_util_a-glibcxx_compat.Po
@@ -3394,7 +3394,7 @@ include qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_utilitydialog.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_walletframe.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_walletmodel.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_walletview.Po
-include qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zdelioncontroldialog.Po
+include qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-multisenddialog.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-multisigdialog.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-networkstyle.Po
@@ -3410,8 +3410,8 @@ include qt/$(DEPDIR)/qt_libbitcoinqt_a-paymentserver.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-peertablemodel.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-platformstyle.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-privacydialog.Po
-include qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_delion.Po
-include qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_delion_locale.Po
+include qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_millenniumclubcoin.Po
+include qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-qvalidatedlineedit.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-qvaluecombobox.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-receivecoinsdialog.Po
@@ -3435,15 +3435,15 @@ include qt/$(DEPDIR)/qt_libbitcoinqt_a-walletmodel.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-walletmodeltransaction.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-walletview.Po
 include qt/$(DEPDIR)/qt_libbitcoinqt_a-winshutdownmonitor.Po
-include qt/$(DEPDIR)/qt_libbitcoinqt_a-zdelioncontroldialog.Po
-include qt/$(DEPDIR)/qt_delion_qt-macdockiconhandler.Po
-include qt/$(DEPDIR)/qt_delion_qt-macnotificationhandler.Po
-include qt/$(DEPDIR)/qt_delion_qt-delion.Po
-include qt/test/$(DEPDIR)/qt_test_test_delion_qt-moc_paymentservertests.Po
-include qt/test/$(DEPDIR)/qt_test_test_delion_qt-moc_uritests.Po
-include qt/test/$(DEPDIR)/qt_test_test_delion_qt-paymentservertests.Po
-include qt/test/$(DEPDIR)/qt_test_test_delion_qt-test_main.Po
-include qt/test/$(DEPDIR)/qt_test_test_delion_qt-uritests.Po
+include qt/$(DEPDIR)/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.Po
+include qt/$(DEPDIR)/qt_millenniumclubcoin_qt-macdockiconhandler.Po
+include qt/$(DEPDIR)/qt_millenniumclubcoin_qt-macnotificationhandler.Po
+include qt/$(DEPDIR)/qt_millenniumclubcoin_qt-millenniumclubcoin.Po
+include qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.Po
+include qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-moc_uritests.Po
+include qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-paymentservertests.Po
+include qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-test_main.Po
+include qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-uritests.Po
 include script/$(DEPDIR)/libbitcoin_common_a-interpreter.Po
 include script/$(DEPDIR)/libbitcoin_common_a-script.Po
 include script/$(DEPDIR)/libbitcoin_common_a-script_error.Po
@@ -3453,50 +3453,50 @@ include script/$(DEPDIR)/libbitcoin_server_a-sigcache.Po
 include script/$(DEPDIR)/libbitcoinconsensus_la-bitcoinconsensus.Plo
 include script/$(DEPDIR)/libbitcoinconsensus_la-interpreter.Plo
 include script/$(DEPDIR)/libbitcoinconsensus_la-script.Plo
-include test/$(DEPDIR)/test_test_delion-Checkpoints_tests.Po
-include test/$(DEPDIR)/test_test_delion-DoS_tests.Po
-include test/$(DEPDIR)/test_test_delion-accounting_tests.Po
-include test/$(DEPDIR)/test_test_delion-allocator_tests.Po
-include test/$(DEPDIR)/test_test_delion-base32_tests.Po
-include test/$(DEPDIR)/test_test_delion-base58_tests.Po
-include test/$(DEPDIR)/test_test_delion-base64_tests.Po
-include test/$(DEPDIR)/test_test_delion-benchmark_zerocoin.Po
-include test/$(DEPDIR)/test_test_delion-checkblock_tests.Po
-include test/$(DEPDIR)/test_test_delion-coins_tests.Po
-include test/$(DEPDIR)/test_test_delion-compress_tests.Po
-include test/$(DEPDIR)/test_test_delion-crypto_tests.Po
-include test/$(DEPDIR)/test_test_delion-getarg_tests.Po
-include test/$(DEPDIR)/test_test_delion-hash_tests.Po
-include test/$(DEPDIR)/test_test_delion-key_tests.Po
-include test/$(DEPDIR)/test_test_delion-libzerocoin_tests.Po
-include test/$(DEPDIR)/test_test_delion-main_tests.Po
-include test/$(DEPDIR)/test_test_delion-mempool_tests.Po
-include test/$(DEPDIR)/test_test_delion-mruset_tests.Po
-include test/$(DEPDIR)/test_test_delion-multisig_tests.Po
-include test/$(DEPDIR)/test_test_delion-netbase_tests.Po
-include test/$(DEPDIR)/test_test_delion-pmt_tests.Po
-include test/$(DEPDIR)/test_test_delion-rpc_tests.Po
-include test/$(DEPDIR)/test_test_delion-rpc_wallet_tests.Po
-include test/$(DEPDIR)/test_test_delion-sanity_tests.Po
-include test/$(DEPDIR)/test_test_delion-script_P2SH_tests.Po
-include test/$(DEPDIR)/test_test_delion-script_tests.Po
-include test/$(DEPDIR)/test_test_delion-scriptnum_tests.Po
-include test/$(DEPDIR)/test_test_delion-serialize_tests.Po
-include test/$(DEPDIR)/test_test_delion-sighash_tests.Po
-include test/$(DEPDIR)/test_test_delion-sigopcount_tests.Po
-include test/$(DEPDIR)/test_test_delion-skiplist_tests.Po
-include test/$(DEPDIR)/test_test_delion-test_delion.Po
-include test/$(DEPDIR)/test_test_delion-timedata_tests.Po
-include test/$(DEPDIR)/test_test_delion-torcontrol_tests.Po
-include test/$(DEPDIR)/test_test_delion-transaction_tests.Po
-include test/$(DEPDIR)/test_test_delion-tutorial_zerocoin.Po
-include test/$(DEPDIR)/test_test_delion-uint256_tests.Po
-include test/$(DEPDIR)/test_test_delion-univalue_tests.Po
-include test/$(DEPDIR)/test_test_delion-util_tests.Po
-include test/$(DEPDIR)/test_test_delion-wallet_tests.Po
-include test/$(DEPDIR)/test_test_delion-zerocoin_denomination_tests.Po
-include test/$(DEPDIR)/test_test_delion-zerocoin_implementation_tests.Po
-include test/$(DEPDIR)/test_test_delion-zerocoin_transactions_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-Checkpoints_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-DoS_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-accounting_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-allocator_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-base32_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-base58_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-base64_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-benchmark_zerocoin.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-checkblock_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-coins_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-compress_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-crypto_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-getarg_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-hash_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-key_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-libzerocoin_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-main_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-mempool_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-mruset_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-multisig_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-netbase_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-pmt_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-rpc_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-rpc_wallet_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-sanity_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-script_P2SH_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-script_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-scriptnum_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-serialize_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-sighash_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-sigopcount_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-skiplist_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-test_millenniumclubcoin.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-timedata_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-torcontrol_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-transaction_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-tutorial_zerocoin.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-uint256_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-univalue_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-util_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-wallet_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_denomination_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_implementation_tests.Po
+include test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_transactions_tests.Po
 include univalue/$(DEPDIR)/univalue.Po
 include univalue/$(DEPDIR)/univalue_read.Po
 include univalue/$(DEPDIR)/univalue_write.Po
@@ -6086,19 +6086,19 @@ qt/qt_libbitcoinqt_a-walletview.obj: qt/walletview.cpp
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-walletview.obj `if test -f 'qt/walletview.cpp'; then $(CYGPATH_W) 'qt/walletview.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/walletview.cpp'; fi`
 
-qt/qt_libbitcoinqt_a-zdelioncontroldialog.o: qt/zdelioncontroldialog.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-zdelioncontroldialog.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-zdelioncontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-zdelioncontroldialog.o `test -f 'qt/zdelioncontroldialog.cpp' || echo '$(srcdir)/'`qt/zdelioncontroldialog.cpp
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-zdelioncontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-zdelioncontroldialog.Po
-#	$(AM_V_CXX)source='qt/zdelioncontroldialog.cpp' object='qt/qt_libbitcoinqt_a-zdelioncontroldialog.o' libtool=no \
+qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.o: qt/zmillenniumclubcoincontroldialog.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.o `test -f 'qt/zmillenniumclubcoincontroldialog.cpp' || echo '$(srcdir)/'`qt/zmillenniumclubcoincontroldialog.cpp
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.Po
+#	$(AM_V_CXX)source='qt/zmillenniumclubcoincontroldialog.cpp' object='qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-zdelioncontroldialog.o `test -f 'qt/zdelioncontroldialog.cpp' || echo '$(srcdir)/'`qt/zdelioncontroldialog.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.o `test -f 'qt/zmillenniumclubcoincontroldialog.cpp' || echo '$(srcdir)/'`qt/zmillenniumclubcoincontroldialog.cpp
 
-qt/qt_libbitcoinqt_a-zdelioncontroldialog.obj: qt/zdelioncontroldialog.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-zdelioncontroldialog.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-zdelioncontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-zdelioncontroldialog.obj `if test -f 'qt/zdelioncontroldialog.cpp'; then $(CYGPATH_W) 'qt/zdelioncontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/zdelioncontroldialog.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-zdelioncontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-zdelioncontroldialog.Po
-#	$(AM_V_CXX)source='qt/zdelioncontroldialog.cpp' object='qt/qt_libbitcoinqt_a-zdelioncontroldialog.obj' libtool=no \
+qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.obj: qt/zmillenniumclubcoincontroldialog.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.obj `if test -f 'qt/zmillenniumclubcoincontroldialog.cpp'; then $(CYGPATH_W) 'qt/zmillenniumclubcoincontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/zmillenniumclubcoincontroldialog.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.Po
+#	$(AM_V_CXX)source='qt/zmillenniumclubcoincontroldialog.cpp' object='qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-zdelioncontroldialog.obj `if test -f 'qt/zdelioncontroldialog.cpp'; then $(CYGPATH_W) 'qt/zdelioncontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/zdelioncontroldialog.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.obj `if test -f 'qt/zmillenniumclubcoincontroldialog.cpp'; then $(CYGPATH_W) 'qt/zmillenniumclubcoincontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/zmillenniumclubcoincontroldialog.cpp'; fi`
 
 qt/qt_libbitcoinqt_a-moc_addressbookpage.o: qt/moc_addressbookpage.cpp
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_addressbookpage.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_addressbookpage.Tpo -c -o qt/qt_libbitcoinqt_a-moc_addressbookpage.o `test -f 'qt/moc_addressbookpage.cpp' || echo '$(srcdir)/'`qt/moc_addressbookpage.cpp
@@ -6800,19 +6800,19 @@ qt/qt_libbitcoinqt_a-moc_walletview.obj: qt/moc_walletview.cpp
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_walletview.obj `if test -f 'qt/moc_walletview.cpp'; then $(CYGPATH_W) 'qt/moc_walletview.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_walletview.cpp'; fi`
 
-qt/qt_libbitcoinqt_a-moc_zdelioncontroldialog.o: qt/moc_zdelioncontroldialog.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_zdelioncontroldialog.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zdelioncontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-moc_zdelioncontroldialog.o `test -f 'qt/moc_zdelioncontroldialog.cpp' || echo '$(srcdir)/'`qt/moc_zdelioncontroldialog.cpp
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zdelioncontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zdelioncontroldialog.Po
-#	$(AM_V_CXX)source='qt/moc_zdelioncontroldialog.cpp' object='qt/qt_libbitcoinqt_a-moc_zdelioncontroldialog.o' libtool=no \
+qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.o: qt/moc_zmillenniumclubcoincontroldialog.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.o `test -f 'qt/moc_zmillenniumclubcoincontroldialog.cpp' || echo '$(srcdir)/'`qt/moc_zmillenniumclubcoincontroldialog.cpp
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.Po
+#	$(AM_V_CXX)source='qt/moc_zmillenniumclubcoincontroldialog.cpp' object='qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_zdelioncontroldialog.o `test -f 'qt/moc_zdelioncontroldialog.cpp' || echo '$(srcdir)/'`qt/moc_zdelioncontroldialog.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.o `test -f 'qt/moc_zmillenniumclubcoincontroldialog.cpp' || echo '$(srcdir)/'`qt/moc_zmillenniumclubcoincontroldialog.cpp
 
-qt/qt_libbitcoinqt_a-moc_zdelioncontroldialog.obj: qt/moc_zdelioncontroldialog.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_zdelioncontroldialog.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zdelioncontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-moc_zdelioncontroldialog.obj `if test -f 'qt/moc_zdelioncontroldialog.cpp'; then $(CYGPATH_W) 'qt/moc_zdelioncontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_zdelioncontroldialog.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zdelioncontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zdelioncontroldialog.Po
-#	$(AM_V_CXX)source='qt/moc_zdelioncontroldialog.cpp' object='qt/qt_libbitcoinqt_a-moc_zdelioncontroldialog.obj' libtool=no \
+qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.obj: qt/moc_zmillenniumclubcoincontroldialog.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.obj `if test -f 'qt/moc_zmillenniumclubcoincontroldialog.cpp'; then $(CYGPATH_W) 'qt/moc_zmillenniumclubcoincontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_zmillenniumclubcoincontroldialog.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.Po
+#	$(AM_V_CXX)source='qt/moc_zmillenniumclubcoincontroldialog.cpp' object='qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_zdelioncontroldialog.obj `if test -f 'qt/moc_zdelioncontroldialog.cpp'; then $(CYGPATH_W) 'qt/moc_zdelioncontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_zdelioncontroldialog.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.obj `if test -f 'qt/moc_zmillenniumclubcoincontroldialog.cpp'; then $(CYGPATH_W) 'qt/moc_zmillenniumclubcoincontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_zmillenniumclubcoincontroldialog.cpp'; fi`
 
 qt/qt_libbitcoinqt_a-paymentrequest.pb.o: qt/paymentrequest.pb.cc
 	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-paymentrequest.pb.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-paymentrequest.pb.Tpo -c -o qt/qt_libbitcoinqt_a-paymentrequest.pb.o `test -f 'qt/paymentrequest.pb.cc' || echo '$(srcdir)/'`qt/paymentrequest.pb.cc
@@ -6828,33 +6828,33 @@ qt/qt_libbitcoinqt_a-paymentrequest.pb.obj: qt/paymentrequest.pb.cc
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-paymentrequest.pb.obj `if test -f 'qt/paymentrequest.pb.cc'; then $(CYGPATH_W) 'qt/paymentrequest.pb.cc'; else $(CYGPATH_W) '$(srcdir)/qt/paymentrequest.pb.cc'; fi`
 
-qt/qt_libbitcoinqt_a-qrc_delion.o: qt/qrc_delion.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_delion.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_delion.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_delion.o `test -f 'qt/qrc_delion.cpp' || echo '$(srcdir)/'`qt/qrc_delion.cpp
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_delion.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_delion.Po
-#	$(AM_V_CXX)source='qt/qrc_delion.cpp' object='qt/qt_libbitcoinqt_a-qrc_delion.o' libtool=no \
+qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin.o: qt/qrc_millenniumclubcoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_millenniumclubcoin.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin.o `test -f 'qt/qrc_millenniumclubcoin.cpp' || echo '$(srcdir)/'`qt/qrc_millenniumclubcoin.cpp
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_millenniumclubcoin.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_millenniumclubcoin.Po
+#	$(AM_V_CXX)source='qt/qrc_millenniumclubcoin.cpp' object='qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_delion.o `test -f 'qt/qrc_delion.cpp' || echo '$(srcdir)/'`qt/qrc_delion.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin.o `test -f 'qt/qrc_millenniumclubcoin.cpp' || echo '$(srcdir)/'`qt/qrc_millenniumclubcoin.cpp
 
-qt/qt_libbitcoinqt_a-qrc_delion.obj: qt/qrc_delion.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_delion.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_delion.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_delion.obj `if test -f 'qt/qrc_delion.cpp'; then $(CYGPATH_W) 'qt/qrc_delion.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_delion.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_delion.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_delion.Po
-#	$(AM_V_CXX)source='qt/qrc_delion.cpp' object='qt/qt_libbitcoinqt_a-qrc_delion.obj' libtool=no \
+qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin.obj: qt/qrc_millenniumclubcoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_millenniumclubcoin.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin.obj `if test -f 'qt/qrc_millenniumclubcoin.cpp'; then $(CYGPATH_W) 'qt/qrc_millenniumclubcoin.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_millenniumclubcoin.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_millenniumclubcoin.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_millenniumclubcoin.Po
+#	$(AM_V_CXX)source='qt/qrc_millenniumclubcoin.cpp' object='qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_delion.obj `if test -f 'qt/qrc_delion.cpp'; then $(CYGPATH_W) 'qt/qrc_delion.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_delion.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin.obj `if test -f 'qt/qrc_millenniumclubcoin.cpp'; then $(CYGPATH_W) 'qt/qrc_millenniumclubcoin.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_millenniumclubcoin.cpp'; fi`
 
-qt/qt_libbitcoinqt_a-qrc_delion_locale.o: qt/qrc_delion_locale.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_delion_locale.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_delion_locale.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_delion_locale.o `test -f 'qt/qrc_delion_locale.cpp' || echo '$(srcdir)/'`qt/qrc_delion_locale.cpp
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_delion_locale.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_delion_locale.Po
-#	$(AM_V_CXX)source='qt/qrc_delion_locale.cpp' object='qt/qt_libbitcoinqt_a-qrc_delion_locale.o' libtool=no \
+qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.o: qt/qrc_millenniumclubcoin_locale.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.o `test -f 'qt/qrc_millenniumclubcoin_locale.cpp' || echo '$(srcdir)/'`qt/qrc_millenniumclubcoin_locale.cpp
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.Po
+#	$(AM_V_CXX)source='qt/qrc_millenniumclubcoin_locale.cpp' object='qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_delion_locale.o `test -f 'qt/qrc_delion_locale.cpp' || echo '$(srcdir)/'`qt/qrc_delion_locale.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.o `test -f 'qt/qrc_millenniumclubcoin_locale.cpp' || echo '$(srcdir)/'`qt/qrc_millenniumclubcoin_locale.cpp
 
-qt/qt_libbitcoinqt_a-qrc_delion_locale.obj: qt/qrc_delion_locale.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_delion_locale.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_delion_locale.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_delion_locale.obj `if test -f 'qt/qrc_delion_locale.cpp'; then $(CYGPATH_W) 'qt/qrc_delion_locale.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_delion_locale.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_delion_locale.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_delion_locale.Po
-#	$(AM_V_CXX)source='qt/qrc_delion_locale.cpp' object='qt/qt_libbitcoinqt_a-qrc_delion_locale.obj' libtool=no \
+qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.obj: qt/qrc_millenniumclubcoin_locale.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.Tpo -c -o qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.obj `if test -f 'qt/qrc_millenniumclubcoin_locale.cpp'; then $(CYGPATH_W) 'qt/qrc_millenniumclubcoin_locale.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_millenniumclubcoin_locale.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.Po
+#	$(AM_V_CXX)source='qt/qrc_millenniumclubcoin_locale.cpp' object='qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_delion_locale.obj `if test -f 'qt/qrc_delion_locale.cpp'; then $(CYGPATH_W) 'qt/qrc_delion_locale.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_delion_locale.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.obj `if test -f 'qt/qrc_millenniumclubcoin_locale.cpp'; then $(CYGPATH_W) 'qt/qrc_millenniumclubcoin_locale.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/qrc_millenniumclubcoin_locale.cpp'; fi`
 
 libbitcoinconsensus_la-allocators.lo: allocators.cpp
 	$(AM_V_CXX)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoinconsensus_la_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT libbitcoinconsensus_la-allocators.lo -MD -MP -MF $(DEPDIR)/libbitcoinconsensus_la-allocators.Tpo -c -o libbitcoinconsensus_la-allocators.lo `test -f 'allocators.cpp' || echo '$(srcdir)/'`allocators.cpp
@@ -6989,747 +6989,747 @@ compat/libbitcoinconsensus_la-glibcxx_compat.lo: compat/glibcxx_compat.cpp
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(AM_V_CXX_no)$(LIBTOOL) $(AM_V_lt) --tag=CXX $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libbitcoinconsensus_la_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o compat/libbitcoinconsensus_la-glibcxx_compat.lo `test -f 'compat/glibcxx_compat.cpp' || echo '$(srcdir)/'`compat/glibcxx_compat.cpp
 
-qt/test/qt_test_test_delion_qt-test_main.o: qt/test/test_main.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_delion_qt-test_main.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_delion_qt-test_main.Tpo -c -o qt/test/qt_test_test_delion_qt-test_main.o `test -f 'qt/test/test_main.cpp' || echo '$(srcdir)/'`qt/test/test_main.cpp
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_delion_qt-test_main.Tpo qt/test/$(DEPDIR)/qt_test_test_delion_qt-test_main.Po
-#	$(AM_V_CXX)source='qt/test/test_main.cpp' object='qt/test/qt_test_test_delion_qt-test_main.o' libtool=no \
+qt/test/qt_test_test_millenniumclubcoin_qt-test_main.o: qt/test/test_main.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_millenniumclubcoin_qt-test_main.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-test_main.Tpo -c -o qt/test/qt_test_test_millenniumclubcoin_qt-test_main.o `test -f 'qt/test/test_main.cpp' || echo '$(srcdir)/'`qt/test/test_main.cpp
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-test_main.Tpo qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-test_main.Po
+#	$(AM_V_CXX)source='qt/test/test_main.cpp' object='qt/test/qt_test_test_millenniumclubcoin_qt-test_main.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_delion_qt-test_main.o `test -f 'qt/test/test_main.cpp' || echo '$(srcdir)/'`qt/test/test_main.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_millenniumclubcoin_qt-test_main.o `test -f 'qt/test/test_main.cpp' || echo '$(srcdir)/'`qt/test/test_main.cpp
 
-qt/test/qt_test_test_delion_qt-test_main.obj: qt/test/test_main.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_delion_qt-test_main.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_delion_qt-test_main.Tpo -c -o qt/test/qt_test_test_delion_qt-test_main.obj `if test -f 'qt/test/test_main.cpp'; then $(CYGPATH_W) 'qt/test/test_main.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/test_main.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_delion_qt-test_main.Tpo qt/test/$(DEPDIR)/qt_test_test_delion_qt-test_main.Po
-#	$(AM_V_CXX)source='qt/test/test_main.cpp' object='qt/test/qt_test_test_delion_qt-test_main.obj' libtool=no \
+qt/test/qt_test_test_millenniumclubcoin_qt-test_main.obj: qt/test/test_main.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_millenniumclubcoin_qt-test_main.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-test_main.Tpo -c -o qt/test/qt_test_test_millenniumclubcoin_qt-test_main.obj `if test -f 'qt/test/test_main.cpp'; then $(CYGPATH_W) 'qt/test/test_main.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/test_main.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-test_main.Tpo qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-test_main.Po
+#	$(AM_V_CXX)source='qt/test/test_main.cpp' object='qt/test/qt_test_test_millenniumclubcoin_qt-test_main.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_delion_qt-test_main.obj `if test -f 'qt/test/test_main.cpp'; then $(CYGPATH_W) 'qt/test/test_main.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/test_main.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_millenniumclubcoin_qt-test_main.obj `if test -f 'qt/test/test_main.cpp'; then $(CYGPATH_W) 'qt/test/test_main.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/test_main.cpp'; fi`
 
-qt/test/qt_test_test_delion_qt-uritests.o: qt/test/uritests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_delion_qt-uritests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_delion_qt-uritests.Tpo -c -o qt/test/qt_test_test_delion_qt-uritests.o `test -f 'qt/test/uritests.cpp' || echo '$(srcdir)/'`qt/test/uritests.cpp
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_delion_qt-uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_delion_qt-uritests.Po
-#	$(AM_V_CXX)source='qt/test/uritests.cpp' object='qt/test/qt_test_test_delion_qt-uritests.o' libtool=no \
+qt/test/qt_test_test_millenniumclubcoin_qt-uritests.o: qt/test/uritests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_millenniumclubcoin_qt-uritests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-uritests.Tpo -c -o qt/test/qt_test_test_millenniumclubcoin_qt-uritests.o `test -f 'qt/test/uritests.cpp' || echo '$(srcdir)/'`qt/test/uritests.cpp
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-uritests.Po
+#	$(AM_V_CXX)source='qt/test/uritests.cpp' object='qt/test/qt_test_test_millenniumclubcoin_qt-uritests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_delion_qt-uritests.o `test -f 'qt/test/uritests.cpp' || echo '$(srcdir)/'`qt/test/uritests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_millenniumclubcoin_qt-uritests.o `test -f 'qt/test/uritests.cpp' || echo '$(srcdir)/'`qt/test/uritests.cpp
 
-qt/test/qt_test_test_delion_qt-uritests.obj: qt/test/uritests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_delion_qt-uritests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_delion_qt-uritests.Tpo -c -o qt/test/qt_test_test_delion_qt-uritests.obj `if test -f 'qt/test/uritests.cpp'; then $(CYGPATH_W) 'qt/test/uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/uritests.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_delion_qt-uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_delion_qt-uritests.Po
-#	$(AM_V_CXX)source='qt/test/uritests.cpp' object='qt/test/qt_test_test_delion_qt-uritests.obj' libtool=no \
+qt/test/qt_test_test_millenniumclubcoin_qt-uritests.obj: qt/test/uritests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_millenniumclubcoin_qt-uritests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-uritests.Tpo -c -o qt/test/qt_test_test_millenniumclubcoin_qt-uritests.obj `if test -f 'qt/test/uritests.cpp'; then $(CYGPATH_W) 'qt/test/uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/uritests.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-uritests.Po
+#	$(AM_V_CXX)source='qt/test/uritests.cpp' object='qt/test/qt_test_test_millenniumclubcoin_qt-uritests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_delion_qt-uritests.obj `if test -f 'qt/test/uritests.cpp'; then $(CYGPATH_W) 'qt/test/uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/uritests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_millenniumclubcoin_qt-uritests.obj `if test -f 'qt/test/uritests.cpp'; then $(CYGPATH_W) 'qt/test/uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/uritests.cpp'; fi`
 
-qt/test/qt_test_test_delion_qt-paymentservertests.o: qt/test/paymentservertests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_delion_qt-paymentservertests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_delion_qt-paymentservertests.Tpo -c -o qt/test/qt_test_test_delion_qt-paymentservertests.o `test -f 'qt/test/paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/paymentservertests.cpp
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_delion_qt-paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_delion_qt-paymentservertests.Po
-#	$(AM_V_CXX)source='qt/test/paymentservertests.cpp' object='qt/test/qt_test_test_delion_qt-paymentservertests.o' libtool=no \
+qt/test/qt_test_test_millenniumclubcoin_qt-paymentservertests.o: qt/test/paymentservertests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_millenniumclubcoin_qt-paymentservertests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-paymentservertests.Tpo -c -o qt/test/qt_test_test_millenniumclubcoin_qt-paymentservertests.o `test -f 'qt/test/paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/paymentservertests.cpp
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-paymentservertests.Po
+#	$(AM_V_CXX)source='qt/test/paymentservertests.cpp' object='qt/test/qt_test_test_millenniumclubcoin_qt-paymentservertests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_delion_qt-paymentservertests.o `test -f 'qt/test/paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/paymentservertests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_millenniumclubcoin_qt-paymentservertests.o `test -f 'qt/test/paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/paymentservertests.cpp
 
-qt/test/qt_test_test_delion_qt-paymentservertests.obj: qt/test/paymentservertests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_delion_qt-paymentservertests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_delion_qt-paymentservertests.Tpo -c -o qt/test/qt_test_test_delion_qt-paymentservertests.obj `if test -f 'qt/test/paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/paymentservertests.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_delion_qt-paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_delion_qt-paymentservertests.Po
-#	$(AM_V_CXX)source='qt/test/paymentservertests.cpp' object='qt/test/qt_test_test_delion_qt-paymentservertests.obj' libtool=no \
+qt/test/qt_test_test_millenniumclubcoin_qt-paymentservertests.obj: qt/test/paymentservertests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_millenniumclubcoin_qt-paymentservertests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-paymentservertests.Tpo -c -o qt/test/qt_test_test_millenniumclubcoin_qt-paymentservertests.obj `if test -f 'qt/test/paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/paymentservertests.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-paymentservertests.Po
+#	$(AM_V_CXX)source='qt/test/paymentservertests.cpp' object='qt/test/qt_test_test_millenniumclubcoin_qt-paymentservertests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_delion_qt-paymentservertests.obj `if test -f 'qt/test/paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/paymentservertests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_millenniumclubcoin_qt-paymentservertests.obj `if test -f 'qt/test/paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/paymentservertests.cpp'; fi`
 
-qt/test/qt_test_test_delion_qt-moc_uritests.o: qt/test/moc_uritests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_delion_qt-moc_uritests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_delion_qt-moc_uritests.Tpo -c -o qt/test/qt_test_test_delion_qt-moc_uritests.o `test -f 'qt/test/moc_uritests.cpp' || echo '$(srcdir)/'`qt/test/moc_uritests.cpp
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_delion_qt-moc_uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_delion_qt-moc_uritests.Po
-#	$(AM_V_CXX)source='qt/test/moc_uritests.cpp' object='qt/test/qt_test_test_delion_qt-moc_uritests.o' libtool=no \
+qt/test/qt_test_test_millenniumclubcoin_qt-moc_uritests.o: qt/test/moc_uritests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_millenniumclubcoin_qt-moc_uritests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-moc_uritests.Tpo -c -o qt/test/qt_test_test_millenniumclubcoin_qt-moc_uritests.o `test -f 'qt/test/moc_uritests.cpp' || echo '$(srcdir)/'`qt/test/moc_uritests.cpp
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-moc_uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-moc_uritests.Po
+#	$(AM_V_CXX)source='qt/test/moc_uritests.cpp' object='qt/test/qt_test_test_millenniumclubcoin_qt-moc_uritests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_delion_qt-moc_uritests.o `test -f 'qt/test/moc_uritests.cpp' || echo '$(srcdir)/'`qt/test/moc_uritests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_millenniumclubcoin_qt-moc_uritests.o `test -f 'qt/test/moc_uritests.cpp' || echo '$(srcdir)/'`qt/test/moc_uritests.cpp
 
-qt/test/qt_test_test_delion_qt-moc_uritests.obj: qt/test/moc_uritests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_delion_qt-moc_uritests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_delion_qt-moc_uritests.Tpo -c -o qt/test/qt_test_test_delion_qt-moc_uritests.obj `if test -f 'qt/test/moc_uritests.cpp'; then $(CYGPATH_W) 'qt/test/moc_uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_uritests.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_delion_qt-moc_uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_delion_qt-moc_uritests.Po
-#	$(AM_V_CXX)source='qt/test/moc_uritests.cpp' object='qt/test/qt_test_test_delion_qt-moc_uritests.obj' libtool=no \
+qt/test/qt_test_test_millenniumclubcoin_qt-moc_uritests.obj: qt/test/moc_uritests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_millenniumclubcoin_qt-moc_uritests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-moc_uritests.Tpo -c -o qt/test/qt_test_test_millenniumclubcoin_qt-moc_uritests.obj `if test -f 'qt/test/moc_uritests.cpp'; then $(CYGPATH_W) 'qt/test/moc_uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_uritests.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-moc_uritests.Tpo qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-moc_uritests.Po
+#	$(AM_V_CXX)source='qt/test/moc_uritests.cpp' object='qt/test/qt_test_test_millenniumclubcoin_qt-moc_uritests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_delion_qt-moc_uritests.obj `if test -f 'qt/test/moc_uritests.cpp'; then $(CYGPATH_W) 'qt/test/moc_uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_uritests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_millenniumclubcoin_qt-moc_uritests.obj `if test -f 'qt/test/moc_uritests.cpp'; then $(CYGPATH_W) 'qt/test/moc_uritests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_uritests.cpp'; fi`
 
-qt/test/qt_test_test_delion_qt-moc_paymentservertests.o: qt/test/moc_paymentservertests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_delion_qt-moc_paymentservertests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_delion_qt-moc_paymentservertests.Tpo -c -o qt/test/qt_test_test_delion_qt-moc_paymentservertests.o `test -f 'qt/test/moc_paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/moc_paymentservertests.cpp
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_delion_qt-moc_paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_delion_qt-moc_paymentservertests.Po
-#	$(AM_V_CXX)source='qt/test/moc_paymentservertests.cpp' object='qt/test/qt_test_test_delion_qt-moc_paymentservertests.o' libtool=no \
+qt/test/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.o: qt/test/moc_paymentservertests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.o -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.Tpo -c -o qt/test/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.o `test -f 'qt/test/moc_paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/moc_paymentservertests.cpp
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.Po
+#	$(AM_V_CXX)source='qt/test/moc_paymentservertests.cpp' object='qt/test/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_delion_qt-moc_paymentservertests.o `test -f 'qt/test/moc_paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/moc_paymentservertests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.o `test -f 'qt/test/moc_paymentservertests.cpp' || echo '$(srcdir)/'`qt/test/moc_paymentservertests.cpp
 
-qt/test/qt_test_test_delion_qt-moc_paymentservertests.obj: qt/test/moc_paymentservertests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_delion_qt-moc_paymentservertests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_delion_qt-moc_paymentservertests.Tpo -c -o qt/test/qt_test_test_delion_qt-moc_paymentservertests.obj `if test -f 'qt/test/moc_paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/moc_paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_paymentservertests.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_delion_qt-moc_paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_delion_qt-moc_paymentservertests.Po
-#	$(AM_V_CXX)source='qt/test/moc_paymentservertests.cpp' object='qt/test/qt_test_test_delion_qt-moc_paymentservertests.obj' libtool=no \
+qt/test/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.obj: qt/test/moc_paymentservertests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/test/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.obj -MD -MP -MF qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.Tpo -c -o qt/test/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.obj `if test -f 'qt/test/moc_paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/moc_paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_paymentservertests.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.Tpo qt/test/$(DEPDIR)/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.Po
+#	$(AM_V_CXX)source='qt/test/moc_paymentservertests.cpp' object='qt/test/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_delion_qt-moc_paymentservertests.obj `if test -f 'qt/test/moc_paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/moc_paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_paymentservertests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_test_test_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/test/qt_test_test_millenniumclubcoin_qt-moc_paymentservertests.obj `if test -f 'qt/test/moc_paymentservertests.cpp'; then $(CYGPATH_W) 'qt/test/moc_paymentservertests.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/test/moc_paymentservertests.cpp'; fi`
 
-qt/qt_delion_qt-delion.o: qt/delion.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_delion_qt-delion.o -MD -MP -MF qt/$(DEPDIR)/qt_delion_qt-delion.Tpo -c -o qt/qt_delion_qt-delion.o `test -f 'qt/delion.cpp' || echo '$(srcdir)/'`qt/delion.cpp
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_delion_qt-delion.Tpo qt/$(DEPDIR)/qt_delion_qt-delion.Po
-#	$(AM_V_CXX)source='qt/delion.cpp' object='qt/qt_delion_qt-delion.o' libtool=no \
+qt/qt_millenniumclubcoin_qt-millenniumclubcoin.o: qt/millenniumclubcoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_millenniumclubcoin_qt-millenniumclubcoin.o -MD -MP -MF qt/$(DEPDIR)/qt_millenniumclubcoin_qt-millenniumclubcoin.Tpo -c -o qt/qt_millenniumclubcoin_qt-millenniumclubcoin.o `test -f 'qt/millenniumclubcoin.cpp' || echo '$(srcdir)/'`qt/millenniumclubcoin.cpp
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_millenniumclubcoin_qt-millenniumclubcoin.Tpo qt/$(DEPDIR)/qt_millenniumclubcoin_qt-millenniumclubcoin.Po
+#	$(AM_V_CXX)source='qt/millenniumclubcoin.cpp' object='qt/qt_millenniumclubcoin_qt-millenniumclubcoin.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_delion_qt-delion.o `test -f 'qt/delion.cpp' || echo '$(srcdir)/'`qt/delion.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_millenniumclubcoin_qt-millenniumclubcoin.o `test -f 'qt/millenniumclubcoin.cpp' || echo '$(srcdir)/'`qt/millenniumclubcoin.cpp
 
-qt/qt_delion_qt-delion.obj: qt/delion.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_delion_qt-delion.obj -MD -MP -MF qt/$(DEPDIR)/qt_delion_qt-delion.Tpo -c -o qt/qt_delion_qt-delion.obj `if test -f 'qt/delion.cpp'; then $(CYGPATH_W) 'qt/delion.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/delion.cpp'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_delion_qt-delion.Tpo qt/$(DEPDIR)/qt_delion_qt-delion.Po
-#	$(AM_V_CXX)source='qt/delion.cpp' object='qt/qt_delion_qt-delion.obj' libtool=no \
+qt/qt_millenniumclubcoin_qt-millenniumclubcoin.obj: qt/millenniumclubcoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_millenniumclubcoin_qt-millenniumclubcoin.obj -MD -MP -MF qt/$(DEPDIR)/qt_millenniumclubcoin_qt-millenniumclubcoin.Tpo -c -o qt/qt_millenniumclubcoin_qt-millenniumclubcoin.obj `if test -f 'qt/millenniumclubcoin.cpp'; then $(CYGPATH_W) 'qt/millenniumclubcoin.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/millenniumclubcoin.cpp'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_millenniumclubcoin_qt-millenniumclubcoin.Tpo qt/$(DEPDIR)/qt_millenniumclubcoin_qt-millenniumclubcoin.Po
+#	$(AM_V_CXX)source='qt/millenniumclubcoin.cpp' object='qt/qt_millenniumclubcoin_qt-millenniumclubcoin.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_delion_qt-delion.obj `if test -f 'qt/delion.cpp'; then $(CYGPATH_W) 'qt/delion.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/delion.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_millenniumclubcoin_qt-millenniumclubcoin.obj `if test -f 'qt/millenniumclubcoin.cpp'; then $(CYGPATH_W) 'qt/millenniumclubcoin.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/millenniumclubcoin.cpp'; fi`
 
-test/test_test_delion-zerocoin_implementation_tests.o: test/zerocoin_implementation_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-zerocoin_implementation_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-zerocoin_implementation_tests.Tpo -c -o test/test_test_delion-zerocoin_implementation_tests.o `test -f 'test/zerocoin_implementation_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_implementation_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-zerocoin_implementation_tests.Tpo test/$(DEPDIR)/test_test_delion-zerocoin_implementation_tests.Po
-#	$(AM_V_CXX)source='test/zerocoin_implementation_tests.cpp' object='test/test_test_delion-zerocoin_implementation_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-zerocoin_implementation_tests.o: test/zerocoin_implementation_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-zerocoin_implementation_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_implementation_tests.Tpo -c -o test/test_test_millenniumclubcoin-zerocoin_implementation_tests.o `test -f 'test/zerocoin_implementation_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_implementation_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_implementation_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_implementation_tests.Po
+#	$(AM_V_CXX)source='test/zerocoin_implementation_tests.cpp' object='test/test_test_millenniumclubcoin-zerocoin_implementation_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-zerocoin_implementation_tests.o `test -f 'test/zerocoin_implementation_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_implementation_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-zerocoin_implementation_tests.o `test -f 'test/zerocoin_implementation_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_implementation_tests.cpp
 
-test/test_test_delion-zerocoin_implementation_tests.obj: test/zerocoin_implementation_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-zerocoin_implementation_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-zerocoin_implementation_tests.Tpo -c -o test/test_test_delion-zerocoin_implementation_tests.obj `if test -f 'test/zerocoin_implementation_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_implementation_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_implementation_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-zerocoin_implementation_tests.Tpo test/$(DEPDIR)/test_test_delion-zerocoin_implementation_tests.Po
-#	$(AM_V_CXX)source='test/zerocoin_implementation_tests.cpp' object='test/test_test_delion-zerocoin_implementation_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-zerocoin_implementation_tests.obj: test/zerocoin_implementation_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-zerocoin_implementation_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_implementation_tests.Tpo -c -o test/test_test_millenniumclubcoin-zerocoin_implementation_tests.obj `if test -f 'test/zerocoin_implementation_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_implementation_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_implementation_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_implementation_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_implementation_tests.Po
+#	$(AM_V_CXX)source='test/zerocoin_implementation_tests.cpp' object='test/test_test_millenniumclubcoin-zerocoin_implementation_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-zerocoin_implementation_tests.obj `if test -f 'test/zerocoin_implementation_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_implementation_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_implementation_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-zerocoin_implementation_tests.obj `if test -f 'test/zerocoin_implementation_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_implementation_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_implementation_tests.cpp'; fi`
 
-test/test_test_delion-zerocoin_denomination_tests.o: test/zerocoin_denomination_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-zerocoin_denomination_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-zerocoin_denomination_tests.Tpo -c -o test/test_test_delion-zerocoin_denomination_tests.o `test -f 'test/zerocoin_denomination_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_denomination_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-zerocoin_denomination_tests.Tpo test/$(DEPDIR)/test_test_delion-zerocoin_denomination_tests.Po
-#	$(AM_V_CXX)source='test/zerocoin_denomination_tests.cpp' object='test/test_test_delion-zerocoin_denomination_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-zerocoin_denomination_tests.o: test/zerocoin_denomination_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-zerocoin_denomination_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_denomination_tests.Tpo -c -o test/test_test_millenniumclubcoin-zerocoin_denomination_tests.o `test -f 'test/zerocoin_denomination_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_denomination_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_denomination_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_denomination_tests.Po
+#	$(AM_V_CXX)source='test/zerocoin_denomination_tests.cpp' object='test/test_test_millenniumclubcoin-zerocoin_denomination_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-zerocoin_denomination_tests.o `test -f 'test/zerocoin_denomination_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_denomination_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-zerocoin_denomination_tests.o `test -f 'test/zerocoin_denomination_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_denomination_tests.cpp
 
-test/test_test_delion-zerocoin_denomination_tests.obj: test/zerocoin_denomination_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-zerocoin_denomination_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-zerocoin_denomination_tests.Tpo -c -o test/test_test_delion-zerocoin_denomination_tests.obj `if test -f 'test/zerocoin_denomination_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_denomination_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_denomination_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-zerocoin_denomination_tests.Tpo test/$(DEPDIR)/test_test_delion-zerocoin_denomination_tests.Po
-#	$(AM_V_CXX)source='test/zerocoin_denomination_tests.cpp' object='test/test_test_delion-zerocoin_denomination_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-zerocoin_denomination_tests.obj: test/zerocoin_denomination_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-zerocoin_denomination_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_denomination_tests.Tpo -c -o test/test_test_millenniumclubcoin-zerocoin_denomination_tests.obj `if test -f 'test/zerocoin_denomination_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_denomination_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_denomination_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_denomination_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_denomination_tests.Po
+#	$(AM_V_CXX)source='test/zerocoin_denomination_tests.cpp' object='test/test_test_millenniumclubcoin-zerocoin_denomination_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-zerocoin_denomination_tests.obj `if test -f 'test/zerocoin_denomination_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_denomination_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_denomination_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-zerocoin_denomination_tests.obj `if test -f 'test/zerocoin_denomination_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_denomination_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_denomination_tests.cpp'; fi`
 
-test/test_test_delion-zerocoin_transactions_tests.o: test/zerocoin_transactions_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-zerocoin_transactions_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-zerocoin_transactions_tests.Tpo -c -o test/test_test_delion-zerocoin_transactions_tests.o `test -f 'test/zerocoin_transactions_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_transactions_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-zerocoin_transactions_tests.Tpo test/$(DEPDIR)/test_test_delion-zerocoin_transactions_tests.Po
-#	$(AM_V_CXX)source='test/zerocoin_transactions_tests.cpp' object='test/test_test_delion-zerocoin_transactions_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-zerocoin_transactions_tests.o: test/zerocoin_transactions_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-zerocoin_transactions_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_transactions_tests.Tpo -c -o test/test_test_millenniumclubcoin-zerocoin_transactions_tests.o `test -f 'test/zerocoin_transactions_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_transactions_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_transactions_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_transactions_tests.Po
+#	$(AM_V_CXX)source='test/zerocoin_transactions_tests.cpp' object='test/test_test_millenniumclubcoin-zerocoin_transactions_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-zerocoin_transactions_tests.o `test -f 'test/zerocoin_transactions_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_transactions_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-zerocoin_transactions_tests.o `test -f 'test/zerocoin_transactions_tests.cpp' || echo '$(srcdir)/'`test/zerocoin_transactions_tests.cpp
 
-test/test_test_delion-zerocoin_transactions_tests.obj: test/zerocoin_transactions_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-zerocoin_transactions_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-zerocoin_transactions_tests.Tpo -c -o test/test_test_delion-zerocoin_transactions_tests.obj `if test -f 'test/zerocoin_transactions_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_transactions_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_transactions_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-zerocoin_transactions_tests.Tpo test/$(DEPDIR)/test_test_delion-zerocoin_transactions_tests.Po
-#	$(AM_V_CXX)source='test/zerocoin_transactions_tests.cpp' object='test/test_test_delion-zerocoin_transactions_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-zerocoin_transactions_tests.obj: test/zerocoin_transactions_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-zerocoin_transactions_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_transactions_tests.Tpo -c -o test/test_test_millenniumclubcoin-zerocoin_transactions_tests.obj `if test -f 'test/zerocoin_transactions_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_transactions_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_transactions_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_transactions_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-zerocoin_transactions_tests.Po
+#	$(AM_V_CXX)source='test/zerocoin_transactions_tests.cpp' object='test/test_test_millenniumclubcoin-zerocoin_transactions_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-zerocoin_transactions_tests.obj `if test -f 'test/zerocoin_transactions_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_transactions_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_transactions_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-zerocoin_transactions_tests.obj `if test -f 'test/zerocoin_transactions_tests.cpp'; then $(CYGPATH_W) 'test/zerocoin_transactions_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/zerocoin_transactions_tests.cpp'; fi`
 
-test/test_test_delion-benchmark_zerocoin.o: test/benchmark_zerocoin.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-benchmark_zerocoin.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-benchmark_zerocoin.Tpo -c -o test/test_test_delion-benchmark_zerocoin.o `test -f 'test/benchmark_zerocoin.cpp' || echo '$(srcdir)/'`test/benchmark_zerocoin.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-benchmark_zerocoin.Tpo test/$(DEPDIR)/test_test_delion-benchmark_zerocoin.Po
-#	$(AM_V_CXX)source='test/benchmark_zerocoin.cpp' object='test/test_test_delion-benchmark_zerocoin.o' libtool=no \
+test/test_test_millenniumclubcoin-benchmark_zerocoin.o: test/benchmark_zerocoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-benchmark_zerocoin.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-benchmark_zerocoin.Tpo -c -o test/test_test_millenniumclubcoin-benchmark_zerocoin.o `test -f 'test/benchmark_zerocoin.cpp' || echo '$(srcdir)/'`test/benchmark_zerocoin.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-benchmark_zerocoin.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-benchmark_zerocoin.Po
+#	$(AM_V_CXX)source='test/benchmark_zerocoin.cpp' object='test/test_test_millenniumclubcoin-benchmark_zerocoin.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-benchmark_zerocoin.o `test -f 'test/benchmark_zerocoin.cpp' || echo '$(srcdir)/'`test/benchmark_zerocoin.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-benchmark_zerocoin.o `test -f 'test/benchmark_zerocoin.cpp' || echo '$(srcdir)/'`test/benchmark_zerocoin.cpp
 
-test/test_test_delion-benchmark_zerocoin.obj: test/benchmark_zerocoin.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-benchmark_zerocoin.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-benchmark_zerocoin.Tpo -c -o test/test_test_delion-benchmark_zerocoin.obj `if test -f 'test/benchmark_zerocoin.cpp'; then $(CYGPATH_W) 'test/benchmark_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/benchmark_zerocoin.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-benchmark_zerocoin.Tpo test/$(DEPDIR)/test_test_delion-benchmark_zerocoin.Po
-#	$(AM_V_CXX)source='test/benchmark_zerocoin.cpp' object='test/test_test_delion-benchmark_zerocoin.obj' libtool=no \
+test/test_test_millenniumclubcoin-benchmark_zerocoin.obj: test/benchmark_zerocoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-benchmark_zerocoin.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-benchmark_zerocoin.Tpo -c -o test/test_test_millenniumclubcoin-benchmark_zerocoin.obj `if test -f 'test/benchmark_zerocoin.cpp'; then $(CYGPATH_W) 'test/benchmark_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/benchmark_zerocoin.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-benchmark_zerocoin.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-benchmark_zerocoin.Po
+#	$(AM_V_CXX)source='test/benchmark_zerocoin.cpp' object='test/test_test_millenniumclubcoin-benchmark_zerocoin.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-benchmark_zerocoin.obj `if test -f 'test/benchmark_zerocoin.cpp'; then $(CYGPATH_W) 'test/benchmark_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/benchmark_zerocoin.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-benchmark_zerocoin.obj `if test -f 'test/benchmark_zerocoin.cpp'; then $(CYGPATH_W) 'test/benchmark_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/benchmark_zerocoin.cpp'; fi`
 
-test/test_test_delion-tutorial_zerocoin.o: test/tutorial_zerocoin.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-tutorial_zerocoin.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-tutorial_zerocoin.Tpo -c -o test/test_test_delion-tutorial_zerocoin.o `test -f 'test/tutorial_zerocoin.cpp' || echo '$(srcdir)/'`test/tutorial_zerocoin.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-tutorial_zerocoin.Tpo test/$(DEPDIR)/test_test_delion-tutorial_zerocoin.Po
-#	$(AM_V_CXX)source='test/tutorial_zerocoin.cpp' object='test/test_test_delion-tutorial_zerocoin.o' libtool=no \
+test/test_test_millenniumclubcoin-tutorial_zerocoin.o: test/tutorial_zerocoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-tutorial_zerocoin.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-tutorial_zerocoin.Tpo -c -o test/test_test_millenniumclubcoin-tutorial_zerocoin.o `test -f 'test/tutorial_zerocoin.cpp' || echo '$(srcdir)/'`test/tutorial_zerocoin.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-tutorial_zerocoin.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-tutorial_zerocoin.Po
+#	$(AM_V_CXX)source='test/tutorial_zerocoin.cpp' object='test/test_test_millenniumclubcoin-tutorial_zerocoin.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-tutorial_zerocoin.o `test -f 'test/tutorial_zerocoin.cpp' || echo '$(srcdir)/'`test/tutorial_zerocoin.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-tutorial_zerocoin.o `test -f 'test/tutorial_zerocoin.cpp' || echo '$(srcdir)/'`test/tutorial_zerocoin.cpp
 
-test/test_test_delion-tutorial_zerocoin.obj: test/tutorial_zerocoin.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-tutorial_zerocoin.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-tutorial_zerocoin.Tpo -c -o test/test_test_delion-tutorial_zerocoin.obj `if test -f 'test/tutorial_zerocoin.cpp'; then $(CYGPATH_W) 'test/tutorial_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/tutorial_zerocoin.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-tutorial_zerocoin.Tpo test/$(DEPDIR)/test_test_delion-tutorial_zerocoin.Po
-#	$(AM_V_CXX)source='test/tutorial_zerocoin.cpp' object='test/test_test_delion-tutorial_zerocoin.obj' libtool=no \
+test/test_test_millenniumclubcoin-tutorial_zerocoin.obj: test/tutorial_zerocoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-tutorial_zerocoin.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-tutorial_zerocoin.Tpo -c -o test/test_test_millenniumclubcoin-tutorial_zerocoin.obj `if test -f 'test/tutorial_zerocoin.cpp'; then $(CYGPATH_W) 'test/tutorial_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/tutorial_zerocoin.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-tutorial_zerocoin.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-tutorial_zerocoin.Po
+#	$(AM_V_CXX)source='test/tutorial_zerocoin.cpp' object='test/test_test_millenniumclubcoin-tutorial_zerocoin.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-tutorial_zerocoin.obj `if test -f 'test/tutorial_zerocoin.cpp'; then $(CYGPATH_W) 'test/tutorial_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/tutorial_zerocoin.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-tutorial_zerocoin.obj `if test -f 'test/tutorial_zerocoin.cpp'; then $(CYGPATH_W) 'test/tutorial_zerocoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/tutorial_zerocoin.cpp'; fi`
 
-test/test_test_delion-libzerocoin_tests.o: test/libzerocoin_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-libzerocoin_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-libzerocoin_tests.Tpo -c -o test/test_test_delion-libzerocoin_tests.o `test -f 'test/libzerocoin_tests.cpp' || echo '$(srcdir)/'`test/libzerocoin_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-libzerocoin_tests.Tpo test/$(DEPDIR)/test_test_delion-libzerocoin_tests.Po
-#	$(AM_V_CXX)source='test/libzerocoin_tests.cpp' object='test/test_test_delion-libzerocoin_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-libzerocoin_tests.o: test/libzerocoin_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-libzerocoin_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-libzerocoin_tests.Tpo -c -o test/test_test_millenniumclubcoin-libzerocoin_tests.o `test -f 'test/libzerocoin_tests.cpp' || echo '$(srcdir)/'`test/libzerocoin_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-libzerocoin_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-libzerocoin_tests.Po
+#	$(AM_V_CXX)source='test/libzerocoin_tests.cpp' object='test/test_test_millenniumclubcoin-libzerocoin_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-libzerocoin_tests.o `test -f 'test/libzerocoin_tests.cpp' || echo '$(srcdir)/'`test/libzerocoin_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-libzerocoin_tests.o `test -f 'test/libzerocoin_tests.cpp' || echo '$(srcdir)/'`test/libzerocoin_tests.cpp
 
-test/test_test_delion-libzerocoin_tests.obj: test/libzerocoin_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-libzerocoin_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-libzerocoin_tests.Tpo -c -o test/test_test_delion-libzerocoin_tests.obj `if test -f 'test/libzerocoin_tests.cpp'; then $(CYGPATH_W) 'test/libzerocoin_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/libzerocoin_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-libzerocoin_tests.Tpo test/$(DEPDIR)/test_test_delion-libzerocoin_tests.Po
-#	$(AM_V_CXX)source='test/libzerocoin_tests.cpp' object='test/test_test_delion-libzerocoin_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-libzerocoin_tests.obj: test/libzerocoin_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-libzerocoin_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-libzerocoin_tests.Tpo -c -o test/test_test_millenniumclubcoin-libzerocoin_tests.obj `if test -f 'test/libzerocoin_tests.cpp'; then $(CYGPATH_W) 'test/libzerocoin_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/libzerocoin_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-libzerocoin_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-libzerocoin_tests.Po
+#	$(AM_V_CXX)source='test/libzerocoin_tests.cpp' object='test/test_test_millenniumclubcoin-libzerocoin_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-libzerocoin_tests.obj `if test -f 'test/libzerocoin_tests.cpp'; then $(CYGPATH_W) 'test/libzerocoin_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/libzerocoin_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-libzerocoin_tests.obj `if test -f 'test/libzerocoin_tests.cpp'; then $(CYGPATH_W) 'test/libzerocoin_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/libzerocoin_tests.cpp'; fi`
 
-test/test_test_delion-allocator_tests.o: test/allocator_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-allocator_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-allocator_tests.Tpo -c -o test/test_test_delion-allocator_tests.o `test -f 'test/allocator_tests.cpp' || echo '$(srcdir)/'`test/allocator_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-allocator_tests.Tpo test/$(DEPDIR)/test_test_delion-allocator_tests.Po
-#	$(AM_V_CXX)source='test/allocator_tests.cpp' object='test/test_test_delion-allocator_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-allocator_tests.o: test/allocator_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-allocator_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-allocator_tests.Tpo -c -o test/test_test_millenniumclubcoin-allocator_tests.o `test -f 'test/allocator_tests.cpp' || echo '$(srcdir)/'`test/allocator_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-allocator_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-allocator_tests.Po
+#	$(AM_V_CXX)source='test/allocator_tests.cpp' object='test/test_test_millenniumclubcoin-allocator_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-allocator_tests.o `test -f 'test/allocator_tests.cpp' || echo '$(srcdir)/'`test/allocator_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-allocator_tests.o `test -f 'test/allocator_tests.cpp' || echo '$(srcdir)/'`test/allocator_tests.cpp
 
-test/test_test_delion-allocator_tests.obj: test/allocator_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-allocator_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-allocator_tests.Tpo -c -o test/test_test_delion-allocator_tests.obj `if test -f 'test/allocator_tests.cpp'; then $(CYGPATH_W) 'test/allocator_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/allocator_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-allocator_tests.Tpo test/$(DEPDIR)/test_test_delion-allocator_tests.Po
-#	$(AM_V_CXX)source='test/allocator_tests.cpp' object='test/test_test_delion-allocator_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-allocator_tests.obj: test/allocator_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-allocator_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-allocator_tests.Tpo -c -o test/test_test_millenniumclubcoin-allocator_tests.obj `if test -f 'test/allocator_tests.cpp'; then $(CYGPATH_W) 'test/allocator_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/allocator_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-allocator_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-allocator_tests.Po
+#	$(AM_V_CXX)source='test/allocator_tests.cpp' object='test/test_test_millenniumclubcoin-allocator_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-allocator_tests.obj `if test -f 'test/allocator_tests.cpp'; then $(CYGPATH_W) 'test/allocator_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/allocator_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-allocator_tests.obj `if test -f 'test/allocator_tests.cpp'; then $(CYGPATH_W) 'test/allocator_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/allocator_tests.cpp'; fi`
 
-test/test_test_delion-base32_tests.o: test/base32_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-base32_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-base32_tests.Tpo -c -o test/test_test_delion-base32_tests.o `test -f 'test/base32_tests.cpp' || echo '$(srcdir)/'`test/base32_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-base32_tests.Tpo test/$(DEPDIR)/test_test_delion-base32_tests.Po
-#	$(AM_V_CXX)source='test/base32_tests.cpp' object='test/test_test_delion-base32_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-base32_tests.o: test/base32_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-base32_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-base32_tests.Tpo -c -o test/test_test_millenniumclubcoin-base32_tests.o `test -f 'test/base32_tests.cpp' || echo '$(srcdir)/'`test/base32_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-base32_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-base32_tests.Po
+#	$(AM_V_CXX)source='test/base32_tests.cpp' object='test/test_test_millenniumclubcoin-base32_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-base32_tests.o `test -f 'test/base32_tests.cpp' || echo '$(srcdir)/'`test/base32_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-base32_tests.o `test -f 'test/base32_tests.cpp' || echo '$(srcdir)/'`test/base32_tests.cpp
 
-test/test_test_delion-base32_tests.obj: test/base32_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-base32_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-base32_tests.Tpo -c -o test/test_test_delion-base32_tests.obj `if test -f 'test/base32_tests.cpp'; then $(CYGPATH_W) 'test/base32_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base32_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-base32_tests.Tpo test/$(DEPDIR)/test_test_delion-base32_tests.Po
-#	$(AM_V_CXX)source='test/base32_tests.cpp' object='test/test_test_delion-base32_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-base32_tests.obj: test/base32_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-base32_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-base32_tests.Tpo -c -o test/test_test_millenniumclubcoin-base32_tests.obj `if test -f 'test/base32_tests.cpp'; then $(CYGPATH_W) 'test/base32_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base32_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-base32_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-base32_tests.Po
+#	$(AM_V_CXX)source='test/base32_tests.cpp' object='test/test_test_millenniumclubcoin-base32_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-base32_tests.obj `if test -f 'test/base32_tests.cpp'; then $(CYGPATH_W) 'test/base32_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base32_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-base32_tests.obj `if test -f 'test/base32_tests.cpp'; then $(CYGPATH_W) 'test/base32_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base32_tests.cpp'; fi`
 
-test/test_test_delion-base58_tests.o: test/base58_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-base58_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-base58_tests.Tpo -c -o test/test_test_delion-base58_tests.o `test -f 'test/base58_tests.cpp' || echo '$(srcdir)/'`test/base58_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-base58_tests.Tpo test/$(DEPDIR)/test_test_delion-base58_tests.Po
-#	$(AM_V_CXX)source='test/base58_tests.cpp' object='test/test_test_delion-base58_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-base58_tests.o: test/base58_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-base58_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-base58_tests.Tpo -c -o test/test_test_millenniumclubcoin-base58_tests.o `test -f 'test/base58_tests.cpp' || echo '$(srcdir)/'`test/base58_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-base58_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-base58_tests.Po
+#	$(AM_V_CXX)source='test/base58_tests.cpp' object='test/test_test_millenniumclubcoin-base58_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-base58_tests.o `test -f 'test/base58_tests.cpp' || echo '$(srcdir)/'`test/base58_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-base58_tests.o `test -f 'test/base58_tests.cpp' || echo '$(srcdir)/'`test/base58_tests.cpp
 
-test/test_test_delion-base58_tests.obj: test/base58_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-base58_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-base58_tests.Tpo -c -o test/test_test_delion-base58_tests.obj `if test -f 'test/base58_tests.cpp'; then $(CYGPATH_W) 'test/base58_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base58_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-base58_tests.Tpo test/$(DEPDIR)/test_test_delion-base58_tests.Po
-#	$(AM_V_CXX)source='test/base58_tests.cpp' object='test/test_test_delion-base58_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-base58_tests.obj: test/base58_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-base58_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-base58_tests.Tpo -c -o test/test_test_millenniumclubcoin-base58_tests.obj `if test -f 'test/base58_tests.cpp'; then $(CYGPATH_W) 'test/base58_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base58_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-base58_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-base58_tests.Po
+#	$(AM_V_CXX)source='test/base58_tests.cpp' object='test/test_test_millenniumclubcoin-base58_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-base58_tests.obj `if test -f 'test/base58_tests.cpp'; then $(CYGPATH_W) 'test/base58_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base58_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-base58_tests.obj `if test -f 'test/base58_tests.cpp'; then $(CYGPATH_W) 'test/base58_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base58_tests.cpp'; fi`
 
-test/test_test_delion-base64_tests.o: test/base64_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-base64_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-base64_tests.Tpo -c -o test/test_test_delion-base64_tests.o `test -f 'test/base64_tests.cpp' || echo '$(srcdir)/'`test/base64_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-base64_tests.Tpo test/$(DEPDIR)/test_test_delion-base64_tests.Po
-#	$(AM_V_CXX)source='test/base64_tests.cpp' object='test/test_test_delion-base64_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-base64_tests.o: test/base64_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-base64_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-base64_tests.Tpo -c -o test/test_test_millenniumclubcoin-base64_tests.o `test -f 'test/base64_tests.cpp' || echo '$(srcdir)/'`test/base64_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-base64_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-base64_tests.Po
+#	$(AM_V_CXX)source='test/base64_tests.cpp' object='test/test_test_millenniumclubcoin-base64_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-base64_tests.o `test -f 'test/base64_tests.cpp' || echo '$(srcdir)/'`test/base64_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-base64_tests.o `test -f 'test/base64_tests.cpp' || echo '$(srcdir)/'`test/base64_tests.cpp
 
-test/test_test_delion-base64_tests.obj: test/base64_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-base64_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-base64_tests.Tpo -c -o test/test_test_delion-base64_tests.obj `if test -f 'test/base64_tests.cpp'; then $(CYGPATH_W) 'test/base64_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base64_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-base64_tests.Tpo test/$(DEPDIR)/test_test_delion-base64_tests.Po
-#	$(AM_V_CXX)source='test/base64_tests.cpp' object='test/test_test_delion-base64_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-base64_tests.obj: test/base64_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-base64_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-base64_tests.Tpo -c -o test/test_test_millenniumclubcoin-base64_tests.obj `if test -f 'test/base64_tests.cpp'; then $(CYGPATH_W) 'test/base64_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base64_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-base64_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-base64_tests.Po
+#	$(AM_V_CXX)source='test/base64_tests.cpp' object='test/test_test_millenniumclubcoin-base64_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-base64_tests.obj `if test -f 'test/base64_tests.cpp'; then $(CYGPATH_W) 'test/base64_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base64_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-base64_tests.obj `if test -f 'test/base64_tests.cpp'; then $(CYGPATH_W) 'test/base64_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/base64_tests.cpp'; fi`
 
-test/test_test_delion-checkblock_tests.o: test/checkblock_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-checkblock_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-checkblock_tests.Tpo -c -o test/test_test_delion-checkblock_tests.o `test -f 'test/checkblock_tests.cpp' || echo '$(srcdir)/'`test/checkblock_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-checkblock_tests.Tpo test/$(DEPDIR)/test_test_delion-checkblock_tests.Po
-#	$(AM_V_CXX)source='test/checkblock_tests.cpp' object='test/test_test_delion-checkblock_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-checkblock_tests.o: test/checkblock_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-checkblock_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-checkblock_tests.Tpo -c -o test/test_test_millenniumclubcoin-checkblock_tests.o `test -f 'test/checkblock_tests.cpp' || echo '$(srcdir)/'`test/checkblock_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-checkblock_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-checkblock_tests.Po
+#	$(AM_V_CXX)source='test/checkblock_tests.cpp' object='test/test_test_millenniumclubcoin-checkblock_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-checkblock_tests.o `test -f 'test/checkblock_tests.cpp' || echo '$(srcdir)/'`test/checkblock_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-checkblock_tests.o `test -f 'test/checkblock_tests.cpp' || echo '$(srcdir)/'`test/checkblock_tests.cpp
 
-test/test_test_delion-checkblock_tests.obj: test/checkblock_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-checkblock_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-checkblock_tests.Tpo -c -o test/test_test_delion-checkblock_tests.obj `if test -f 'test/checkblock_tests.cpp'; then $(CYGPATH_W) 'test/checkblock_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/checkblock_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-checkblock_tests.Tpo test/$(DEPDIR)/test_test_delion-checkblock_tests.Po
-#	$(AM_V_CXX)source='test/checkblock_tests.cpp' object='test/test_test_delion-checkblock_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-checkblock_tests.obj: test/checkblock_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-checkblock_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-checkblock_tests.Tpo -c -o test/test_test_millenniumclubcoin-checkblock_tests.obj `if test -f 'test/checkblock_tests.cpp'; then $(CYGPATH_W) 'test/checkblock_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/checkblock_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-checkblock_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-checkblock_tests.Po
+#	$(AM_V_CXX)source='test/checkblock_tests.cpp' object='test/test_test_millenniumclubcoin-checkblock_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-checkblock_tests.obj `if test -f 'test/checkblock_tests.cpp'; then $(CYGPATH_W) 'test/checkblock_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/checkblock_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-checkblock_tests.obj `if test -f 'test/checkblock_tests.cpp'; then $(CYGPATH_W) 'test/checkblock_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/checkblock_tests.cpp'; fi`
 
-test/test_test_delion-Checkpoints_tests.o: test/Checkpoints_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-Checkpoints_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-Checkpoints_tests.Tpo -c -o test/test_test_delion-Checkpoints_tests.o `test -f 'test/Checkpoints_tests.cpp' || echo '$(srcdir)/'`test/Checkpoints_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-Checkpoints_tests.Tpo test/$(DEPDIR)/test_test_delion-Checkpoints_tests.Po
-#	$(AM_V_CXX)source='test/Checkpoints_tests.cpp' object='test/test_test_delion-Checkpoints_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-Checkpoints_tests.o: test/Checkpoints_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-Checkpoints_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-Checkpoints_tests.Tpo -c -o test/test_test_millenniumclubcoin-Checkpoints_tests.o `test -f 'test/Checkpoints_tests.cpp' || echo '$(srcdir)/'`test/Checkpoints_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-Checkpoints_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-Checkpoints_tests.Po
+#	$(AM_V_CXX)source='test/Checkpoints_tests.cpp' object='test/test_test_millenniumclubcoin-Checkpoints_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-Checkpoints_tests.o `test -f 'test/Checkpoints_tests.cpp' || echo '$(srcdir)/'`test/Checkpoints_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-Checkpoints_tests.o `test -f 'test/Checkpoints_tests.cpp' || echo '$(srcdir)/'`test/Checkpoints_tests.cpp
 
-test/test_test_delion-Checkpoints_tests.obj: test/Checkpoints_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-Checkpoints_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-Checkpoints_tests.Tpo -c -o test/test_test_delion-Checkpoints_tests.obj `if test -f 'test/Checkpoints_tests.cpp'; then $(CYGPATH_W) 'test/Checkpoints_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/Checkpoints_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-Checkpoints_tests.Tpo test/$(DEPDIR)/test_test_delion-Checkpoints_tests.Po
-#	$(AM_V_CXX)source='test/Checkpoints_tests.cpp' object='test/test_test_delion-Checkpoints_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-Checkpoints_tests.obj: test/Checkpoints_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-Checkpoints_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-Checkpoints_tests.Tpo -c -o test/test_test_millenniumclubcoin-Checkpoints_tests.obj `if test -f 'test/Checkpoints_tests.cpp'; then $(CYGPATH_W) 'test/Checkpoints_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/Checkpoints_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-Checkpoints_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-Checkpoints_tests.Po
+#	$(AM_V_CXX)source='test/Checkpoints_tests.cpp' object='test/test_test_millenniumclubcoin-Checkpoints_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-Checkpoints_tests.obj `if test -f 'test/Checkpoints_tests.cpp'; then $(CYGPATH_W) 'test/Checkpoints_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/Checkpoints_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-Checkpoints_tests.obj `if test -f 'test/Checkpoints_tests.cpp'; then $(CYGPATH_W) 'test/Checkpoints_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/Checkpoints_tests.cpp'; fi`
 
-test/test_test_delion-coins_tests.o: test/coins_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-coins_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-coins_tests.Tpo -c -o test/test_test_delion-coins_tests.o `test -f 'test/coins_tests.cpp' || echo '$(srcdir)/'`test/coins_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-coins_tests.Tpo test/$(DEPDIR)/test_test_delion-coins_tests.Po
-#	$(AM_V_CXX)source='test/coins_tests.cpp' object='test/test_test_delion-coins_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-coins_tests.o: test/coins_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-coins_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-coins_tests.Tpo -c -o test/test_test_millenniumclubcoin-coins_tests.o `test -f 'test/coins_tests.cpp' || echo '$(srcdir)/'`test/coins_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-coins_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-coins_tests.Po
+#	$(AM_V_CXX)source='test/coins_tests.cpp' object='test/test_test_millenniumclubcoin-coins_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-coins_tests.o `test -f 'test/coins_tests.cpp' || echo '$(srcdir)/'`test/coins_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-coins_tests.o `test -f 'test/coins_tests.cpp' || echo '$(srcdir)/'`test/coins_tests.cpp
 
-test/test_test_delion-coins_tests.obj: test/coins_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-coins_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-coins_tests.Tpo -c -o test/test_test_delion-coins_tests.obj `if test -f 'test/coins_tests.cpp'; then $(CYGPATH_W) 'test/coins_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/coins_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-coins_tests.Tpo test/$(DEPDIR)/test_test_delion-coins_tests.Po
-#	$(AM_V_CXX)source='test/coins_tests.cpp' object='test/test_test_delion-coins_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-coins_tests.obj: test/coins_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-coins_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-coins_tests.Tpo -c -o test/test_test_millenniumclubcoin-coins_tests.obj `if test -f 'test/coins_tests.cpp'; then $(CYGPATH_W) 'test/coins_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/coins_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-coins_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-coins_tests.Po
+#	$(AM_V_CXX)source='test/coins_tests.cpp' object='test/test_test_millenniumclubcoin-coins_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-coins_tests.obj `if test -f 'test/coins_tests.cpp'; then $(CYGPATH_W) 'test/coins_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/coins_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-coins_tests.obj `if test -f 'test/coins_tests.cpp'; then $(CYGPATH_W) 'test/coins_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/coins_tests.cpp'; fi`
 
-test/test_test_delion-compress_tests.o: test/compress_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-compress_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-compress_tests.Tpo -c -o test/test_test_delion-compress_tests.o `test -f 'test/compress_tests.cpp' || echo '$(srcdir)/'`test/compress_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-compress_tests.Tpo test/$(DEPDIR)/test_test_delion-compress_tests.Po
-#	$(AM_V_CXX)source='test/compress_tests.cpp' object='test/test_test_delion-compress_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-compress_tests.o: test/compress_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-compress_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-compress_tests.Tpo -c -o test/test_test_millenniumclubcoin-compress_tests.o `test -f 'test/compress_tests.cpp' || echo '$(srcdir)/'`test/compress_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-compress_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-compress_tests.Po
+#	$(AM_V_CXX)source='test/compress_tests.cpp' object='test/test_test_millenniumclubcoin-compress_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-compress_tests.o `test -f 'test/compress_tests.cpp' || echo '$(srcdir)/'`test/compress_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-compress_tests.o `test -f 'test/compress_tests.cpp' || echo '$(srcdir)/'`test/compress_tests.cpp
 
-test/test_test_delion-compress_tests.obj: test/compress_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-compress_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-compress_tests.Tpo -c -o test/test_test_delion-compress_tests.obj `if test -f 'test/compress_tests.cpp'; then $(CYGPATH_W) 'test/compress_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/compress_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-compress_tests.Tpo test/$(DEPDIR)/test_test_delion-compress_tests.Po
-#	$(AM_V_CXX)source='test/compress_tests.cpp' object='test/test_test_delion-compress_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-compress_tests.obj: test/compress_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-compress_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-compress_tests.Tpo -c -o test/test_test_millenniumclubcoin-compress_tests.obj `if test -f 'test/compress_tests.cpp'; then $(CYGPATH_W) 'test/compress_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/compress_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-compress_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-compress_tests.Po
+#	$(AM_V_CXX)source='test/compress_tests.cpp' object='test/test_test_millenniumclubcoin-compress_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-compress_tests.obj `if test -f 'test/compress_tests.cpp'; then $(CYGPATH_W) 'test/compress_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/compress_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-compress_tests.obj `if test -f 'test/compress_tests.cpp'; then $(CYGPATH_W) 'test/compress_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/compress_tests.cpp'; fi`
 
-test/test_test_delion-crypto_tests.o: test/crypto_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-crypto_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-crypto_tests.Tpo -c -o test/test_test_delion-crypto_tests.o `test -f 'test/crypto_tests.cpp' || echo '$(srcdir)/'`test/crypto_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-crypto_tests.Tpo test/$(DEPDIR)/test_test_delion-crypto_tests.Po
-#	$(AM_V_CXX)source='test/crypto_tests.cpp' object='test/test_test_delion-crypto_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-crypto_tests.o: test/crypto_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-crypto_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-crypto_tests.Tpo -c -o test/test_test_millenniumclubcoin-crypto_tests.o `test -f 'test/crypto_tests.cpp' || echo '$(srcdir)/'`test/crypto_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-crypto_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-crypto_tests.Po
+#	$(AM_V_CXX)source='test/crypto_tests.cpp' object='test/test_test_millenniumclubcoin-crypto_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-crypto_tests.o `test -f 'test/crypto_tests.cpp' || echo '$(srcdir)/'`test/crypto_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-crypto_tests.o `test -f 'test/crypto_tests.cpp' || echo '$(srcdir)/'`test/crypto_tests.cpp
 
-test/test_test_delion-crypto_tests.obj: test/crypto_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-crypto_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-crypto_tests.Tpo -c -o test/test_test_delion-crypto_tests.obj `if test -f 'test/crypto_tests.cpp'; then $(CYGPATH_W) 'test/crypto_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/crypto_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-crypto_tests.Tpo test/$(DEPDIR)/test_test_delion-crypto_tests.Po
-#	$(AM_V_CXX)source='test/crypto_tests.cpp' object='test/test_test_delion-crypto_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-crypto_tests.obj: test/crypto_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-crypto_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-crypto_tests.Tpo -c -o test/test_test_millenniumclubcoin-crypto_tests.obj `if test -f 'test/crypto_tests.cpp'; then $(CYGPATH_W) 'test/crypto_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/crypto_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-crypto_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-crypto_tests.Po
+#	$(AM_V_CXX)source='test/crypto_tests.cpp' object='test/test_test_millenniumclubcoin-crypto_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-crypto_tests.obj `if test -f 'test/crypto_tests.cpp'; then $(CYGPATH_W) 'test/crypto_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/crypto_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-crypto_tests.obj `if test -f 'test/crypto_tests.cpp'; then $(CYGPATH_W) 'test/crypto_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/crypto_tests.cpp'; fi`
 
-test/test_test_delion-DoS_tests.o: test/DoS_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-DoS_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-DoS_tests.Tpo -c -o test/test_test_delion-DoS_tests.o `test -f 'test/DoS_tests.cpp' || echo '$(srcdir)/'`test/DoS_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-DoS_tests.Tpo test/$(DEPDIR)/test_test_delion-DoS_tests.Po
-#	$(AM_V_CXX)source='test/DoS_tests.cpp' object='test/test_test_delion-DoS_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-DoS_tests.o: test/DoS_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-DoS_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-DoS_tests.Tpo -c -o test/test_test_millenniumclubcoin-DoS_tests.o `test -f 'test/DoS_tests.cpp' || echo '$(srcdir)/'`test/DoS_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-DoS_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-DoS_tests.Po
+#	$(AM_V_CXX)source='test/DoS_tests.cpp' object='test/test_test_millenniumclubcoin-DoS_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-DoS_tests.o `test -f 'test/DoS_tests.cpp' || echo '$(srcdir)/'`test/DoS_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-DoS_tests.o `test -f 'test/DoS_tests.cpp' || echo '$(srcdir)/'`test/DoS_tests.cpp
 
-test/test_test_delion-DoS_tests.obj: test/DoS_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-DoS_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-DoS_tests.Tpo -c -o test/test_test_delion-DoS_tests.obj `if test -f 'test/DoS_tests.cpp'; then $(CYGPATH_W) 'test/DoS_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/DoS_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-DoS_tests.Tpo test/$(DEPDIR)/test_test_delion-DoS_tests.Po
-#	$(AM_V_CXX)source='test/DoS_tests.cpp' object='test/test_test_delion-DoS_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-DoS_tests.obj: test/DoS_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-DoS_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-DoS_tests.Tpo -c -o test/test_test_millenniumclubcoin-DoS_tests.obj `if test -f 'test/DoS_tests.cpp'; then $(CYGPATH_W) 'test/DoS_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/DoS_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-DoS_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-DoS_tests.Po
+#	$(AM_V_CXX)source='test/DoS_tests.cpp' object='test/test_test_millenniumclubcoin-DoS_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-DoS_tests.obj `if test -f 'test/DoS_tests.cpp'; then $(CYGPATH_W) 'test/DoS_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/DoS_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-DoS_tests.obj `if test -f 'test/DoS_tests.cpp'; then $(CYGPATH_W) 'test/DoS_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/DoS_tests.cpp'; fi`
 
-test/test_test_delion-getarg_tests.o: test/getarg_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-getarg_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-getarg_tests.Tpo -c -o test/test_test_delion-getarg_tests.o `test -f 'test/getarg_tests.cpp' || echo '$(srcdir)/'`test/getarg_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-getarg_tests.Tpo test/$(DEPDIR)/test_test_delion-getarg_tests.Po
-#	$(AM_V_CXX)source='test/getarg_tests.cpp' object='test/test_test_delion-getarg_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-getarg_tests.o: test/getarg_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-getarg_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-getarg_tests.Tpo -c -o test/test_test_millenniumclubcoin-getarg_tests.o `test -f 'test/getarg_tests.cpp' || echo '$(srcdir)/'`test/getarg_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-getarg_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-getarg_tests.Po
+#	$(AM_V_CXX)source='test/getarg_tests.cpp' object='test/test_test_millenniumclubcoin-getarg_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-getarg_tests.o `test -f 'test/getarg_tests.cpp' || echo '$(srcdir)/'`test/getarg_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-getarg_tests.o `test -f 'test/getarg_tests.cpp' || echo '$(srcdir)/'`test/getarg_tests.cpp
 
-test/test_test_delion-getarg_tests.obj: test/getarg_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-getarg_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-getarg_tests.Tpo -c -o test/test_test_delion-getarg_tests.obj `if test -f 'test/getarg_tests.cpp'; then $(CYGPATH_W) 'test/getarg_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/getarg_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-getarg_tests.Tpo test/$(DEPDIR)/test_test_delion-getarg_tests.Po
-#	$(AM_V_CXX)source='test/getarg_tests.cpp' object='test/test_test_delion-getarg_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-getarg_tests.obj: test/getarg_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-getarg_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-getarg_tests.Tpo -c -o test/test_test_millenniumclubcoin-getarg_tests.obj `if test -f 'test/getarg_tests.cpp'; then $(CYGPATH_W) 'test/getarg_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/getarg_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-getarg_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-getarg_tests.Po
+#	$(AM_V_CXX)source='test/getarg_tests.cpp' object='test/test_test_millenniumclubcoin-getarg_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-getarg_tests.obj `if test -f 'test/getarg_tests.cpp'; then $(CYGPATH_W) 'test/getarg_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/getarg_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-getarg_tests.obj `if test -f 'test/getarg_tests.cpp'; then $(CYGPATH_W) 'test/getarg_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/getarg_tests.cpp'; fi`
 
-test/test_test_delion-hash_tests.o: test/hash_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-hash_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-hash_tests.Tpo -c -o test/test_test_delion-hash_tests.o `test -f 'test/hash_tests.cpp' || echo '$(srcdir)/'`test/hash_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-hash_tests.Tpo test/$(DEPDIR)/test_test_delion-hash_tests.Po
-#	$(AM_V_CXX)source='test/hash_tests.cpp' object='test/test_test_delion-hash_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-hash_tests.o: test/hash_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-hash_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-hash_tests.Tpo -c -o test/test_test_millenniumclubcoin-hash_tests.o `test -f 'test/hash_tests.cpp' || echo '$(srcdir)/'`test/hash_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-hash_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-hash_tests.Po
+#	$(AM_V_CXX)source='test/hash_tests.cpp' object='test/test_test_millenniumclubcoin-hash_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-hash_tests.o `test -f 'test/hash_tests.cpp' || echo '$(srcdir)/'`test/hash_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-hash_tests.o `test -f 'test/hash_tests.cpp' || echo '$(srcdir)/'`test/hash_tests.cpp
 
-test/test_test_delion-hash_tests.obj: test/hash_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-hash_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-hash_tests.Tpo -c -o test/test_test_delion-hash_tests.obj `if test -f 'test/hash_tests.cpp'; then $(CYGPATH_W) 'test/hash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/hash_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-hash_tests.Tpo test/$(DEPDIR)/test_test_delion-hash_tests.Po
-#	$(AM_V_CXX)source='test/hash_tests.cpp' object='test/test_test_delion-hash_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-hash_tests.obj: test/hash_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-hash_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-hash_tests.Tpo -c -o test/test_test_millenniumclubcoin-hash_tests.obj `if test -f 'test/hash_tests.cpp'; then $(CYGPATH_W) 'test/hash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/hash_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-hash_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-hash_tests.Po
+#	$(AM_V_CXX)source='test/hash_tests.cpp' object='test/test_test_millenniumclubcoin-hash_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-hash_tests.obj `if test -f 'test/hash_tests.cpp'; then $(CYGPATH_W) 'test/hash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/hash_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-hash_tests.obj `if test -f 'test/hash_tests.cpp'; then $(CYGPATH_W) 'test/hash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/hash_tests.cpp'; fi`
 
-test/test_test_delion-key_tests.o: test/key_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-key_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-key_tests.Tpo -c -o test/test_test_delion-key_tests.o `test -f 'test/key_tests.cpp' || echo '$(srcdir)/'`test/key_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-key_tests.Tpo test/$(DEPDIR)/test_test_delion-key_tests.Po
-#	$(AM_V_CXX)source='test/key_tests.cpp' object='test/test_test_delion-key_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-key_tests.o: test/key_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-key_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-key_tests.Tpo -c -o test/test_test_millenniumclubcoin-key_tests.o `test -f 'test/key_tests.cpp' || echo '$(srcdir)/'`test/key_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-key_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-key_tests.Po
+#	$(AM_V_CXX)source='test/key_tests.cpp' object='test/test_test_millenniumclubcoin-key_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-key_tests.o `test -f 'test/key_tests.cpp' || echo '$(srcdir)/'`test/key_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-key_tests.o `test -f 'test/key_tests.cpp' || echo '$(srcdir)/'`test/key_tests.cpp
 
-test/test_test_delion-key_tests.obj: test/key_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-key_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-key_tests.Tpo -c -o test/test_test_delion-key_tests.obj `if test -f 'test/key_tests.cpp'; then $(CYGPATH_W) 'test/key_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/key_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-key_tests.Tpo test/$(DEPDIR)/test_test_delion-key_tests.Po
-#	$(AM_V_CXX)source='test/key_tests.cpp' object='test/test_test_delion-key_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-key_tests.obj: test/key_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-key_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-key_tests.Tpo -c -o test/test_test_millenniumclubcoin-key_tests.obj `if test -f 'test/key_tests.cpp'; then $(CYGPATH_W) 'test/key_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/key_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-key_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-key_tests.Po
+#	$(AM_V_CXX)source='test/key_tests.cpp' object='test/test_test_millenniumclubcoin-key_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-key_tests.obj `if test -f 'test/key_tests.cpp'; then $(CYGPATH_W) 'test/key_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/key_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-key_tests.obj `if test -f 'test/key_tests.cpp'; then $(CYGPATH_W) 'test/key_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/key_tests.cpp'; fi`
 
-test/test_test_delion-main_tests.o: test/main_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-main_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-main_tests.Tpo -c -o test/test_test_delion-main_tests.o `test -f 'test/main_tests.cpp' || echo '$(srcdir)/'`test/main_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-main_tests.Tpo test/$(DEPDIR)/test_test_delion-main_tests.Po
-#	$(AM_V_CXX)source='test/main_tests.cpp' object='test/test_test_delion-main_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-main_tests.o: test/main_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-main_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-main_tests.Tpo -c -o test/test_test_millenniumclubcoin-main_tests.o `test -f 'test/main_tests.cpp' || echo '$(srcdir)/'`test/main_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-main_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-main_tests.Po
+#	$(AM_V_CXX)source='test/main_tests.cpp' object='test/test_test_millenniumclubcoin-main_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-main_tests.o `test -f 'test/main_tests.cpp' || echo '$(srcdir)/'`test/main_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-main_tests.o `test -f 'test/main_tests.cpp' || echo '$(srcdir)/'`test/main_tests.cpp
 
-test/test_test_delion-main_tests.obj: test/main_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-main_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-main_tests.Tpo -c -o test/test_test_delion-main_tests.obj `if test -f 'test/main_tests.cpp'; then $(CYGPATH_W) 'test/main_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/main_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-main_tests.Tpo test/$(DEPDIR)/test_test_delion-main_tests.Po
-#	$(AM_V_CXX)source='test/main_tests.cpp' object='test/test_test_delion-main_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-main_tests.obj: test/main_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-main_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-main_tests.Tpo -c -o test/test_test_millenniumclubcoin-main_tests.obj `if test -f 'test/main_tests.cpp'; then $(CYGPATH_W) 'test/main_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/main_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-main_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-main_tests.Po
+#	$(AM_V_CXX)source='test/main_tests.cpp' object='test/test_test_millenniumclubcoin-main_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-main_tests.obj `if test -f 'test/main_tests.cpp'; then $(CYGPATH_W) 'test/main_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/main_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-main_tests.obj `if test -f 'test/main_tests.cpp'; then $(CYGPATH_W) 'test/main_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/main_tests.cpp'; fi`
 
-test/test_test_delion-mempool_tests.o: test/mempool_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-mempool_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-mempool_tests.Tpo -c -o test/test_test_delion-mempool_tests.o `test -f 'test/mempool_tests.cpp' || echo '$(srcdir)/'`test/mempool_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-mempool_tests.Tpo test/$(DEPDIR)/test_test_delion-mempool_tests.Po
-#	$(AM_V_CXX)source='test/mempool_tests.cpp' object='test/test_test_delion-mempool_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-mempool_tests.o: test/mempool_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-mempool_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-mempool_tests.Tpo -c -o test/test_test_millenniumclubcoin-mempool_tests.o `test -f 'test/mempool_tests.cpp' || echo '$(srcdir)/'`test/mempool_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-mempool_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-mempool_tests.Po
+#	$(AM_V_CXX)source='test/mempool_tests.cpp' object='test/test_test_millenniumclubcoin-mempool_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-mempool_tests.o `test -f 'test/mempool_tests.cpp' || echo '$(srcdir)/'`test/mempool_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-mempool_tests.o `test -f 'test/mempool_tests.cpp' || echo '$(srcdir)/'`test/mempool_tests.cpp
 
-test/test_test_delion-mempool_tests.obj: test/mempool_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-mempool_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-mempool_tests.Tpo -c -o test/test_test_delion-mempool_tests.obj `if test -f 'test/mempool_tests.cpp'; then $(CYGPATH_W) 'test/mempool_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mempool_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-mempool_tests.Tpo test/$(DEPDIR)/test_test_delion-mempool_tests.Po
-#	$(AM_V_CXX)source='test/mempool_tests.cpp' object='test/test_test_delion-mempool_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-mempool_tests.obj: test/mempool_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-mempool_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-mempool_tests.Tpo -c -o test/test_test_millenniumclubcoin-mempool_tests.obj `if test -f 'test/mempool_tests.cpp'; then $(CYGPATH_W) 'test/mempool_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mempool_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-mempool_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-mempool_tests.Po
+#	$(AM_V_CXX)source='test/mempool_tests.cpp' object='test/test_test_millenniumclubcoin-mempool_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-mempool_tests.obj `if test -f 'test/mempool_tests.cpp'; then $(CYGPATH_W) 'test/mempool_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mempool_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-mempool_tests.obj `if test -f 'test/mempool_tests.cpp'; then $(CYGPATH_W) 'test/mempool_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mempool_tests.cpp'; fi`
 
-test/test_test_delion-mruset_tests.o: test/mruset_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-mruset_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-mruset_tests.Tpo -c -o test/test_test_delion-mruset_tests.o `test -f 'test/mruset_tests.cpp' || echo '$(srcdir)/'`test/mruset_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-mruset_tests.Tpo test/$(DEPDIR)/test_test_delion-mruset_tests.Po
-#	$(AM_V_CXX)source='test/mruset_tests.cpp' object='test/test_test_delion-mruset_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-mruset_tests.o: test/mruset_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-mruset_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-mruset_tests.Tpo -c -o test/test_test_millenniumclubcoin-mruset_tests.o `test -f 'test/mruset_tests.cpp' || echo '$(srcdir)/'`test/mruset_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-mruset_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-mruset_tests.Po
+#	$(AM_V_CXX)source='test/mruset_tests.cpp' object='test/test_test_millenniumclubcoin-mruset_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-mruset_tests.o `test -f 'test/mruset_tests.cpp' || echo '$(srcdir)/'`test/mruset_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-mruset_tests.o `test -f 'test/mruset_tests.cpp' || echo '$(srcdir)/'`test/mruset_tests.cpp
 
-test/test_test_delion-mruset_tests.obj: test/mruset_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-mruset_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-mruset_tests.Tpo -c -o test/test_test_delion-mruset_tests.obj `if test -f 'test/mruset_tests.cpp'; then $(CYGPATH_W) 'test/mruset_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mruset_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-mruset_tests.Tpo test/$(DEPDIR)/test_test_delion-mruset_tests.Po
-#	$(AM_V_CXX)source='test/mruset_tests.cpp' object='test/test_test_delion-mruset_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-mruset_tests.obj: test/mruset_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-mruset_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-mruset_tests.Tpo -c -o test/test_test_millenniumclubcoin-mruset_tests.obj `if test -f 'test/mruset_tests.cpp'; then $(CYGPATH_W) 'test/mruset_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mruset_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-mruset_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-mruset_tests.Po
+#	$(AM_V_CXX)source='test/mruset_tests.cpp' object='test/test_test_millenniumclubcoin-mruset_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-mruset_tests.obj `if test -f 'test/mruset_tests.cpp'; then $(CYGPATH_W) 'test/mruset_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mruset_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-mruset_tests.obj `if test -f 'test/mruset_tests.cpp'; then $(CYGPATH_W) 'test/mruset_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/mruset_tests.cpp'; fi`
 
-test/test_test_delion-multisig_tests.o: test/multisig_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-multisig_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-multisig_tests.Tpo -c -o test/test_test_delion-multisig_tests.o `test -f 'test/multisig_tests.cpp' || echo '$(srcdir)/'`test/multisig_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-multisig_tests.Tpo test/$(DEPDIR)/test_test_delion-multisig_tests.Po
-#	$(AM_V_CXX)source='test/multisig_tests.cpp' object='test/test_test_delion-multisig_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-multisig_tests.o: test/multisig_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-multisig_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-multisig_tests.Tpo -c -o test/test_test_millenniumclubcoin-multisig_tests.o `test -f 'test/multisig_tests.cpp' || echo '$(srcdir)/'`test/multisig_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-multisig_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-multisig_tests.Po
+#	$(AM_V_CXX)source='test/multisig_tests.cpp' object='test/test_test_millenniumclubcoin-multisig_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-multisig_tests.o `test -f 'test/multisig_tests.cpp' || echo '$(srcdir)/'`test/multisig_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-multisig_tests.o `test -f 'test/multisig_tests.cpp' || echo '$(srcdir)/'`test/multisig_tests.cpp
 
-test/test_test_delion-multisig_tests.obj: test/multisig_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-multisig_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-multisig_tests.Tpo -c -o test/test_test_delion-multisig_tests.obj `if test -f 'test/multisig_tests.cpp'; then $(CYGPATH_W) 'test/multisig_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/multisig_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-multisig_tests.Tpo test/$(DEPDIR)/test_test_delion-multisig_tests.Po
-#	$(AM_V_CXX)source='test/multisig_tests.cpp' object='test/test_test_delion-multisig_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-multisig_tests.obj: test/multisig_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-multisig_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-multisig_tests.Tpo -c -o test/test_test_millenniumclubcoin-multisig_tests.obj `if test -f 'test/multisig_tests.cpp'; then $(CYGPATH_W) 'test/multisig_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/multisig_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-multisig_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-multisig_tests.Po
+#	$(AM_V_CXX)source='test/multisig_tests.cpp' object='test/test_test_millenniumclubcoin-multisig_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-multisig_tests.obj `if test -f 'test/multisig_tests.cpp'; then $(CYGPATH_W) 'test/multisig_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/multisig_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-multisig_tests.obj `if test -f 'test/multisig_tests.cpp'; then $(CYGPATH_W) 'test/multisig_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/multisig_tests.cpp'; fi`
 
-test/test_test_delion-netbase_tests.o: test/netbase_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-netbase_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-netbase_tests.Tpo -c -o test/test_test_delion-netbase_tests.o `test -f 'test/netbase_tests.cpp' || echo '$(srcdir)/'`test/netbase_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-netbase_tests.Tpo test/$(DEPDIR)/test_test_delion-netbase_tests.Po
-#	$(AM_V_CXX)source='test/netbase_tests.cpp' object='test/test_test_delion-netbase_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-netbase_tests.o: test/netbase_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-netbase_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-netbase_tests.Tpo -c -o test/test_test_millenniumclubcoin-netbase_tests.o `test -f 'test/netbase_tests.cpp' || echo '$(srcdir)/'`test/netbase_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-netbase_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-netbase_tests.Po
+#	$(AM_V_CXX)source='test/netbase_tests.cpp' object='test/test_test_millenniumclubcoin-netbase_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-netbase_tests.o `test -f 'test/netbase_tests.cpp' || echo '$(srcdir)/'`test/netbase_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-netbase_tests.o `test -f 'test/netbase_tests.cpp' || echo '$(srcdir)/'`test/netbase_tests.cpp
 
-test/test_test_delion-netbase_tests.obj: test/netbase_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-netbase_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-netbase_tests.Tpo -c -o test/test_test_delion-netbase_tests.obj `if test -f 'test/netbase_tests.cpp'; then $(CYGPATH_W) 'test/netbase_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/netbase_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-netbase_tests.Tpo test/$(DEPDIR)/test_test_delion-netbase_tests.Po
-#	$(AM_V_CXX)source='test/netbase_tests.cpp' object='test/test_test_delion-netbase_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-netbase_tests.obj: test/netbase_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-netbase_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-netbase_tests.Tpo -c -o test/test_test_millenniumclubcoin-netbase_tests.obj `if test -f 'test/netbase_tests.cpp'; then $(CYGPATH_W) 'test/netbase_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/netbase_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-netbase_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-netbase_tests.Po
+#	$(AM_V_CXX)source='test/netbase_tests.cpp' object='test/test_test_millenniumclubcoin-netbase_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-netbase_tests.obj `if test -f 'test/netbase_tests.cpp'; then $(CYGPATH_W) 'test/netbase_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/netbase_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-netbase_tests.obj `if test -f 'test/netbase_tests.cpp'; then $(CYGPATH_W) 'test/netbase_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/netbase_tests.cpp'; fi`
 
-test/test_test_delion-pmt_tests.o: test/pmt_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-pmt_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-pmt_tests.Tpo -c -o test/test_test_delion-pmt_tests.o `test -f 'test/pmt_tests.cpp' || echo '$(srcdir)/'`test/pmt_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-pmt_tests.Tpo test/$(DEPDIR)/test_test_delion-pmt_tests.Po
-#	$(AM_V_CXX)source='test/pmt_tests.cpp' object='test/test_test_delion-pmt_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-pmt_tests.o: test/pmt_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-pmt_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-pmt_tests.Tpo -c -o test/test_test_millenniumclubcoin-pmt_tests.o `test -f 'test/pmt_tests.cpp' || echo '$(srcdir)/'`test/pmt_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-pmt_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-pmt_tests.Po
+#	$(AM_V_CXX)source='test/pmt_tests.cpp' object='test/test_test_millenniumclubcoin-pmt_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-pmt_tests.o `test -f 'test/pmt_tests.cpp' || echo '$(srcdir)/'`test/pmt_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-pmt_tests.o `test -f 'test/pmt_tests.cpp' || echo '$(srcdir)/'`test/pmt_tests.cpp
 
-test/test_test_delion-pmt_tests.obj: test/pmt_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-pmt_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-pmt_tests.Tpo -c -o test/test_test_delion-pmt_tests.obj `if test -f 'test/pmt_tests.cpp'; then $(CYGPATH_W) 'test/pmt_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/pmt_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-pmt_tests.Tpo test/$(DEPDIR)/test_test_delion-pmt_tests.Po
-#	$(AM_V_CXX)source='test/pmt_tests.cpp' object='test/test_test_delion-pmt_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-pmt_tests.obj: test/pmt_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-pmt_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-pmt_tests.Tpo -c -o test/test_test_millenniumclubcoin-pmt_tests.obj `if test -f 'test/pmt_tests.cpp'; then $(CYGPATH_W) 'test/pmt_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/pmt_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-pmt_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-pmt_tests.Po
+#	$(AM_V_CXX)source='test/pmt_tests.cpp' object='test/test_test_millenniumclubcoin-pmt_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-pmt_tests.obj `if test -f 'test/pmt_tests.cpp'; then $(CYGPATH_W) 'test/pmt_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/pmt_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-pmt_tests.obj `if test -f 'test/pmt_tests.cpp'; then $(CYGPATH_W) 'test/pmt_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/pmt_tests.cpp'; fi`
 
-test/test_test_delion-rpc_tests.o: test/rpc_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-rpc_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-rpc_tests.Tpo -c -o test/test_test_delion-rpc_tests.o `test -f 'test/rpc_tests.cpp' || echo '$(srcdir)/'`test/rpc_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-rpc_tests.Tpo test/$(DEPDIR)/test_test_delion-rpc_tests.Po
-#	$(AM_V_CXX)source='test/rpc_tests.cpp' object='test/test_test_delion-rpc_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-rpc_tests.o: test/rpc_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-rpc_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-rpc_tests.Tpo -c -o test/test_test_millenniumclubcoin-rpc_tests.o `test -f 'test/rpc_tests.cpp' || echo '$(srcdir)/'`test/rpc_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-rpc_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-rpc_tests.Po
+#	$(AM_V_CXX)source='test/rpc_tests.cpp' object='test/test_test_millenniumclubcoin-rpc_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-rpc_tests.o `test -f 'test/rpc_tests.cpp' || echo '$(srcdir)/'`test/rpc_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-rpc_tests.o `test -f 'test/rpc_tests.cpp' || echo '$(srcdir)/'`test/rpc_tests.cpp
 
-test/test_test_delion-rpc_tests.obj: test/rpc_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-rpc_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-rpc_tests.Tpo -c -o test/test_test_delion-rpc_tests.obj `if test -f 'test/rpc_tests.cpp'; then $(CYGPATH_W) 'test/rpc_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-rpc_tests.Tpo test/$(DEPDIR)/test_test_delion-rpc_tests.Po
-#	$(AM_V_CXX)source='test/rpc_tests.cpp' object='test/test_test_delion-rpc_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-rpc_tests.obj: test/rpc_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-rpc_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-rpc_tests.Tpo -c -o test/test_test_millenniumclubcoin-rpc_tests.obj `if test -f 'test/rpc_tests.cpp'; then $(CYGPATH_W) 'test/rpc_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-rpc_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-rpc_tests.Po
+#	$(AM_V_CXX)source='test/rpc_tests.cpp' object='test/test_test_millenniumclubcoin-rpc_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-rpc_tests.obj `if test -f 'test/rpc_tests.cpp'; then $(CYGPATH_W) 'test/rpc_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-rpc_tests.obj `if test -f 'test/rpc_tests.cpp'; then $(CYGPATH_W) 'test/rpc_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_tests.cpp'; fi`
 
-test/test_test_delion-sanity_tests.o: test/sanity_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-sanity_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-sanity_tests.Tpo -c -o test/test_test_delion-sanity_tests.o `test -f 'test/sanity_tests.cpp' || echo '$(srcdir)/'`test/sanity_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-sanity_tests.Tpo test/$(DEPDIR)/test_test_delion-sanity_tests.Po
-#	$(AM_V_CXX)source='test/sanity_tests.cpp' object='test/test_test_delion-sanity_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-sanity_tests.o: test/sanity_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-sanity_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-sanity_tests.Tpo -c -o test/test_test_millenniumclubcoin-sanity_tests.o `test -f 'test/sanity_tests.cpp' || echo '$(srcdir)/'`test/sanity_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-sanity_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-sanity_tests.Po
+#	$(AM_V_CXX)source='test/sanity_tests.cpp' object='test/test_test_millenniumclubcoin-sanity_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-sanity_tests.o `test -f 'test/sanity_tests.cpp' || echo '$(srcdir)/'`test/sanity_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-sanity_tests.o `test -f 'test/sanity_tests.cpp' || echo '$(srcdir)/'`test/sanity_tests.cpp
 
-test/test_test_delion-sanity_tests.obj: test/sanity_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-sanity_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-sanity_tests.Tpo -c -o test/test_test_delion-sanity_tests.obj `if test -f 'test/sanity_tests.cpp'; then $(CYGPATH_W) 'test/sanity_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sanity_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-sanity_tests.Tpo test/$(DEPDIR)/test_test_delion-sanity_tests.Po
-#	$(AM_V_CXX)source='test/sanity_tests.cpp' object='test/test_test_delion-sanity_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-sanity_tests.obj: test/sanity_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-sanity_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-sanity_tests.Tpo -c -o test/test_test_millenniumclubcoin-sanity_tests.obj `if test -f 'test/sanity_tests.cpp'; then $(CYGPATH_W) 'test/sanity_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sanity_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-sanity_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-sanity_tests.Po
+#	$(AM_V_CXX)source='test/sanity_tests.cpp' object='test/test_test_millenniumclubcoin-sanity_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-sanity_tests.obj `if test -f 'test/sanity_tests.cpp'; then $(CYGPATH_W) 'test/sanity_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sanity_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-sanity_tests.obj `if test -f 'test/sanity_tests.cpp'; then $(CYGPATH_W) 'test/sanity_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sanity_tests.cpp'; fi`
 
-test/test_test_delion-script_P2SH_tests.o: test/script_P2SH_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-script_P2SH_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-script_P2SH_tests.Tpo -c -o test/test_test_delion-script_P2SH_tests.o `test -f 'test/script_P2SH_tests.cpp' || echo '$(srcdir)/'`test/script_P2SH_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-script_P2SH_tests.Tpo test/$(DEPDIR)/test_test_delion-script_P2SH_tests.Po
-#	$(AM_V_CXX)source='test/script_P2SH_tests.cpp' object='test/test_test_delion-script_P2SH_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-script_P2SH_tests.o: test/script_P2SH_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-script_P2SH_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-script_P2SH_tests.Tpo -c -o test/test_test_millenniumclubcoin-script_P2SH_tests.o `test -f 'test/script_P2SH_tests.cpp' || echo '$(srcdir)/'`test/script_P2SH_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-script_P2SH_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-script_P2SH_tests.Po
+#	$(AM_V_CXX)source='test/script_P2SH_tests.cpp' object='test/test_test_millenniumclubcoin-script_P2SH_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-script_P2SH_tests.o `test -f 'test/script_P2SH_tests.cpp' || echo '$(srcdir)/'`test/script_P2SH_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-script_P2SH_tests.o `test -f 'test/script_P2SH_tests.cpp' || echo '$(srcdir)/'`test/script_P2SH_tests.cpp
 
-test/test_test_delion-script_P2SH_tests.obj: test/script_P2SH_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-script_P2SH_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-script_P2SH_tests.Tpo -c -o test/test_test_delion-script_P2SH_tests.obj `if test -f 'test/script_P2SH_tests.cpp'; then $(CYGPATH_W) 'test/script_P2SH_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_P2SH_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-script_P2SH_tests.Tpo test/$(DEPDIR)/test_test_delion-script_P2SH_tests.Po
-#	$(AM_V_CXX)source='test/script_P2SH_tests.cpp' object='test/test_test_delion-script_P2SH_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-script_P2SH_tests.obj: test/script_P2SH_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-script_P2SH_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-script_P2SH_tests.Tpo -c -o test/test_test_millenniumclubcoin-script_P2SH_tests.obj `if test -f 'test/script_P2SH_tests.cpp'; then $(CYGPATH_W) 'test/script_P2SH_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_P2SH_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-script_P2SH_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-script_P2SH_tests.Po
+#	$(AM_V_CXX)source='test/script_P2SH_tests.cpp' object='test/test_test_millenniumclubcoin-script_P2SH_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-script_P2SH_tests.obj `if test -f 'test/script_P2SH_tests.cpp'; then $(CYGPATH_W) 'test/script_P2SH_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_P2SH_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-script_P2SH_tests.obj `if test -f 'test/script_P2SH_tests.cpp'; then $(CYGPATH_W) 'test/script_P2SH_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_P2SH_tests.cpp'; fi`
 
-test/test_test_delion-script_tests.o: test/script_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-script_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-script_tests.Tpo -c -o test/test_test_delion-script_tests.o `test -f 'test/script_tests.cpp' || echo '$(srcdir)/'`test/script_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-script_tests.Tpo test/$(DEPDIR)/test_test_delion-script_tests.Po
-#	$(AM_V_CXX)source='test/script_tests.cpp' object='test/test_test_delion-script_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-script_tests.o: test/script_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-script_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-script_tests.Tpo -c -o test/test_test_millenniumclubcoin-script_tests.o `test -f 'test/script_tests.cpp' || echo '$(srcdir)/'`test/script_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-script_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-script_tests.Po
+#	$(AM_V_CXX)source='test/script_tests.cpp' object='test/test_test_millenniumclubcoin-script_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-script_tests.o `test -f 'test/script_tests.cpp' || echo '$(srcdir)/'`test/script_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-script_tests.o `test -f 'test/script_tests.cpp' || echo '$(srcdir)/'`test/script_tests.cpp
 
-test/test_test_delion-script_tests.obj: test/script_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-script_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-script_tests.Tpo -c -o test/test_test_delion-script_tests.obj `if test -f 'test/script_tests.cpp'; then $(CYGPATH_W) 'test/script_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-script_tests.Tpo test/$(DEPDIR)/test_test_delion-script_tests.Po
-#	$(AM_V_CXX)source='test/script_tests.cpp' object='test/test_test_delion-script_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-script_tests.obj: test/script_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-script_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-script_tests.Tpo -c -o test/test_test_millenniumclubcoin-script_tests.obj `if test -f 'test/script_tests.cpp'; then $(CYGPATH_W) 'test/script_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-script_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-script_tests.Po
+#	$(AM_V_CXX)source='test/script_tests.cpp' object='test/test_test_millenniumclubcoin-script_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-script_tests.obj `if test -f 'test/script_tests.cpp'; then $(CYGPATH_W) 'test/script_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-script_tests.obj `if test -f 'test/script_tests.cpp'; then $(CYGPATH_W) 'test/script_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/script_tests.cpp'; fi`
 
-test/test_test_delion-scriptnum_tests.o: test/scriptnum_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-scriptnum_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-scriptnum_tests.Tpo -c -o test/test_test_delion-scriptnum_tests.o `test -f 'test/scriptnum_tests.cpp' || echo '$(srcdir)/'`test/scriptnum_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-scriptnum_tests.Tpo test/$(DEPDIR)/test_test_delion-scriptnum_tests.Po
-#	$(AM_V_CXX)source='test/scriptnum_tests.cpp' object='test/test_test_delion-scriptnum_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-scriptnum_tests.o: test/scriptnum_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-scriptnum_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-scriptnum_tests.Tpo -c -o test/test_test_millenniumclubcoin-scriptnum_tests.o `test -f 'test/scriptnum_tests.cpp' || echo '$(srcdir)/'`test/scriptnum_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-scriptnum_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-scriptnum_tests.Po
+#	$(AM_V_CXX)source='test/scriptnum_tests.cpp' object='test/test_test_millenniumclubcoin-scriptnum_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-scriptnum_tests.o `test -f 'test/scriptnum_tests.cpp' || echo '$(srcdir)/'`test/scriptnum_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-scriptnum_tests.o `test -f 'test/scriptnum_tests.cpp' || echo '$(srcdir)/'`test/scriptnum_tests.cpp
 
-test/test_test_delion-scriptnum_tests.obj: test/scriptnum_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-scriptnum_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-scriptnum_tests.Tpo -c -o test/test_test_delion-scriptnum_tests.obj `if test -f 'test/scriptnum_tests.cpp'; then $(CYGPATH_W) 'test/scriptnum_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/scriptnum_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-scriptnum_tests.Tpo test/$(DEPDIR)/test_test_delion-scriptnum_tests.Po
-#	$(AM_V_CXX)source='test/scriptnum_tests.cpp' object='test/test_test_delion-scriptnum_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-scriptnum_tests.obj: test/scriptnum_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-scriptnum_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-scriptnum_tests.Tpo -c -o test/test_test_millenniumclubcoin-scriptnum_tests.obj `if test -f 'test/scriptnum_tests.cpp'; then $(CYGPATH_W) 'test/scriptnum_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/scriptnum_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-scriptnum_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-scriptnum_tests.Po
+#	$(AM_V_CXX)source='test/scriptnum_tests.cpp' object='test/test_test_millenniumclubcoin-scriptnum_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-scriptnum_tests.obj `if test -f 'test/scriptnum_tests.cpp'; then $(CYGPATH_W) 'test/scriptnum_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/scriptnum_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-scriptnum_tests.obj `if test -f 'test/scriptnum_tests.cpp'; then $(CYGPATH_W) 'test/scriptnum_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/scriptnum_tests.cpp'; fi`
 
-test/test_test_delion-serialize_tests.o: test/serialize_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-serialize_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-serialize_tests.Tpo -c -o test/test_test_delion-serialize_tests.o `test -f 'test/serialize_tests.cpp' || echo '$(srcdir)/'`test/serialize_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-serialize_tests.Tpo test/$(DEPDIR)/test_test_delion-serialize_tests.Po
-#	$(AM_V_CXX)source='test/serialize_tests.cpp' object='test/test_test_delion-serialize_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-serialize_tests.o: test/serialize_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-serialize_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-serialize_tests.Tpo -c -o test/test_test_millenniumclubcoin-serialize_tests.o `test -f 'test/serialize_tests.cpp' || echo '$(srcdir)/'`test/serialize_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-serialize_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-serialize_tests.Po
+#	$(AM_V_CXX)source='test/serialize_tests.cpp' object='test/test_test_millenniumclubcoin-serialize_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-serialize_tests.o `test -f 'test/serialize_tests.cpp' || echo '$(srcdir)/'`test/serialize_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-serialize_tests.o `test -f 'test/serialize_tests.cpp' || echo '$(srcdir)/'`test/serialize_tests.cpp
 
-test/test_test_delion-serialize_tests.obj: test/serialize_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-serialize_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-serialize_tests.Tpo -c -o test/test_test_delion-serialize_tests.obj `if test -f 'test/serialize_tests.cpp'; then $(CYGPATH_W) 'test/serialize_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/serialize_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-serialize_tests.Tpo test/$(DEPDIR)/test_test_delion-serialize_tests.Po
-#	$(AM_V_CXX)source='test/serialize_tests.cpp' object='test/test_test_delion-serialize_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-serialize_tests.obj: test/serialize_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-serialize_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-serialize_tests.Tpo -c -o test/test_test_millenniumclubcoin-serialize_tests.obj `if test -f 'test/serialize_tests.cpp'; then $(CYGPATH_W) 'test/serialize_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/serialize_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-serialize_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-serialize_tests.Po
+#	$(AM_V_CXX)source='test/serialize_tests.cpp' object='test/test_test_millenniumclubcoin-serialize_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-serialize_tests.obj `if test -f 'test/serialize_tests.cpp'; then $(CYGPATH_W) 'test/serialize_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/serialize_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-serialize_tests.obj `if test -f 'test/serialize_tests.cpp'; then $(CYGPATH_W) 'test/serialize_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/serialize_tests.cpp'; fi`
 
-test/test_test_delion-sighash_tests.o: test/sighash_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-sighash_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-sighash_tests.Tpo -c -o test/test_test_delion-sighash_tests.o `test -f 'test/sighash_tests.cpp' || echo '$(srcdir)/'`test/sighash_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-sighash_tests.Tpo test/$(DEPDIR)/test_test_delion-sighash_tests.Po
-#	$(AM_V_CXX)source='test/sighash_tests.cpp' object='test/test_test_delion-sighash_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-sighash_tests.o: test/sighash_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-sighash_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-sighash_tests.Tpo -c -o test/test_test_millenniumclubcoin-sighash_tests.o `test -f 'test/sighash_tests.cpp' || echo '$(srcdir)/'`test/sighash_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-sighash_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-sighash_tests.Po
+#	$(AM_V_CXX)source='test/sighash_tests.cpp' object='test/test_test_millenniumclubcoin-sighash_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-sighash_tests.o `test -f 'test/sighash_tests.cpp' || echo '$(srcdir)/'`test/sighash_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-sighash_tests.o `test -f 'test/sighash_tests.cpp' || echo '$(srcdir)/'`test/sighash_tests.cpp
 
-test/test_test_delion-sighash_tests.obj: test/sighash_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-sighash_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-sighash_tests.Tpo -c -o test/test_test_delion-sighash_tests.obj `if test -f 'test/sighash_tests.cpp'; then $(CYGPATH_W) 'test/sighash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sighash_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-sighash_tests.Tpo test/$(DEPDIR)/test_test_delion-sighash_tests.Po
-#	$(AM_V_CXX)source='test/sighash_tests.cpp' object='test/test_test_delion-sighash_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-sighash_tests.obj: test/sighash_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-sighash_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-sighash_tests.Tpo -c -o test/test_test_millenniumclubcoin-sighash_tests.obj `if test -f 'test/sighash_tests.cpp'; then $(CYGPATH_W) 'test/sighash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sighash_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-sighash_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-sighash_tests.Po
+#	$(AM_V_CXX)source='test/sighash_tests.cpp' object='test/test_test_millenniumclubcoin-sighash_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-sighash_tests.obj `if test -f 'test/sighash_tests.cpp'; then $(CYGPATH_W) 'test/sighash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sighash_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-sighash_tests.obj `if test -f 'test/sighash_tests.cpp'; then $(CYGPATH_W) 'test/sighash_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sighash_tests.cpp'; fi`
 
-test/test_test_delion-sigopcount_tests.o: test/sigopcount_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-sigopcount_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-sigopcount_tests.Tpo -c -o test/test_test_delion-sigopcount_tests.o `test -f 'test/sigopcount_tests.cpp' || echo '$(srcdir)/'`test/sigopcount_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-sigopcount_tests.Tpo test/$(DEPDIR)/test_test_delion-sigopcount_tests.Po
-#	$(AM_V_CXX)source='test/sigopcount_tests.cpp' object='test/test_test_delion-sigopcount_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-sigopcount_tests.o: test/sigopcount_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-sigopcount_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-sigopcount_tests.Tpo -c -o test/test_test_millenniumclubcoin-sigopcount_tests.o `test -f 'test/sigopcount_tests.cpp' || echo '$(srcdir)/'`test/sigopcount_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-sigopcount_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-sigopcount_tests.Po
+#	$(AM_V_CXX)source='test/sigopcount_tests.cpp' object='test/test_test_millenniumclubcoin-sigopcount_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-sigopcount_tests.o `test -f 'test/sigopcount_tests.cpp' || echo '$(srcdir)/'`test/sigopcount_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-sigopcount_tests.o `test -f 'test/sigopcount_tests.cpp' || echo '$(srcdir)/'`test/sigopcount_tests.cpp
 
-test/test_test_delion-sigopcount_tests.obj: test/sigopcount_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-sigopcount_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-sigopcount_tests.Tpo -c -o test/test_test_delion-sigopcount_tests.obj `if test -f 'test/sigopcount_tests.cpp'; then $(CYGPATH_W) 'test/sigopcount_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sigopcount_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-sigopcount_tests.Tpo test/$(DEPDIR)/test_test_delion-sigopcount_tests.Po
-#	$(AM_V_CXX)source='test/sigopcount_tests.cpp' object='test/test_test_delion-sigopcount_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-sigopcount_tests.obj: test/sigopcount_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-sigopcount_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-sigopcount_tests.Tpo -c -o test/test_test_millenniumclubcoin-sigopcount_tests.obj `if test -f 'test/sigopcount_tests.cpp'; then $(CYGPATH_W) 'test/sigopcount_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sigopcount_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-sigopcount_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-sigopcount_tests.Po
+#	$(AM_V_CXX)source='test/sigopcount_tests.cpp' object='test/test_test_millenniumclubcoin-sigopcount_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-sigopcount_tests.obj `if test -f 'test/sigopcount_tests.cpp'; then $(CYGPATH_W) 'test/sigopcount_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sigopcount_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-sigopcount_tests.obj `if test -f 'test/sigopcount_tests.cpp'; then $(CYGPATH_W) 'test/sigopcount_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/sigopcount_tests.cpp'; fi`
 
-test/test_test_delion-skiplist_tests.o: test/skiplist_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-skiplist_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-skiplist_tests.Tpo -c -o test/test_test_delion-skiplist_tests.o `test -f 'test/skiplist_tests.cpp' || echo '$(srcdir)/'`test/skiplist_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-skiplist_tests.Tpo test/$(DEPDIR)/test_test_delion-skiplist_tests.Po
-#	$(AM_V_CXX)source='test/skiplist_tests.cpp' object='test/test_test_delion-skiplist_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-skiplist_tests.o: test/skiplist_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-skiplist_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-skiplist_tests.Tpo -c -o test/test_test_millenniumclubcoin-skiplist_tests.o `test -f 'test/skiplist_tests.cpp' || echo '$(srcdir)/'`test/skiplist_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-skiplist_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-skiplist_tests.Po
+#	$(AM_V_CXX)source='test/skiplist_tests.cpp' object='test/test_test_millenniumclubcoin-skiplist_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-skiplist_tests.o `test -f 'test/skiplist_tests.cpp' || echo '$(srcdir)/'`test/skiplist_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-skiplist_tests.o `test -f 'test/skiplist_tests.cpp' || echo '$(srcdir)/'`test/skiplist_tests.cpp
 
-test/test_test_delion-skiplist_tests.obj: test/skiplist_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-skiplist_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-skiplist_tests.Tpo -c -o test/test_test_delion-skiplist_tests.obj `if test -f 'test/skiplist_tests.cpp'; then $(CYGPATH_W) 'test/skiplist_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/skiplist_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-skiplist_tests.Tpo test/$(DEPDIR)/test_test_delion-skiplist_tests.Po
-#	$(AM_V_CXX)source='test/skiplist_tests.cpp' object='test/test_test_delion-skiplist_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-skiplist_tests.obj: test/skiplist_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-skiplist_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-skiplist_tests.Tpo -c -o test/test_test_millenniumclubcoin-skiplist_tests.obj `if test -f 'test/skiplist_tests.cpp'; then $(CYGPATH_W) 'test/skiplist_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/skiplist_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-skiplist_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-skiplist_tests.Po
+#	$(AM_V_CXX)source='test/skiplist_tests.cpp' object='test/test_test_millenniumclubcoin-skiplist_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-skiplist_tests.obj `if test -f 'test/skiplist_tests.cpp'; then $(CYGPATH_W) 'test/skiplist_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/skiplist_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-skiplist_tests.obj `if test -f 'test/skiplist_tests.cpp'; then $(CYGPATH_W) 'test/skiplist_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/skiplist_tests.cpp'; fi`
 
-test/test_test_delion-test_delion.o: test/test_delion.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-test_delion.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-test_delion.Tpo -c -o test/test_test_delion-test_delion.o `test -f 'test/test_delion.cpp' || echo '$(srcdir)/'`test/test_delion.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-test_delion.Tpo test/$(DEPDIR)/test_test_delion-test_delion.Po
-#	$(AM_V_CXX)source='test/test_delion.cpp' object='test/test_test_delion-test_delion.o' libtool=no \
+test/test_test_millenniumclubcoin-test_millenniumclubcoin.o: test/test_millenniumclubcoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-test_millenniumclubcoin.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-test_millenniumclubcoin.Tpo -c -o test/test_test_millenniumclubcoin-test_millenniumclubcoin.o `test -f 'test/test_millenniumclubcoin.cpp' || echo '$(srcdir)/'`test/test_millenniumclubcoin.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-test_millenniumclubcoin.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-test_millenniumclubcoin.Po
+#	$(AM_V_CXX)source='test/test_millenniumclubcoin.cpp' object='test/test_test_millenniumclubcoin-test_millenniumclubcoin.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-test_delion.o `test -f 'test/test_delion.cpp' || echo '$(srcdir)/'`test/test_delion.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-test_millenniumclubcoin.o `test -f 'test/test_millenniumclubcoin.cpp' || echo '$(srcdir)/'`test/test_millenniumclubcoin.cpp
 
-test/test_test_delion-test_delion.obj: test/test_delion.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-test_delion.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-test_delion.Tpo -c -o test/test_test_delion-test_delion.obj `if test -f 'test/test_delion.cpp'; then $(CYGPATH_W) 'test/test_delion.cpp'; else $(CYGPATH_W) '$(srcdir)/test/test_delion.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-test_delion.Tpo test/$(DEPDIR)/test_test_delion-test_delion.Po
-#	$(AM_V_CXX)source='test/test_delion.cpp' object='test/test_test_delion-test_delion.obj' libtool=no \
+test/test_test_millenniumclubcoin-test_millenniumclubcoin.obj: test/test_millenniumclubcoin.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-test_millenniumclubcoin.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-test_millenniumclubcoin.Tpo -c -o test/test_test_millenniumclubcoin-test_millenniumclubcoin.obj `if test -f 'test/test_millenniumclubcoin.cpp'; then $(CYGPATH_W) 'test/test_millenniumclubcoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/test_millenniumclubcoin.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-test_millenniumclubcoin.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-test_millenniumclubcoin.Po
+#	$(AM_V_CXX)source='test/test_millenniumclubcoin.cpp' object='test/test_test_millenniumclubcoin-test_millenniumclubcoin.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-test_delion.obj `if test -f 'test/test_delion.cpp'; then $(CYGPATH_W) 'test/test_delion.cpp'; else $(CYGPATH_W) '$(srcdir)/test/test_delion.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-test_millenniumclubcoin.obj `if test -f 'test/test_millenniumclubcoin.cpp'; then $(CYGPATH_W) 'test/test_millenniumclubcoin.cpp'; else $(CYGPATH_W) '$(srcdir)/test/test_millenniumclubcoin.cpp'; fi`
 
-test/test_test_delion-timedata_tests.o: test/timedata_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-timedata_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-timedata_tests.Tpo -c -o test/test_test_delion-timedata_tests.o `test -f 'test/timedata_tests.cpp' || echo '$(srcdir)/'`test/timedata_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-timedata_tests.Tpo test/$(DEPDIR)/test_test_delion-timedata_tests.Po
-#	$(AM_V_CXX)source='test/timedata_tests.cpp' object='test/test_test_delion-timedata_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-timedata_tests.o: test/timedata_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-timedata_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-timedata_tests.Tpo -c -o test/test_test_millenniumclubcoin-timedata_tests.o `test -f 'test/timedata_tests.cpp' || echo '$(srcdir)/'`test/timedata_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-timedata_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-timedata_tests.Po
+#	$(AM_V_CXX)source='test/timedata_tests.cpp' object='test/test_test_millenniumclubcoin-timedata_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-timedata_tests.o `test -f 'test/timedata_tests.cpp' || echo '$(srcdir)/'`test/timedata_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-timedata_tests.o `test -f 'test/timedata_tests.cpp' || echo '$(srcdir)/'`test/timedata_tests.cpp
 
-test/test_test_delion-timedata_tests.obj: test/timedata_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-timedata_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-timedata_tests.Tpo -c -o test/test_test_delion-timedata_tests.obj `if test -f 'test/timedata_tests.cpp'; then $(CYGPATH_W) 'test/timedata_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/timedata_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-timedata_tests.Tpo test/$(DEPDIR)/test_test_delion-timedata_tests.Po
-#	$(AM_V_CXX)source='test/timedata_tests.cpp' object='test/test_test_delion-timedata_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-timedata_tests.obj: test/timedata_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-timedata_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-timedata_tests.Tpo -c -o test/test_test_millenniumclubcoin-timedata_tests.obj `if test -f 'test/timedata_tests.cpp'; then $(CYGPATH_W) 'test/timedata_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/timedata_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-timedata_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-timedata_tests.Po
+#	$(AM_V_CXX)source='test/timedata_tests.cpp' object='test/test_test_millenniumclubcoin-timedata_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-timedata_tests.obj `if test -f 'test/timedata_tests.cpp'; then $(CYGPATH_W) 'test/timedata_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/timedata_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-timedata_tests.obj `if test -f 'test/timedata_tests.cpp'; then $(CYGPATH_W) 'test/timedata_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/timedata_tests.cpp'; fi`
 
-test/test_test_delion-torcontrol_tests.o: test/torcontrol_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-torcontrol_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-torcontrol_tests.Tpo -c -o test/test_test_delion-torcontrol_tests.o `test -f 'test/torcontrol_tests.cpp' || echo '$(srcdir)/'`test/torcontrol_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-torcontrol_tests.Tpo test/$(DEPDIR)/test_test_delion-torcontrol_tests.Po
-#	$(AM_V_CXX)source='test/torcontrol_tests.cpp' object='test/test_test_delion-torcontrol_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-torcontrol_tests.o: test/torcontrol_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-torcontrol_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-torcontrol_tests.Tpo -c -o test/test_test_millenniumclubcoin-torcontrol_tests.o `test -f 'test/torcontrol_tests.cpp' || echo '$(srcdir)/'`test/torcontrol_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-torcontrol_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-torcontrol_tests.Po
+#	$(AM_V_CXX)source='test/torcontrol_tests.cpp' object='test/test_test_millenniumclubcoin-torcontrol_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-torcontrol_tests.o `test -f 'test/torcontrol_tests.cpp' || echo '$(srcdir)/'`test/torcontrol_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-torcontrol_tests.o `test -f 'test/torcontrol_tests.cpp' || echo '$(srcdir)/'`test/torcontrol_tests.cpp
 
-test/test_test_delion-torcontrol_tests.obj: test/torcontrol_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-torcontrol_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-torcontrol_tests.Tpo -c -o test/test_test_delion-torcontrol_tests.obj `if test -f 'test/torcontrol_tests.cpp'; then $(CYGPATH_W) 'test/torcontrol_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/torcontrol_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-torcontrol_tests.Tpo test/$(DEPDIR)/test_test_delion-torcontrol_tests.Po
-#	$(AM_V_CXX)source='test/torcontrol_tests.cpp' object='test/test_test_delion-torcontrol_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-torcontrol_tests.obj: test/torcontrol_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-torcontrol_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-torcontrol_tests.Tpo -c -o test/test_test_millenniumclubcoin-torcontrol_tests.obj `if test -f 'test/torcontrol_tests.cpp'; then $(CYGPATH_W) 'test/torcontrol_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/torcontrol_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-torcontrol_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-torcontrol_tests.Po
+#	$(AM_V_CXX)source='test/torcontrol_tests.cpp' object='test/test_test_millenniumclubcoin-torcontrol_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-torcontrol_tests.obj `if test -f 'test/torcontrol_tests.cpp'; then $(CYGPATH_W) 'test/torcontrol_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/torcontrol_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-torcontrol_tests.obj `if test -f 'test/torcontrol_tests.cpp'; then $(CYGPATH_W) 'test/torcontrol_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/torcontrol_tests.cpp'; fi`
 
-test/test_test_delion-transaction_tests.o: test/transaction_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-transaction_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-transaction_tests.Tpo -c -o test/test_test_delion-transaction_tests.o `test -f 'test/transaction_tests.cpp' || echo '$(srcdir)/'`test/transaction_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-transaction_tests.Tpo test/$(DEPDIR)/test_test_delion-transaction_tests.Po
-#	$(AM_V_CXX)source='test/transaction_tests.cpp' object='test/test_test_delion-transaction_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-transaction_tests.o: test/transaction_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-transaction_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-transaction_tests.Tpo -c -o test/test_test_millenniumclubcoin-transaction_tests.o `test -f 'test/transaction_tests.cpp' || echo '$(srcdir)/'`test/transaction_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-transaction_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-transaction_tests.Po
+#	$(AM_V_CXX)source='test/transaction_tests.cpp' object='test/test_test_millenniumclubcoin-transaction_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-transaction_tests.o `test -f 'test/transaction_tests.cpp' || echo '$(srcdir)/'`test/transaction_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-transaction_tests.o `test -f 'test/transaction_tests.cpp' || echo '$(srcdir)/'`test/transaction_tests.cpp
 
-test/test_test_delion-transaction_tests.obj: test/transaction_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-transaction_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-transaction_tests.Tpo -c -o test/test_test_delion-transaction_tests.obj `if test -f 'test/transaction_tests.cpp'; then $(CYGPATH_W) 'test/transaction_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/transaction_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-transaction_tests.Tpo test/$(DEPDIR)/test_test_delion-transaction_tests.Po
-#	$(AM_V_CXX)source='test/transaction_tests.cpp' object='test/test_test_delion-transaction_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-transaction_tests.obj: test/transaction_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-transaction_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-transaction_tests.Tpo -c -o test/test_test_millenniumclubcoin-transaction_tests.obj `if test -f 'test/transaction_tests.cpp'; then $(CYGPATH_W) 'test/transaction_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/transaction_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-transaction_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-transaction_tests.Po
+#	$(AM_V_CXX)source='test/transaction_tests.cpp' object='test/test_test_millenniumclubcoin-transaction_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-transaction_tests.obj `if test -f 'test/transaction_tests.cpp'; then $(CYGPATH_W) 'test/transaction_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/transaction_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-transaction_tests.obj `if test -f 'test/transaction_tests.cpp'; then $(CYGPATH_W) 'test/transaction_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/transaction_tests.cpp'; fi`
 
-test/test_test_delion-uint256_tests.o: test/uint256_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-uint256_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-uint256_tests.Tpo -c -o test/test_test_delion-uint256_tests.o `test -f 'test/uint256_tests.cpp' || echo '$(srcdir)/'`test/uint256_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-uint256_tests.Tpo test/$(DEPDIR)/test_test_delion-uint256_tests.Po
-#	$(AM_V_CXX)source='test/uint256_tests.cpp' object='test/test_test_delion-uint256_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-uint256_tests.o: test/uint256_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-uint256_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-uint256_tests.Tpo -c -o test/test_test_millenniumclubcoin-uint256_tests.o `test -f 'test/uint256_tests.cpp' || echo '$(srcdir)/'`test/uint256_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-uint256_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-uint256_tests.Po
+#	$(AM_V_CXX)source='test/uint256_tests.cpp' object='test/test_test_millenniumclubcoin-uint256_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-uint256_tests.o `test -f 'test/uint256_tests.cpp' || echo '$(srcdir)/'`test/uint256_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-uint256_tests.o `test -f 'test/uint256_tests.cpp' || echo '$(srcdir)/'`test/uint256_tests.cpp
 
-test/test_test_delion-uint256_tests.obj: test/uint256_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-uint256_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-uint256_tests.Tpo -c -o test/test_test_delion-uint256_tests.obj `if test -f 'test/uint256_tests.cpp'; then $(CYGPATH_W) 'test/uint256_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/uint256_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-uint256_tests.Tpo test/$(DEPDIR)/test_test_delion-uint256_tests.Po
-#	$(AM_V_CXX)source='test/uint256_tests.cpp' object='test/test_test_delion-uint256_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-uint256_tests.obj: test/uint256_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-uint256_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-uint256_tests.Tpo -c -o test/test_test_millenniumclubcoin-uint256_tests.obj `if test -f 'test/uint256_tests.cpp'; then $(CYGPATH_W) 'test/uint256_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/uint256_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-uint256_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-uint256_tests.Po
+#	$(AM_V_CXX)source='test/uint256_tests.cpp' object='test/test_test_millenniumclubcoin-uint256_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-uint256_tests.obj `if test -f 'test/uint256_tests.cpp'; then $(CYGPATH_W) 'test/uint256_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/uint256_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-uint256_tests.obj `if test -f 'test/uint256_tests.cpp'; then $(CYGPATH_W) 'test/uint256_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/uint256_tests.cpp'; fi`
 
-test/test_test_delion-univalue_tests.o: test/univalue_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-univalue_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-univalue_tests.Tpo -c -o test/test_test_delion-univalue_tests.o `test -f 'test/univalue_tests.cpp' || echo '$(srcdir)/'`test/univalue_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-univalue_tests.Tpo test/$(DEPDIR)/test_test_delion-univalue_tests.Po
-#	$(AM_V_CXX)source='test/univalue_tests.cpp' object='test/test_test_delion-univalue_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-univalue_tests.o: test/univalue_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-univalue_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-univalue_tests.Tpo -c -o test/test_test_millenniumclubcoin-univalue_tests.o `test -f 'test/univalue_tests.cpp' || echo '$(srcdir)/'`test/univalue_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-univalue_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-univalue_tests.Po
+#	$(AM_V_CXX)source='test/univalue_tests.cpp' object='test/test_test_millenniumclubcoin-univalue_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-univalue_tests.o `test -f 'test/univalue_tests.cpp' || echo '$(srcdir)/'`test/univalue_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-univalue_tests.o `test -f 'test/univalue_tests.cpp' || echo '$(srcdir)/'`test/univalue_tests.cpp
 
-test/test_test_delion-univalue_tests.obj: test/univalue_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-univalue_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-univalue_tests.Tpo -c -o test/test_test_delion-univalue_tests.obj `if test -f 'test/univalue_tests.cpp'; then $(CYGPATH_W) 'test/univalue_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/univalue_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-univalue_tests.Tpo test/$(DEPDIR)/test_test_delion-univalue_tests.Po
-#	$(AM_V_CXX)source='test/univalue_tests.cpp' object='test/test_test_delion-univalue_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-univalue_tests.obj: test/univalue_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-univalue_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-univalue_tests.Tpo -c -o test/test_test_millenniumclubcoin-univalue_tests.obj `if test -f 'test/univalue_tests.cpp'; then $(CYGPATH_W) 'test/univalue_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/univalue_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-univalue_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-univalue_tests.Po
+#	$(AM_V_CXX)source='test/univalue_tests.cpp' object='test/test_test_millenniumclubcoin-univalue_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-univalue_tests.obj `if test -f 'test/univalue_tests.cpp'; then $(CYGPATH_W) 'test/univalue_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/univalue_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-univalue_tests.obj `if test -f 'test/univalue_tests.cpp'; then $(CYGPATH_W) 'test/univalue_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/univalue_tests.cpp'; fi`
 
-test/test_test_delion-util_tests.o: test/util_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-util_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-util_tests.Tpo -c -o test/test_test_delion-util_tests.o `test -f 'test/util_tests.cpp' || echo '$(srcdir)/'`test/util_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-util_tests.Tpo test/$(DEPDIR)/test_test_delion-util_tests.Po
-#	$(AM_V_CXX)source='test/util_tests.cpp' object='test/test_test_delion-util_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-util_tests.o: test/util_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-util_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-util_tests.Tpo -c -o test/test_test_millenniumclubcoin-util_tests.o `test -f 'test/util_tests.cpp' || echo '$(srcdir)/'`test/util_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-util_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-util_tests.Po
+#	$(AM_V_CXX)source='test/util_tests.cpp' object='test/test_test_millenniumclubcoin-util_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-util_tests.o `test -f 'test/util_tests.cpp' || echo '$(srcdir)/'`test/util_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-util_tests.o `test -f 'test/util_tests.cpp' || echo '$(srcdir)/'`test/util_tests.cpp
 
-test/test_test_delion-util_tests.obj: test/util_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-util_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-util_tests.Tpo -c -o test/test_test_delion-util_tests.obj `if test -f 'test/util_tests.cpp'; then $(CYGPATH_W) 'test/util_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/util_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-util_tests.Tpo test/$(DEPDIR)/test_test_delion-util_tests.Po
-#	$(AM_V_CXX)source='test/util_tests.cpp' object='test/test_test_delion-util_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-util_tests.obj: test/util_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-util_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-util_tests.Tpo -c -o test/test_test_millenniumclubcoin-util_tests.obj `if test -f 'test/util_tests.cpp'; then $(CYGPATH_W) 'test/util_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/util_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-util_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-util_tests.Po
+#	$(AM_V_CXX)source='test/util_tests.cpp' object='test/test_test_millenniumclubcoin-util_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-util_tests.obj `if test -f 'test/util_tests.cpp'; then $(CYGPATH_W) 'test/util_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/util_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-util_tests.obj `if test -f 'test/util_tests.cpp'; then $(CYGPATH_W) 'test/util_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/util_tests.cpp'; fi`
 
-test/test_test_delion-accounting_tests.o: test/accounting_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-accounting_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-accounting_tests.Tpo -c -o test/test_test_delion-accounting_tests.o `test -f 'test/accounting_tests.cpp' || echo '$(srcdir)/'`test/accounting_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-accounting_tests.Tpo test/$(DEPDIR)/test_test_delion-accounting_tests.Po
-#	$(AM_V_CXX)source='test/accounting_tests.cpp' object='test/test_test_delion-accounting_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-accounting_tests.o: test/accounting_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-accounting_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-accounting_tests.Tpo -c -o test/test_test_millenniumclubcoin-accounting_tests.o `test -f 'test/accounting_tests.cpp' || echo '$(srcdir)/'`test/accounting_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-accounting_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-accounting_tests.Po
+#	$(AM_V_CXX)source='test/accounting_tests.cpp' object='test/test_test_millenniumclubcoin-accounting_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-accounting_tests.o `test -f 'test/accounting_tests.cpp' || echo '$(srcdir)/'`test/accounting_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-accounting_tests.o `test -f 'test/accounting_tests.cpp' || echo '$(srcdir)/'`test/accounting_tests.cpp
 
-test/test_test_delion-accounting_tests.obj: test/accounting_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-accounting_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-accounting_tests.Tpo -c -o test/test_test_delion-accounting_tests.obj `if test -f 'test/accounting_tests.cpp'; then $(CYGPATH_W) 'test/accounting_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/accounting_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-accounting_tests.Tpo test/$(DEPDIR)/test_test_delion-accounting_tests.Po
-#	$(AM_V_CXX)source='test/accounting_tests.cpp' object='test/test_test_delion-accounting_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-accounting_tests.obj: test/accounting_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-accounting_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-accounting_tests.Tpo -c -o test/test_test_millenniumclubcoin-accounting_tests.obj `if test -f 'test/accounting_tests.cpp'; then $(CYGPATH_W) 'test/accounting_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/accounting_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-accounting_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-accounting_tests.Po
+#	$(AM_V_CXX)source='test/accounting_tests.cpp' object='test/test_test_millenniumclubcoin-accounting_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-accounting_tests.obj `if test -f 'test/accounting_tests.cpp'; then $(CYGPATH_W) 'test/accounting_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/accounting_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-accounting_tests.obj `if test -f 'test/accounting_tests.cpp'; then $(CYGPATH_W) 'test/accounting_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/accounting_tests.cpp'; fi`
 
-test/test_test_delion-wallet_tests.o: test/wallet_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-wallet_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-wallet_tests.Tpo -c -o test/test_test_delion-wallet_tests.o `test -f 'test/wallet_tests.cpp' || echo '$(srcdir)/'`test/wallet_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-wallet_tests.Tpo test/$(DEPDIR)/test_test_delion-wallet_tests.Po
-#	$(AM_V_CXX)source='test/wallet_tests.cpp' object='test/test_test_delion-wallet_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-wallet_tests.o: test/wallet_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-wallet_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-wallet_tests.Tpo -c -o test/test_test_millenniumclubcoin-wallet_tests.o `test -f 'test/wallet_tests.cpp' || echo '$(srcdir)/'`test/wallet_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-wallet_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-wallet_tests.Po
+#	$(AM_V_CXX)source='test/wallet_tests.cpp' object='test/test_test_millenniumclubcoin-wallet_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-wallet_tests.o `test -f 'test/wallet_tests.cpp' || echo '$(srcdir)/'`test/wallet_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-wallet_tests.o `test -f 'test/wallet_tests.cpp' || echo '$(srcdir)/'`test/wallet_tests.cpp
 
-test/test_test_delion-wallet_tests.obj: test/wallet_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-wallet_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-wallet_tests.Tpo -c -o test/test_test_delion-wallet_tests.obj `if test -f 'test/wallet_tests.cpp'; then $(CYGPATH_W) 'test/wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/wallet_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-wallet_tests.Tpo test/$(DEPDIR)/test_test_delion-wallet_tests.Po
-#	$(AM_V_CXX)source='test/wallet_tests.cpp' object='test/test_test_delion-wallet_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-wallet_tests.obj: test/wallet_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-wallet_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-wallet_tests.Tpo -c -o test/test_test_millenniumclubcoin-wallet_tests.obj `if test -f 'test/wallet_tests.cpp'; then $(CYGPATH_W) 'test/wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/wallet_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-wallet_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-wallet_tests.Po
+#	$(AM_V_CXX)source='test/wallet_tests.cpp' object='test/test_test_millenniumclubcoin-wallet_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-wallet_tests.obj `if test -f 'test/wallet_tests.cpp'; then $(CYGPATH_W) 'test/wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/wallet_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-wallet_tests.obj `if test -f 'test/wallet_tests.cpp'; then $(CYGPATH_W) 'test/wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/wallet_tests.cpp'; fi`
 
-test/test_test_delion-rpc_wallet_tests.o: test/rpc_wallet_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-rpc_wallet_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_delion-rpc_wallet_tests.Tpo -c -o test/test_test_delion-rpc_wallet_tests.o `test -f 'test/rpc_wallet_tests.cpp' || echo '$(srcdir)/'`test/rpc_wallet_tests.cpp
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-rpc_wallet_tests.Tpo test/$(DEPDIR)/test_test_delion-rpc_wallet_tests.Po
-#	$(AM_V_CXX)source='test/rpc_wallet_tests.cpp' object='test/test_test_delion-rpc_wallet_tests.o' libtool=no \
+test/test_test_millenniumclubcoin-rpc_wallet_tests.o: test/rpc_wallet_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-rpc_wallet_tests.o -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-rpc_wallet_tests.Tpo -c -o test/test_test_millenniumclubcoin-rpc_wallet_tests.o `test -f 'test/rpc_wallet_tests.cpp' || echo '$(srcdir)/'`test/rpc_wallet_tests.cpp
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-rpc_wallet_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-rpc_wallet_tests.Po
+#	$(AM_V_CXX)source='test/rpc_wallet_tests.cpp' object='test/test_test_millenniumclubcoin-rpc_wallet_tests.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-rpc_wallet_tests.o `test -f 'test/rpc_wallet_tests.cpp' || echo '$(srcdir)/'`test/rpc_wallet_tests.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-rpc_wallet_tests.o `test -f 'test/rpc_wallet_tests.cpp' || echo '$(srcdir)/'`test/rpc_wallet_tests.cpp
 
-test/test_test_delion-rpc_wallet_tests.obj: test/rpc_wallet_tests.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_delion-rpc_wallet_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_delion-rpc_wallet_tests.Tpo -c -o test/test_test_delion-rpc_wallet_tests.obj `if test -f 'test/rpc_wallet_tests.cpp'; then $(CYGPATH_W) 'test/rpc_wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_wallet_tests.cpp'; fi`
-	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_delion-rpc_wallet_tests.Tpo test/$(DEPDIR)/test_test_delion-rpc_wallet_tests.Po
-#	$(AM_V_CXX)source='test/rpc_wallet_tests.cpp' object='test/test_test_delion-rpc_wallet_tests.obj' libtool=no \
+test/test_test_millenniumclubcoin-rpc_wallet_tests.obj: test/rpc_wallet_tests.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT test/test_test_millenniumclubcoin-rpc_wallet_tests.obj -MD -MP -MF test/$(DEPDIR)/test_test_millenniumclubcoin-rpc_wallet_tests.Tpo -c -o test/test_test_millenniumclubcoin-rpc_wallet_tests.obj `if test -f 'test/rpc_wallet_tests.cpp'; then $(CYGPATH_W) 'test/rpc_wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_wallet_tests.cpp'; fi`
+	$(AM_V_at)$(am__mv) test/$(DEPDIR)/test_test_millenniumclubcoin-rpc_wallet_tests.Tpo test/$(DEPDIR)/test_test_millenniumclubcoin-rpc_wallet_tests.Po
+#	$(AM_V_CXX)source='test/rpc_wallet_tests.cpp' object='test/test_test_millenniumclubcoin-rpc_wallet_tests.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_delion_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_delion-rpc_wallet_tests.obj `if test -f 'test/rpc_wallet_tests.cpp'; then $(CYGPATH_W) 'test/rpc_wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_wallet_tests.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(test_test_millenniumclubcoin_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o test/test_test_millenniumclubcoin-rpc_wallet_tests.obj `if test -f 'test/rpc_wallet_tests.cpp'; then $(CYGPATH_W) 'test/rpc_wallet_tests.cpp'; else $(CYGPATH_W) '$(srcdir)/test/rpc_wallet_tests.cpp'; fi`
 
-delion_cli-delion-cli.o: delion-cli.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(delion_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT delion_cli-delion-cli.o -MD -MP -MF $(DEPDIR)/delion_cli-delion-cli.Tpo -c -o delion_cli-delion-cli.o `test -f 'delion-cli.cpp' || echo '$(srcdir)/'`delion-cli.cpp
-	$(AM_V_at)$(am__mv) $(DEPDIR)/delion_cli-delion-cli.Tpo $(DEPDIR)/delion_cli-delion-cli.Po
-#	$(AM_V_CXX)source='delion-cli.cpp' object='delion_cli-delion-cli.o' libtool=no \
+millenniumclubcoin_cli-millenniumclubcoin-cli.o: millenniumclubcoin-cli.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(millenniumclubcoin_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT millenniumclubcoin_cli-millenniumclubcoin-cli.o -MD -MP -MF $(DEPDIR)/millenniumclubcoin_cli-millenniumclubcoin-cli.Tpo -c -o millenniumclubcoin_cli-millenniumclubcoin-cli.o `test -f 'millenniumclubcoin-cli.cpp' || echo '$(srcdir)/'`millenniumclubcoin-cli.cpp
+	$(AM_V_at)$(am__mv) $(DEPDIR)/millenniumclubcoin_cli-millenniumclubcoin-cli.Tpo $(DEPDIR)/millenniumclubcoin_cli-millenniumclubcoin-cli.Po
+#	$(AM_V_CXX)source='millenniumclubcoin-cli.cpp' object='millenniumclubcoin_cli-millenniumclubcoin-cli.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(delion_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o delion_cli-delion-cli.o `test -f 'delion-cli.cpp' || echo '$(srcdir)/'`delion-cli.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(millenniumclubcoin_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o millenniumclubcoin_cli-millenniumclubcoin-cli.o `test -f 'millenniumclubcoin-cli.cpp' || echo '$(srcdir)/'`millenniumclubcoin-cli.cpp
 
-delion_cli-delion-cli.obj: delion-cli.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(delion_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT delion_cli-delion-cli.obj -MD -MP -MF $(DEPDIR)/delion_cli-delion-cli.Tpo -c -o delion_cli-delion-cli.obj `if test -f 'delion-cli.cpp'; then $(CYGPATH_W) 'delion-cli.cpp'; else $(CYGPATH_W) '$(srcdir)/delion-cli.cpp'; fi`
-	$(AM_V_at)$(am__mv) $(DEPDIR)/delion_cli-delion-cli.Tpo $(DEPDIR)/delion_cli-delion-cli.Po
-#	$(AM_V_CXX)source='delion-cli.cpp' object='delion_cli-delion-cli.obj' libtool=no \
+millenniumclubcoin_cli-millenniumclubcoin-cli.obj: millenniumclubcoin-cli.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(millenniumclubcoin_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT millenniumclubcoin_cli-millenniumclubcoin-cli.obj -MD -MP -MF $(DEPDIR)/millenniumclubcoin_cli-millenniumclubcoin-cli.Tpo -c -o millenniumclubcoin_cli-millenniumclubcoin-cli.obj `if test -f 'millenniumclubcoin-cli.cpp'; then $(CYGPATH_W) 'millenniumclubcoin-cli.cpp'; else $(CYGPATH_W) '$(srcdir)/millenniumclubcoin-cli.cpp'; fi`
+	$(AM_V_at)$(am__mv) $(DEPDIR)/millenniumclubcoin_cli-millenniumclubcoin-cli.Tpo $(DEPDIR)/millenniumclubcoin_cli-millenniumclubcoin-cli.Po
+#	$(AM_V_CXX)source='millenniumclubcoin-cli.cpp' object='millenniumclubcoin_cli-millenniumclubcoin-cli.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(delion_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o delion_cli-delion-cli.obj `if test -f 'delion-cli.cpp'; then $(CYGPATH_W) 'delion-cli.cpp'; else $(CYGPATH_W) '$(srcdir)/delion-cli.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(millenniumclubcoin_cli_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o millenniumclubcoin_cli-millenniumclubcoin-cli.obj `if test -f 'millenniumclubcoin-cli.cpp'; then $(CYGPATH_W) 'millenniumclubcoin-cli.cpp'; else $(CYGPATH_W) '$(srcdir)/millenniumclubcoin-cli.cpp'; fi`
 
-delion_tx-delion-tx.o: delion-tx.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(delion_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT delion_tx-delion-tx.o -MD -MP -MF $(DEPDIR)/delion_tx-delion-tx.Tpo -c -o delion_tx-delion-tx.o `test -f 'delion-tx.cpp' || echo '$(srcdir)/'`delion-tx.cpp
-	$(AM_V_at)$(am__mv) $(DEPDIR)/delion_tx-delion-tx.Tpo $(DEPDIR)/delion_tx-delion-tx.Po
-#	$(AM_V_CXX)source='delion-tx.cpp' object='delion_tx-delion-tx.o' libtool=no \
+millenniumclubcoin_tx-millenniumclubcoin-tx.o: millenniumclubcoin-tx.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(millenniumclubcoin_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT millenniumclubcoin_tx-millenniumclubcoin-tx.o -MD -MP -MF $(DEPDIR)/millenniumclubcoin_tx-millenniumclubcoin-tx.Tpo -c -o millenniumclubcoin_tx-millenniumclubcoin-tx.o `test -f 'millenniumclubcoin-tx.cpp' || echo '$(srcdir)/'`millenniumclubcoin-tx.cpp
+	$(AM_V_at)$(am__mv) $(DEPDIR)/millenniumclubcoin_tx-millenniumclubcoin-tx.Tpo $(DEPDIR)/millenniumclubcoin_tx-millenniumclubcoin-tx.Po
+#	$(AM_V_CXX)source='millenniumclubcoin-tx.cpp' object='millenniumclubcoin_tx-millenniumclubcoin-tx.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(delion_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o delion_tx-delion-tx.o `test -f 'delion-tx.cpp' || echo '$(srcdir)/'`delion-tx.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(millenniumclubcoin_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o millenniumclubcoin_tx-millenniumclubcoin-tx.o `test -f 'millenniumclubcoin-tx.cpp' || echo '$(srcdir)/'`millenniumclubcoin-tx.cpp
 
-delion_tx-delion-tx.obj: delion-tx.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(delion_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT delion_tx-delion-tx.obj -MD -MP -MF $(DEPDIR)/delion_tx-delion-tx.Tpo -c -o delion_tx-delion-tx.obj `if test -f 'delion-tx.cpp'; then $(CYGPATH_W) 'delion-tx.cpp'; else $(CYGPATH_W) '$(srcdir)/delion-tx.cpp'; fi`
-	$(AM_V_at)$(am__mv) $(DEPDIR)/delion_tx-delion-tx.Tpo $(DEPDIR)/delion_tx-delion-tx.Po
-#	$(AM_V_CXX)source='delion-tx.cpp' object='delion_tx-delion-tx.obj' libtool=no \
+millenniumclubcoin_tx-millenniumclubcoin-tx.obj: millenniumclubcoin-tx.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(millenniumclubcoin_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT millenniumclubcoin_tx-millenniumclubcoin-tx.obj -MD -MP -MF $(DEPDIR)/millenniumclubcoin_tx-millenniumclubcoin-tx.Tpo -c -o millenniumclubcoin_tx-millenniumclubcoin-tx.obj `if test -f 'millenniumclubcoin-tx.cpp'; then $(CYGPATH_W) 'millenniumclubcoin-tx.cpp'; else $(CYGPATH_W) '$(srcdir)/millenniumclubcoin-tx.cpp'; fi`
+	$(AM_V_at)$(am__mv) $(DEPDIR)/millenniumclubcoin_tx-millenniumclubcoin-tx.Tpo $(DEPDIR)/millenniumclubcoin_tx-millenniumclubcoin-tx.Po
+#	$(AM_V_CXX)source='millenniumclubcoin-tx.cpp' object='millenniumclubcoin_tx-millenniumclubcoin-tx.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(delion_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o delion_tx-delion-tx.obj `if test -f 'delion-tx.cpp'; then $(CYGPATH_W) 'delion-tx.cpp'; else $(CYGPATH_W) '$(srcdir)/delion-tx.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(millenniumclubcoin_tx_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o millenniumclubcoin_tx-millenniumclubcoin-tx.obj `if test -f 'millenniumclubcoin-tx.cpp'; then $(CYGPATH_W) 'millenniumclubcoin-tx.cpp'; else $(CYGPATH_W) '$(srcdir)/millenniumclubcoin-tx.cpp'; fi`
 
-deliond-deliond.o: deliond.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(deliond_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT deliond-deliond.o -MD -MP -MF $(DEPDIR)/deliond-deliond.Tpo -c -o deliond-deliond.o `test -f 'deliond.cpp' || echo '$(srcdir)/'`deliond.cpp
-	$(AM_V_at)$(am__mv) $(DEPDIR)/deliond-deliond.Tpo $(DEPDIR)/deliond-deliond.Po
-#	$(AM_V_CXX)source='deliond.cpp' object='deliond-deliond.o' libtool=no \
+millenniumclubcoind-millenniumclubcoind.o: millenniumclubcoind.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(millenniumclubcoind_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT millenniumclubcoind-millenniumclubcoind.o -MD -MP -MF $(DEPDIR)/millenniumclubcoind-millenniumclubcoind.Tpo -c -o millenniumclubcoind-millenniumclubcoind.o `test -f 'millenniumclubcoind.cpp' || echo '$(srcdir)/'`millenniumclubcoind.cpp
+	$(AM_V_at)$(am__mv) $(DEPDIR)/millenniumclubcoind-millenniumclubcoind.Tpo $(DEPDIR)/millenniumclubcoind-millenniumclubcoind.Po
+#	$(AM_V_CXX)source='millenniumclubcoind.cpp' object='millenniumclubcoind-millenniumclubcoind.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(deliond_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o deliond-deliond.o `test -f 'deliond.cpp' || echo '$(srcdir)/'`deliond.cpp
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(millenniumclubcoind_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o millenniumclubcoind-millenniumclubcoind.o `test -f 'millenniumclubcoind.cpp' || echo '$(srcdir)/'`millenniumclubcoind.cpp
 
-deliond-deliond.obj: deliond.cpp
-	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(deliond_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT deliond-deliond.obj -MD -MP -MF $(DEPDIR)/deliond-deliond.Tpo -c -o deliond-deliond.obj `if test -f 'deliond.cpp'; then $(CYGPATH_W) 'deliond.cpp'; else $(CYGPATH_W) '$(srcdir)/deliond.cpp'; fi`
-	$(AM_V_at)$(am__mv) $(DEPDIR)/deliond-deliond.Tpo $(DEPDIR)/deliond-deliond.Po
-#	$(AM_V_CXX)source='deliond.cpp' object='deliond-deliond.obj' libtool=no \
+millenniumclubcoind-millenniumclubcoind.obj: millenniumclubcoind.cpp
+	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(millenniumclubcoind_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT millenniumclubcoind-millenniumclubcoind.obj -MD -MP -MF $(DEPDIR)/millenniumclubcoind-millenniumclubcoind.Tpo -c -o millenniumclubcoind-millenniumclubcoind.obj `if test -f 'millenniumclubcoind.cpp'; then $(CYGPATH_W) 'millenniumclubcoind.cpp'; else $(CYGPATH_W) '$(srcdir)/millenniumclubcoind.cpp'; fi`
+	$(AM_V_at)$(am__mv) $(DEPDIR)/millenniumclubcoind-millenniumclubcoind.Tpo $(DEPDIR)/millenniumclubcoind-millenniumclubcoind.Po
+#	$(AM_V_CXX)source='millenniumclubcoind.cpp' object='millenniumclubcoind-millenniumclubcoind.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(deliond_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o deliond-deliond.obj `if test -f 'deliond.cpp'; then $(CYGPATH_W) 'deliond.cpp'; else $(CYGPATH_W) '$(srcdir)/deliond.cpp'; fi`
+#	$(AM_V_CXX_no)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(millenniumclubcoind_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o millenniumclubcoind-millenniumclubcoind.obj `if test -f 'millenniumclubcoind.cpp'; then $(CYGPATH_W) 'millenniumclubcoind.cpp'; else $(CYGPATH_W) '$(srcdir)/millenniumclubcoind.cpp'; fi`
 
 .cpp.o:
 	$(AM_V_CXX)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\
@@ -7771,33 +7771,33 @@ deliond-deliond.obj: deliond.cpp
 #	DEPDIR=$(DEPDIR) $(OBJCXXDEPMODE) $(depcomp) \
 #	$(AM_V_OBJCXX_no)$(LTOBJCXXCOMPILE) -c -o $@ $<
 
-qt/qt_delion_qt-macdockiconhandler.o: qt/macdockiconhandler.mm
-	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_delion_qt-macdockiconhandler.o -MD -MP -MF qt/$(DEPDIR)/qt_delion_qt-macdockiconhandler.Tpo -c -o qt/qt_delion_qt-macdockiconhandler.o `test -f 'qt/macdockiconhandler.mm' || echo '$(srcdir)/'`qt/macdockiconhandler.mm
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_delion_qt-macdockiconhandler.Tpo qt/$(DEPDIR)/qt_delion_qt-macdockiconhandler.Po
-#	$(AM_V_OBJCXX)source='qt/macdockiconhandler.mm' object='qt/qt_delion_qt-macdockiconhandler.o' libtool=no \
+qt/qt_millenniumclubcoin_qt-macdockiconhandler.o: qt/macdockiconhandler.mm
+	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_millenniumclubcoin_qt-macdockiconhandler.o -MD -MP -MF qt/$(DEPDIR)/qt_millenniumclubcoin_qt-macdockiconhandler.Tpo -c -o qt/qt_millenniumclubcoin_qt-macdockiconhandler.o `test -f 'qt/macdockiconhandler.mm' || echo '$(srcdir)/'`qt/macdockiconhandler.mm
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_millenniumclubcoin_qt-macdockiconhandler.Tpo qt/$(DEPDIR)/qt_millenniumclubcoin_qt-macdockiconhandler.Po
+#	$(AM_V_OBJCXX)source='qt/macdockiconhandler.mm' object='qt/qt_millenniumclubcoin_qt-macdockiconhandler.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(OBJCXXDEPMODE) $(depcomp) \
-#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_delion_qt-macdockiconhandler.o `test -f 'qt/macdockiconhandler.mm' || echo '$(srcdir)/'`qt/macdockiconhandler.mm
+#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_millenniumclubcoin_qt-macdockiconhandler.o `test -f 'qt/macdockiconhandler.mm' || echo '$(srcdir)/'`qt/macdockiconhandler.mm
 
-qt/qt_delion_qt-macdockiconhandler.obj: qt/macdockiconhandler.mm
-	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_delion_qt-macdockiconhandler.obj -MD -MP -MF qt/$(DEPDIR)/qt_delion_qt-macdockiconhandler.Tpo -c -o qt/qt_delion_qt-macdockiconhandler.obj `if test -f 'qt/macdockiconhandler.mm'; then $(CYGPATH_W) 'qt/macdockiconhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macdockiconhandler.mm'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_delion_qt-macdockiconhandler.Tpo qt/$(DEPDIR)/qt_delion_qt-macdockiconhandler.Po
-#	$(AM_V_OBJCXX)source='qt/macdockiconhandler.mm' object='qt/qt_delion_qt-macdockiconhandler.obj' libtool=no \
+qt/qt_millenniumclubcoin_qt-macdockiconhandler.obj: qt/macdockiconhandler.mm
+	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_millenniumclubcoin_qt-macdockiconhandler.obj -MD -MP -MF qt/$(DEPDIR)/qt_millenniumclubcoin_qt-macdockiconhandler.Tpo -c -o qt/qt_millenniumclubcoin_qt-macdockiconhandler.obj `if test -f 'qt/macdockiconhandler.mm'; then $(CYGPATH_W) 'qt/macdockiconhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macdockiconhandler.mm'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_millenniumclubcoin_qt-macdockiconhandler.Tpo qt/$(DEPDIR)/qt_millenniumclubcoin_qt-macdockiconhandler.Po
+#	$(AM_V_OBJCXX)source='qt/macdockiconhandler.mm' object='qt/qt_millenniumclubcoin_qt-macdockiconhandler.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(OBJCXXDEPMODE) $(depcomp) \
-#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_delion_qt-macdockiconhandler.obj `if test -f 'qt/macdockiconhandler.mm'; then $(CYGPATH_W) 'qt/macdockiconhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macdockiconhandler.mm'; fi`
+#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_millenniumclubcoin_qt-macdockiconhandler.obj `if test -f 'qt/macdockiconhandler.mm'; then $(CYGPATH_W) 'qt/macdockiconhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macdockiconhandler.mm'; fi`
 
-qt/qt_delion_qt-macnotificationhandler.o: qt/macnotificationhandler.mm
-	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_delion_qt-macnotificationhandler.o -MD -MP -MF qt/$(DEPDIR)/qt_delion_qt-macnotificationhandler.Tpo -c -o qt/qt_delion_qt-macnotificationhandler.o `test -f 'qt/macnotificationhandler.mm' || echo '$(srcdir)/'`qt/macnotificationhandler.mm
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_delion_qt-macnotificationhandler.Tpo qt/$(DEPDIR)/qt_delion_qt-macnotificationhandler.Po
-#	$(AM_V_OBJCXX)source='qt/macnotificationhandler.mm' object='qt/qt_delion_qt-macnotificationhandler.o' libtool=no \
+qt/qt_millenniumclubcoin_qt-macnotificationhandler.o: qt/macnotificationhandler.mm
+	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_millenniumclubcoin_qt-macnotificationhandler.o -MD -MP -MF qt/$(DEPDIR)/qt_millenniumclubcoin_qt-macnotificationhandler.Tpo -c -o qt/qt_millenniumclubcoin_qt-macnotificationhandler.o `test -f 'qt/macnotificationhandler.mm' || echo '$(srcdir)/'`qt/macnotificationhandler.mm
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_millenniumclubcoin_qt-macnotificationhandler.Tpo qt/$(DEPDIR)/qt_millenniumclubcoin_qt-macnotificationhandler.Po
+#	$(AM_V_OBJCXX)source='qt/macnotificationhandler.mm' object='qt/qt_millenniumclubcoin_qt-macnotificationhandler.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(OBJCXXDEPMODE) $(depcomp) \
-#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_delion_qt-macnotificationhandler.o `test -f 'qt/macnotificationhandler.mm' || echo '$(srcdir)/'`qt/macnotificationhandler.mm
+#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_millenniumclubcoin_qt-macnotificationhandler.o `test -f 'qt/macnotificationhandler.mm' || echo '$(srcdir)/'`qt/macnotificationhandler.mm
 
-qt/qt_delion_qt-macnotificationhandler.obj: qt/macnotificationhandler.mm
-	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_delion_qt-macnotificationhandler.obj -MD -MP -MF qt/$(DEPDIR)/qt_delion_qt-macnotificationhandler.Tpo -c -o qt/qt_delion_qt-macnotificationhandler.obj `if test -f 'qt/macnotificationhandler.mm'; then $(CYGPATH_W) 'qt/macnotificationhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macnotificationhandler.mm'; fi`
-	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_delion_qt-macnotificationhandler.Tpo qt/$(DEPDIR)/qt_delion_qt-macnotificationhandler.Po
-#	$(AM_V_OBJCXX)source='qt/macnotificationhandler.mm' object='qt/qt_delion_qt-macnotificationhandler.obj' libtool=no \
+qt/qt_millenniumclubcoin_qt-macnotificationhandler.obj: qt/macnotificationhandler.mm
+	$(AM_V_OBJCXX)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -MT qt/qt_millenniumclubcoin_qt-macnotificationhandler.obj -MD -MP -MF qt/$(DEPDIR)/qt_millenniumclubcoin_qt-macnotificationhandler.Tpo -c -o qt/qt_millenniumclubcoin_qt-macnotificationhandler.obj `if test -f 'qt/macnotificationhandler.mm'; then $(CYGPATH_W) 'qt/macnotificationhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macnotificationhandler.mm'; fi`
+	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_millenniumclubcoin_qt-macnotificationhandler.Tpo qt/$(DEPDIR)/qt_millenniumclubcoin_qt-macnotificationhandler.Po
+#	$(AM_V_OBJCXX)source='qt/macnotificationhandler.mm' object='qt/qt_millenniumclubcoin_qt-macnotificationhandler.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(OBJCXXDEPMODE) $(depcomp) \
-#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_delion_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_delion_qt-macnotificationhandler.obj `if test -f 'qt/macnotificationhandler.mm'; then $(CYGPATH_W) 'qt/macnotificationhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macnotificationhandler.mm'; fi`
+#	$(AM_V_OBJCXX_no)$(OBJCXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_millenniumclubcoin_qt_CPPFLAGS) $(CPPFLAGS) $(AM_OBJCXXFLAGS) $(OBJCXXFLAGS) -c -o qt/qt_millenniumclubcoin_qt-macnotificationhandler.obj `if test -f 'qt/macnotificationhandler.mm'; then $(CYGPATH_W) 'qt/macnotificationhandler.mm'; else $(CYGPATH_W) '$(srcdir)/qt/macnotificationhandler.mm'; fi`
 
 mostlyclean-libtool:
 	-rm -f *.lo
@@ -8073,9 +8073,9 @@ recheck: all
 	        am__force_recheck=am--force-recheck \
 	        TEST_LOGS="$$log_list"; \
 	exit $$?
-test/test_delion.log: test/test_delion$(EXEEXT)
-	@p='test/test_delion$(EXEEXT)'; \
-	b='test/test_delion'; \
+test/test_millenniumclubcoin.log: test/test_millenniumclubcoin$(EXEEXT)
+	@p='test/test_millenniumclubcoin$(EXEEXT)'; \
+	b='test/test_millenniumclubcoin'; \
 	$(am__check_pre) $(LOG_DRIVER) --test-name "$$f" \
 	--log-file $$b.log --trs-file $$b.trs \
 	$(am__common_driver_flags) $(AM_LOG_DRIVER_FLAGS) $(LOG_DRIVER_FLAGS) -- $(LOG_COMPILE) \
@@ -8087,9 +8087,9 @@ test/bitcoin-util-test.py.log: test/bitcoin-util-test.py
 	--log-file $$b.log --trs-file $$b.trs \
 	$(am__common_driver_flags) $(AM_LOG_DRIVER_FLAGS) $(LOG_DRIVER_FLAGS) -- $(LOG_COMPILE) \
 	"$$tst" $(AM_TESTS_FD_REDIRECT)
-qt/test/test_delion-qt.log: qt/test/test_delion-qt$(EXEEXT)
-	@p='qt/test/test_delion-qt$(EXEEXT)'; \
-	b='qt/test/test_delion-qt'; \
+qt/test/test_millenniumclubcoin-qt.log: qt/test/test_millenniumclubcoin-qt$(EXEEXT)
+	@p='qt/test/test_millenniumclubcoin-qt$(EXEEXT)'; \
+	b='qt/test/test_millenniumclubcoin-qt'; \
 	$(am__check_pre) $(LOG_DRIVER) --test-name "$$f" \
 	--log-file $$b.log --trs-file $$b.trs \
 	$(am__common_driver_flags) $(AM_LOG_DRIVER_FLAGS) $(LOG_DRIVER_FLAGS) -- $(LOG_COMPILE) \
@@ -8367,13 +8367,13 @@ clean-local:
 
 #$(BITCOIN_TESTS): $(GENERATED_TEST_FILES)
 
-#delion_test: $(TEST_BINARY)
+#millenniumclubcoin_test: $(TEST_BINARY)
 
-#delion_test_check: $(TEST_BINARY) FORCE
+#millenniumclubcoin_test_check: $(TEST_BINARY) FORCE
 #	$(MAKE) check-TESTS TESTS=$^
 
-#delion_test_clean : FORCE
-#	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_delion_OBJECTS) $(TEST_BINARY)
+#millenniumclubcoin_test_clean : FORCE
+#	rm -f $(CLEAN_BITCOIN_TEST) $(test_test_millenniumclubcoin_OBJECTS) $(TEST_BINARY)
 
 #check-local:
 #	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C secp256k1 check
@@ -8397,7 +8397,7 @@ clean-local:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_delion_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_millenniumclubcoin_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
@@ -8406,29 +8406,29 @@ $(QT_MOC_CPP): $(PROTOBUF_H)
 
 .SECONDARY: $(QT_QM)
 
-qt/delionstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
+qt/millenniumclubcoinstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: qt/delionstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: qt/millenniumclubcoinstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/delion_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/millenniumclubcoin_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@test -f $(@D)/$(<F) || cp -f $< $(@D)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name delion_locale $(@D)/$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name millenniumclubcoin_locale $(@D)/$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name delion $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name millenniumclubcoin $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-delion_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_delion_qt_OBJECTS) qt/delion-qt$(EXEEXT) $(LIBBITCOINQT)
+millenniumclubcoin_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_millenniumclubcoin_qt_OBJECTS) qt/millenniumclubcoin-qt$(EXEEXT) $(LIBBITCOINQT)
 
-delion_qt : qt/delion-qt$(EXEEXT)
+millenniumclubcoin_qt : qt/millenniumclubcoin-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)
@@ -8448,13 +8448,13 @@ moc_%.cpp: %.h
 	@$(MKDIR_P) $(@D)
 	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LRELEASE) -silent $< -qm $@
 
-#test_delion_qt : qt/test/test_delion-qt$(EXEEXT)
+#test_millenniumclubcoin_qt : qt/test/test_millenniumclubcoin-qt$(EXEEXT)
 
-#test_delion_qt_check : qt/test/test_delion-qt$(EXEEXT) FORCE
+#test_millenniumclubcoin_qt_check : qt/test/test_millenniumclubcoin-qt$(EXEEXT) FORCE
 #	$(MAKE) check-TESTS TESTS=$^
 
-#test_delion_qt_clean: FORCE
-#	rm -f $(CLEAN_BITCOIN_QT_TEST) $(qt_test_test_delion_qt_OBJECTS)
+#test_millenniumclubcoin_qt_clean: FORCE
+#	rm -f $(CLEAN_BITCOIN_QT_TEST) $(qt_test_test_millenniumclubcoin_qt_OBJECTS)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

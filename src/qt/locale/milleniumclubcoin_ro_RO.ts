@@ -183,9 +183,9 @@
     </message>
     </context>
 <context>
-    <name>ZDelionControlDialog</name>
+    <name>ZMillenniumclubcoinControlDialog</name>
     </context>
 <context>
-    <name>delion-core</name>
+    <name>millenniumclubcoin-core</name>
     </context>
 </TS>

@@ -60,7 +60,7 @@
                </font>
               </property>
               <property name="text">
-               <string>DELION Balances</string>
+               <string>MILLENIUMCLUBCOIN Balances</string>
               </property>
              </widget>
             </item>
@@ -70,7 +70,7 @@
                <cursorShape>WhatsThisCursor</cursorShape>
               </property>
               <property name="toolTip">
-               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Delion network after a connection is established, but this process has not completed yet.</string>
+               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Millenniumclubcoin network after a connection is established, but this process has not completed yet.</string>
               </property>
               <property name="styleSheet">
                <string notr="true">QLabel { color: red; }</string>
@@ -1021,7 +1021,7 @@
              <item row="1" column="0">
               <widget class="QLabel" name="labelBalanceTextz">
                <property name="text">
-                <string>DELION:</string>
+                <string>MILLENIUMCLUBCOIN:</string>
                </property>
               </widget>
              </item>
@@ -1056,12 +1056,12 @@
                 <string/>
                </property>
                <property name="text">
-                <string>zDELION:</string>
+                <string>zMILLENIUMCLUBCOIN:</string>
                </property>
               </widget>
              </item>
              <item row="4" column="2">
-              <widget class="QLabel" name="labelzDELIONPercent">
+              <widget class="QLabel" name="labelzMILLENIUMCLUBCOINPercent">
                <property name="toolTip">
                 <string>Current percentage of zDLN.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%)</string>
@@ -1131,7 +1131,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
               </widget>
              </item>
              <item row="3" column="2">
-              <widget class="QLabel" name="labelDELIONPercent">
+              <widget class="QLabel" name="labelMILLENIUMCLUBCOINPercent">
                <property name="text">
                 <string>0 %</string>
                </property>
@@ -1485,7 +1485,7 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
                <cursorShape>WhatsThisCursor</cursorShape>
               </property>
               <property name="toolTip">
-               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Delion network after a connection is established, but this process has not completed yet.</string>
+               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Millenniumclubcoin network after a connection is established, but this process has not completed yet.</string>
               </property>
               <property name="styleSheet">
                <string notr="true">QLabel { color: red; }</string>

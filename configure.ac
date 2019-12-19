@@ -6,22 +6,22 @@ define(_CLIENT_VERSION_REVISION, 1)
 define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2018)
-AC_INIT([Delion Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[www.delion.online],[delion])
+AC_INIT([Millenniumclubcoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://millenniumclub.ca/],[millenniumclubcoin])
 AC_CONFIG_SRCDIR([src/main.cpp])
-AC_CONFIG_HEADERS([src/config/delion-config.h])
+AC_CONFIG_HEADERS([src/config/millenniumclubcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=deliond
-BITCOIN_GUI_NAME=delion-qt
-BITCOIN_CLI_NAME=delion-cli
-BITCOIN_TX_NAME=delion-tx
+BITCOIN_DAEMON_NAME=millenniumclubcoind
+BITCOIN_GUI_NAME=millenniumclubcoin-qt
+BITCOIN_CLI_NAME=millenniumclubcoin-cli
+BITCOIN_TX_NAME=millenniumclubcoin-tx
 
 AC_CANONICAL_HOST
 
-AH_TOP([#ifndef DELION_CONFIG_H])
-AH_TOP([#define DELION_CONFIG_H])
-AH_BOTTOM([#endif //DELION_CONFIG_H])
+AH_TOP([#ifndef MILLENIUMCLUBCOIN_CONFIG_H])
+AH_TOP([#define MILLENIUMCLUBCOIN_CONFIG_H])
+AH_BOTTOM([#endif //MILLENIUMCLUBCOIN_CONFIG_H])
 
 dnl faketime breaks configure and is only needed for make. Disable it here.
 unset FAKETIME
@@ -192,7 +192,7 @@ CPPFLAGS="$CPPFLAGS -DBOOST_SPIRIT_THREADSAFE -DHAVE_BUILD_INFO -D__STDC_FORMAT_
 
 AC_ARG_WITH([utils],
   [AS_HELP_STRING([--with-utils],
-  [build delion-cli delion-tx (default=yes)])],
+  [build millenniumclubcoin-cli millenniumclubcoin-tx (default=yes)])],
   [build_bitcoin_utils=$withval],
   [build_bitcoin_utils=yes])
 
@@ -204,7 +204,7 @@ AC_ARG_WITH([libs],
 
 AC_ARG_WITH([daemon],
   [AS_HELP_STRING([--with-daemon],
-  [build deliond daemon (default=yes)])],
+  [build millenniumclubcoind daemon (default=yes)])],
   [build_bitcoind=$withval],
   [build_bitcoind=yes])
 
@@ -396,7 +396,7 @@ AC_C_BIGENDIAN([AC_MSG_ERROR("Big Endian not supported")])
 dnl Check for pthread compile/link requirements
 AX_PTHREAD
 
-# The following macro will add the necessary defines to delion-config.h, but
+# The following macro will add the necessary defines to millenniumclubcoin-config.h, but
 # they also need to be passed down to any subprojects. Pull the results out of
 # the cache and add them to CPPFLAGS.
 AC_SYS_LARGEFILE
@@ -806,11 +806,11 @@ LIBS="$LIBS_TEMP"
 
 BITCOIN_QT_PATH_PROGS([PROTOC], [protoc],$protoc_bin_path)
 
-AC_MSG_CHECKING([whether to build deliond])
+AC_MSG_CHECKING([whether to build millenniumclubcoind])
 AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
 AC_MSG_RESULT($build_bitcoind)
 
-AC_MSG_CHECKING([whether to build utils (delion-cli delion-tx)])
+AC_MSG_CHECKING([whether to build utils (millenniumclubcoin-cli millenniumclubcoin-tx)])
 AM_CONDITIONAL([BUILD_BITCOIN_UTILS], [test x$build_bitcoin_utils = xyes])
 AC_MSG_RESULT($build_bitcoin_utils)
 
@@ -910,7 +910,7 @@ if test x$bitcoin_enable_qt != xno; then
     AC_MSG_WARN("xgettext is required to update qt translations")
   fi
 
-  AC_MSG_CHECKING([whether to build test_delion-qt])
+  AC_MSG_CHECKING([whether to build test_millenniumclubcoin-qt])
   if test x$use_tests$bitcoin_enable_qt_test = xyesyes; then
     AC_MSG_RESULT([yes])
     BUILD_TEST_QT="test"
@@ -921,7 +921,7 @@ fi
 
 AM_CONDITIONAL([ENABLE_ZMQ], [test "x$use_zmq" = "xyes"])
 
-AC_MSG_CHECKING([whether to build test_delion])
+AC_MSG_CHECKING([whether to build test_millenniumclubcoin])
 if test x$use_tests = xyes; then
   AC_MSG_RESULT([yes])
   BUILD_TEST="test"

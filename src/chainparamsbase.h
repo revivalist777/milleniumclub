@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between delion-cli and deliond)
- * of a given instance of the Delion system.
+ * CBaseChainParams defines the base parameters (shared between millenniumclubcoin-cli and millenniumclubcoind)
+ * of a given instance of the Millenniumclubcoin system.
  */
 class CBaseChainParams
 {

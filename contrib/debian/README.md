@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package deliond/delion-qt
-for Debian-based Linux systems. If you compile deliond/delion-qt yourself, there are some useful files here.
+This directory contains files used to package millenniumclubcoind/millenniumclubcoin-qt
+for Debian-based Linux systems. If you compile millenniumclubcoind/millenniumclubcoin-qt yourself, there are some useful files here.
 
-## delion: URI support ##
+## millenniumclubcoin: URI support ##
 
 
-delion-qt.desktop  (Gnome / Open Desktop)
+millenniumclubcoin-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install delion-qt.desktop
+	sudo desktop-file-install millenniumclubcoin-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your delionqt binary to `/usr/bin`
-and the `../../share/pixmaps/delion128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your millenniumclubcoinqt binary to `/usr/bin`
+and the `../../share/pixmaps/millenniumclubcoin128.png` to `/usr/share/pixmaps`
 
-delion-qt.protocol (KDE)
+millenniumclubcoin-qt.protocol (KDE)
 

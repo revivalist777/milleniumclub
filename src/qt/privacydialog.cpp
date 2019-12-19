@@ -14,7 +14,7 @@
 #include "sendcoinsentry.h"
 #include "walletmodel.h"
 #include "coincontrol.h"
-#include "zdelioncontroldialog.h"
+#include "zmillenniumclubcoincontroldialog.h"
 #include "spork.h"
 
 #include <QClipboard>
@@ -31,13 +31,13 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent),
     ui->setupUi(this);
 
     // "Spending 999999 zDLN ought to be enough for anybody." - Bill Gates, 2017
-    ui->zDELIONpayAmount->setValidator( new QDoubleValidator(0.0, 21000000.0, 20, this) );
+    ui->zMILLENIUMCLUBCOINpayAmount->setValidator( new QDoubleValidator(0.0, 21000000.0, 20, this) );
     ui->labelMintAmountValue->setValidator( new QIntValidator(0, 999999, this) );
 
     // Default texts for (mini-) coincontrol
     ui->labelCoinControlQuantity->setText (tr("Coins automatically selected"));
     ui->labelCoinControlAmount->setText (tr("Coins automatically selected"));
-    ui->labelzDELIONSyncStatus->setText("(" + tr("out of sync") + ")");
+    ui->labelzMILLENIUMCLUBCOINSyncStatus->setText("(" + tr("out of sync") + ")");
 
     // Sunken frame for minting messages
     ui->TEMintStatus->setFrameStyle(QFrame::StyledPanel | QFrame::Sunken);
@@ -66,7 +66,7 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent),
     ui->labelzDenom7Text->setText("Denom. with value <b>1000</b>:");
     ui->labelzDenom8Text->setText("Denom. with value <b>5000</b>:");
 
-    // Delion settings
+    // Millenniumclubcoin settings
     QSettings settings;
     if (!settings.contains("nSecurityLevel")){
         nSecurityLevel = 42;
@@ -94,11 +94,11 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent),
 
     //temporary disable for maintenance
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        ui->pushButtonMintzDELION->setEnabled(false);
-        ui->pushButtonMintzDELION->setToolTip(tr("zDLN is currently disabled due to maintenance."));
+        ui->pushButtonMintzMILLENIUMCLUBCOIN->setEnabled(false);
+        ui->pushButtonMintzMILLENIUMCLUBCOIN->setToolTip(tr("zDLN is currently disabled due to maintenance."));
 
-        ui->pushButtonSpendzDELION->setEnabled(false);
-        ui->pushButtonSpendzDELION->setToolTip(tr("zDLN is currently disabled due to maintenance."));
+        ui->pushButtonSpendzMILLENIUMCLUBCOIN->setEnabled(false);
+        ui->pushButtonSpendzMILLENIUMCLUBCOIN->setToolTip(tr("zDLN is currently disabled due to maintenance."));
     }
 }
 
@@ -137,11 +137,11 @@ void PrivacyDialog::on_addressBookButton_clicked()
     dlg.setModel(walletModel->getAddressTableModel());
     if (dlg.exec()) {
         ui->payTo->setText(dlg.getReturnValue());
-        ui->zDELIONpayAmount->setFocus();
+        ui->zMILLENIUMCLUBCOINpayAmount->setFocus();
     }
 }
 
-void PrivacyDialog::on_pushButtonMintzDELION_clicked()
+void PrivacyDialog::on_pushButtonMintzMILLENIUMCLUBCOIN_clicked()
 {
     if (!walletModel || !walletModel->getOptionsModel())
         return;
@@ -253,7 +253,7 @@ void PrivacyDialog::on_pushButtonSpentReset_clicked()
     return;
 }
 
-void PrivacyDialog::on_pushButtonSpendzDELION_clicked()
+void PrivacyDialog::on_pushButtonSpendzMILLENIUMCLUBCOIN_clicked()
 {
 
     if (!walletModel || !walletModel->getOptionsModel() || !pwalletMain)
@@ -274,23 +274,23 @@ void PrivacyDialog::on_pushButtonSpendzDELION_clicked()
             return;
         }
         // Wallet is unlocked now, sedn zDLN
-        sendzDELION();
+        sendzMILLENIUMCLUBCOIN();
         return;
     }
     // Wallet already unlocked or not encrypted at all, send zDLN
-    sendzDELION();
+    sendzMILLENIUMCLUBCOIN();
 }
 
-void PrivacyDialog::on_pushButtonZDelionControl_clicked()
+void PrivacyDialog::on_pushButtonZMillenniumclubcoinControl_clicked()
 {
-    ZDelionControlDialog* zDELIONControl = new ZDelionControlDialog(this);
-    zDELIONControl->setModel(walletModel);
-    zDELIONControl->exec();
+    ZMillenniumclubcoinControlDialog* zMILLENIUMCLUBCOINControl = new ZMillenniumclubcoinControlDialog(this);
+    zMILLENIUMCLUBCOINControl->setModel(walletModel);
+    zMILLENIUMCLUBCOINControl->exec();
 }
 
-void PrivacyDialog::setZDelionControlLabels(int64_t nAmount, int nQuantity)
+void PrivacyDialog::setZMillenniumclubcoinControlLabels(int64_t nAmount, int nQuantity)
 {
-    ui->labelzDELIONSelected_int->setText(QString::number(nAmount));
+    ui->labelzMILLENIUMCLUBCOINSelected_int->setText(QString::number(nAmount));
     ui->labelQuantitySelected_int->setText(QString::number(nQuantity));
 }
 
@@ -299,7 +299,7 @@ static inline int64_t roundint64(double d)
     return (int64_t)(d > 0 ? d + 0.5 : d - 0.5);
 }
 
-void PrivacyDialog::sendzDELION()
+void PrivacyDialog::sendzMILLENIUMCLUBCOIN()
 {
     QSettings settings;
 
@@ -310,20 +310,20 @@ void PrivacyDialog::sendzDELION()
     }
     else{
         if (!address.IsValid()) {
-            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid Delion Address"), QMessageBox::Ok, QMessageBox::Ok);
+            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid Millenniumclubcoin Address"), QMessageBox::Ok, QMessageBox::Ok);
             ui->payTo->setFocus();
             return;
         }
     }
 
     // Double is allowed now
-    double dAmount = ui->zDELIONpayAmount->text().toDouble();
+    double dAmount = ui->zMILLENIUMCLUBCOINpayAmount->text().toDouble();
     CAmount nAmount = roundint64(dAmount* COIN);
 
     // Check amount validity
     if (!MoneyRange(nAmount) || nAmount <= 0.0) {
         QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid Send Amount"), QMessageBox::Ok, QMessageBox::Ok);
-        ui->zDELIONpayAmount->setFocus();
+        ui->zMILLENIUMCLUBCOINpayAmount->setFocus();
         return;
     }
 
@@ -351,7 +351,7 @@ void PrivacyDialog::sendzDELION()
 
         if (retval != QMessageBox::Yes) {
             // Sending canceled
-            ui->zDELIONpayAmount->setFocus();
+            ui->zMILLENIUMCLUBCOINpayAmount->setFocus();
             return;
         }
     }
@@ -398,8 +398,8 @@ void PrivacyDialog::sendzDELION()
 
     // use mints from zDLN selector if applicable
     vector<CZerocoinMint> vMintsSelected;
-    if (!ZDelionControlDialog::listSelectedMints.empty()) {
-        vMintsSelected = ZDelionControlDialog::GetSelectedMints();
+    if (!ZMillenniumclubcoinControlDialog::listSelectedMints.empty()) {
+        vMintsSelected = ZMillenniumclubcoinControlDialog::GetSelectedMints();
     }
 
     // Spend zDLN
@@ -429,13 +429,13 @@ void PrivacyDialog::sendzDELION()
             QMessageBox::warning(this, tr("Spend Zerocoin"), receipt.GetStatusMessage().c_str(), QMessageBox::Ok, QMessageBox::Ok);
             ui->TEMintStatus->setPlainText(tr("Spend Zerocoin failed with status = ") +QString::number(receipt.GetStatus(), 10) + "\n" + "Message: " + QString::fromStdString(receipt.GetStatusMessage()));
         }
-        ui->zDELIONpayAmount->setFocus();
+        ui->zMILLENIUMCLUBCOINpayAmount->setFocus();
         ui->TEMintStatus->repaint();
         return;
     }
 
-    // Clear zdelion selector in case it was used
-    ZDelionControlDialog::listSelectedMints.clear();
+    // Clear zmillenniumclubcoin selector in case it was used
+    ZMillenniumclubcoinControlDialog::listSelectedMints.clear();
 
     // Some statistics for entertainment
     QString strStats = "";
@@ -451,7 +451,7 @@ void PrivacyDialog::sendzDELION()
 
     CAmount nValueOut = 0;
     for (const CTxOut& txout: wtxNew.vout) {
-        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " Delion, ";
+        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " Millenniumclubcoin, ";
         nValueOut += txout.nValue;
 
         strStats += tr("address: ");
@@ -472,7 +472,7 @@ void PrivacyDialog::sendzDELION()
     strReturn += strStats;
 
     // Clear amount to avoid double spending when accidentally clicking twice
-    ui->zDELIONpayAmount->setText ("0");
+    ui->zMILLENIUMCLUBCOINpayAmount->setText ("0");
 
     ui->TEMintStatus->setPlainText(strReturn);
     ui->TEMintStatus->repaint();
@@ -656,7 +656,7 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
 
     ui->labelzAvailableAmount->setText(QString::number(zerocoinBalance/COIN) + QString(" zDLN "));
     ui->labelzAvailableAmount_2->setText(QString::number(matureZerocoinBalance/COIN) + QString(" zDLN "));
-    ui->labelzDELIONAmountValue->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance - immatureBalance - nLockedBalance, false, BitcoinUnits::separatorAlways));
+    ui->labelzMILLENIUMCLUBCOINAmountValue->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance - immatureBalance - nLockedBalance, false, BitcoinUnits::separatorAlways));
 }
 
 void PrivacyDialog::updateDisplayUnit()
@@ -672,7 +672,7 @@ void PrivacyDialog::updateDisplayUnit()
 
 void PrivacyDialog::showOutOfSyncWarning(bool fShow)
 {
-    ui->labelzDELIONSyncStatus->setVisible(fShow);
+    ui->labelzMILLENIUMCLUBCOINSyncStatus->setVisible(fShow);
 }
 
 void PrivacyDialog::keyPressEvent(QKeyEvent* event)

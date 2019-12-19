@@ -62,12 +62,12 @@
         <translation>Adresy pro přijetí peněz</translation>
     </message>
     <message>
-        <source>These are your Delion addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše Delion adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <source>These are your Millenniumclubcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto jsou Vaše Millenniumclubcoin adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
-        <source>These are your Delion addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše Delion adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <source>These are your Millenniumclubcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto jsou Vaše Millenniumclubcoin adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>Delion will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DLNs from being stolen by malware infecting your computer.</source>
-        <translation>Delion se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše DLNy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>Millenniumclubcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DLNs from being stolen by malware infecting your computer.</source>
+        <translation>Millenniumclubcoin se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše DLNy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Šifrovat</translation>
     </message>
     <message>
-        <source>Enter a Delion Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadejte Delion adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
+        <source>Enter a Millenniumclubcoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadejte Millenniumclubcoin adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The Delion address to sign the message with</source>
-        <translation>Delion adresa pro podepsání zprávy</translation>
+        <source>The Millenniumclubcoin address to sign the message with</source>
+        <translation>Millenniumclubcoin adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Delion address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Delion adresu</translation>
+        <source>Sign the message to prove you own this Millenniumclubcoin address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Millenniumclubcoin adresu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Vložte BIP 38 šifrovaný privítní klíc. Frázové heslo vložte do prostředního boxu. Kliknětě na Dešifrovat Klíč pro výpočet privátního klíče. Poté co bude klíč dešifrován, kliknutím na 'Importovat Adresu' přidáte privátní klíč do Vaší peněženky.</translation>
     </message>
     <message>
-        <source>The Delion address the message was signed with</source>
-        <translation>Delion adresa zprávy byla podpsána</translation>
+        <source>The Millenniumclubcoin address the message was signed with</source>
+        <translation>Millenniumclubcoin adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Delion address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Delion adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Millenniumclubcoin address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Millenniumclubcoin adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>Millenniumclubcoin Core</translation>
     </message>
     <message>
-        <source>Send coins to a Delion address</source>
-        <translation>Odeslat platbuna Delion adresu</translation>
+        <source>Send coins to a Millenniumclubcoin address</source>
+        <translation>Odeslat platbuna Millenniumclubcoin adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and delion: URIs)</source>
-        <translation>Vyžádat platbu (generování QK kódu a delion: URIs)</translation>
+        <source>Request payments (generates QR codes and millenniumclubcoin: URIs)</source>
+        <translation>Vyžádat platbu (generování QK kódu a millenniumclubcoin: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About Delion Core</source>
-        <translation>&amp;O Delion Core</translation>
+        <source>&amp;About Millenniumclubcoin Core</source>
+        <translation>&amp;O Millenniumclubcoin Core</translation>
     </message>
     <message>
-        <source>Show information about Delion Core</source>
-        <translation>Zobraz informace o Delion Core</translation>
+        <source>Show information about Millenniumclubcoin Core</source>
+        <translation>Zobraz informace o Millenniumclubcoin Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Delion</source>
-        <translation>Upravit možnosti konfigurace pro Delion</translation>
+        <source>Modify configuration options for Millenniumclubcoin</source>
+        <translation>Upravit možnosti konfigurace pro Millenniumclubcoin</translation>
     </message>
     <message>
-        <source>Sign messages with your Delion addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší Delion adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <source>Sign messages with your Millenniumclubcoin addresses to prove you own them</source>
+        <translation>Podepsat zprávy Vaší Millenniumclubcoin adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Delion addresses</source>
-        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými Delion adresami</translation>
+        <source>Verify messages to ensure they were signed with specified Millenniumclubcoin addresses</source>
+        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými Millenniumclubcoin adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a Delion: URI or payment request</source>
-        <translation>Otevřít Delion: URI nebo platební žádost</translation>
+        <source>Open a Millenniumclubcoin: URI or payment request</source>
+        <translation>Otevřít Millenniumclubcoin: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the Delion Core help message to get a list with possible Delion command-line options</source>
-        <translation>Zobrazit Delion Core pomocnou zpráv pro získání seznamu možných parametrů Delion pro příkazy do příkazové řádky</translation>
+        <source>Show the Millenniumclubcoin Core help message to get a list with possible Millenniumclubcoin command-line options</source>
+        <translation>Zobrazit Millenniumclubcoin Core pomocnou zpráv pro získání seznamu možných parametrů Millenniumclubcoin pro příkazy do příkazové řádky</translation>
     </message>
     <message>
-        <source>Delion Core client</source>
-        <translation>Delion Core klient</translation>
+        <source>Millenniumclubcoin Core client</source>
+        <translation>Millenniumclubcoin Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -809,8 +809,8 @@ MultiSend: %1</translation>
         <translation>TextPopisku</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (delion.conf).</source>
-        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (delion.conf) txindex=1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (millenniumclubcoin.conf).</source>
+        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (millenniumclubcoin.conf) txindex=1.</translation>
     </message>
 </context>
 <context>
@@ -1066,8 +1066,8 @@ MultiSend: %1</translation>
         <translation>Upravit adresu k odeslání platby</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Delion address.</source>
-        <translation>Zadaná adresa "%1" není validní Delion adresa.</translation>
+        <source>The entered address "%1" is not a valid Millenniumclubcoin address.</source>
+        <translation>Zadaná adresa "%1" není validní Millenniumclubcoin adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1112,12 +1112,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>Millenniumclubcoin Core</translation>
     </message>
     <message>
-        <source>About Delion Core</source>
-        <translation>O Delion Core</translation>
+        <source>About Millenniumclubcoin Core</source>
+        <translation>O Millenniumclubcoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1151,16 +1151,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to Delion Core.</source>
-        <translation>Vítejte v Delion Core.</translation>
+        <source>Welcome to Millenniumclubcoin Core.</source>
+        <translation>Vítejte v Millenniumclubcoin Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Delion Core will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude Delion Core ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Millenniumclubcoin Core will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude Millenniumclubcoin Core ukládat svá data.</translation>
     </message>
     <message>
-        <source>Delion Core will download and store a copy of the Delion block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Delion Core stáhne a uloží kopii Delion blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>Millenniumclubcoin Core will download and store a copy of the Millenniumclubcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Millenniumclubcoin Core stáhne a uloží kopii Millenniumclubcoin blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1171,8 +1171,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>Millenniumclubcoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1520,12 +1520,12 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Delion after logging in to the system.</source>
-        <translation>Automaticky spustit Delion po přihlášení do systému</translation>
+        <source>Automatically start Millenniumclubcoin after logging in to the system.</source>
+        <translation>Automaticky spustit Millenniumclubcoin po přihlášení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start Delion on system login</source>
-        <translation>&amp;Spusti Delion při přihlášení do systému</translation>
+        <source>&amp;Start Millenniumclubcoin on system login</source>
+        <translation>&amp;Spusti Millenniumclubcoin při přihlášení do systému</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -2186,8 +2186,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Delion address to sign the message with</source>
-        <translation>Delion adresa pro podepsání zprávy</translation>
+        <source>The Millenniumclubcoin address to sign the message with</source>
+        <translation>Millenniumclubcoin adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2214,16 +2214,16 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Delion address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Delion adresu</translation>
+        <source>Sign the message to prove you own this Millenniumclubcoin address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto Millenniumclubcoin adresu</translation>
     </message>
     <message>
-        <source>The Delion address the message was signed with</source>
-        <translation>Delion adresa zprávy byla podpsána</translation>
+        <source>The Millenniumclubcoin address the message was signed with</source>
+        <translation>Millenniumclubcoin adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Delion address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Delion adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Millenniumclubcoin address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou Millenniumclubcoin adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2265,8 +2265,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Delion Core</source>
-        <translation>Delion Core</translation>
+        <source>Millenniumclubcoin Core</source>
+        <translation>Millenniumclubcoin Core</translation>
     </message>
     </context>
 <context>
@@ -2369,14 +2369,14 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
     </context>
 <context>
-    <name>ZDelionControlDialog</name>
+    <name>ZMillenniumclubcoinControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>delion-core</name>
+    <name>millenniumclubcoin-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

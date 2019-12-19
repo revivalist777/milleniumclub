@@ -85,23 +85,23 @@ enum AvailableCoinsType {
     STAKABLE_COINS = 6                          // UTXO's that are valid for staking
 };
 
-// Possible states for zDELION send
+// Possible states for zMILLENIUMCLUBCOIN send
 enum ZerocoinSpendStatus {
-    ZDELION_SPEND_OKAY = 0,                            // No error
-    ZDELION_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
-    ZDELION_WALLET_LOCKED = 2,                         // Wallet was locked
-    ZDELION_COMMIT_FAILED = 3,                         // Commit failed, reset status
-    ZDELION_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
-    ZDELION_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
-    ZDELION_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
-    ZDELION_TRX_CREATE = 7,                            // Everything related to create the transaction
-    ZDELION_TRX_CHANGE = 8,                            // Everything related to transaction change
-    ZDELION_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
-    ZDELION_INVALID_COIN = 10,                         // Selected mint coin is not valid
-    ZDELION_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
-    ZDELION_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
-    ZDELION_BAD_SERIALIZATION = 13,                    // Transaction verification failed
-    ZDELION_SPENT_USED_ZDELION = 14                       // Coin has already been spend
+    ZMILLENIUMCLUBCOIN_SPEND_OKAY = 0,                            // No error
+    ZMILLENIUMCLUBCOIN_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
+    ZMILLENIUMCLUBCOIN_WALLET_LOCKED = 2,                         // Wallet was locked
+    ZMILLENIUMCLUBCOIN_COMMIT_FAILED = 3,                         // Commit failed, reset status
+    ZMILLENIUMCLUBCOIN_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
+    ZMILLENIUMCLUBCOIN_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
+    ZMILLENIUMCLUBCOIN_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
+    ZMILLENIUMCLUBCOIN_TRX_CREATE = 7,                            // Everything related to create the transaction
+    ZMILLENIUMCLUBCOIN_TRX_CHANGE = 8,                            // Everything related to transaction change
+    ZMILLENIUMCLUBCOIN_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
+    ZMILLENIUMCLUBCOIN_INVALID_COIN = 10,                         // Selected mint coin is not valid
+    ZMILLENIUMCLUBCOIN_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
+    ZMILLENIUMCLUBCOIN_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
+    ZMILLENIUMCLUBCOIN_BAD_SERIALIZATION = 13,                    // Transaction verification failed
+    ZMILLENIUMCLUBCOIN_SPENT_USED_ZMILLENIUMCLUBCOIN = 14                       // Coin has already been spend
 };
 
 struct CompactTallyItem {
@@ -206,7 +206,7 @@ public:
     std::string ResetMintZerocoin(bool fExtendedSearch);
     std::string ResetSpentZerocoin();
     void ReconsiderZerocoins(std::list<CZerocoinMint>& listMintsRestored);
-    void ZDelionBackupWallet();
+    void ZMillenniumclubcoinBackupWallet();
 
     /** Zerocin entry changed.
     * @note called with lock cs_wallet held.
@@ -309,7 +309,7 @@ public:
         return fEnableZeromint;
     }
 
-    void setZDelionAutoBackups(bool fEnabled)
+    void setZMillenniumclubcoinAutoBackups(bool fEnabled)
     {
         fBackupMints = fEnabled;
     }

@@ -1,9 +1,9 @@
-/* src/config/delion-config.h.  Generated from delion-config.h.in by configure.  */
-/* src/config/delion-config.h.in.  Generated from configure.ac by autoheader.  */
+/* src/config/millenniumclubcoin-config.h.  Generated from millenniumclubcoin-config.h.in by configure.  */
+/* src/config/millenniumclubcoin-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef DELION_CONFIG_H
+#ifndef MILLENIUMCLUBCOIN_CONFIG_H
 
-#define DELION_CONFIG_H
+#define MILLENIUMCLUBCOIN_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
@@ -268,16 +268,16 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "www.delion.online"
+#define PACKAGE_BUGREPORT "https://millenniumclub.ca/"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "Delion Core"
+#define PACKAGE_NAME "Millenniumclubcoin Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Delion Core 1.0.0"
+#define PACKAGE_STRING "Millenniumclubcoin Core 1.0.0"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "delion"
+#define PACKAGE_TARNAME "millenniumclubcoin"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL ""
@@ -340,4 +340,4 @@
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
 
-#endif //DELION_CONFIG_H
+#endif //MILLENIUMCLUBCOIN_CONFIG_H
