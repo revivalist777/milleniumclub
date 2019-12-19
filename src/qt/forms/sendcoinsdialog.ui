@@ -1385,7 +1385,7 @@
         <number>3</number>
        </property>
        <item>
-        <widget class="QCheckBox" name="checkzMILLENIUMCLUBCOIN">
+        <widget class="QCheckBox" name="checkzMCLB">
          <property name="enabled">
           <bool>false</bool>
          </property>

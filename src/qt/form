@@ -1056,12 +1056,12 @@
                 <string/>
                </property>
                <property name="text">
-                <string>zMILLENIUMCLUBCOIN:</string>
+                <string>zMCLB:</string>
                </property>
               </widget>
              </item>
              <item row="4" column="2">
-              <widget class="QLabel" name="labelzMILLENIUMCLUBCOINPercent">
+              <widget class="QLabel" name="labelzMCLBPercent">
                <property name="toolTip">
                 <string>Current percentage of zDLN.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%)</string>

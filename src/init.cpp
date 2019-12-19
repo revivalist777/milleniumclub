@@ -1357,8 +1357,8 @@ bool AppInit2(boost::thread_group& threadGroup)
                 // Recalculate money supply for blocks that are impacted by accounting issue after zerocoin activation
                 if (GetBoolArg("-reindexmoneysupply", false)) {
                     if (chainActive.Height() >= Params().Zerocoin_AccumulatorStartHeight()) {
-                        RecalculateZMILLENIUMCLUBCOINMinted();
-                        RecalculateZMILLENIUMCLUBCOINSpent();
+                        RecalculateZMCLBMinted();
+                        RecalculateZMCLBSpent();
                     }
                     RecalculateMILLENIUMCLUBCOINSupply(1);
                 }

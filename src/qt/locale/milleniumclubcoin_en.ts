@@ -2454,7 +2454,7 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
     </message>
     <message>
         <location line="+35"/>
-        <source>zMILLENIUMCLUBCOIN:</source>
+        <source>zMCLB:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -31,7 +31,7 @@
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0">
        <item>
-        <widget class="QLabel" name="zMILLENIUMCLUBCOINLabel">
+        <widget class="QLabel" name="zMCLBLabel">
          <property name="minimumSize">
           <size>
            <width>460</width>
@@ -74,7 +74,7 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_3">
                <item>
-                <widget class="QLabel" name="labelzMILLENIUMCLUBCOINActions">
+                <widget class="QLabel" name="labelzMCLBActions">
                  <property name="font">
                   <font>
                    <pointsize>12</pointsize>
@@ -91,7 +91,7 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzMILLENIUMCLUBCOINSyncStatus">
+                <widget class="QLabel" name="labelzMCLBSyncStatus">
                  <property name="toolTip">
                   <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Millenniumclubcoin network after a connection is established, but this process has not completed yet.</string>
                  </property>
@@ -137,7 +137,7 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_4">
                <item>
-                <widget class="QPushButton" name="pushButtonMintzMILLENIUMCLUBCOIN">
+                <widget class="QPushButton" name="pushButtonMintzMCLB">
                  <property name="minimumSize">
                   <size>
                    <width>131</width>
@@ -169,14 +169,14 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzMILLENIUMCLUBCOIN_2">
+                <widget class="QLabel" name="labelzMCLB_2">
                  <property name="text">
                   <string>DLN</string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzMILLENIUMCLUBCOINAmountText">
+                <widget class="QLabel" name="labelzMCLBAmountText">
                  <property name="toolTip">
                   <string>Available Balance are coins (DLN) which are confirmed and not locked or Masternode collaterals.</string>
                  </property>
@@ -189,7 +189,7 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzMILLENIUMCLUBCOINAmountValue">
+                <widget class="QLabel" name="labelzMCLBAmountValue">
                  <property name="toolTip">
                   <string>Enter an amount of DLN to convert to zDLN</string>
                  </property>
@@ -476,19 +476,19 @@
                <item>
                 <widget class="QPushButton" name="pushButtonZMillenniumclubcoinControl">
                  <property name="text">
-                  <string>zMILLENIUMCLUBCOIN Control</string>
+                  <string>zMCLB Control</string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzMILLENIUMCLUBCOINSelected">
+                <widget class="QLabel" name="labelzMCLBSelected">
                  <property name="text">
                   <string>MILLENIUMCLUBCOIN Selected:</string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzMILLENIUMCLUBCOINSelected_int">
+                <widget class="QLabel" name="labelzMCLBSelected_int">
                  <property name="text">
                   <string>0</string>
                  </property>
@@ -542,7 +542,7 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_6">
                <item>
-                <widget class="QPushButton" name="pushButtonSpendzMILLENIUMCLUBCOIN">
+                <widget class="QPushButton" name="pushButtonSpendzMCLB">
                  <property name="minimumSize">
                   <size>
                    <width>131</width>
@@ -558,7 +558,7 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzMILLENIUMCLUBCOINBalanceText">
+                <widget class="QLabel" name="labelzMCLBBalanceText">
                  <property name="toolTip">
                   <string>Available (mature and spendable) zDLN for spending</string>
                  </property>
@@ -784,15 +784,15 @@ zDLN are mature when they have more than 20 confirmations AND more than 1 mints 
                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                  </property>
                  <property name="buddy">
-                  <cstring>zMILLENIUMCLUBCOINpayAmount</cstring>
+                  <cstring>zMCLBpayAmount</cstring>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLineEdit" name="zMILLENIUMCLUBCOINpayAmount"/>
+                <widget class="QLineEdit" name="zMCLBpayAmount"/>
                </item>
                <item>
-                <widget class="QLabel" name="labelzMILLENIUMCLUBCOIN">
+                <widget class="QLabel" name="labelzMCLB">
                  <property name="minimumSize">
                   <size>
                    <width>55</width>
@@ -886,7 +886,7 @@ zDLN are mature when they have more than 20 confirmations AND more than 1 mints 
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_21">
                <item>
-                <widget class="QLabel" name="labelzMILLENIUMCLUBCOINStats">
+                <widget class="QLabel" name="labelzMCLBStats">
                  <property name="font">
                   <font>
                    <pointsize>12</pointsize>

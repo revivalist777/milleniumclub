@@ -360,7 +360,7 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
         return tr("Spent zDLN");
     case TransactionRecord::RecvFromZerocoinSpend:
         return tr("Received dln from zDLN");
-    case TransactionRecord::ZerocoinSpend_Change_zMILLENIUMCLUBCOIN:
+    case TransactionRecord::ZerocoinSpend_Change_zMCLB:
         return tr("Minted Change as zDLN from zDLN Spend");
     case TransactionRecord::ZerocoinSpend_FromMe:
         return tr("Converted zDLN to DLN");
@@ -418,7 +418,7 @@ QString TransactionTableModel::formatTxToAddress(const TransactionRecord* wtx, b
     case TransactionRecord::SendToOther:
         return QString::fromStdString(wtx->address) + watchAddress;
     case TransactionRecord::ZerocoinMint:
-    case TransactionRecord::ZerocoinSpend_Change_zMILLENIUMCLUBCOIN:
+    case TransactionRecord::ZerocoinSpend_Change_zMCLB:
         return tr("zDLN Accumulator");
     case TransactionRecord::SendToSelf:
     default:

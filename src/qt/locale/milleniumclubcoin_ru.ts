@@ -1895,8 +1895,8 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>MILLENIUMCLUBCOIN:</translation>
     </message>
     <message>
-        <source>zMILLENIUMCLUBCOIN:</source>
-        <translation>zMILLENIUMCLUBCOIN:</translation>
+        <source>zMCLB:</source>
+        <translation>zMCLB:</translation>
     </message>
     <message>
         <source>0 %</source>

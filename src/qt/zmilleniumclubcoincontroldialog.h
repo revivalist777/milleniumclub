@@ -3,8 +3,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZMILLENIUMCLUBCOINCONTROLDIALOG_H
-#define ZMILLENIUMCLUBCOINCONTROLDIALOG_H
+#ifndef ZMCLBCONTROLDIALOG_H
+#define ZMCLBCONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
@@ -53,4 +53,4 @@ private slots:
     void ButtonAllClicked();
 };
 
-#endif // ZMILLENIUMCLUBCOINCONTROLDIALOG_H
+#endif // ZMCLBCONTROLDIALOG_H

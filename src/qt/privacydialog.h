@@ -76,7 +76,7 @@ private:
 
     int nDisplayUnit;
     bool updateLabel(const QString& address);
-    void sendzMILLENIUMCLUBCOIN();
+    void sendzMCLB();
 
 private slots:
     void on_payTo_textChanged(const QString& address);
@@ -96,10 +96,10 @@ private slots:
 //    void coinControlClipboardLowOutput();
 //    void coinControlClipboardChange();
 
-    void on_pushButtonMintzMILLENIUMCLUBCOIN_clicked();
+    void on_pushButtonMintzMCLB_clicked();
     void on_pushButtonMintReset_clicked();
     void on_pushButtonSpentReset_clicked();
-    void on_pushButtonSpendzMILLENIUMCLUBCOIN_clicked();
+    void on_pushButtonSpendzMCLB_clicked();
     void on_pushButtonZMillenniumclubcoinControl_clicked();
     void on_pasteButton_clicked();
     void updateDisplayUnit();
