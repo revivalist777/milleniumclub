@@ -1,2 +1,0 @@
-# milleniumclub
-MilleniumClubCoin
