@@ -3490,8 +3490,8 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>(15858 could be used only on mainnet)</source>
-        <translation>(15858 could be used only on mainnet)</translation>
+        <source>(3333 could be used only on mainnet)</source>
+        <translation>(3333 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3502,8 +3502,8 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>(must be 15858 for mainnet)</source>
-        <translation>(deve ser 15858 para mainnet)</translation>
+        <source>(must be 3333 for mainnet)</source>
+        <translation>(deve ser 3333 para mainnet)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>

@@ -226,10 +226,10 @@ QT_TRANSLATE_NOOP("millenniumclubcoin-core", ""
 QT_TRANSLATE_NOOP("millenniumclubcoin-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("millenniumclubcoin-core", "(15858 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("millenniumclubcoin-core", "(3333 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("millenniumclubcoin-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("millenniumclubcoin-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("millenniumclubcoin-core", "(must be 15858 for mainnet)"),
+QT_TRANSLATE_NOOP("millenniumclubcoin-core", "(must be 3333 for mainnet)"),
 QT_TRANSLATE_NOOP("millenniumclubcoin-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("millenniumclubcoin-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("millenniumclubcoin-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),
