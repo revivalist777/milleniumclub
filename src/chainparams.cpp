@@ -54,15 +54,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
-    boost::assign::map_list_of
-    (0, uint256("0xeaaaea7d13c08bff5ba2be83cb558de02a5f872af48a67a9802dd4bc95f0a399"))
-    (50000,uint256("06466ca82b589f87682a84be2055ab487a5b305b10b3ff89db70fed9b169b34c"))
-    (100000,uint256("870b056fde9975f0b8d81eb800dd7533b446095d26518acdadce098c65b5a964"))
-    (140000,uint256("ec916ebba4184b3936d081cff5a3fad56a80672c9f71c359c83d8f96ba97fc33"));
+    boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1557117733, // * UNIX timestamp of last checkpoint block
-    295778,    // * total number of transactions between genesis and last checkpoint
+    1576809656, // * UNIX timestamp of last checkpoint block
+    2,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     5000       // * estimated number of transactions per day after checkpoint
 };
@@ -71,7 +67,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1537607775,
+    1576809656,
     0,
     250};
 
@@ -79,7 +75,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
-    1537607764,
+    1576809656,
     0,
     0};
 
@@ -104,11 +100,11 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0x18;
-        pchMessageStart[1] = 0x76;
-        pchMessageStart[2] = 0x04;
-        pchMessageStart[3] = 0x57;
-        vAlertPubKey = ParseHex("0480e0e72c17b6205828d44d080648e9c27ab1e2a17ecbaf80962e4f6c2c89ac42862352bf459271886b752cb64784e8b66c01341a9973ada2a7c3b1dc99d32631");
+        pchMessageStart[0] = 0x6f;
+        pchMessageStart[1] = 0x20;
+        pchMessageStart[2] = 0xbd;
+        pchMessageStart[3] = 0xc4;
+        vAlertPubKey = ParseHex("04b9d58f1d755c40578351f010ccc861f848adea17d89a945a334dea1f64de0aaffc6b3bdf2d088b0b4a2b33fa3fed83f280187139e70ee826aaa1371c06c11868");
         nDefaultPort = 3333;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Millenniumclubcoin starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
@@ -120,38 +116,35 @@ public:
         nTargetTimespan = 1 * 60; // Millenniumclubcoin: 60 seconds
         nTargetSpacingSlowLaunch = 1 * 60;
         nTargetSpacing = 1 * 60;  // Millenniumclubcoin: 60 Seconds
-        nMaturity = 20;
-        nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 100000000 * COIN;
+        nMaturity = 60;
+        nMasternodeCountDrift = 60;
+        nMaxMoneyOut = 20000000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 600;
+        nLastPOWBlock = 500;
         nModifierUpdateBlock = 1;
-        nZerocoinStartHeight = 601;
+        nZerocoinStartHeight = 501;
         nAccumulatorStartHeight = 1;
-        nZerocoinStartTime = 1537607855; // 1537760280
+        nZerocoinStartTime = 1576810040;
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = ~1; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = ~1; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = ~1; //Last valid accumulator checkpoint
 
-        nEnforceNewSporkKey = 1564056000; //!> Sporks signed after (GMT): Thursday, July 25, 2019 12:00:00 PM GMT must use the new spork key
-        nRejectOldSporkKey = 1564315200; //!> Fully reject old spork key after (GMT): Monday, July 29, 2019 12:00:00 PM
-
-        const char* pszTimestamp = "Millenniumclubcoin Project Started";
+        const char* pszTimestamp = "2019-12-19 Donald Trump is impeached and faces trial in the US Senate";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 1 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04c1eb45c93f2d5c6857211458fd588901af54903651b4a21921cdf11e702c9ebecddbbbbfe8dc1fb9e79678536720bab21f3a3755160e93d9beaa69acbb1e9b14") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("0423d6ea539691df878c0c8e35458436d2fc9e23db5b612b71d6d03391494a4fdac1b3096019ca8c8388e9b9d178ce94a006295b7a2730a1b70ef1e004e581fcb4") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1537607855;
+        genesis.nTime = 1576810792;
         genesis.nBits = 0x1e0fffff;
-        genesis.nNonce = 594490584;
+        genesis.nNonce = 0;
         
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0xeaaaea7d13c08bff5ba2be83cb558de02a5f872af48a67a9802dd4bc95f0a399"));
@@ -161,22 +154,13 @@ public:
 		vSeeds.clear();
 		
         vSeeds.push_back(CDNSSeedData("1.millenniumclubcoin.online", "1.millenniumclubcoin.online"));
-        vSeeds.push_back(CDNSSeedData("2.millenniumclubcoin.online", "2.millenniumclubcoin.online"));
-        vSeeds.push_back(CDNSSeedData("3.millenniumclubcoin.online", "3.millenniumclubcoin.online"));
-        vSeeds.push_back(CDNSSeedData("4.millenniumclubcoin.online", "4.millenniumclubcoin.online"));
-        vSeeds.push_back(CDNSSeedData("5.millenniumclubcoin.online", "5.millenniumclubcoin.online"));
-        vSeeds.push_back(CDNSSeedData("6.millenniumclubcoin.online", "6.millenniumclubcoin.online"));
-        vSeeds.push_back(CDNSSeedData("7.millenniumclubcoin.online", "7.millenniumclubcoin.online"));
-        vSeeds.push_back(CDNSSeedData("8.millenniumclubcoin.online", "8.millenniumclubcoin.online"));
-        vSeeds.push_back(CDNSSeedData("9.millenniumclubcoin.online", "9.millenniumclubcoin.online"));
-        vSeeds.push_back(CDNSSeedData("10.millenniumclubcoin.online", "10.millenniumclubcoin.online"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 31); // D
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 48); // L
-        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 53); // N
-        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0xb1)(0x9c)(0x11)(0x8c).convert_to_container<std::vector<unsigned char> >();
-        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x7f)(0xfd)(0xb7)(0xcc).convert_to_container<std::vector<unsigned char> >();
-        base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x10)(0xb8)(0xa4)(0x8a).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 51);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 48);
+        base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 53);
+        base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x7b)(0x14)(0xdb)(0x6a).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x4c)(0xe6)(0xf5)(0x1a).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x81)(0x9c)(0x90)(0xe8).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
@@ -192,8 +176,7 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04b2fe44535740084d1df6b93fb044000ba018f1c35ec5196c4d918498e108bd436389225d9a83db72bbe473d6ba373fabf8fc68038ff87463e97cee8caaccb28e";
-        strSporkKeyOld = "0484698d3ba6ba6e7423fa5cbd6a89e0a9a5348f88d332b44a5cb1a8b7ed2c1eaa335fc8dc4f012cb8241cc0bdafd6ca70c5f5448916e4e6f511bcd746ed57dc50";
+        strSporkKey = "044970435ca3ec078efeac38c0715b25c2b7f7b82ff5e42c6e596b795b8abba12720ed4babe4a26b30f694159671903d432e0471cc9403c20089593230b0803a48";
         strObfuscationPoolDummyAddress  = "D87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
         
@@ -225,11 +208,11 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0x18;
-        pchMessageStart[1] = 0x76;
-        pchMessageStart[2] = 0x04;
-        pchMessageStart[3] = 0x57;
-        vAlertPubKey = ParseHex("04c1eb45c93f2d5c6857211458fd588901af54903651b4a21921cdf11e702c9ebecddbbbbfe8dc1fb9e79678536720bab21f3a3755160e93d9beaa69acbb1e9b14");
+        pchMessageStart[0] = 0x69;
+        pchMessageStart[1] = 0x25;
+        pchMessageStart[2] = 0xf7;
+        pchMessageStart[3] = 0xb1;
+        vAlertPubKey = ParseHex("049e0e066381d7f9eddfacc690fee888deeee91bc54c1b098730e078ceec748e6887fee70d291fd20824c98a70caa9ca12698312d1779a72c59d204fd93f6424ed");
         nDefaultPort = 4444;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
@@ -250,8 +233,8 @@ public:
         nBlockLastGoodCheckpoint = 9891730; //Last valid accumulator checkpoint
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1537602753;
-        genesis.nNonce = 531957;
+        genesis.nTime = 1576810792;
+        genesis.nNonce = 0;
         
                        
         hashGenesisBlock = genesis.GetHash();
@@ -308,10 +291,10 @@ public:
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
         strNetworkID = "regtest";
-        pchMessageStart[0] = 0x18;
-        pchMessageStart[1] = 0x76;
-        pchMessageStart[2] = 0x04;
-        pchMessageStart[3] = 0x57;
+        pchMessageStart[0] = 0x91;
+        pchMessageStart[1] = 0xc5;
+        pchMessageStart[2] = 0xe4;
+        pchMessageStart[3] = 0x9d;
         nSubsidyHalvingInterval = 150;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
@@ -320,9 +303,9 @@ public:
         nTargetTimespan = 24 * 60 * 60; // Millenniumclubcoin: 1 day
         nTargetSpacing = 1 * 60;        // Millenniumclubcoin: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1537602753;
+        genesis.nTime = 1576810792;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 2266010;
+        genesis.nNonce = 0;
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 5555;
