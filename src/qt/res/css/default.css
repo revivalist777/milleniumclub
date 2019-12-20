@@ -1,7 +1,7 @@
 /****************************************************************************************/
 /*************** [COLOR CODES] DARK :#2d6eb7 2d6eb7 LIGHT :#2d6eb7  2d6eb7 *****************/
 /* hover1: #2d6eb7 2d6eb7 hover2: #01c4c4 01c4c4
-/* button1 #FFF400 FFF400
+/* button1 #2d6eb7 2d6eb7
 /* privacy  #2d6eb7 ,  #2d6eb7 956E47
 /****************************************************************************************/
 
@@ -166,7 +166,7 @@ background-color:#f2f2f2;
 /****************************************************************************************/
 
 QPushButton { /* Global Button Style */
-background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #FFF400, stop: .1 #2d6eb7, stop: .95 #2d6eb7, stop: 1 #FFF400);
+background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: .01 #2d6eb7, stop: .1 #2d6eb7, stop: .95 #2d6eb7, stop: 1 #2d6eb7);
 border:0;
 border-radius:3px;
 color:#ffffff;
