@@ -176,16 +176,16 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>Millenniumclubcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DLNs from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer DLNs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <source>Millenniumclubcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MCLBs from being stolen by malware infecting your computer.</source>
+        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer MCLBs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Sind Sie sich sicher, dass Sie ihre Wallet verschlüsseln möchten?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DLN&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre DLNs verlieren&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MCLB&lt;/b&gt;!</source>
+        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre MCLBs verlieren&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -618,8 +618,8 @@
         <translation>&amp;Privatsphäre</translation>
     </message>
     <message>
-        <source>Privacy Action for zDLN and Obfuscation</source>
-        <translation>Privatsphäre Aktion für zDLN und Verschleierung</translation>
+        <source>Privacy Action for zMCLB and Obfuscation</source>
+        <translation>Privatsphäre Aktion für zMCLB und Verschleierung</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -1539,32 +1539,32 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Bitte den gewünschten Privatsphäre Level auswählen.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 DLN</source>
-        <translation>2 separate Masternodes verwenden um bis zu 10000 DLN zu mixen</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 MCLB</source>
+        <translation>2 separate Masternodes verwenden um bis zu 10000 MCLB zu mixen</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 DLN</source>
-        <translation>8 separate Masternodes verwenden um bis zu 10000 DLN zu mixen</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 MCLB</source>
+        <translation>8 separate Masternodes verwenden um bis zu 10000 MCLB zu mixen</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>16 separate Masternodes verwenden</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 DLN to anonymize 10000 DLN</source>
-        <translation>Diese Option ist die schnellst und kostet ungefähr ~0.025 DLN um 10000 DLN zu anonymisieren </translation>
+        <source>This option is the quickest and will cost about ~0.025 MCLB to anonymize 10000 MCLB</source>
+        <translation>Diese Option ist die schnellst und kostet ungefähr ~0.025 MCLB um 10000 MCLB zu anonymisieren </translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 DLN to anonymize 10000 DLN</source>
-        <translation>Diese Option ist angemessen schnell und kostet ungefähr  0.05 DLN um 10000 DLN zu anonymisieren</translation>
+        <source>This option is moderately fast and will cost about 0.05 MCLB to anonymize 10000 MCLB</source>
+        <translation>Diese Option ist angemessen schnell und kostet ungefähr  0.05 MCLB um 10000 MCLB zu anonymisieren</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Diese Option ist die langsamste und sicherste Option. Die Verwendung maximaler Anonymisierung kostet</translation>
     </message>
     <message>
-        <source>0.1 DLN per 10000 DLN you anonymize.</source>
-        <translation>0.1 DLN per 10000 DLN die anonymisiert werden.</translation>
+        <source>0.1 MCLB per 10000 MCLB you anonymize.</source>
+        <translation>0.1 MCLB per 10000 MCLB die anonymisiert werden.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1707,20 +1707,20 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>Port mit &amp;UPnP mappen</translation>
     </message>
     <message>
-        <source>Percentage of incoming DLN which get automatically converted to zDLN via Zerocoin Protocol (min: 10%)</source>
-        <translation>Anteil des eingehenden DLN, welcher automatisch zu zDLN via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
+        <source>Percentage of incoming MCLB which get automatically converted to zMCLB via Zerocoin Protocol (min: 10%)</source>
+        <translation>Anteil des eingehenden MCLB, welcher automatisch zu zMCLB via Zerocoin Protokoll konvertiert wird (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zDLN</source>
-        <translation>Prozentsatz der automatisierten zDLN</translation>
+        <source>Percentage of autominted zMCLB</source>
+        <translation>Prozentsatz der automatisierten zMCLB</translation>
     </message>
     <message>
-        <source>Wait with automatic conversion to Zerocoin until enough DLN for this denomination is available</source>
-        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend DLN für diese Stückelung verfügbar ist</translation>
+        <source>Wait with automatic conversion to Zerocoin until enough MCLB for this denomination is available</source>
+        <translation>Warte mit automatischer Konvertierung zu Zerocoin, bis genügend MCLB für diese Stückelung verfügbar ist</translation>
     </message>
     <message>
-        <source>Preferred Automint zDLN Denomination</source>
-        <translation>Bevorzugte automatisierte zDLN Stückelung </translation>
+        <source>Preferred Automint zMCLB Denomination</source>
+        <translation>Bevorzugte automatisierte zMCLB Stückelung </translation>
     </message>
     <message>
         <source>Connect to the Millenniumclubcoin network through a SOCKS5 proxy.</source>
@@ -2055,12 +2055,12 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>DLN which were anonymized via Zerocin Protocol</source>
-        <translation>DLN, die über das Zerocoin-Protokoll anonymisiert wurden</translation>
+        <source>MCLB which were anonymized via Zerocin Protocol</source>
+        <translation>MCLB, die über das Zerocoin-Protokoll anonymisiert wurden</translation>
     </message>
     <message>
-        <source>Zerocoin DLN (zDLN)</source>
-        <translation>Zerocoin DLN (zDLN)</translation>
+        <source>Zerocoin MCLB (zMCLB)</source>
+        <translation>Zerocoin MCLB (zMCLB)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -2071,8 +2071,8 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem Millenniumclubcoin-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
     </message>
     <message>
-        <source>Enter an amount of DLN to convert to zDLN</source>
-        <translation>Eingabe des DLN-Betrags, um in zDLN umzuwandeln</translation>
+        <source>Enter an amount of MCLB to convert to zMCLB</source>
+        <translation>Eingabe des MCLB-Betrags, um in zMCLB umzuwandeln</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2083,16 +2083,16 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>0</translation>
     </message>
     <message>
-        <source>zDLN</source>
-        <translation>zDLN</translation>
+        <source>zMCLB</source>
+        <translation>zMCLB</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
         <translation>Verfügbar für Prägung:</translation>
     </message>
     <message>
-        <source>0.000 000 00 DLN</source>
-        <translation>0.000 000 00 DLN</translation>
+        <source>0.000 000 00 MCLB</source>
+        <translation>0.000 000 00 MCLB</translation>
     </message>
     <message>
         <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
@@ -2127,12 +2127,12 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>Status und/oder Mitteilungen aus der letzten Prägung</translation>
     </message>
     <message>
-        <source>zDLN Control</source>
-        <translation>zDLN Kontrolle</translation>
+        <source>zMCLB Control</source>
+        <translation>zMCLB Kontrolle</translation>
     </message>
     <message>
-        <source>zDLN Selected:</source>
-        <translation>zDLN Ausgewählt:</translation>
+        <source>zMCLB Selected:</source>
+        <translation>zMCLB Ausgewählt:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2151,8 +2151,8 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>Verfügbare Bilanz:</translation>
     </message>
     <message>
-        <source>0 zDLN</source>
-        <translation>0 zDLN</translation>
+        <source>0 zMCLB</source>
+        <translation>0 zMCLB</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2391,8 +2391,8 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>Erfolgreich geprägt</translation>
     </message>
     <message>
-        <source> zDLN in </source>
-        <translation> zDLN in </translation>
+        <source> zMCLB in </source>
+        <translation> zMCLB in </translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2469,8 +2469,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Ausgeben Zerocoin fehlgeschlagen mit Status =</translation>
     </message>
     <message>
-        <source>zDLN Spend #: </source>
-        <translation>zDLN Ausgeben #:</translation>
+        <source>zMCLB Spend #: </source>
+        <translation>zMCLB Ausgeben #:</translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2493,8 +2493,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Adresse:</translation>
     </message>
     <message>
-        <source>zDLN Mint</source>
-        <translation>zDLN Prägen</translation>
+        <source>zMCLB Mint</source>
+        <translation>zMCLB Prägen</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -3051,7 +3051,7 @@ Bitte haben Sie Geduld...</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>DLNs überweisen</translation>
+        <translation>MCLBs überweisen</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -3122,8 +3122,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>UTXO Größe:</translation>
     </message>
     <message>
-        <source>0 DLN</source>
-        <translation>0 DLN</translation>
+        <source>0 MCLB</source>
+        <translation>0 MCLB</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -3174,12 +3174,12 @@ Bitte haben Sie Geduld...</translation>
         <translation>Coins automatisch ausgewählt</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uDLNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDLNs in fee,&lt;br /&gt;while "at least" pays 1000 uDLNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uDLNs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uDLNs an Gebühren,&lt;br /&gt;während man "mindestens" 1000 uDLNs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uMCLBs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMCLBs in fee,&lt;br /&gt;while "at least" pays 1000 uMCLBs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uMCLBs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uMCLBs an Gebühren,&lt;br /&gt;während man "mindestens" 1000 uMCLBs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uDLNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uDLNs in fee,&lt;br /&gt;while "total at least" pays 1000 uDLNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uDLNs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uDLNs an Gebühren,&lt;br /&gt;während man "insgesamt mindestens" 1000 uDLNs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uMCLBs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMCLBs in fee,&lt;br /&gt;while "total at least" pays 1000 uMCLBs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uMCLBs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uMCLBs an Gebühren,&lt;br /&gt;während man "insgesamt mindestens" 1000 uMCLBs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Millenniumclubcoin transactions than the network can process.</source>
@@ -3230,8 +3230,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Empfänge&amp;r hinzufügen</translation>
     </message>
     <message>
-        <source>Anonymized DLN</source>
-        <translation>Anonymisierte DLN</translation>
+        <source>Anonymized MCLB</source>
+        <translation>Anonymisierte MCLB</translation>
     </message>
     <message>
         <source>SwiftTX</source>
@@ -3805,7 +3805,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Erzeugte DLNs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine DLNs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
+        <translation>Erzeugte MCLBs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine MCLBs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3950,32 +3950,32 @@ Bitte haben Sie Geduld...</translation>
         <translation>Verschleiert</translation>
     </message>
     <message>
-        <source>Converted DLN to zDLN</source>
-        <translation>Umgewandeltes DLN zu zDLN</translation>
+        <source>Converted MCLB to zMCLB</source>
+        <translation>Umgewandeltes MCLB zu zMCLB</translation>
     </message>
     <message>
-        <source>Spent zDLN</source>
-        <translation>Ausgeben zDLN</translation>
+        <source>Spent zMCLB</source>
+        <translation>Ausgeben zMCLB</translation>
     </message>
     <message>
-        <source>Received DLN from zDLN</source>
-        <translation>Empfangene DLN von zDLN</translation>
+        <source>Received MCLB from zMCLB</source>
+        <translation>Empfangene MCLB von zMCLB</translation>
     </message>
     <message>
-        <source>Minted Change as zDLN from zDLN Spend</source>
-        <translation>Geprägtes Wechselgeld als zDLN von zDLN Ausgabe</translation>
+        <source>Minted Change as zMCLB from zMCLB Spend</source>
+        <translation>Geprägtes Wechselgeld als zMCLB von zMCLB Ausgabe</translation>
     </message>
     <message>
-        <source>Converted zDLN to DLN</source>
-        <translation>Umgewandeltes zDLN zu DLN</translation>
+        <source>Converted zMCLB to MCLB</source>
+        <translation>Umgewandeltes zMCLB zu MCLB</translation>
     </message>
     <message>
         <source>watch-only</source>
         <translation>nur beobachtet</translation>
     </message>
     <message>
-        <source>zDLN Accumulator</source>
-        <translation>zDLN Speicher</translation>
+        <source>zMCLB Accumulator</source>
+        <translation>zMCLB Speicher</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4085,8 +4085,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Masternode Vergütung</translation>
     </message>
     <message>
-        <source>Received DLN from zDLN</source>
-        <translation>Empfangene DLN von zDLN</translation>
+        <source>Received MCLB from zMCLB</source>
+        <translation>Empfangene MCLB von zMCLB</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4097,8 +4097,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Zerocoin Ausgabe</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zDLN</source>
-        <translation>Zerocoin Ausgabe, Wechselgeld in zDLN</translation>
+        <source>Zerocoin Spend, Change in zMCLB</source>
+        <translation>Zerocoin Ausgabe, Wechselgeld in zMCLB</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4219,11 +4219,11 @@ Bitte haben Sie Geduld...</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>DLNs überweisen</translation>
+        <translation>MCLBs überweisen</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 DLN.</source>
-        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 DLN begrenzt.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 MCLB.</source>
+        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 MCLB begrenzt.</translation>
     </message>
 </context>
 <context>
@@ -4268,8 +4268,8 @@ Bitte haben Sie Geduld...</translation>
 <context>
     <name>ZMillenniumclubcoinControlDialog</name>
     <message>
-        <source>Select zDLN to Spend</source>
-        <translation>Auswahl zDLN als Ausgabe</translation>
+        <source>Select zMCLB to Spend</source>
+        <translation>Auswahl zMCLB als Ausgabe</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4280,8 +4280,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zDLN</source>
-        <translation>zDLN</translation>
+        <source>zMCLB</source>
+        <translation>zMCLB</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4363,12 +4363,12 @@ Bitte haben Sie Geduld...</translation>
         <translation>Befehl ausführen, wenn sich der beste Block ändert (%s in cmd wird durch Blockhash ersetzt)</translation>
     </message>
     <message>
-        <source>Fees (in DLN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebühren (in DLN/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
+        <source>Fees (in MCLB/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebühren (in MCLB/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in DLN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebühren (in DLN/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
+        <source>Fees (in MCLB/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebühren (in MCLB/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4755,8 +4755,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Millenniumclubcoin Alert" admin@foo.co
         <translation>Block konnte nicht gelesen werden</translation>
     </message>
     <message>
-        <source>Fee (in DLN/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebühr (in DLN/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
+        <source>Fee (in MCLB/kB) to add to transactions you send (default: %s)</source>
+        <translation>Gebühr (in MCLB/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>

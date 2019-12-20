@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>Millenniumclubcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DLNs from being stolen by malware infecting your computer.</source>
+        <source>Millenniumclubcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MCLBs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -231,7 +231,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DLN&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MCLB&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -546,7 +546,7 @@
     </message>
     <message>
         <location line="+11"/>
-        <source>Privacy Actions for zDLN</source>
+        <source>Privacy Actions for zMCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1953,12 +1953,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 10000 DLN</source>
+        <source>Use 2 separate masternodes to mix funds up to 10000 MCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 10000 DLN</source>
+        <source>Use 8 separate masternodes to mix funds up to 10000 MCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1968,12 +1968,12 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 DLN to anonymize 10000 DLN</source>
+        <source>This option is the quickest and will cost about ~0.025 MCLB to anonymize 10000 MCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 DLN to anonymize 10000 DLN</source>
+        <source>This option is moderately fast and will cost about 0.05 MCLB to anonymize 10000 MCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1983,7 +1983,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>0.1 DLN per 10000 DLN you anonymize.</source>
+        <source>0.1 MCLB per 10000 MCLB you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2162,23 +2162,23 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
     </message>
     <message>
         <location line="-133"/>
-        <source>Percentage of incoming DLN which get automatically converted to zDLN via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming MCLB which get automatically converted to zMCLB via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Percentage of autominted zDLN</source>
+        <source>Percentage of autominted zMCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+30"/>
         <location line="+16"/>
-        <source>Wait with automatic conversion to Zerocoin until enough DLN for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough MCLB for this denomination is available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-13"/>
-        <source>Preferred Automint zDLN Denomination</source>
+        <source>Preferred Automint zMCLB Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2459,7 +2459,7 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
     </message>
     <message>
         <location line="+7"/>
-        <source>Current percentage of zDLN.
+        <source>Current percentage of zMCLB.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2472,7 +2472,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     <message>
         <location line="-46"/>
         <location line="+13"/>
-        <source>Locked DLN or Masternode collaterals. These are excluded from zDLN minting.</source>
+        <source>Locked MCLB or Masternode collaterals. These are excluded from zMCLB minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2481,7 +2481,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
         <location line="+189"/>
         <location line="+31"/>
         <location line="+44"/>
-        <source>0.000 000 00 DLN</source>
+        <source>0.000 000 00 MCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2492,7 +2492,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     <message>
         <location line="+7"/>
         <location line="+10"/>
-        <source>Unlocked DLNs. These can be used for zDLN minting.</source>
+        <source>Unlocked MCLBs. These can be used for zMCLB minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2509,7 +2509,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
         <location line="+14"/>
         <location line="+104"/>
         <source>Mature: more than 20 confirmation and more than 3 mints of the same denomination after it was minted.
-These zDLN are spendable.</source>
+These zMCLB are spendable.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2520,7 +2520,7 @@ These zDLN are spendable.</source>
     <message>
         <location line="+23"/>
         <location line="+35"/>
-        <source>All available zDLN, unconfirmed and immature zDLN included.</source>
+        <source>All available zMCLB, unconfirmed and immature zMCLB included.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2550,7 +2550,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
     </message>
     <message>
         <location line="+93"/>
-        <source>Current percentage of zDLN.
+        <source>Current percentage of zMCLB.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
 </source>
         <translation type="unfinished"></translation>
@@ -2716,12 +2716,12 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <name>PrivacyDialog</name>
     <message>
         <location filename="../forms/privacydialog.ui" line="+55"/>
-        <source>DLN which were anonymized via Zerocin Protocol</source>
+        <source>MCLB which were anonymized via Zerocin Protocol</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Zerocoin DLN (zDLN)</source>
+        <source>Zerocoin MCLB (zMCLB)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2737,7 +2737,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <message>
         <location line="+52"/>
         <location line="+46"/>
-        <source>Enter an amount of DLN to convert to zDLN</source>
+        <source>Enter an amount of MCLB to convert to zMCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2756,7 +2756,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <message>
         <location line="-349"/>
         <location line="+629"/>
-        <source>zDLN</source>
+        <source>zMCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2771,7 +2771,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+13"/>
-        <source>0.000 000 00 DLN</source>
+        <source>0.000 000 00 MCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2816,12 +2816,12 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+45"/>
-        <source>zDLN Control</source>
+        <source>zMCLB Control</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>zDLN Selected:</source>
+        <source>zMCLB Selected:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2847,7 +2847,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+7"/>
-        <source>Available (mature and spendable) zDLN for spending</source>
+        <source>Available (mature and spendable) zMCLB for spending</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2857,15 +2857,15 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+16"/>
-        <source>Available (mature and spendable) zDLN for spending
+        <source>Available (mature and spendable) zMCLB for spending
 
-zDLN are mature when they have more than 20 confirmations AND more than 3 mints of the same denomination after them were minted</source>
+zMCLB are mature when they have more than 20 confirmations AND more than 3 mints of the same denomination after them were minted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+5"/>
         <location line="+417"/>
-        <source>0 zDLN</source>
+        <source>0 zMCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2956,7 +2956,7 @@ zDLN are mature when they have more than 20 confirmations AND more than 3 mints 
     <message>
         <location line="+62"/>
         <location line="+38"/>
-        <source>Total Balance including unconfirmed and immature zDLN</source>
+        <source>Total Balance including unconfirmed and immature zMCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3192,7 +3192,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
     </message>
     <message>
         <location line="+0"/>
-        <source> zDLN in </source>
+        <source> zMCLB in </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3304,7 +3304,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+15"/>
-        <source>zDLN Spend #: </source>
+        <source>zMCLB Spend #: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3334,7 +3334,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>zDLN Mint</source>
+        <source>zMCLB Mint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4188,7 +4188,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+7"/>
-        <source>0 DLN</source>
+        <source>0 MCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4253,12 +4253,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+772"/>
-        <source>If the custom fee is set to 1000 uDLNs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uDLNs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uDLNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uMCLBs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uMCLBs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uMCLBs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 uDLNs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uDLNs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uDLNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uMCLBs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uMCLBs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uMCLBs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4324,7 +4324,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+35"/>
-        <source>Anonymized DLN</source>
+        <source>Anonymized MCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5270,27 +5270,27 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted DLN to zDLN</source>
+        <source>Converted MCLB to zMCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Spent zDLN</source>
+        <source>Spent zMCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Received DLN from zDLN</source>
+        <source>Received MCLB from zMCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Minted Change as zDLN from zDLN Spend</source>
+        <source>Minted Change as zMCLB from zMCLB Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zDLN to DLN</source>
+        <source>Converted zMCLB to MCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5300,7 +5300,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+22"/>
-        <source>zDLN Accumulator</source>
+        <source>zMCLB Accumulator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5439,7 +5439,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Received DLN from zDLN</source>
+        <source>Received MCLB from zMCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5454,7 +5454,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Zerocoin Spend, Change in zDLN</source>
+        <source>Zerocoin Spend, Change in zMCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5611,7 +5611,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 DLN.</source>
+        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 MCLB.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5667,7 +5667,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>ZMillenniumclubcoinControlDialog</name>
     <message>
         <location filename="../forms/zmclbcontroldialog.ui" line="+20"/>
-        <source>Select zDLN to Spend</source>
+        <source>Select zMCLB to Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5683,7 +5683,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-7"/>
-        <source>zDLN</source>
+        <source>zMCLB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5811,12 +5811,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in DLN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in MCLB/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in DLN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in MCLB/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5966,12 +5966,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Millenniumclubcoin Alert&quot;
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 DLN.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 MCLB.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 DLN.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 MCLB.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6351,7 +6351,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Millenniumclubcoin Alert&quot;
     </message>
     <message>
         <location line="+2"/>
-        <source>Fee (in DLN/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in MCLB/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6538,7 +6538,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Millenniumclubcoin Alert&quot;
     </message>
     <message>
         <location line="+44"/>
-        <source>Enable automatic wallet backups triggered after each zDLN minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each zMCLB minting (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

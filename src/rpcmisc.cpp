@@ -102,7 +102,7 @@ Value getinfo(const Array& params, bool fHelp)
         zmclbObj.push_back(Pair(to_string(denom), ValueFromAmount(chainActive.Tip()->mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
     zmclbObj.emplace_back(Pair("total", ValueFromAmount(chainActive.Tip()->GetZerocoinSupply())));
-    obj.emplace_back(Pair("zDLNsupply", zmclbObj));
+    obj.emplace_back(Pair("zMCLBsupply", zmclbObj));
     
 #ifdef ENABLE_WALLET
     if (pwalletMain) {

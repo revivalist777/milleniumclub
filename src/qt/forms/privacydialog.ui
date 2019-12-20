@@ -52,13 +52,13 @@
           </font>
          </property>
          <property name="toolTip">
-          <string>DLN which were anonymized via Zerocin Protocol</string>
+          <string>MCLB which were anonymized via Zerocin Protocol</string>
          </property>
          <property name="autoFillBackground">
           <bool>true</bool>
          </property>
          <property name="text">
-          <string>Zerocoin DLN (zDLN)</string>
+          <string>Zerocoin MCLB (zMCLB)</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -83,7 +83,7 @@
                   </font>
                  </property>
                  <property name="text">
-                  <string>zDLN Actions:</string>
+                  <string>zMCLB Actions:</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -145,10 +145,10 @@
                   </size>
                  </property>
                  <property name="toolTip">
-                  <string>Enter an amount of DLN to convert (mint) to zDLN</string>
+                  <string>Enter an amount of MCLB to convert (mint) to zMCLB</string>
                  </property>
                  <property name="text">
-                  <string>Mint DLN to zDLN</string>
+                  <string>Mint MCLB to zMCLB</string>
                  </property>
                 </widget>
                </item>
@@ -171,14 +171,14 @@
                <item>
                 <widget class="QLabel" name="labelzMCLB_2">
                  <property name="text">
-                  <string>DLN</string>
+                  <string>MCLB</string>
                  </property>
                 </widget>
                </item>
                <item>
                 <widget class="QLabel" name="labelzMCLBAmountText">
                  <property name="toolTip">
-                  <string>Available Balance are coins (DLN) which are confirmed and not locked or Masternode collaterals.</string>
+                  <string>Available Balance are coins (MCLB) which are confirmed and not locked or Masternode collaterals.</string>
                  </property>
                  <property name="text">
                   <string>Available Balance:</string>
@@ -191,10 +191,10 @@
                <item>
                 <widget class="QLabel" name="labelzMCLBAmountValue">
                  <property name="toolTip">
-                  <string>Enter an amount of DLN to convert to zDLN</string>
+                  <string>Enter an amount of MCLB to convert to zMCLB</string>
                  </property>
                  <property name="text">
-                  <string>0.000 000 00 DLN</string>
+                  <string>0.000 000 00 MCLB</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -223,7 +223,7 @@
                   </size>
                  </property>
                  <property name="toolTip">
-                  <string>Reset Zerocoin (zDLN) Wallet DB. Deletes transactions that did not make it into the blockchain.</string>
+                  <string>Reset Zerocoin (zMCLB) Wallet DB. Deletes transactions that did not make it into the blockchain.</string>
                  </property>
                  <property name="text">
                   <string>Reset</string>
@@ -370,7 +370,7 @@
                     <enum>Qt::ActionsContextMenu</enum>
                    </property>
                    <property name="text">
-                    <string notr="true">0.00 DLN</string>
+                    <string notr="true">0.00 MCLB</string>
                    </property>
                    <property name="textInteractionFlags">
                     <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -550,17 +550,17 @@
                   </size>
                  </property>
                  <property name="toolTip">
-                  <string>Send zDLN. Without 'Pay To:' address creates payments to yourself.</string>
+                  <string>Send zMCLB. Without 'Pay To:' address creates payments to yourself.</string>
                  </property>
                  <property name="text">
-                  <string>Send zDLN</string>
+                  <string>Send zMCLB</string>
                  </property>
                 </widget>
                </item>
                <item>
                 <widget class="QLabel" name="labelzMCLBBalanceText">
                  <property name="toolTip">
-                  <string>Available (mature and spendable) zDLN for spending</string>
+                  <string>Available (mature and spendable) zMCLB for spending</string>
                  </property>
                  <property name="text">
                   <string>Available Balance:</string>
@@ -579,12 +579,12 @@
                   </font>
                  </property>
                  <property name="toolTip">
-                  <string>Available (mature and spendable) zDLN for spending
+                  <string>Available (mature and spendable) zMCLB for spending
 
-zDLN are mature when they have more than 20 confirmations AND more than 1 mints of the same denomination after them were minted</string>
+zMCLB are mature when they have more than 20 confirmations AND more than 1 mints of the same denomination after them were minted</string>
                  </property>
                  <property name="text">
-                  <string>0 zDLN</string>
+                  <string>0 zMCLB</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -607,7 +607,7 @@ zDLN are mature when they have more than 20 confirmations AND more than 1 mints 
                <item>
                 <widget class="QLabel" name="labelSecurityLevel">
                  <property name="toolTip">
-                  <string>Security Level for Zerocoin (zDLN) Transactions. More is better, but needs more time and resources.</string>
+                  <string>Security Level for Zerocoin (zMCLB) Transactions. More is better, but needs more time and resources.</string>
                  </property>
                  <property name="frameShape">
                   <enum>QFrame::Box</enum>
@@ -800,7 +800,7 @@ zDLN are mature when they have more than 20 confirmations AND more than 1 mints 
                   </size>
                  </property>
                  <property name="text">
-                  <string>zDLN</string>
+                  <string>zMCLB</string>
                  </property>
                 </widget>
                </item>
@@ -833,7 +833,7 @@ zDLN are mature when they have more than 20 confirmations AND more than 1 mints 
                   <enum>Qt::LeftToRight</enum>
                  </property>
                  <property name="text">
-                  <string>Convert Change Back to zDLN (might cost additional fees)</string>
+                  <string>Convert Change Back to zMCLB (might cost additional fees)</string>
                  </property>
                 </widget>
                </item>
@@ -895,10 +895,10 @@ zDLN are mature when they have more than 20 confirmations AND more than 1 mints 
                   </font>
                  </property>
                  <property name="toolTip">
-                  <string>Information about the available zDLN funds.</string>
+                  <string>Information about the available zMCLB funds.</string>
                  </property>
                  <property name="text">
-                  <string>zDLN Stats:</string>
+                  <string>zMCLB Stats:</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -960,10 +960,10 @@ zDLN are mature when they have more than 20 confirmations AND more than 1 mints 
                   </font>
                  </property>
                  <property name="toolTip">
-                  <string>Total Balance including unconfirmed and immature zDLN</string>
+                  <string>Total Balance including unconfirmed and immature zMCLB</string>
                  </property>
                  <property name="text">
-                  <string>Total zDLN Balance:</string>
+                  <string>Total zMCLB Balance:</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -998,10 +998,10 @@ zDLN are mature when they have more than 20 confirmations AND more than 1 mints 
                   </font>
                  </property>
                  <property name="toolTip">
-                  <string>Total Balance including unconfirmed and immature zDLN</string>
+                  <string>Total Balance including unconfirmed and immature zMCLB</string>
                  </property>
                  <property name="text">
-                  <string>0 zDLN</string>
+                  <string>0 zMCLB</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1576,7 +1576,7 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
          <enum>Qt::ActionsContextMenu</enum>
         </property>
         <property name="text">
-         <string notr="true">0.000 000 00 DLN</string>
+         <string notr="true">0.000 000 00 MCLB</string>
         </property>
         <property name="textInteractionFlags">
          <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -1650,7 +1650,7 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
            <enum>Qt::ActionsContextMenu</enum>
           </property>
           <property name="text">
-           <string notr="true">0.00 DLN</string>
+           <string notr="true">0.00 MCLB</string>
           </property>
           <property name="textInteractionFlags">
            <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -1847,7 +1847,7 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
          <enum>Qt::ActionsContextMenu</enum>
         </property>
         <property name="text">
-         <string notr="true">0.000 000 00 DLN</string>
+         <string notr="true">0.000 000 00 MCLB</string>
         </property>
         <property name="textInteractionFlags">
          <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>

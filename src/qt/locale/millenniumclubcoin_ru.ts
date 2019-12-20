@@ -172,7 +172,7 @@
         <translation>Подтверждение шифрования кошелька</translation>
     </message>
     <message>
-        <source>Millenniumclubcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your DLNs from being stolen by malware infecting your computer.</source>
+        <source>Millenniumclubcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MCLBs from being stolen by malware infecting your computer.</source>
         <translation>Millenniumclubcoin сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши Millenniumclubcoin от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
@@ -180,8 +180,8 @@
         <translation>Вы действительно хотите зашифровать свой кошелек?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DLN&lt;/b&gt;!</source>
-        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ DLN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MCLB&lt;/b&gt;!</source>
+        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ MCLB&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -610,7 +610,7 @@
         <translation>&amp;Конфиденциальность</translation>
     </message>
     <message>
-        <source>Privacy Action for zDLN and Obfuscation</source>
+        <source>Privacy Action for zMCLB and Obfuscation</source>
         <translation>Конфиденциальное действие и обфускация</translation>
     </message>
     <message>
@@ -1516,32 +1516,32 @@ Please check the address and try again.</source>
         <translation>Выберите уровень конфиденциальности.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 DLN</source>
-        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 DLN</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 MCLB</source>
+        <translation>Используйте 2 разные мастерноды для смешивания средств до 10000 MCLB</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 DLN</source>
-        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 DLN</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 MCLB</source>
+        <translation>Используйте 8 разных мастернод для смешивания средств до 10000 MCLB</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Используйте 16 разных мастернод</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 DLN to anonymize 10000 DLN</source>
-        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 DLN для анонимизации 10000 DLN</translation>
+        <source>This option is the quickest and will cost about ~0.025 MCLB to anonymize 10000 MCLB</source>
+        <translation>Этот вариант является самым быстрым и будет стоить порядка ~0.025 MCLB для анонимизации 10000 MCLB</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 DLN to anonymize 10000 DLN</source>
-        <translation>Это средний по скорости вариант и он будет стоить около 0.05 DLN для анонимизации 10000 DLN</translation>
+        <source>This option is moderately fast and will cost about 0.05 MCLB to anonymize 10000 MCLB</source>
+        <translation>Это средний по скорости вариант и он будет стоить около 0.05 MCLB для анонимизации 10000 MCLB</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Это самый медленный и безопасный вариант. Максимальная анонимность стоит</translation>
     </message>
     <message>
-        <source>0.1 DLN per 10000 DLN you anonymize.</source>
-        <translation>0.1 DLN за 10000 DLN которые вы собираетесь анонимизировать.</translation>
+        <source>0.1 MCLB per 10000 MCLB you anonymize.</source>
+        <translation>0.1 MCLB за 10000 MCLB которые вы собираетесь анонимизировать.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1684,16 +1684,16 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>Карта порта, использующего &amp;UPnP</translation>
     </message>
     <message>
-        <source>Percentage of incoming DLN which get automatically converted to zDLN via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент приходящих DLN, которые автоматически конвертируются в zDLN благодаря Zerocoin протоколу (min: 10%)</translation>
+        <source>Percentage of incoming MCLB which get automatically converted to zMCLB via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент приходящих MCLB, которые автоматически конвертируются в zMCLB благодаря Zerocoin протоколу (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zDLN</source>
-        <translation>Процент  авточеканненых zDLN</translation>
+        <source>Percentage of autominted zMCLB</source>
+        <translation>Процент  авточеканненых zMCLB</translation>
     </message>
     <message>
-        <source>Preferred Automint zDLN Denomination</source>
-        <translation>Предпочитаемый номинал авточеканной  монеты  zDLN</translation>
+        <source>Preferred Automint zMCLB Denomination</source>
+        <translation>Предпочитаемый номинал авточеканной  монеты  zMCLB</translation>
     </message>
     <message>
         <source>Connect to the Millenniumclubcoin network through a SOCKS5 proxy.</source>
@@ -2020,8 +2020,8 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>DLN which were anonymized via Zerocin Protocol</source>
-        <translation>DLN, который был анонимно использован через Zerocoin протокол</translation>
+        <source>MCLB which were anonymized via Zerocin Protocol</source>
+        <translation>MCLB, который был анонимно использован через Zerocoin протокол</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
@@ -2032,8 +2032,8 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>Возможно отображаемая информация устарела. Ваш кошелек автоматически синхронизируется с сетью Millenniumclubcoin после установки соединения, но этот процесс еще не завершен. </translation>
     </message>
     <message>
-        <source>Enter an amount of DLN to convert to zDLN</source>
-        <translation>Введите сумму в DLN для  конвертации в zDLN</translation>
+        <source>Enter an amount of MCLB to convert to zMCLB</source>
+        <translation>Введите сумму в MCLB для  конвертации в zMCLB</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2706,8 +2706,8 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>Изменить:</translation>
     </message>
     <message>
-        <source>0 DLN</source>
-        <translation>0 DLN</translation>
+        <source>0 MCLB</source>
+        <translation>0 MCLB</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
