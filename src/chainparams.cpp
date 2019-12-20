@@ -146,9 +146,31 @@ public:
         genesis.nBits = 0x1e0fffff;
         genesis.nNonce = 0;
         
-        hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0xeaaaea7d13c08bff5ba2be83cb558de02a5f872af48a67a9802dd4bc95f0a399"));
-        assert(genesis.hashMerkleRoot == uint256("0x3540db09006953f2ef04edce58acf06c8f003cb7d2632c8f664cb5e086933fd6"));
+        //hashGenesisBlock = genesis.GetHash();
+		
+		hashGenesisBlock = uint256("0x01");
+        if (true && genesis.GetHash() != hashGenesisBlock)
+        {
+            printf("recalculating params for mainnet.\n");
+            std::string old_nonce;
+            std::stringstream oldss;
+            oldss << genesis.nNonce;
+            old_nonce = oldss.str();
+            printf("old mainnet genesis nonce: %s\n", old_nonce.c_str());
+            printf("old mainnet genesis hash:  %s\n", hashGenesisBlock.ToString().c_str());
+            // deliberately empty for loop finds nonce value.
+            for(genesis.nNonce == 0; genesis.GetHash() > bnProofOfWorkLimit; genesis.nNonce++){ } 
+            printf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
+            std::string new_nonce;
+            std::stringstream newss;
+            newss << genesis.nNonce;
+            new_nonce = newss.str();
+            printf("new mainnet genesis nonce: %s\n", new_nonce.c_str());
+            printf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
+        }
+		
+        //assert(hashGenesisBlock == uint256("0xeaaaea7d13c08bff5ba2be83cb558de02a5f872af48a67a9802dd4bc95f0a399"));
+        //assert(genesis.hashMerkleRoot == uint256("0x3540db09006953f2ef04edce58acf06c8f003cb7d2632c8f664cb5e086933fd6"));
 		
 		vFixedSeeds.clear();
 		vSeeds.clear();
@@ -237,8 +259,30 @@ public:
         genesis.nNonce = 0;
         
                        
-        hashGenesisBlock = genesis.GetHash();
-		assert(hashGenesisBlock == uint256("0x881ec759a95bee06f8b76147ef6e2e99ff487eb92062132dc74055a09d5ef7c6"));
+        //hashGenesisBlock = genesis.GetHash();
+		
+		hashGenesisBlock = uint256("0x01");
+        if (true && genesis.GetHash() != hashGenesisBlock)
+        {
+            printf("recalculating params for TESTNET.\n");
+            std::string old_nonce;
+            std::stringstream oldss;
+            oldss << genesis.nNonce;
+            old_nonce = oldss.str();
+            printf("old TESTNET genesis nonce: %s\n", old_nonce.c_str());
+            printf("old TESTNET genesis hash:  %s\n", hashGenesisBlock.ToString().c_str());
+            // deliberately empty for loop finds nonce value.
+            for(genesis.nNonce == 0; genesis.GetHash() > bnProofOfWorkLimit; genesis.nNonce++){ } 
+            printf("new TESTNET genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
+            std::string new_nonce;
+            std::stringstream newss;
+            newss << genesis.nNonce;
+            new_nonce = newss.str();
+            printf("new TESTNET genesis nonce: %s\n", new_nonce.c_str());
+            printf("new TESTNET genesis hash: %s\n", genesis.GetHash().ToString().c_str());
+        }
+		
+		//assert(hashGenesisBlock == uint256("0x881ec759a95bee06f8b76147ef6e2e99ff487eb92062132dc74055a09d5ef7c6"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -307,10 +351,31 @@ public:
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 0;
 
-        hashGenesisBlock = genesis.GetHash();
+        //hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 5555;
-        assert(hashGenesisBlock == uint256("0x6ae8a8b69440f2ffe28e2e16b50f4d8904877b08ba971e9324a52adf049deb3a"));
+        //assert(hashGenesisBlock == uint256("0x6ae8a8b69440f2ffe28e2e16b50f4d8904877b08ba971e9324a52adf049deb3a"));
 
+		hashGenesisBlock = uint256("0x01");
+        if (true && genesis.GetHash() != hashGenesisBlock)
+        {
+            printf("recalculating params for regTESTNET.\n");
+            std::string old_nonce;
+            std::stringstream oldss;
+            oldss << genesis.nNonce;
+            old_nonce = oldss.str();
+            printf("old regTESTNET genesis nonce: %s\n", old_nonce.c_str());
+            printf("old regTESTNET genesis hash:  %s\n", hashGenesisBlock.ToString().c_str());
+            // deliberately empty for loop finds nonce value.
+            for(genesis.nNonce == 0; genesis.GetHash() > bnProofOfWorkLimit; genesis.nNonce++){ } 
+            printf("new regTESTNET genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
+            std::string new_nonce;
+            std::stringstream newss;
+            newss << genesis.nNonce;
+            new_nonce = newss.str();
+            printf("new regTESTNET genesis nonce: %s\n", new_nonce.c_str());
+            printf("new regTESTNET genesis hash: %s\n", genesis.GetHash().ToString().c_str());
+        }
+		
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
 
