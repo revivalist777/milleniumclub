@@ -2508,7 +2508,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     <message>
         <location line="+14"/>
         <location line="+104"/>
-        <source>Mature: more than 20 confirmation and more than 3 mints of the same denomination after it was minted.
+        <source>Mature: more than 60 confirmation and more than 3 mints of the same denomination after it was minted.
 These zMCLB are spendable.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2528,7 +2528,7 @@ These zMCLB are spendable.</source>
         <location line="+17"/>
         <location line="+27"/>
         <location line="+17"/>
-        <source>Unconfirmed: less than 20 confirmations
+        <source>Unconfirmed: less than 60 confirmations
 Immature: confirmed, but less than 3 mints of the same denomination after it was minted</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2859,7 +2859,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
         <location line="+16"/>
         <source>Available (mature and spendable) zMCLB for spending
 
-zMCLB are mature when they have more than 20 confirmations AND more than 3 mints of the same denomination after them were minted</source>
+zMCLB are mature when they have more than 60 confirmations AND more than 3 mints of the same denomination after them were minted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2983,7 +2983,7 @@ zMCLB are mature when they have more than 20 confirmations AND more than 3 mints
         <location line="+53"/>
         <location line="+53"/>
         <location line="+53"/>
-        <source>Unconfirmed: less than 20 confirmations
+        <source>Unconfirmed: less than 60 confirmations
 Immature: confirmed, but less than 3 mints of the same denomination after it was minted</source>
         <translation type="unfinished"></translation>
     </message>
