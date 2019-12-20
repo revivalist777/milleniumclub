@@ -154,7 +154,7 @@ public:
 		vFixedSeeds.clear();
 		vSeeds.clear();
 		
-        vSeeds.push_back(CDNSSeedData("1.millenniumclubcoin.online", "1.millenniumclubcoin.online"));
+        vSeeds.push_back(CDNSSeedData("explore.millenniumclub.ca", "explore.millenniumclub.ca"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 51);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 48);
@@ -243,7 +243,7 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         
-        //vSeeds.push_back(CDNSSeedData("test.millenniumclubcoin.online", "test.millenniumclubcoin.online"));
+        //vSeeds.push_back(CDNSSeedData("test.millenniumclub.ca", "test.millenniumclub.ca"));
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 126); // Testnet millenniumclubcoin addresses start with 'x' or 'y'
