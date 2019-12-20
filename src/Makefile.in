@@ -171,7 +171,7 @@ TESTS = $(am__EXEEXT_6) $(am__EXEEXT_5)
 @ENABLE_QT_TRUE@@ENABLE_WALLET_TRUE@  qt/walletmodel.cpp \
 @ENABLE_QT_TRUE@@ENABLE_WALLET_TRUE@  qt/walletmodeltransaction.cpp \
 @ENABLE_QT_TRUE@@ENABLE_WALLET_TRUE@  qt/walletview.cpp \
-@ENABLE_QT_TRUE@@ENABLE_WALLET_TRUE@  qt/zmillenniumclubcoincontroldialog.cpp
+@ENABLE_QT_TRUE@@ENABLE_WALLET_TRUE@  qt/zmclbcontroldialog.cpp
 
 @ENABLE_QT_TRUE@@TARGET_DARWIN_TRUE@am__append_26 = $(BITCOIN_MM)
 @ENABLE_QT_TRUE@@TARGET_WINDOWS_TRUE@am__append_27 = $(BITCOIN_RC)
@@ -455,7 +455,7 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 	qt/transactionrecord.cpp qt/transactiontablemodel.cpp \
 	qt/transactionview.cpp qt/walletframe.cpp qt/walletmodel.cpp \
 	qt/walletmodeltransaction.cpp qt/walletview.cpp \
-	qt/zmillenniumclubcoincontroldialog.cpp qt/addressbookpage.h \
+	qt/zmclbcontroldialog.cpp qt/addressbookpage.h \
 	qt/addresstablemodel.h qt/askpassphrasedialog.h \
 	qt/bip38tooldialog.h qt/bitcoinaddressvalidator.h \
 	qt/bitcoinamountfield.h qt/bitcoingui.h qt/bitcoinunits.h \
@@ -478,7 +478,7 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 	qt/transactionrecord.h qt/transactiontablemodel.h \
 	qt/transactionview.h qt/utilitydialog.h qt/walletframe.h \
 	qt/walletmodel.h qt/walletmodeltransaction.h qt/walletview.h \
-	qt/winshutdownmonitor.h qt/zmillenniumclubcoincontroldialog.h \
+	qt/winshutdownmonitor.h qt/zmclbcontroldialog.h \
 	qt/forms/addressbookpage.ui qt/forms/askpassphrasedialog.ui \
 	qt/forms/bip38tooldialog.ui qt/forms/coincontroldialog.ui \
 	qt/forms/blockexplorer.ui qt/forms/obfuscationconfig.ui \
@@ -491,7 +491,7 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 	qt/forms/rpcconsole.ui qt/forms/sendcoinsdialog.ui \
 	qt/forms/sendcoinsentry.ui qt/forms/signverifymessagedialog.ui \
 	qt/forms/transactiondescdialog.ui \
-	qt/forms/zmillenniumclubcoincontroldialog.ui qt/millenniumclubcoin.qrc \
+	qt/forms/zmclbcontroldialog.ui qt/millenniumclubcoin.qrc \
 	qt/millenniumclubcoin_locale.qrc qt/locale/millenniumclubcoin_bg.ts \
 	qt/locale/millenniumclubcoin_ca.ts qt/locale/millenniumclubcoin_cs.ts \
 	qt/locale/millenniumclubcoin_da.ts qt/locale/millenniumclubcoin_de.ts \
@@ -584,7 +584,7 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 @ENABLE_QT_TRUE@@ENABLE_WALLET_TRUE@	qt/qt_libbitcoinqt_a-walletmodel.$(OBJEXT) \
 @ENABLE_QT_TRUE@@ENABLE_WALLET_TRUE@	qt/qt_libbitcoinqt_a-walletmodeltransaction.$(OBJEXT) \
 @ENABLE_QT_TRUE@@ENABLE_WALLET_TRUE@	qt/qt_libbitcoinqt_a-walletview.$(OBJEXT) \
-@ENABLE_QT_TRUE@@ENABLE_WALLET_TRUE@	qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.$(OBJEXT)
+@ENABLE_QT_TRUE@@ENABLE_WALLET_TRUE@	qt/qt_libbitcoinqt_a-zmclbcontroldialog.$(OBJEXT)
 @ENABLE_QT_TRUE@am__objects_4 = qt/qt_libbitcoinqt_a-bitcoinaddressvalidator.$(OBJEXT) \
 @ENABLE_QT_TRUE@	qt/qt_libbitcoinqt_a-bitcoinamountfield.$(OBJEXT) \
 @ENABLE_QT_TRUE@	qt/qt_libbitcoinqt_a-bitcoingui.$(OBJEXT) \
@@ -665,7 +665,7 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bitcoinaddressvalidator.cpp \
 @ENABLE_QT_TRUE@	qt/qt_libbitcoinqt_a-moc_walletframe.$(OBJEXT) \
 @ENABLE_QT_TRUE@	qt/qt_libbitcoinqt_a-moc_walletmodel.$(OBJEXT) \
 @ENABLE_QT_TRUE@	qt/qt_libbitcoinqt_a-moc_walletview.$(OBJEXT) \
-@ENABLE_QT_TRUE@	qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.$(OBJEXT)
+@ENABLE_QT_TRUE@	qt/qt_libbitcoinqt_a-moc_zmclbcontroldialog.$(OBJEXT)
 @ENABLE_QT_TRUE@am__objects_6 = qt/qt_libbitcoinqt_a-paymentrequest.pb.$(OBJEXT)
 @ENABLE_QT_TRUE@am__objects_7 = qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin.$(OBJEXT)
 @ENABLE_QT_TRUE@am__objects_8 = qt/qt_libbitcoinqt_a-qrc_millenniumclubcoin_locale.$(OBJEXT)
@@ -2132,7 +2132,7 @@ EXTRA_DIST = leveldb $(am__append_18)
 @ENABLE_QT_TRUE@  qt/forms/sendcoinsentry.ui \
 @ENABLE_QT_TRUE@  qt/forms/signverifymessagedialog.ui \
 @ENABLE_QT_TRUE@  qt/forms/transactiondescdialog.ui \
-@ENABLE_QT_TRUE@  qt/forms/zmillenniumclubcoincontroldialog.ui
+@ENABLE_QT_TRUE@  qt/forms/zmclbcontroldialog.ui
 
 @ENABLE_QT_TRUE@QT_MOC_CPP = \
 @ENABLE_QT_TRUE@  qt/moc_addressbookpage.cpp \
@@ -2185,7 +2185,7 @@ EXTRA_DIST = leveldb $(am__append_18)
 @ENABLE_QT_TRUE@  qt/moc_walletframe.cpp \
 @ENABLE_QT_TRUE@  qt/moc_walletmodel.cpp \
 @ENABLE_QT_TRUE@  qt/moc_walletview.cpp \
-@ENABLE_QT_TRUE@  qt/moc_zmillenniumclubcoincontroldialog.cpp
+@ENABLE_QT_TRUE@  qt/moc_zmclbcontroldialog.cpp
 
 @ENABLE_QT_TRUE@BITCOIN_MM = \
 @ENABLE_QT_TRUE@  qt/macdockiconhandler.mm \
@@ -2263,7 +2263,7 @@ EXTRA_DIST = leveldb $(am__append_18)
 @ENABLE_QT_TRUE@  qt/walletmodeltransaction.h \
 @ENABLE_QT_TRUE@  qt/walletview.h \
 @ENABLE_QT_TRUE@  qt/winshutdownmonitor.h \
-@ENABLE_QT_TRUE@  qt/zmillenniumclubcoincontroldialog.h
+@ENABLE_QT_TRUE@  qt/zmclbcontroldialog.h
 
 @ENABLE_QT_TRUE@RES_ICONS = \
 @ENABLE_QT_TRUE@  qt/res/icons/add.png \
@@ -2767,7 +2767,7 @@ qt/qt_libbitcoinqt_a-walletmodeltransaction.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-walletview.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.$(OBJEXT):  \
+qt/qt_libbitcoinqt_a-zmclbcontroldialog.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-moc_addressbookpage.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
@@ -2869,7 +2869,7 @@ qt/qt_libbitcoinqt_a-moc_walletmodel.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-moc_walletview.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
-qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.$(OBJEXT):  \
+qt/qt_libbitcoinqt_a-moc_zmclbcontroldialog.$(OBJEXT):  \
 	qt/$(am__dirstamp) qt/$(DEPDIR)/$(am__dirstamp)
 qt/qt_libbitcoinqt_a-paymentrequest.pb.$(OBJEXT): qt/$(am__dirstamp) \
 	qt/$(DEPDIR)/$(am__dirstamp)
@@ -3394,7 +3394,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_walletframe.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_walletmodel.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_walletview.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmclbcontroldialog.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-multisenddialog.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-multisigdialog.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-networkstyle.Po@am__quote@
@@ -3435,7 +3435,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-walletmodeltransaction.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-walletview.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-winshutdownmonitor.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_libbitcoinqt_a-zmclbcontroldialog.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_millenniumclubcoin_qt-macdockiconhandler.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_millenniumclubcoin_qt-macnotificationhandler.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@qt/$(DEPDIR)/qt_millenniumclubcoin_qt-millenniumclubcoin.Po@am__quote@
@@ -6086,19 +6086,19 @@ qt/qt_libbitcoinqt_a-walletview.obj: qt/walletview.cpp
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-walletview.obj `if test -f 'qt/walletview.cpp'; then $(CYGPATH_W) 'qt/walletview.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/walletview.cpp'; fi`
 
-qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.o: qt/zmillenniumclubcoincontroldialog.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.o `test -f 'qt/zmillenniumclubcoincontroldialog.cpp' || echo '$(srcdir)/'`qt/zmillenniumclubcoincontroldialog.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='qt/zmillenniumclubcoincontroldialog.cpp' object='qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.o' libtool=no @AMDEPBACKSLASH@
+qt/qt_libbitcoinqt_a-zmclbcontroldialog.o: qt/zmclbcontroldialog.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-zmclbcontroldialog.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-zmclbcontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-zmclbcontroldialog.o `test -f 'qt/zmclbcontroldialog.cpp' || echo '$(srcdir)/'`qt/zmclbcontroldialog.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-zmclbcontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-zmclbcontroldialog.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='qt/zmclbcontroldialog.cpp' object='qt/qt_libbitcoinqt_a-zmclbcontroldialog.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.o `test -f 'qt/zmillenniumclubcoincontroldialog.cpp' || echo '$(srcdir)/'`qt/zmillenniumclubcoincontroldialog.cpp
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-zmclbcontroldialog.o `test -f 'qt/zmclbcontroldialog.cpp' || echo '$(srcdir)/'`qt/zmclbcontroldialog.cpp
 
-qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.obj: qt/zmillenniumclubcoincontroldialog.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.obj `if test -f 'qt/zmillenniumclubcoincontroldialog.cpp'; then $(CYGPATH_W) 'qt/zmillenniumclubcoincontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/zmillenniumclubcoincontroldialog.cpp'; fi`
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='qt/zmillenniumclubcoincontroldialog.cpp' object='qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.obj' libtool=no @AMDEPBACKSLASH@
+qt/qt_libbitcoinqt_a-zmclbcontroldialog.obj: qt/zmclbcontroldialog.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-zmclbcontroldialog.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-zmclbcontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-zmclbcontroldialog.obj `if test -f 'qt/zmclbcontroldialog.cpp'; then $(CYGPATH_W) 'qt/zmclbcontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/zmclbcontroldialog.cpp'; fi`
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-zmclbcontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-zmclbcontroldialog.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='qt/zmclbcontroldialog.cpp' object='qt/qt_libbitcoinqt_a-zmclbcontroldialog.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-zmillenniumclubcoincontroldialog.obj `if test -f 'qt/zmillenniumclubcoincontroldialog.cpp'; then $(CYGPATH_W) 'qt/zmillenniumclubcoincontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/zmillenniumclubcoincontroldialog.cpp'; fi`
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-zmclbcontroldialog.obj `if test -f 'qt/zmclbcontroldialog.cpp'; then $(CYGPATH_W) 'qt/zmclbcontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/zmclbcontroldialog.cpp'; fi`
 
 qt/qt_libbitcoinqt_a-moc_addressbookpage.o: qt/moc_addressbookpage.cpp
 @am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_addressbookpage.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_addressbookpage.Tpo -c -o qt/qt_libbitcoinqt_a-moc_addressbookpage.o `test -f 'qt/moc_addressbookpage.cpp' || echo '$(srcdir)/'`qt/moc_addressbookpage.cpp
@@ -6800,19 +6800,19 @@ qt/qt_libbitcoinqt_a-moc_walletview.obj: qt/moc_walletview.cpp
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
 @am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_walletview.obj `if test -f 'qt/moc_walletview.cpp'; then $(CYGPATH_W) 'qt/moc_walletview.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_walletview.cpp'; fi`
 
-qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.o: qt/moc_zmillenniumclubcoincontroldialog.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.o `test -f 'qt/moc_zmillenniumclubcoincontroldialog.cpp' || echo '$(srcdir)/'`qt/moc_zmillenniumclubcoincontroldialog.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='qt/moc_zmillenniumclubcoincontroldialog.cpp' object='qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.o' libtool=no @AMDEPBACKSLASH@
+qt/qt_libbitcoinqt_a-moc_zmclbcontroldialog.o: qt/moc_zmclbcontroldialog.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_zmclbcontroldialog.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmclbcontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-moc_zmclbcontroldialog.o `test -f 'qt/moc_zmclbcontroldialog.cpp' || echo '$(srcdir)/'`qt/moc_zmclbcontroldialog.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmclbcontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmclbcontroldialog.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='qt/moc_zmclbcontroldialog.cpp' object='qt/qt_libbitcoinqt_a-moc_zmclbcontroldialog.o' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.o `test -f 'qt/moc_zmillenniumclubcoincontroldialog.cpp' || echo '$(srcdir)/'`qt/moc_zmillenniumclubcoincontroldialog.cpp
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_zmclbcontroldialog.o `test -f 'qt/moc_zmclbcontroldialog.cpp' || echo '$(srcdir)/'`qt/moc_zmclbcontroldialog.cpp
 
-qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.obj: qt/moc_zmillenniumclubcoincontroldialog.cpp
-@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.obj `if test -f 'qt/moc_zmillenniumclubcoincontroldialog.cpp'; then $(CYGPATH_W) 'qt/moc_zmillenniumclubcoincontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_zmillenniumclubcoincontroldialog.cpp'; fi`
-@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.Po
-@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='qt/moc_zmillenniumclubcoincontroldialog.cpp' object='qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.obj' libtool=no @AMDEPBACKSLASH@
+qt/qt_libbitcoinqt_a-moc_zmclbcontroldialog.obj: qt/moc_zmclbcontroldialog.cpp
+@am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-moc_zmclbcontroldialog.obj -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmclbcontroldialog.Tpo -c -o qt/qt_libbitcoinqt_a-moc_zmclbcontroldialog.obj `if test -f 'qt/moc_zmclbcontroldialog.cpp'; then $(CYGPATH_W) 'qt/moc_zmclbcontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_zmclbcontroldialog.cpp'; fi`
+@am__fastdepCXX_TRUE@	$(AM_V_at)$(am__mv) qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmclbcontroldialog.Tpo qt/$(DEPDIR)/qt_libbitcoinqt_a-moc_zmclbcontroldialog.Po
+@AMDEP_TRUE@@am__fastdepCXX_FALSE@	$(AM_V_CXX)source='qt/moc_zmclbcontroldialog.cpp' object='qt/qt_libbitcoinqt_a-moc_zmclbcontroldialog.obj' libtool=no @AMDEPBACKSLASH@
 @AMDEP_TRUE@@am__fastdepCXX_FALSE@	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) @AMDEPBACKSLASH@
-@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_zmillenniumclubcoincontroldialog.obj `if test -f 'qt/moc_zmillenniumclubcoincontroldialog.cpp'; then $(CYGPATH_W) 'qt/moc_zmillenniumclubcoincontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_zmillenniumclubcoincontroldialog.cpp'; fi`
+@am__fastdepCXX_FALSE@	$(AM_V_CXX@am__nodep@)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o qt/qt_libbitcoinqt_a-moc_zmclbcontroldialog.obj `if test -f 'qt/moc_zmclbcontroldialog.cpp'; then $(CYGPATH_W) 'qt/moc_zmclbcontroldialog.cpp'; else $(CYGPATH_W) '$(srcdir)/qt/moc_zmclbcontroldialog.cpp'; fi`
 
 qt/qt_libbitcoinqt_a-paymentrequest.pb.o: qt/paymentrequest.pb.cc
 @am__fastdepCXX_TRUE@	$(AM_V_CXX)$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(qt_libbitcoinqt_a_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT qt/qt_libbitcoinqt_a-paymentrequest.pb.o -MD -MP -MF qt/$(DEPDIR)/qt_libbitcoinqt_a-paymentrequest.pb.Tpo -c -o qt/qt_libbitcoinqt_a-paymentrequest.pb.o `test -f 'qt/paymentrequest.pb.cc' || echo '$(srcdir)/'`qt/paymentrequest.pb.cc

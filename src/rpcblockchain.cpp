@@ -91,12 +91,12 @@ Object blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool txDe
 
     result.push_back(Pair("moneysupply",ValueFromAmount(blockindex->nMoneySupply)));
 
-    Object zmillenniumclubcoinObj;
+    Object zmclbObj;
     for (auto denom : libzerocoin::zerocoinDenomList) {
-        zmillenniumclubcoinObj.push_back(Pair(to_string(denom), ValueFromAmount(blockindex->mapZerocoinSupply.at(denom) * (denom*COIN))));
+        zmclbObj.push_back(Pair(to_string(denom), ValueFromAmount(blockindex->mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
-    zmillenniumclubcoinObj.emplace_back(Pair("total", ValueFromAmount(blockindex->GetZerocoinSupply())));
-    result.emplace_back(Pair("zMCLBsupply", zmillenniumclubcoinObj));
+    zmclbObj.emplace_back(Pair("total", ValueFromAmount(blockindex->GetZerocoinSupply())));
+    result.emplace_back(Pair("zMCLBsupply", zmclbObj));
 
     return result;
 }

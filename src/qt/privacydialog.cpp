@@ -14,7 +14,7 @@
 #include "sendcoinsentry.h"
 #include "walletmodel.h"
 #include "coincontrol.h"
-#include "zmillenniumclubcoincontroldialog.h"
+#include "zmclbcontroldialog.h"
 #include "spork.h"
 
 #include <QClipboard>
@@ -434,7 +434,7 @@ void PrivacyDialog::sendzMCLB()
         return;
     }
 
-    // Clear zmillenniumclubcoin selector in case it was used
+    // Clear zmclb selector in case it was used
     ZMillenniumclubcoinControlDialog::listSelectedMints.clear();
 
     // Some statistics for entertainment

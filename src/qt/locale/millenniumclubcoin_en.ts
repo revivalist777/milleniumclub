@@ -5666,7 +5666,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ZMillenniumclubcoinControlDialog</name>
     <message>
-        <location filename="../forms/zmillenniumclubcoincontroldialog.ui" line="+20"/>
+        <location filename="../forms/zmclbcontroldialog.ui" line="+20"/>
         <source>Select zDLN to Spend</source>
         <translation type="unfinished"></translation>
     </message>
