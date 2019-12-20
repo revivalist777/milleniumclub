@@ -54,7 +54,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
-    boost::assign::map_list_of(0, uint256("0x001"));
+    boost::assign::map_list_of(0, uint256("0x000008566319bcaf616d171485dc4dbe31bb010d8f712ef137458cd7fa931ff8"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1576809656, // * UNIX timestamp of last checkpoint block
@@ -64,7 +64,7 @@ static const Checkpoints::CCheckpointData data = {
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x001"));
+    boost::assign::map_list_of(0, uint256("0x000008566319bcaf616d171485dc4dbe31bb010d8f712ef137458cd7fa931ff8"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     1576809656,
@@ -72,7 +72,7 @@ static const Checkpoints::CCheckpointData dataTestnet = {
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0x001"));
+    boost::assign::map_list_of(0, uint256("0x1eca1c601f89a5eee705b32f6fe98918d6fc8ab73e81a2c81ef85f5a9db605a4"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
     1576809656,
@@ -144,33 +144,12 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1576810792;
         genesis.nBits = 0x1e0fffff;
-        genesis.nNonce = 0;
+        genesis.nNonce = 171792;
         
-        //hashGenesisBlock = genesis.GetHash();
+        hashGenesisBlock = genesis.GetHash();
 		
-		hashGenesisBlock = uint256("0x01");
-        if (true && genesis.GetHash() != hashGenesisBlock)
-        {
-            printf("recalculating params for mainnet.\n");
-            std::string old_nonce;
-            std::stringstream oldss;
-            oldss << genesis.nNonce;
-            old_nonce = oldss.str();
-            printf("old mainnet genesis nonce: %s\n", old_nonce.c_str());
-            printf("old mainnet genesis hash:  %s\n", hashGenesisBlock.ToString().c_str());
-            // deliberately empty for loop finds nonce value.
-            for(genesis.nNonce == 0; genesis.GetHash() > bnProofOfWorkLimit; genesis.nNonce++){ } 
-            printf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-            std::string new_nonce;
-            std::stringstream newss;
-            newss << genesis.nNonce;
-            new_nonce = newss.str();
-            printf("new mainnet genesis nonce: %s\n", new_nonce.c_str());
-            printf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString().c_str());
-        }
-		
-        //assert(hashGenesisBlock == uint256("0xeaaaea7d13c08bff5ba2be83cb558de02a5f872af48a67a9802dd4bc95f0a399"));
-        //assert(genesis.hashMerkleRoot == uint256("0x3540db09006953f2ef04edce58acf06c8f003cb7d2632c8f664cb5e086933fd6"));
+        assert(hashGenesisBlock == uint256("0x000008566319bcaf616d171485dc4dbe31bb010d8f712ef137458cd7fa931ff8"));
+        assert(genesis.hashMerkleRoot == uint256("0xbcfbcf815684b2e1890e32fe972741dcd8d8095c845cffae7ee9fb3613ac8926"));
 		
 		vFixedSeeds.clear();
 		vSeeds.clear();
@@ -256,38 +235,15 @@ public:
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1576810792;
-        genesis.nNonce = 0;
+        genesis.nNonce = 171792;
         
-                       
-        //hashGenesisBlock = genesis.GetHash();
-		
-		hashGenesisBlock = uint256("0x01");
-        if (true && genesis.GetHash() != hashGenesisBlock)
-        {
-            printf("recalculating params for TESTNET.\n");
-            std::string old_nonce;
-            std::stringstream oldss;
-            oldss << genesis.nNonce;
-            old_nonce = oldss.str();
-            printf("old TESTNET genesis nonce: %s\n", old_nonce.c_str());
-            printf("old TESTNET genesis hash:  %s\n", hashGenesisBlock.ToString().c_str());
-            // deliberately empty for loop finds nonce value.
-            for(genesis.nNonce == 0; genesis.GetHash() > bnProofOfWorkLimit; genesis.nNonce++){ } 
-            printf("new TESTNET genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-            std::string new_nonce;
-            std::stringstream newss;
-            newss << genesis.nNonce;
-            new_nonce = newss.str();
-            printf("new TESTNET genesis nonce: %s\n", new_nonce.c_str());
-            printf("new TESTNET genesis hash: %s\n", genesis.GetHash().ToString().c_str());
-        }
-		
-		//assert(hashGenesisBlock == uint256("0x881ec759a95bee06f8b76147ef6e2e99ff487eb92062132dc74055a09d5ef7c6"));
+        hashGenesisBlock = genesis.GetHash();		
+		assert(hashGenesisBlock == uint256("0x000008566319bcaf616d171485dc4dbe31bb010d8f712ef137458cd7fa931ff8"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
         
-        vSeeds.push_back(CDNSSeedData("test.millenniumclubcoin.online", "test.millenniumclubcoin.online"));
+        //vSeeds.push_back(CDNSSeedData("test.millenniumclubcoin.online", "test.millenniumclubcoin.online"));
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 126); // Testnet millenniumclubcoin addresses start with 'x' or 'y'
@@ -349,32 +305,11 @@ public:
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1576810792;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 0;
+        genesis.nNonce = 2;
 
-        //hashGenesisBlock = genesis.GetHash();
+        hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 5555;
-        //assert(hashGenesisBlock == uint256("0x6ae8a8b69440f2ffe28e2e16b50f4d8904877b08ba971e9324a52adf049deb3a"));
-
-		hashGenesisBlock = uint256("0x01");
-        if (true && genesis.GetHash() != hashGenesisBlock)
-        {
-            printf("recalculating params for regTESTNET.\n");
-            std::string old_nonce;
-            std::stringstream oldss;
-            oldss << genesis.nNonce;
-            old_nonce = oldss.str();
-            printf("old regTESTNET genesis nonce: %s\n", old_nonce.c_str());
-            printf("old regTESTNET genesis hash:  %s\n", hashGenesisBlock.ToString().c_str());
-            // deliberately empty for loop finds nonce value.
-            for(genesis.nNonce == 0; genesis.GetHash() > bnProofOfWorkLimit; genesis.nNonce++){ } 
-            printf("new regTESTNET genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-            std::string new_nonce;
-            std::stringstream newss;
-            newss << genesis.nNonce;
-            new_nonce = newss.str();
-            printf("new regTESTNET genesis nonce: %s\n", new_nonce.c_str());
-            printf("new regTESTNET genesis hash: %s\n", genesis.GetHash().ToString().c_str());
-        }
+        assert(hashGenesisBlock == uint256("0x1eca1c601f89a5eee705b32f6fe98918d6fc8ab73e81a2c81ef85f5a9db605a4"));
 		
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
