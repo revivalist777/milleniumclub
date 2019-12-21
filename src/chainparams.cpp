@@ -154,9 +154,10 @@ public:
 		vFixedSeeds.clear();
 		vSeeds.clear();
 		
-        vSeeds.push_back(CDNSSeedData("explore.millenniumclub.ca", "explore.millenniumclub.ca"));
+        vSeeds.push_back(CDNSSeedData("node1.millenniumclub.ca", "node1.millenniumclub.ca"));
+        vSeeds.push_back(CDNSSeedData("node2.millenniumclub.ca", "node2.millenniumclub.ca"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 51);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 110);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 48);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 53);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x7b)(0x14)(0xdb)(0x6a).convert_to_container<std::vector<unsigned char> >();
@@ -164,7 +165,6 @@ public:
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x81)(0x9c)(0x90)(0xe8).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
-
 
 		fRequireRPCPassword = true;
         fMiningRequiresPeers = false;
