@@ -1859,8 +1859,8 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>От</translation>
     </message>
     <message>
-        <source>MILLENIUMCLUBCOIN Balances</source>
-        <translation>MILLENIUMCLUBCOIN Баланс</translation>
+        <source>MILLENNIUMCLUBCOIN Balances</source>
+        <translation>MILLENNIUMCLUBCOIN Баланс</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1927,8 +1927,8 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>Комбиниран общ баланс (само озрелите монети)</translation>
     </message>
     <message>
-        <source>MILLENIUMCLUBCOIN:</source>
-        <translation>MILLENIUMCLUBCOIN:</translation>
+        <source>MILLENNIUMCLUBCOIN:</source>
+        <translation>MILLENNIUMCLUBCOIN:</translation>
     </message>
     <message>
         <source>zMCLB:</source>

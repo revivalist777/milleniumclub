@@ -1854,8 +1854,8 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>Formular</translation>
     </message>
     <message>
-        <source>MILLENIUMCLUBCOIN Balances</source>
-        <translation>MILLENIUMCLUBCOIN Bilanzen</translation>
+        <source>MILLENNIUMCLUBCOIN Balances</source>
+        <translation>MILLENNIUMCLUBCOIN Bilanzen</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1922,8 +1922,8 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>Kombinierte Bilanz (einschließlich unreifer Coins)</translation>
     </message>
     <message>
-        <source>MILLENIUMCLUBCOIN:</source>
-        <translation>MILLENIUMCLUBCOIN:</translation>
+        <source>MILLENNIUMCLUBCOIN:</source>
+        <translation>MILLENNIUMCLUBCOIN:</translation>
     </message>
     <message>
         <source>zMCLB:</source>

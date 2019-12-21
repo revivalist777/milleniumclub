@@ -1863,8 +1863,8 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>Form</translation>
     </message>
     <message>
-        <source>MILLENIUMCLUBCOIN Balances</source>
-        <translation>MILLENIUMCLUBCOIN 잔액</translation>
+        <source>MILLENNIUMCLUBCOIN Balances</source>
+        <translation>MILLENNIUMCLUBCOIN 잔액</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1931,8 +1931,8 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>전체 잔액 (대기중 코인 포함)</translation>
     </message>
     <message>
-        <source>MILLENIUMCLUBCOIN:</source>
-        <translation>MILLENIUMCLUBCOIN:</translation>
+        <source>MILLENNIUMCLUBCOIN:</source>
+        <translation>MILLENNIUMCLUBCOIN:</translation>
     </message>
     <message>
         <source>zMCLB:</source>

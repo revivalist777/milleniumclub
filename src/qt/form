@@ -60,7 +60,7 @@
                </font>
               </property>
               <property name="text">
-               <string>MILLENIUMCLUBCOIN Balances</string>
+               <string>MILLENNIUMCLUBCOIN Balances</string>
               </property>
              </widget>
             </item>
@@ -1021,7 +1021,7 @@
              <item row="1" column="0">
               <widget class="QLabel" name="labelBalanceTextz">
                <property name="text">
-                <string>MILLENIUMCLUBCOIN:</string>
+                <string>MILLENNIUMCLUBCOIN:</string>
                </property>
               </widget>
              </item>
@@ -1131,7 +1131,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
               </widget>
              </item>
              <item row="3" column="2">
-              <widget class="QLabel" name="labelMILLENIUMCLUBCOINPercent">
+              <widget class="QLabel" name="labelMILLENNIUMCLUBCOINPercent">
                <property name="text">
                 <string>0 %</string>
                </property>

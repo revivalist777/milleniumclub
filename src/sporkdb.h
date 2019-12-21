@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MILLENIUMCLUBCOIN_CSPORKDB_H
-#define MILLENIUMCLUBCOIN_CSPORKDB_H
+#ifndef MILLENNIUMCLUBCOIN_CSPORKDB_H
+#define MILLENNIUMCLUBCOIN_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -25,4 +25,4 @@ public:
 };
 
 
-#endif //MILLENIUMCLUBCOIN_CSPORKDB_H
+#endif //MILLENNIUMCLUBCOIN_CSPORKDB_H

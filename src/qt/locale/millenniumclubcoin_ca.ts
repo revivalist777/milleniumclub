@@ -1271,8 +1271,8 @@
         <translation>Total:</translation>
     </message>
     <message>
-        <source>MILLENIUMCLUBCOIN:</source>
-        <translation>MILLENIUMCLUBCOIN:</translation>
+        <source>MILLENNIUMCLUBCOIN:</source>
+        <translation>MILLENNIUMCLUBCOIN:</translation>
     </message>
     <message>
         <source>zMCLB:</source>

@@ -1846,8 +1846,8 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>Formulier</translation>
     </message>
     <message>
-        <source>MILLENIUMCLUBCOIN Balances</source>
-        <translation>MILLENIUMCLUBCOIN Saldi</translation>
+        <source>MILLENNIUMCLUBCOIN Balances</source>
+        <translation>MILLENNIUMCLUBCOIN Saldi</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1914,8 +1914,8 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
         <translation>Gecombineerde Saldi (inclusief onvolwassen munten)</translation>
     </message>
     <message>
-        <source>MILLENIUMCLUBCOIN:</source>
-        <translation>MILLENIUMCLUBCOIN:</translation>
+        <source>MILLENNIUMCLUBCOIN:</source>
+        <translation>MILLENNIUMCLUBCOIN:</translation>
     </message>
     <message>
         <source>zMCLB:</source>

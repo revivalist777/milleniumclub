@@ -2705,7 +2705,7 @@ void RecalculateZMCLBSpent()
     pblocktree->Flush();
 }
 
-bool RecalculateMILLENIUMCLUBCOINSupply(int nHeightStart)
+bool RecalculateMILLENNIUMCLUBCOINSupply(int nHeightStart)
 {
     if (nHeightStart > chainActive.Height())
         return false;
@@ -2944,7 +2944,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     if (!fVerifyingBlocks && pindex->nHeight == Params().Zerocoin_StartHeight() + 1) {
         RecalculateZMCLBMinted();
         RecalculateZMCLBSpent();
-        RecalculateMILLENIUMCLUBCOINSupply(1);
+        RecalculateMILLENNIUMCLUBCOINSupply(1);
     }
 
     // Initialize zerocoin supply to the supply from previous block
@@ -3165,7 +3165,7 @@ void static UpdateTip(CBlockIndex* pindexNew)
 {
     chainActive.SetTip(pindexNew);
 
-    // If turned on AutoZeromint will automatically convert MILLENIUMCLUBCOIN to zMCLB
+    // If turned on AutoZeromint will automatically convert MILLENNIUMCLUBCOIN to zMCLB
     if (pwalletMain->isZeromintEnabled ())
         pwalletMain->AutoZeromint ();
 

@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="MILLENIUMCLUBCOINSupply">
+    <widget class="QLabel" name="MILLENNIUMCLUBCOINSupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="MILLENIUMCLUBCOINDemand">
+    <widget class="QLabel" name="MILLENNIUMCLUBCOINDemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="BuyMILLENIUMCLUBCOIN">
+    <widget class="QPushButton" name="BuyMILLENNIUMCLUBCOIN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -442,7 +442,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Buy MILLENIUMCLUBCOIN</string>
+      <string>Buy MILLENNIUMCLUBCOIN</string>
      </property>
      <property name="icon">
       <iconset resource="../millenniumclubcoin.qrc">
@@ -512,7 +512,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>MILLENIUMCLUBCOIN</string>
+      <string>MILLENNIUMCLUBCOIN</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -1704,10 +1704,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>MILLENIUMCLUBCOIN</string>
+      <string>MILLENNIUMCLUBCOIN</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputMILLENIUMCLUBCOIN">
+    <widget class="QLineEdit" name="UnitsInputMILLENNIUMCLUBCOIN">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellMILLENIUMCLUBCOINBTN">
+    <widget class="QPushButton" name="SellMILLENNIUMCLUBCOINBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1751,7 +1751,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Sell MILLENIUMCLUBCOIN</string>
+      <string>Sell MILLENNIUMCLUBCOIN</string>
      </property>
      <property name="icon">
       <iconset resource="../millenniumclubcoin">
@@ -1777,12 +1777,12 @@
          </font>
         </property>
         <property name="text">
-         <string>MILLENIUMCLUBCOIN Available:</string>
+         <string>MILLENNIUMCLUBCOIN Available:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="MILLENIUMCLUBCOINAvailableLabel">
+       <widget class="QLabel" name="MILLENNIUMCLUBCOINAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2213,7 +2213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelMILLENIUMCLUBCOIN">
+       <widget class="QLabel" name="labelMILLENNIUMCLUBCOIN">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2221,7 +2221,7 @@
          </font>
         </property>
         <property name="text">
-         <string>MILLENIUMCLUBCOIN</string>
+         <string>MILLENNIUMCLUBCOIN</string>
         </property>
        </widget>
       </item>
@@ -2733,7 +2733,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="MILLENIUMCLUBCOINBalanceLabel">
+    <widget class="QLabel" name="MILLENNIUMCLUBCOINBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2762,7 +2762,7 @@
       </font>
      </property>
      <property name="text">
-      <string>MILLENIUMCLUBCOIN Balance:</string>
+      <string>MILLENNIUMCLUBCOIN Balance:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -2784,7 +2784,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="MILLENIUMCLUBCOINAvailableLabel_2">
+    <widget class="QLabel" name="MILLENNIUMCLUBCOINAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2813,7 +2813,7 @@
       </font>
      </property>
      <property name="text">
-      <string>MILLENIUMCLUBCOIN Available:</string>
+      <string>MILLENNIUMCLUBCOIN Available:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -2832,10 +2832,10 @@
       </font>
      </property>
      <property name="text">
-      <string>MILLENIUMCLUBCOIN Pending:</string>
+      <string>MILLENNIUMCLUBCOIN Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="MILLENIUMCLUBCOINPendingLabel">
+    <widget class="QLabel" name="MILLENNIUMCLUBCOINPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2928,7 +2928,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Bittrex MILLENIUMCLUBCOIN Deposit Address:</string>
+      <string>Bittrex MILLENNIUMCLUBCOIN Deposit Address:</string>
      </property>
     </widget>
     <widget class="QPushButton" name="GenDepositBTN">

@@ -191,7 +191,7 @@ QT_TRANSLATE_NOOP("millenniumclubcoin-core", ""
 "transaction that are not equal 10000 MCLB."),
 QT_TRANSLATE_NOOP("millenniumclubcoin-core", ""
 "Unable to locate enough funds for this transaction that are not equal 10000 "
-"MILLENIUMCLUBCOIN."),
+"MILLENNIUMCLUBCOIN."),
 QT_TRANSLATE_NOOP("millenniumclubcoin-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
 "%s)"),
@@ -305,7 +305,7 @@ QT_TRANSLATE_NOOP("millenniumclubcoin-core", "Failed to listen on any port. Use 
 QT_TRANSLATE_NOOP("millenniumclubcoin-core", "Failed to read block index"),
 QT_TRANSLATE_NOOP("millenniumclubcoin-core", "Failed to read block"),
 QT_TRANSLATE_NOOP("millenniumclubcoin-core", "Failed to write block index"),
-QT_TRANSLATE_NOOP("millenniumclubcoin-core", "Fee (in MILLENIUMCLUBCOIN/kB) to add to transactions you send (default: %s)"),
+QT_TRANSLATE_NOOP("millenniumclubcoin-core", "Fee (in MILLENNIUMCLUBCOIN/kB) to add to transactions you send (default: %s)"),
 QT_TRANSLATE_NOOP("millenniumclubcoin-core", "Finalizing transaction."),
 QT_TRANSLATE_NOOP("millenniumclubcoin-core", "Force safe mode (default: %u)"),
 QT_TRANSLATE_NOOP("millenniumclubcoin-core", "Found enough users, signing ( waiting %s )"),

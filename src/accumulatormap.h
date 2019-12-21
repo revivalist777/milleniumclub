@@ -1,8 +1,8 @@
 // Copyright (c) 2017 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef MILLENIUMCLUBCOIN_ACCUMULATORMAP_H
-#define MILLENIUMCLUBCOIN_ACCUMULATORMAP_H
+#ifndef MILLENNIUMCLUBCOIN_ACCUMULATORMAP_H
+#define MILLENNIUMCLUBCOIN_ACCUMULATORMAP_H
 
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Coin.h"
@@ -20,4 +20,4 @@ public:
     uint256 GetCheckpoint();
     void Reset();
 };
-#endif //MILLENIUMCLUBCOIN_ACCUMULATORMAP_H
+#endif //MILLENNIUMCLUBCOIN_ACCUMULATORMAP_H

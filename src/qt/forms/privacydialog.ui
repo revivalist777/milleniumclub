@@ -483,7 +483,7 @@
                <item>
                 <widget class="QLabel" name="labelzMCLBSelected">
                  <property name="text">
-                  <string>MILLENIUMCLUBCOIN Selected:</string>
+                  <string>MILLENNIUMCLUBCOIN Selected:</string>
                  </property>
                 </widget>
                </item>

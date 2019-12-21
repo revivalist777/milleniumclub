@@ -1,8 +1,8 @@
 /* src/config/millenniumclubcoin-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef MILLENIUMCLUBCOIN_CONFIG_H
+#ifndef MILLENNIUMCLUBCOIN_CONFIG_H
 
-#define MILLENIUMCLUBCOIN_CONFIG_H
+#define MILLENNIUMCLUBCOIN_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 #undef AC_APPLE_UNIVERSAL_BUILD
@@ -339,4 +339,4 @@
 /* Define for large files, on AIX-style hosts. */
 #undef _LARGE_FILES
 
-#endif //MILLENIUMCLUBCOIN_CONFIG_H
+#endif //MILLENNIUMCLUBCOIN_CONFIG_H

@@ -594,7 +594,7 @@
           <item>
            <widget class="QLabel" name="labelBlockSize">
             <property name="text">
-             <string>MILLENIUMCLUBCOIN</string>
+             <string>MILLENNIUMCLUBCOIN</string>
             </property>
            </widget>
           </item>

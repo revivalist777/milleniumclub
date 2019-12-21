@@ -374,7 +374,7 @@ bool IsTransactionInChain(uint256 txId, int& nHeightTx);
 bool IsBlockHashInChain(const uint256& hashBlock);
 void RecalculateZMCLBSpent();
 void RecalculateZMCLBMinted();
-bool RecalculateMILLENIUMCLUBCOINSupply(int nHeightStart);
+bool RecalculateMILLENNIUMCLUBCOINSupply(int nHeightStart);
 
 
 /**

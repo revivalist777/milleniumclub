@@ -2348,7 +2348,7 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
     </message>
     <message>
         <location line="+43"/>
-        <source>MILLENIUMCLUBCOIN Balances</source>
+        <source>MILLENNIUMCLUBCOIN Balances</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2449,7 +2449,7 @@ https://www.transifex.com/millenniumclubcoin-project/millenniumclubcoin-project-
     </message>
     <message>
         <location line="+36"/>
-        <source>MILLENIUMCLUBCOIN:</source>
+        <source>MILLENNIUMCLUBCOIN:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
